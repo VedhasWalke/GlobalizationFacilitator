@@ -22,20 +22,20 @@ for j in range(len(pages)):
             desc = browser.find_element_by_xpath("//span[contains(text(), 'Read more')]")
             desc.click()
         except:
-            print("", end = "")
+            pass
         try:
             desc2 = browser.find_element_by_xpath("//*[@id='modal-portal-container']/div/div/div/div/div/div[2]//p[1]")
             info = desc2.get_attribute('innerText')
             print('Description: ' + info)
         except:
-            print("", end = "")
+           pass
         try:
             desc2 = browser.find_element_by_xpath("//*[@id='modal-portal-container']/div/div/div/div/div/div[2]//p[2]")
             info = desc2.get_attribute('innerText')
             print('Description: ' + info)
         except:
-            print("", end = "")
-        print("")
+            pass
+        pass
         browser.back()
 for j in range(len(pages)):
     print("\n***** " + pages[j][0] + " - Google *****")
@@ -55,7 +55,7 @@ for j in range(len(pages)):
             print("Title: " + titlename)
             print("Description: " + text)
         except:
-            print("")
+            pass
         try:
             html = browser.page_source
             total = 0
@@ -68,6 +68,6 @@ for j in range(len(pages)):
                 best = titlename
             browser.back()
         except:
-            print("")
+            pass
     print("\nBest website to look at: " + best + '\n')
 browser.quit()
