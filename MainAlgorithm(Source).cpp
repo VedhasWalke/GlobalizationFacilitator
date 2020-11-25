@@ -11,6 +11,7 @@ Features:
 */
 
 #include <iostream>
+<<<<<<< HEAD
 #include <vector>
 #include <fstream>
 #include <numeric>
@@ -74,6 +75,14 @@ int main()
 	Pc[1] = Pos.numberOfClasses / All.numberOfClasses;
 	
 	
+=======
+#include <fstream>
+using namespace std;
+
+int main()
+{
+   
+>>>>>>> e714b788baee1cc3ca745409a3fac962d9a41aad
 
 
 }
