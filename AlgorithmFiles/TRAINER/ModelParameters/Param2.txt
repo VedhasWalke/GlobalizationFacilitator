@@ -1,0 +1,11 @@
+Parameters for Naive Bayes
+(Class Probability and Sums Data)
+Last Modified: 01-04-2021 18:43:53
+#
+1.0004
+0.811817
+8511
+3255
+5256
+2471
+#
