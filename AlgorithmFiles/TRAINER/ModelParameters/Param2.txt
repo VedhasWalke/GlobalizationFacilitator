@@ -1,11 +1,12 @@
 Parameters for Naive Bayes
 (Class Probability and Sums Data)
-Last Modified: 01-04-2021 18:43:53
+PcPos  PcNeg  sum  psum  nsum numberOfmembers 
+Last Modified: 02-08-2021 21:58:16
 #
-1.0004
-0.811817
-8511
-3255
-5256
-2471
+0.660963
+0.536096
+14391
+6539
+7852
+3740
 #

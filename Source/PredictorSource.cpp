@@ -137,18 +137,17 @@ int main()
 {
 	vector<double> OtherData;
 	set = DocToSet(OtherData);
-	//cout << "Here and ";
 	ifstream inputFile;
-	//Metadata\\IO_Num.txt
+	//"Metadata\\IO_Num.txt"
     // "C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\MAIN\\Metadata\\IO_Num.txt"
-	inputFile.open("Metadata\\IO_Num.txt");
+	inputFile.open("C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\MAIN\\Metadata\\IO_Num.txt");
 	string FileNum;
 	inputFile >> FileNum;
 	inputFile.close();
 	// "C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\Input\\I" + FileNum + ".txt"
-	//cout << "Here";
-	inputFile.open("..\\..\\Input\\I" + FileNum + ".txt");
-	//..\\..\\Input\\" + FileNum + ".txt
+	//"..\\..\\Input\\" + FileNum + ".txt"
+	inputFile.open("C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\Input\\I" + FileNum + ".txt");
+	
 	//cout << " and there";
 	Review review;
 
