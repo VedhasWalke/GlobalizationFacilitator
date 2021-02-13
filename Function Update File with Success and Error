@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+#include <string> 
+
+using namespace std;
+
+void success(string input) {
+    ofstream logfile;
+    logfile.open ("logs.txt");
+    logfile << input + "successful\n";
+    logfile.close();
+}
+
+void failure(string input) {
+    ofstream logfile;
+    logfile.open ("logs.txt");
+    logfile << input + "failure\n";
+    logfile.close();
+}
+
+int main() {
+    return 0;
+}
