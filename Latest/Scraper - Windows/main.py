@@ -12,5 +12,3 @@ if __name__ == '__main__':
     print('\n\n\n--------------------------------------------------------------------\n\n\n')
     p2 = process2(linkToClientBiz, maximumDistanceFromClient, minimumNumberOfReviewsPerUser)
     print(p2)
-
-    # print(getUserReviews('U8', 'B1', 7, 30))

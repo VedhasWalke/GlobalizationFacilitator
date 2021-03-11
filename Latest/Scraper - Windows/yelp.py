@@ -17,6 +17,7 @@ options.add_argument('--disable-gpu')
 options.add_argument("--log-level=3")  # fatal
 options.add_argument("--start-maximized")
 
+#Disable images
 chrome_prefs = {}
 options.experimental_options["prefs"] = chrome_prefs
 chrome_prefs["profile.default_content_settings"] = {"images": 2}
@@ -456,9 +457,6 @@ def process2(clientLink, locationRadius, minNumReviewsPerUser):
 	return True
 	
 ############################################# 	END OF IMPORTANT FUNCTIONS	#############################################
-
-
-
 
 #[not in use] A function to search Yelp for a certain good/service in a location
 def searchYelp(goods, numResults, location=""):
