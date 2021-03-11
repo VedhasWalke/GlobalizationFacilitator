@@ -1,24 +1,25 @@
 /*
-Main Algorithm Prototype
+Trainer System
 
-Date Updated: 12/30/20
+Date Updated: 3/10/21
 
 Description:
 	Machine learning training algorithm based on Naive Bayes Framework.
-	Uses two data sets of customer reviews of a business: positive reviews
-	and negative reviews. Outputs file containing computed optimal features
-	in special format as detailed in "ParametersFormat.txt" file in "Help"
-	directory.
+	Uses two main data sets of customer reviews of a business: positive reviews
+	and negative reviews. Furthermore, uses two auxilary datasets of highly specific, 
+	hand-picked data on the loyalty of a consumer based on review. Outputs file 
+	containing computed optimal features in special format as detailed in 
+	"ParametersFormat.txt" file in "Help" directory.
 
 Non-primitive Data Types:
-	WordSet: a struct housing multiple variables key to analyzing a set of reviews.
-		counts: vector storing number of instances of each word in all reviews of the wordset.
-		pcounts: vector storing number of instances of each word in all positive reviews of the wordset.
-		ncounts: vector storing number of instances of each word in all negative reviews of the wordset.
-		numberOfmembers: number of words contained in a wordset, equivalent to size of counts vector.
+	vector<word>: a struct housing multiple variables key to analyzing a set of reviews.
+		counts: vector storing number of instances of each word in all reviews of the vector<word>.
+		pcounts: vector storing number of instances of each word in all positive reviews of the vector<word>.
+		ncounts: vector storing number of instances of each word in all negative reviews of the vector<word>.
+		numberOfmembers: number of words contained in a vector<word>, equivalent to size of counts vector.
 
 Functions:
-	Union: combines two wordsets(positive and negative in this case) into one.
+	Union: combines two vector<word>s(positive and negative in this case) into one.
 	Compress: converts raw words into a word set.
 	OutputFile: outputs parameters found in a text document
 
@@ -31,27 +32,54 @@ Functions:
 #include <string>
 #include <algorithm>
 #include <ctime>
+#include <iterator>
 using namespace std;
 
 
+struct counts {
+	int p; // positive counts
+	int n; // negative counts
+	int o; // novel counts
+	int l; // loyal counts
+};
 
-struct WordSet {
-	vector<string> words;
-	vector<int> counts;
-	vector<int> pcounts;
-	vector<int> ncounts;
-	int numberOfmembers = 0;
-
+struct word {
+	string text;
+	counts count;
+	int value;
 };
 
 
 
+// Global Variables
+ofstream Log;
+int SetType; // 0 -> positive, 1 -> negative, 2 -> novel, 3 -> loyal
+int punctuationCounts[4][3];
+
+// Constants
+const string LogFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\Log.txt";
+const string LogFileNameR = "Log.txt";
+const string posDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\PosTrainingSet\\PosTrainingSet.txt";
+const string posDataFileNameR = "PosTrainingSet\\PosTrainingSet.txt";
+const string negDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\NegTrainingSet\\NegTrainingSet.txt";
+const string negDataFileNameR = "NegTrainingSet\\NegTrainingSet.txt";
+const string loyDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\LoyTrainingSet\\LoyTrainingSet.txt";
+const string loyDataFileNameR = "LoyTrainingSet\\LoyTrainingSet.txt";
+const string novDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\NovTrainingSet\\NovTrainingSet.txt";
+const string novDataFileNameR = "NovTrainingSet\\NovTrainingSet.txt";
+const string delimiter = "///";
+const char taboo_chars[] = {')', '(', '-'};
+
+
 // Prototypes
-WordSet ProcessDocument(string filename);
-string Preformat(string raw_word);
-WordSet Union(WordSet Pos, WordSet Neg);
-WordSet Compress(vector<string> raw_words);
-void OutputFile(WordSet All, vector<double> OtherData);
+vector<word> ProcessDocument(string filename, int ngram);
+string Preprocess(string raw_word);
+vector<word> Union(vector<vector<word>> All);
+vector<word> Compress(vector<string> raw_words);
+vector<word> Trim(vector<vector<word>> All);
+int Evaluate(counts c);
+//void OutputFile(vector<word> Set, vector<double> OtherData);
+
 
 
 
@@ -73,148 +101,209 @@ string getDate() {
 	return str;
 }
 
-WordSet ProcessDocument(string filename) {
-	
+vector<word> ProcessDocument(string filename, int ngram) {
+
 	ifstream inputFile;
 	inputFile.open(filename);
 
-	vector<string> raw_words;
-	string word;
-	while (inputFile) {
-		inputFile >> word;
-		raw_words.push_back(Preformat(word));
+	// CHECK
+	if (inputFile) {
+		Log.open(LogFileNameA);
+		Log << filename.substr(filename.find_last_of('\\') + 1) << " opened successfully | " << getDate() << endl;
+		Log.close();
+	}
+	else {
+		Log.open(LogFileNameA);
+		Log << "ERROR: Filename invalid |" << filename.substr(filename.find_last_of('\\')+1) << " did not opened successfully | " << getDate() << endl;
+		Log.close();
 	}
 
-	return Compress(raw_words);
 
-} 
+	vector<string> raw_words, refined_phrases;
+	string phrase, temp;
+	vector<vector<word>> All(ngram);
 
-string Preformat(string raw_word) {
+	while (inputFile) {
+		inputFile >> temp;
+		raw_words.push_back(temp);
+	}
+
+
+	for (int n = 1; n <= ngram; n++) {
+		int i = 0;
+		refined_phrases.clear();
+		
+		while (i < raw_words.size()-n) {
+			phrase = "";
+			for (int j = 0; j < n; j++) {
+				phrase += raw_words[i+j] + " ";
+			}
+			phrase.erase(phrase.end()-1); // end - 1?
+			
+			
+			if (phrase.find(delimiter) != string::npos) {
+				i += n;
+				continue;
+			}
+				
+			refined_phrases.push_back(Preprocess(phrase));
+			i++;
+		}
+		All[n-1] = Compress(refined_phrases);
+	}
+	
+	
+	return Trim(All);
+
+
+}
+
+string Preprocess(string raw_word) {
+	
+	//deleting taboo characters as defined by "taboo_chars" array
+	while (raw_word.find_first_of(taboo_chars) != string::npos) {
+		raw_word.erase(raw_word.find_first_of(taboo_chars));
+	}
+
+
 	for (int i = 0; i < raw_word.size(); i++) {
-		if (raw_word[i] == '\"')
-			raw_word.erase(raw_word.begin()+i);
+		
+		// checking for punctuation
+		
+		if (raw_word[i] == '.') {
+			punctuationCounts[SetType][0]++;
+			raw_word.erase(i);
+		}
+		else if (raw_word[i] == '!') {
+			punctuationCounts[SetType][1]++;
+			raw_word.erase(i);
+		}
+		else if (raw_word[i] == '?') {
+			punctuationCounts[SetType][2]++;
+			raw_word.erase(i);
+		}
+		else {
+			i++;
+		}
+		i--; // if punctuation char was deleted
 	}
 	return raw_word;
 }
 
-WordSet Union(WordSet Pos, WordSet Neg) {
-	int max_elem;
-	if (Pos.numberOfmembers > Neg.numberOfmembers)
-		max_elem = Neg.numberOfmembers;
-	else
-		max_elem = Pos.numberOfmembers;
-	// max_elem is max element of looping, not string count(looping cannot exceed size of any array)
 
-	vector<string> words(Pos.numberOfmembers + Neg.numberOfmembers);
-	vector<int> counts(Pos.numberOfmembers + Neg.numberOfmembers);
-	vector<int> pcounts(Pos.numberOfmembers + Neg.numberOfmembers);
-	vector<int> ncounts(Pos.numberOfmembers + Neg.numberOfmembers);
-	int i = 0; // pos iterator
-	int j = 0; // neg iterator
-	int m = 0; // words iterator
-	for (int k = 0; k < max_elem; k++) {
-
-		if (Pos.words[i].compare(Neg.words[j]) < 0) {
-
-			words[m] = Pos.words[i];
-			counts[m] = Pos.counts[i];
-			pcounts[m] = Pos.counts[i];
-			i++;
-			m++;
-
-		}
-		else if (Pos.words[i].compare(Neg.words[j]) > 0) {
-			words[m] = Neg.words[j];
-			counts[m] = Neg.counts[j];
-			ncounts[m] = Neg.counts[j];
-			j++;
-			m++;
+vector<word> Union(vector<vector<word>> All) { // lazily coded, kinda slow
+	vector<word> c = All[0];
+	
+	// combining all vectors into one
+	for (int i = 1; i < All.size(); i++) {
+		c.insert(c.end(), All[i].begin(), All[i].end());
+	}
+	
+	// sorting
+	sort(c.begin(), c.end(), [](word a, word b) {return a.text < b.text; }); 
+	
+	int num = 0;
+	vector<word> cset;
+	// combining adjacent words into one
+	for (int i = 0; i < c.size()-1; i++) {
+		
+		if (c[i].text == c[i + 1].text) {
+			num++;
 		}
 		else {
-			words[m] = Pos.words[i];
-			counts[m] = Pos.counts[i] + Neg.counts[j];
-			ncounts[m] = Neg.counts[j];
-			pcounts[m] = Pos.counts[i];
-			i++;
-			j++;
-			m++;
+			int p = 0;
+			int n = 0;
+			int o = 0;
+			int l = 0;
+
+			for (int j = i; j >= i - num; j--) {
+				p += c[j].count.p;
+				n += c[j].count.n;
+				o += c[j].count.o;
+				l += c[j].count.l;
+			}
+
+			cset.push_back(word{ c[i].text,{p,n,o,l}, Evaluate({p,n,o,l}) });
 		}
 	}
 
 
+	return cset;
+}
 
-	for (; m < Pos.numberOfmembers - 1; m++) {
-		words[m] = Pos.words[i];
-		counts[m] = Pos.counts[i];
-		pcounts[m] = Pos.counts[i];
-		i++;
-	}
 
-	for (; m < Neg.numberOfmembers - 1; m++) {
-		words[m] = Neg.words[j];
-		counts[m] = Neg.counts[j];
-		ncounts[m] = Neg.counts[j];
-		j++;
+vector<word> Compress(vector<string> raw_words) { // CHECK
+	sort(raw_words.begin(), raw_words.end());
+
+	int count = 1;
+	string text = "";
+	vector<word> set;
+
+	text = raw_words[0];
+	for (int i = 1; i < raw_words.size(); i++) {
+		if (raw_words[i] == text) {
+			count++;
+		}
+		else {
+			
+			counts c = {0,0,0,0};
+			if (SetType == 0)
+				c.p = count;
+			else if (SetType == 1)
+				c.n = count;
+			else if (SetType == 2)
+				c.o = count;
+			else if (SetType == 3)
+				c.l = count;
+			
+			set.push_back(word{ text, c, Evaluate(c)}); // correct struct declaration?
+			count = 1;
+			text = raw_words[i];
+		}
 	}
 
 	
-	// erasing empty elements of words, counts, pcounts, and ncounts vectors.
-	words.erase(words.begin() + m, words.end());
-	counts.erase(counts.begin() + m, counts.end());
-	pcounts.erase(pcounts.begin() + m, pcounts.end());
-	ncounts.erase(ncounts.begin() + m, ncounts.end());
 
-
-	WordSet C;
-	C.counts = counts;
-	C.words = words;
-	C.ncounts = ncounts;
-	C.pcounts = pcounts;
-	C.numberOfmembers = words.size();
-
-	return C;
-}
-
-WordSet Compress(vector<string> raw_words) {
-	sort(raw_words.begin(), raw_words.end());
-
-	vector<int> counts(raw_words.size(), 1);
-	vector<string> words(raw_words.size(), "");
-
-
-	words[0] = raw_words[0];
-
-	int j = 0; // counts and words iterator
-	for (int i = 1; i < raw_words.size(); i++) {
-		if (raw_words[i] == raw_words[i - 1]) {
-			counts[j]++;
-		}
-		else {
-			j++;
-			words[j] = raw_words[i];
-		}
-
-
-	}
-
-	counts.erase(counts.begin() + j + 1, counts.end());
-	words.erase(words.begin() + j + 1, words.end());
-
-	if (words[0] == "") { // can't have first element as nothing
-		words.erase(words.begin());
-		counts.erase(counts.begin());
+	if (set[0].text == "") { // apparently "" as the first element is problematic
+		set.erase(set.begin());
 	}
 
 
-	WordSet A;
-	A.counts = counts;
-	A.words = words;
-	A.numberOfmembers = A.words.size();
-
-	return A;
+	return set;
 }
 
-void OutputFile(WordSet All, vector<double> OtherData) {
+int Evaluate(counts c) {
+	
+	return c.p + c.n + c.o + c.l; // just basing this on how common word is for now
+	
+}
+
+// temporary trimming --> lopping off bottom half
+vector<word> Trim(vector<vector<word>> All) { 
+	
+
+
+	for (int i = 0; i < All.size(); i++) {
+		
+		for (vector<word>::iterator j = All[i].begin(); j < All[i].end(); j++) {
+			Evaluate((*j).count);
+		}
+		sort(All[i].begin(), All[i].end(), [](word a, word b) {return a.value > b.value; }); // sorting in correct order?
+		
+		All[i].erase(All[i].begin() + All[i].size() / 2, All[i].end()); // how much to trim?? (rn just lopping off bottom half values)
+	}
+	
+
+
+	return Union(All);
+
+	
+
+}
+
+
+/*
+void OutputFile(vector<word> Set, vector<double> OtherData) {
 
 	ofstream outf;
 
@@ -222,20 +311,20 @@ void OutputFile(WordSet All, vector<double> OtherData) {
 
 	// First Parameters File: word counts
 	outf.open("ModelParameters\\Param1.txt");
-                     
+
 	// Preliminary Information
 	outf << "Parameters for Naive Bayes\n";
 	outf << "(Word Counts)\n";
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
 
-	for (int i = 0; i < All.numberOfmembers; i++) {
-		outf << All.words[i] << " " << All.counts[i] << " " << All.pcounts[i] << " " << All.ncounts[i] << "\n";
+	for (int i = 0; i < Set.numberOfmembers; i++) {
+		outf << Set.words[i] << " " << Set.counts[i] << " " << Set.pcounts[i] << " " << Set.ncounts[i] << "\n";
 	}
 	outf << "#";
 
 	outf.close();
-	 
+
 
 
 
@@ -246,58 +335,72 @@ void OutputFile(WordSet All, vector<double> OtherData) {
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
 
-	
-		outf << OtherData[0] << "\n" << OtherData[1] << "\n" << OtherData[2] << "\n" << OtherData[3] << "\n" << OtherData[4] << "\n" << OtherData[5];
-		outf << "\n";
-	
+
+	outf << OtherData[0] << "\n" << OtherData[1] << "\n" << OtherData[2] << "\n" << OtherData[3] << "\n" << OtherData[4] << "\n" << OtherData[5];
+	outf << "\n";
+
 	outf << "#";
 	outf.close();
 
 }
+*/
 
 
 
-int main()
-{ 
 
-	 
-	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+
+// Setup
+
+	Log.open(LogFileNameA);
+
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 3; j++) {
+			punctuationCounts[i][j] = 0;
+		}
+	}
+
+
+// Positive/Negative Training
+	SetType = 0;
+	vector<word> Pos = ProcessDocument(posDataFileNameA, 2);
+	SetType = 1;
+	vector<word> Neg = ProcessDocument(negDataFileNameA, 2);
+	SetType = 2;
+	vector<word> Nov = ProcessDocument(novDataFileNameA, 3);
+	SetType = 3;
+	vector<word> Loy = ProcessDocument(loyDataFileNameA, 3);
+	vector<word> All = Union({ Pos, Neg, Nov, Loy });
 	
-	//"C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\TRAINER\\PosTrainingSet\\PosTrainingSet.txt";
-	WordSet Pos = ProcessDocument("PosTrainingSet\\PosTrainingSet.txt");
 	
-	//"C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\TRAINER\\NegTrainingSet\\NegTrainingSet.txt";
-	WordSet Neg = ProcessDocument("NegTrainingSet\\NegTrainingSet.txt");
-
-	WordSet All = Union(Pos, Neg);
+	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
+	vector<double> OtherData(6);
 
 
-	 
-	int N = All.numberOfmembers;
-
-	int sum = accumulate(All.counts.begin(), All.counts.end(), 0);
-	int psum = accumulate(All.pcounts.begin(), All.pcounts.end(), 0);
-	int nsum = accumulate(All.ncounts.begin(), All.ncounts.end(), 0);
-
-	// Laplace Smoothing Here
 
 
 
 	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
-	vector<double> OtherData(6);
+	
+	
 
-	OtherData[0] = Neg.numberOfmembers / (double)All.numberOfmembers;
-	OtherData[1] = Pos.numberOfmembers / (double)All.numberOfmembers;
-	OtherData[2] = sum;
-	OtherData[3] = psum;
-	OtherData[4] = nsum;
-	OtherData[5] = All.numberOfmembers;
-
-	// Training Completed
-
-	OutputFile(All, OtherData);
-
-
-
+	//OutputFile(NovLoy, OtherData);
 }
 
