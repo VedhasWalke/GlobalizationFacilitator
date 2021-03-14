@@ -1,5 +1,6 @@
 Parameters for Naive Bayes
 (Word Counts)
+<text> [p] [n] [o] [l]
 Last Modified: 02-08-2021 21:58:16
 #
 ! 4 4 0

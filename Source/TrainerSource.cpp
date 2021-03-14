@@ -1,7 +1,7 @@
 /*
 Trainer System
 
-Date Updated: 3/14/21
+Date Updated: 3/10/21
 
 Description:
 	Machine learning training algorithm based on Naive Bayes Framework.
