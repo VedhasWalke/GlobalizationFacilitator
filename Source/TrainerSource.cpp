@@ -1,14 +1,14 @@
 /*
 Trainer System
 
-Date Updated: 3/10/21
+Date Updated: 3/14/21
 
 Description:
 	Machine learning training algorithm based on Naive Bayes Framework.
 	Uses two main data sets of customer reviews of a business: positive reviews
-	and negative reviews. Furthermore, uses two auxilary datasets of highly specific, 
-	hand-picked data on the loyalty of a consumer based on review. Outputs file 
-	containing computed optimal features in special format as detailed in 
+	and negative reviews. Furthermore, uses two auxilary datasets of highly specific,
+	hand-picked data on the loyalty of a consumer based on review. Outputs file
+	containing computed optimal features in special format as detailed in
 	"ParametersFormat.txt" file in "Help" directory.
 
 Non-primitive Data Types:
@@ -55,20 +55,28 @@ struct word {
 ofstream Log;
 int SetType; // 0 -> positive, 1 -> negative, 2 -> novel, 3 -> loyal
 int punctuationCounts[4][3];
+int OtherData[4][4] = { { 0,0,0,0 }, { 0,0,0,0 }, { 0,0,0,0 }, {0,0,0,0} };
+//         0              1              2             3               
+//  uniqueWordCountP 
+//   rawWordCountP  rawWordCountN  rawWordCountO  rawWordCountL   
+//   numPosReviews  numNegReviews  numNovReviews  numLoyReviews  
+//      ngramP         ngramN           ngramO       ngramL
+
+
 
 // Constants
-const string LogFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\Log.txt";
-const string LogFileNameR = "Log.txt";
-const string posDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\PosTrainingSet\\PosTrainingSet.txt";
-const string posDataFileNameR = "PosTrainingSet\\PosTrainingSet.txt";
-const string negDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\NegTrainingSet\\NegTrainingSet.txt";
-const string negDataFileNameR = "NegTrainingSet\\NegTrainingSet.txt";
-const string loyDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\LoyTrainingSet\\LoyTrainingSet.txt";
-const string loyDataFileNameR = "LoyTrainingSet\\LoyTrainingSet.txt";
-const string novDataFileNameA = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\NovTrainingSet\\NovTrainingSet.txt";
-const string novDataFileNameR = "NovTrainingSet\\NovTrainingSet.txt";
+const string AbsPath = "C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\TRAINER\\";
+const string LogFileName = "Log.txt";
+const string Param1FileName = "ModelParameters\\Param1.txt";
+const string Param2FileName = "ModelParameters\\Param2.txt";
+const string posDataFileName = "TrainingSets\\PosTrainingSet\\PosTrainingSet.txt";
+const string negDataFileName = "TrainingSets\\NegTrainingSet\\NegTrainingSet.txt";
+const string novDataFileName = "TrainingSets\\NovTrainingSet\\general_novel_separated.txt";
+const string loyDataFileName = "TrainingSets\\LoyTrainingSet\\general_loyal_seperated.txt";
 const string delimiter = "///";
-const char taboo_chars[] = {')', '(', '-'};
+const char taboo_chars[] = { ')', '(', '-' };
+
+
 
 
 // Prototypes
@@ -108,13 +116,13 @@ vector<word> ProcessDocument(string filename, int ngram) {
 
 	// CHECK
 	if (inputFile) {
-		Log.open(LogFileNameA);
-		Log << filename.substr(filename.find_last_of('\\') + 1) << " opened successfully | " << getDate() << endl;
+		Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
+		Log << getDate() << " | " <<  filename.substr(filename.find_last_of('\\') + 1) << " opened successfully " << endl;
 		Log.close();
 	}
 	else {
-		Log.open(LogFileNameA);
-		Log << "ERROR: Filename invalid |" << filename.substr(filename.find_last_of('\\')+1) << " did not opened successfully | " << getDate() << endl;
+		Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
+		Log << getDate() << " | ERROR: Filename invalid |" << filename.substr(filename.find_last_of('\\') + 1) << " did not opened successfully" << endl;
 		Log.close();
 	}
 
@@ -129,37 +137,47 @@ vector<word> ProcessDocument(string filename, int ngram) {
 	}
 
 
+	// adding some OtherData
+	OtherData[1][SetType] = raw_words.size();
+	OtherData[3][SetType] = ngram;
+	for (int i = 0; i < raw_words.size(); i++) {
+		if (raw_words[i] == delimiter)
+			OtherData[2][SetType]++;
+	}
+
+
+
 	for (int n = 1; n <= ngram; n++) {
 		int i = 0;
 		refined_phrases.clear();
-		
-		while (i < raw_words.size()-n) {
+
+		while (i < raw_words.size() - n) {
 			phrase = "";
 			for (int j = 0; j < n; j++) {
-				phrase += raw_words[i+j] + " ";
+				phrase += raw_words[i + j] + " ";
 			}
-			phrase.erase(phrase.end()-1); // end - 1?
-			
-			
+			phrase.erase(phrase.end() - 1);
+
+
 			if (phrase.find(delimiter) != string::npos) {
 				i += n;
 				continue;
 			}
-				
+
 			refined_phrases.push_back(Preprocess(phrase));
 			i++;
 		}
-		All[n-1] = Compress(refined_phrases);
+		All[n - 1] = Compress(refined_phrases);
 	}
-	
-	
+
+
 	return Trim(All);
 
 
 }
 
 string Preprocess(string raw_word) {
-	
+
 	//deleting taboo characters as defined by "taboo_chars" array
 	while (raw_word.find_first_of(taboo_chars) != string::npos) {
 		raw_word.erase(raw_word.find_first_of(taboo_chars));
@@ -167,9 +185,9 @@ string Preprocess(string raw_word) {
 
 
 	for (int i = 0; i < raw_word.size(); i++) {
-		
+
 		// checking for punctuation
-		
+
 		if (raw_word[i] == '.') {
 			punctuationCounts[SetType][0]++;
 			raw_word.erase(i);
@@ -193,20 +211,20 @@ string Preprocess(string raw_word) {
 
 vector<word> Union(vector<vector<word>> All) { // lazily coded, kinda slow
 	vector<word> c = All[0];
-	
+
 	// combining all vectors into one
 	for (int i = 1; i < All.size(); i++) {
 		c.insert(c.end(), All[i].begin(), All[i].end());
 	}
-	
+
 	// sorting
-	sort(c.begin(), c.end(), [](word a, word b) {return a.text < b.text; }); 
-	
+	sort(c.begin(), c.end(), [](word a, word b) {return a.text < b.text; });
+
 	int num = 0;
 	vector<word> cset;
 	// combining adjacent words into one
-	for (int i = 0; i < c.size()-1; i++) {
-		
+	for (int i = 0; i < c.size() - 1; i++) {
+
 		if (c[i].text == c[i + 1].text) {
 			num++;
 		}
@@ -245,8 +263,8 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 			count++;
 		}
 		else {
-			
-			counts c = {0,0,0,0};
+
+			counts c = { 0,0,0,0 };
 			if (SetType == 0)
 				c.p = count;
 			else if (SetType == 1)
@@ -255,14 +273,14 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 				c.o = count;
 			else if (SetType == 3)
 				c.l = count;
-			
-			set.push_back(word{ text, c, Evaluate(c)}); // correct struct declaration?
+
+			set.push_back(word{ text, c, Evaluate(c) }); // correct struct declaration?
 			count = 1;
 			text = raw_words[i];
 		}
 	}
 
-	
+
 
 	if (set[0].text == "") { // apparently "" as the first element is problematic
 		set.erase(set.begin());
@@ -273,54 +291,57 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 }
 
 int Evaluate(counts c) {
-	
-	return c.p + c.n + c.o + c.l; // just basing this on how common word is for now
-	
+
+	return c.p + c.n + c.o + c.l; 
+
 }
 
 // temporary trimming --> lopping off bottom half
-vector<word> Trim(vector<vector<word>> All) { 
-	
+vector<word> Trim(vector<vector<word>> All) {
+
 
 
 	for (int i = 0; i < All.size(); i++) {
-		
+
 		for (vector<word>::iterator j = All[i].begin(); j < All[i].end(); j++) {
 			Evaluate((*j).count);
 		}
 		sort(All[i].begin(), All[i].end(), [](word a, word b) {return a.value > b.value; }); // sorting in correct order?
-		
+
 		All[i].erase(All[i].begin() + All[i].size() / 2, All[i].end()); // how much to trim?? (rn just lopping off bottom half values)
 	}
-	
+
 
 
 	return Union(All);
 
-	
+
 
 }
 
 
-/*
-void OutputFile(vector<word> Set, vector<double> OtherData) {
+
+void OutputFile(vector<word>::iterator set, int n) {
 
 	ofstream outf;
 
 
 
-	// First Parameters File: word counts
-	outf.open("ModelParameters\\Param1.txt");
-
+	// First Parameters File: Word Counts
+	outf.open(AbsPath + Param1FileName);
+	
 	// Preliminary Information
 	outf << "Parameters for Naive Bayes\n";
 	outf << "(Word Counts)\n";
+	outf << "<text> [p] [n] [o] [l]\n";
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
 
-	for (int i = 0; i < Set.numberOfmembers; i++) {
-		outf << Set.words[i] << " " << Set.counts[i] << " " << Set.pcounts[i] << " " << Set.ncounts[i] << "\n";
+	for (int i = 0; i < n; i++) {
+		outf << (*set).text << " " << (*set).count.p << " " << (*set).count.n << " " << (*set).count.o << " " << (*set).count.l << endl;
+		set++;
 	}
+	
 	outf << "#";
 
 	outf.close();
@@ -328,22 +349,39 @@ void OutputFile(vector<word> Set, vector<double> OtherData) {
 
 
 
-	// Second Parameter File: Class Probabilities and Sums
-	outf.open("ModelParameters\\Param2.txt");
+	// Second Parameter File: Qualities of Word Counts
+	outf.open(AbsPath + Param2FileName);
 	outf << "Parameters for Naive Bayes\n";
 	outf << "(Class Probability and Sums Data)\n";
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
 
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			outf << OtherData[i][j] << " ";
+		}
+		outf << "\n";
+	}
+	
+	outf << "\n\n";
 
-	outf << OtherData[0] << "\n" << OtherData[1] << "\n" << OtherData[2] << "\n" << OtherData[3] << "\n" << OtherData[4] << "\n" << OtherData[5];
-	outf << "\n";
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 3; j++) {
+			outf << punctuationCounts[i][j] << " ";
+		}
+		outf << "\n";
+	}
 
 	outf << "#";
 	outf.close();
 
+	Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
+	Log << getDate() << " | Training Completed\n\n";
+
+
+	// Third Parameter File: 
+
 }
-*/
 
 
 
@@ -367,9 +405,9 @@ void OutputFile(vector<word> Set, vector<double> OtherData) {
 
 int main() {
 
-// Setup
-
-	Log.open(LogFileNameA);
+	// Setup
+	
+	Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
 
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 3; j++) {
@@ -378,18 +416,18 @@ int main() {
 	}
 
 
-// Positive/Negative Training
+	// Positive/Negative Training
 	SetType = 0;
-	vector<word> Pos = ProcessDocument(posDataFileNameA, 2);
+	vector<word> Pos = ProcessDocument(AbsPath + posDataFileName, 2);
 	SetType = 1;
-	vector<word> Neg = ProcessDocument(negDataFileNameA, 2);
+	vector<word> Neg = ProcessDocument(AbsPath+negDataFileName, 2);
 	SetType = 2;
-	vector<word> Nov = ProcessDocument(novDataFileNameA, 3);
+	vector<word> Nov = ProcessDocument(AbsPath+novDataFileName, 3);
 	SetType = 3;
-	vector<word> Loy = ProcessDocument(loyDataFileNameA, 3);
+	vector<word> Loy = ProcessDocument(AbsPath + loyDataFileName, 3);
 	vector<word> All = Union({ Pos, Neg, Nov, Loy });
-	
-	
+
+
 	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
 	vector<double> OtherData(6);
 
@@ -398,9 +436,7 @@ int main() {
 
 
 	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
-	
-	
 
-	//OutputFile(NovLoy, OtherData);
+	OutputFile(All.begin(), All.size());
 }
 
