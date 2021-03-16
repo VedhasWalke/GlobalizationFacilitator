@@ -1,7 +1,7 @@
 /*
 Trainer System
 
-Date Updated: 3/10/21
+Date Updated: 3/14/21
 
 Description:
 	Machine learning training algorithm based on Naive Bayes Framework.
@@ -65,18 +65,21 @@ int OtherData[4][4] = { { 0,0,0,0 }, { 0,0,0,0 }, { 0,0,0,0 }, {0,0,0,0} };
 
 
 // Constants
-const string AbsPath = "C:\\Users\\yoges\\OneDrive\\Documents\\GFacil\\AlgorithmFiles\\TRAINER\\";
+const string AbsPath = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\";
 const string LogFileName = "Log.txt";
 const string Param1FileName = "ModelParameters\\Param1.txt";
 const string Param2FileName = "ModelParameters\\Param2.txt";
 const string posDataFileName = "TrainingSets\\PosTrainingSet\\PosTrainingSet.txt";
 const string negDataFileName = "TrainingSets\\NegTrainingSet\\NegTrainingSet.txt";
-const string novDataFileName = "TrainingSets\\NovTrainingSet\\general_novel_separated.txt";
-const string loyDataFileName = "TrainingSets\\LoyTrainingSet\\general_loyal_seperated.txt";
-const string delimiter = "///";
-const char taboo_chars[] = { ')', '(', '-' };
+const string novDataFileName = "TrainingSets\\NovTrainingSet\\NovTrainingSet.txt";
+const string loyDataFileName = "TrainingSets\\LoyTrainingSet\\LoyTrainingSet.txt";
+const string metadataFolderName = "Metadata\\";
 
-
+// Metadata
+string delimiter;
+string taboo_chars;
+vector<string> stop_words;
+vector<string> negation_words;
 
 
 // Prototypes
@@ -86,9 +89,7 @@ vector<word> Union(vector<vector<word>> All);
 vector<word> Compress(vector<string> raw_words);
 vector<word> Trim(vector<vector<word>> All);
 int Evaluate(counts c);
-//void OutputFile(vector<word> Set, vector<double> OtherData);
-
-
+void OutputFile(vector<word>::iterator set, int n);
 
 
 
@@ -117,7 +118,7 @@ vector<word> ProcessDocument(string filename, int ngram) {
 	// CHECK
 	if (inputFile) {
 		Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
-		Log << getDate() << " | " <<  filename.substr(filename.find_last_of('\\') + 1) << " opened successfully " << endl;
+		Log << getDate() << " | " << filename.substr(filename.find_last_of('\\') + 1) << " opened successfully " << endl;
 		Log.close();
 	}
 	else {
@@ -179,14 +180,29 @@ vector<word> ProcessDocument(string filename, int ngram) {
 string Preprocess(string raw_word) {
 
 	//deleting taboo characters as defined by "taboo_chars" array
-	while (raw_word.find_first_of(taboo_chars) != string::npos) {
-		raw_word.erase(raw_word.find_first_of(taboo_chars));
+	size_t t = raw_word.find_first_of(taboo_chars);
+	while (t != string::npos) {
+		raw_word.erase(t);
+		t = raw_word.find_first_of(taboo_chars);
 	}
 
+	
 
+	// deleting stopwords
+	raw_word.insert(raw_word.begin(), ' ');
+	raw_word.insert(raw_word.end(), ' ');
+
+	for (int i = 0; i < stop_words.size(); i++) {
+		t = raw_word.find(" " + stop_words[i] + " ");
+		if (t != string::npos)
+			raw_word.erase(t+1, t + stop_words[i].size());
+	}
+	raw_word.erase(raw_word.begin());
+	raw_word.erase(raw_word.end()-1);
+
+
+	// checking for punctuation
 	for (int i = 0; i < raw_word.size(); i++) {
-
-		// checking for punctuation
 
 		if (raw_word[i] == '.') {
 			punctuationCounts[SetType][0]++;
@@ -205,6 +221,11 @@ string Preprocess(string raw_word) {
 		}
 		i--; // if punctuation char was deleted
 	}
+
+	for (int i = 0; i < raw_word.size(); i++) {
+		raw_word[i] = tolower(raw_word[i]);
+	}
+
 	return raw_word;
 }
 
@@ -282,7 +303,7 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 
 
 
-	if (set[0].text == "") { // apparently "" as the first element is problematic
+	if (set[0].text == "") {
 		set.erase(set.begin());
 	}
 
@@ -292,7 +313,7 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 
 int Evaluate(counts c) {
 
-	return c.p + c.n + c.o + c.l; 
+	return c.p + c.n + c.o + c.l;
 
 }
 
@@ -329,7 +350,7 @@ void OutputFile(vector<word>::iterator set, int n) {
 
 	// First Parameters File: Word Counts
 	outf.open(AbsPath + Param1FileName);
-	
+
 	// Preliminary Information
 	outf << "Parameters for Naive Bayes\n";
 	outf << "(Word Counts)\n";
@@ -341,7 +362,7 @@ void OutputFile(vector<word>::iterator set, int n) {
 		outf << (*set).text << " " << (*set).count.p << " " << (*set).count.n << " " << (*set).count.o << " " << (*set).count.l << endl;
 		set++;
 	}
-	
+
 	outf << "#";
 
 	outf.close();
@@ -362,7 +383,7 @@ void OutputFile(vector<word>::iterator set, int n) {
 		}
 		outf << "\n";
 	}
-	
+
 	outf << "\n\n";
 
 	for (int i = 0; i < 4; i++) {
@@ -405,8 +426,9 @@ void OutputFile(vector<word>::iterator set, int n) {
 
 int main() {
 
-	// Setup
 	
+	// Setup
+
 	Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
 
 	for (int i = 0; i < 4; i++) {
@@ -415,14 +437,40 @@ int main() {
 		}
 	}
 
+	ifstream inFile;
+	string temp;
+	vector<string> taboo_chars2;
+	char temp2;
+	inFile.open(AbsPath + metadataFolderName + "Delimiter.txt");
+	inFile >> delimiter;
+	inFile.close();
+	inFile.open(AbsPath + metadataFolderName + "StopWordList.txt");
+	while (inFile) {
+		inFile >> temp;
+		stop_words.push_back(temp);
+	}
+	inFile.open(AbsPath + metadataFolderName + "NegationWords.txt");
+	while (inFile) {
+		inFile >> temp;
+		negation_words.push_back(temp);
+	}
+	inFile.open(AbsPath + metadataFolderName + "TabooChars.txt");
+	while (inFile) {
+		inFile >> temp;
+		taboo_chars2.push_back(temp);
+	}
+	taboo_chars = "";
+	for (int i = 0; i < taboo_chars2.size(); i++) {
+		taboo_chars = taboo_chars + taboo_chars2[i];
+	}
 
 	// Positive/Negative Training
 	SetType = 0;
 	vector<word> Pos = ProcessDocument(AbsPath + posDataFileName, 2);
 	SetType = 1;
-	vector<word> Neg = ProcessDocument(AbsPath+negDataFileName, 2);
+	vector<word> Neg = ProcessDocument(AbsPath + negDataFileName, 2);
 	SetType = 2;
-	vector<word> Nov = ProcessDocument(AbsPath+novDataFileName, 3);
+	vector<word> Nov = ProcessDocument(AbsPath + novDataFileName, 3);
 	SetType = 3;
 	vector<word> Loy = ProcessDocument(AbsPath + loyDataFileName, 3);
 	vector<word> All = Union({ Pos, Neg, Nov, Loy });
