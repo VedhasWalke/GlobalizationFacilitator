@@ -1,3746 +1,4925 @@
-Parameters for Naive Bayes
-(Word Counts)
-<text> [p] [n] [o] [l]
-Last Modified: 02-08-2021 21:58:16
+Parameters for Prediction
+(Positive-Negative)
+<text> [p] [n]
+Last Modified: 03-18-2021 15:11:38
 #
-! 4 4 0
-$0.50. 1 0 1
-$100 1 0 1
-$12 1 0 1
-$135+per 1 0 1
-$18 1 0 1
-$20 1 0 1
-$20.00 1 0 1
-$300+, 1 0 1
-$42 1 0 1
-$461. 1 0 1
-$50 1 0 1
-$500 1 0 1
-$59 1 0 1
-$6 1 1 0
-$69/ 1 0 1
-$700 1 0 1
-$86 1 0 1
-$89 1 0 1
-$9.06 1 0 1
-& 6 4 2
-'Two 1 0 1
-( 1 0 1
-($125). 1 0 1
-($500+) 1 1 0
-(Carlos 1 1 0
-(I 1 1 0
-(Incidentally, 1 0 1
-(Jamie) 1 1 0
-(a 4 1 3
-(almost 1 0 1
-(although 1 0 1
-(and 2 1 1
-(as 2 2 0
-(asked 1 0 1
-(big 2 2 0
-(but 2 1 1
-(cavatelli) 1 0 1
-(chipotle 1 0 1
-(considering 1 0 1
-(cookie 1 0 1
-(devoid 1 0 1
-(entree) 1 0 1
-(even 2 2 0
-(excellently 1 1 0
-(fried 1 0 1
-(hopefully 1 1 0
-(i.e. 1 0 1
-(if 1 1 0
-(in 2 1 1
-(it 1 1 0
-(like 1 0 1
-(literally 1 1 0
-(main 1 0 1
-(meat, 1 0 1
-(more 1 0 1
-(nice 1 1 0
-(no 1 1 0
-(not 3 2 1
-(note: 1 1 0
-(pork 1 1 0
-(pun 1 1 0
-(random 1 1 0
-(really 1 0 1
-(salad) 1 0 1
-(shellfish 1 0 1
-(simple 1 0 1
-(spelling??), 1 0 1
-(sweet 1 1 0
-(tell 1 0 1
-(that 1 1 0
-(that's 1 0 1
-(the 3 2 1
-(this 1 1 0
-(too 1 0 1
-(vs 1 1 0
-(whatever 1 0 1
-(which 2 0 2
-) 2 0 2
-, 4 3 1
-- 48 13 35
--- 7 4 3
-. 4 1 3
-... 2 0 2
-/// 133 80 53
-08540! 1 1 0
-1 2 0 2
-1* 1 0 1
-1. 1 1 0
-1/2 1 0 1
-10 1 1 0
-10. 2 1 1
-11 1 0 1
-11:30, 1 1 0
-12, 1 0 1
-12:10. 1 1 0
-15 1 0 1
-2 6 1 5
-2-3 1 0 1
-2. 2 1 1
-20 1 0 1
-20%, 1 0 1
-2000 1 0 1
-2016. 1 1 0
-2020, 1 1 0
-21st 1 1 0
-24 2 0 2
-24th 1 1 0
-26 1 0 1
-2x, 1 0 1
-3 5 0 5
-3-4 1 0 1
-3. 1 1 0
-300 3 0 3
-350 1 0 1
-3pm 1 0 1
-3rd 2 1 1
-4 6 2 4
-400$ 1 0 1
-45 1 0 1
-45th 1 0 1
-4:15 1 1 0
-5 3 1 2
-50% 1 0 1
-5p!). 1 1 0
-5pm 1 1 0
-6 1 0 1
-69 1 0 1
-7 1 1 0
-7pm. 1 1 0
-8 1 1 0
-8/20: 1 0 1
-80th 1 1 0
-9 1 0 1
-9-course 1 0 1
-:) 3 3 0
-;) 1 1 0
-= 1 0 1
-A 16 9 7
-A-mazing! 1 1 0
-AC! 1 1 0
-AMAZING! 1 1 0
-AMAZING. 1 1 0
-AWAY 1 0 1
-Absolute 1 1 0
-Absolutely 1 1 0
-After 4 2 2
-Again 1 0 1
-Again, 1 0 1
-Agricola 12 12 0
-Agricola! 1 1 0
-Agricola, 1 1 0
-Agricola--a 1 1 0
-Agricola. 1 1 0
-Ahi 2 2 0
-Al 1 0 1
-Alas. 1 0 1
-All 10 9 1
-Alliana 1 0 1
-Almost 1 0 1
-Alright, 1 1 0
-Also, 1 0 1
-Although 1 1 0
-Always 5 5 0
-Amazing 2 2 0
-Amazing! 2 2 0
-Ambiance 1 1 0
-Amy, 1 0 1
-An 3 1 2
-Ana 1 1 0
-Ananas 2 2 0
-And 10 2 8
-Anderson 3 0 3
-Anderson, 1 0 1
-Another 2 0 2
-Anyone 1 0 1
-Apparently 1 0 1
-Artisan 2 2 0
-As 5 2 3
-Asado 1 0 1
-Asked 1 0 1
-At 2 0 2
-Ate 1 0 1
-Atelier 1 0 1
-Atlantic 1 1 0
-Atmosphere 1 0 1
-Atmosphere: 1 0 1
-August 1 1 0
-Australian 1 0 1
-Awesome 3 3 0
-BEAUTIFUL! 1 1 0
-BLT, 1 1 0
-BOY 1 0 1
-BPG 1 1 0
-BYO 1 1 0
-BYOB 6 6 0
-BYOB, 1 1 0
-BYOB. 2 2 0
-Bad 1 0 1
-Bar. 1 0 1
-Barns). 1 0 1
-Based 1 1 0
-Basically 1 0 1
-Beautifully 1 1 0
-Because 1 0 1
-Been 1 1 0
-Beet 1 0 1
-Before 2 0 2
-Being 2 2 0
-Bell 1 0 1
-Bellini 2 2 0
-Benedict 2 1 1
-Best 4 4 0
-Beth 1 0 1
-Better 2 1 1
-Big 1 0 1
-Blue 8 7 1
-Bluepoint 1 1 0
-Both 1 1 0
-Boy 1 0 1
-Boyfriend 1 1 0
-Brunch 1 0 1
-Brunch. 1 0 1
-Brussels 2 1 1
-Burrito 1 0 1
-But 6 2 4
-But, 1 0 1
-Butternut 1 1 0
-CC 1 0 1
-CHANGED. 1 0 1
-COVID 1 1 0
-California. 1 0 1
-Came 1 1 0
-Can't 1 1 0
-Car 1 1 0
-Carbo 1 0 1
-Ceasar 1 1 0
-Chanterelles. 1 0 1
-Cheeseboard 1 1 0
-Cheeseboard, 1 1 0
-Cheeseboard. 1 1 0
-Chef 1 0 1
-Chicken 1 1 0
-Chilean 3 3 0
-Chipotle 2 0 2
-Chipotle. 1 0 1
-Chocolate 1 0 1
-Chowder 1 1 0
-Cindy 1 1 0
-City 1 0 1
-Cod 1 1 0
-Cody 1 0 1
-Comfortable 1 1 0
-Congrats 1 0 1
-Cons 1 0 1
-Cons: 1 0 1
-Consider 1 0 1
-Considering 1 0 1
-Cost 1 1 0
-Couldn't 1 1 0
-Covid 3 3 0
-Crab 1 1 0
-Cranky 1 1 0
-Creative. 1 0 1
-Crenn. 1 0 1
-Crepes. 1 1 0
-Cute 1 1 0
-Czech 1 0 1
-Daniel 1 0 1
-Danielle 1 1 0
-Danielle!! 1 1 0
-Dayboat 1 1 0
-Def 1 0 1
-Definitely 2 2 0
-Delectable. 1 1 0
-Delicious 3 2 1
-Delish 1 1 0
-Denmark, 1 0 1
-Despite 1 0 1
-Dessert 3 2 1
-Desserts 1 1 0
-Did 1 0 1
-Didn't 1 0 1
-Diegan, 1 0 1
-Dinner 1 1 0
-Dinner. 1 0 1
-Do 2 0 2
-Does 1 0 1
-Don't 3 1 2
-Dont 1 0 1
-Doubtful. 1 0 1
-Drenched 1 0 1
-Drink 1 0 1
-Drinks 2 1 1
-Dry 1 1 0
-During 1 1 0
-Edit 1 0 1
-Eggs 2 1 1
-El 1 0 1
-Elements 10 0 10
-Elements. 2 0 2
-Emilio, 1 1 0
-Ended 1 1 0
-Entrees 1 1 0
-Especially 2 0 2
-Essentially 1 0 1
-Even 3 2 1
-Every 2 2 0
-Everyone 1 1 0
-Everything 5 4 1
-Excellent 1 1 0
-Except 1 0 1
-Exceptional 1 1 0
-Expectedly, 1 1 0
-Expensive. 1 0 1
-Exquisite 1 1 0
-Extremely 3 1 2
-Eye 1 0 1
-Fantastic 2 2 0
-Favorites 1 1 0
-Fe, 1 0 1
-Fia 5 0 5
-Fia, 1 0 1
-Fia. 1 0 1
-Fiction, 1 0 1
-Fig 1 1 0
-Figure 1 0 1
-Filet 2 2 0
-Finland, 1 0 1
-Fire 1 0 1
-First 3 3 0
-Fish 2 2 0
-Flank 1 0 1
-Foie 3 0 3
-Food 10 5 5
-Food, 1 1 0
-Food: 1 0 1
-For 10 7 3
-Fresh 1 1 0
-Freshest 1 1 0
-Freshly 1 1 0
-Friday 1 0 1
-Fried 1 1 0
-Friendly 1 1 0
-Friends 1 1 0
-From 3 2 1
-Full 1 0 1
-GREAT 1 1 0
-Generally 1 0 1
-Germany, 1 0 1
-Get 1 0 1
-Good 3 1 2
-Gras 2 0 2
-Great 9 9 0
-Green 1 1 0
-Grill 4 4 0
-Grill, 1 1 0
-Grill. 1 1 0
-Group 1 1 0
-Grouper 1 1 0
-Guess 1 1 0
-HAVE 1 0 1
-Had 3 2 1
-Hands 2 2 0
-Harry 1 1 0
-Harvest 1 1 0
-Hats 1 1 0
-Have 1 1 0
-He 6 0 6
-Hen 1 0 1
-Her 1 1 0
-Here 1 0 1
-Highly 2 2 0
-Hill 1 0 1
-Hops 1 0 1
-Horchata 1 0 1
-How 1 0 1
-However 2 0 2
-However, 4 2 2
-I 329 142 187
-I'd 5 3 2
-I'll 1 0 1
-I'm 15 8 7
-I've 13 6 7
-Icelandic 1 1 0
-If 16 6 10
-Imagine 1 1 0
-In 7 3 4
-Inattentive 1 0 1
-Incredible 1 1 0
-Inn 1 0 1
-Inside 1 0 1
-Israel, 1 0 1
-It 28 13 15
-It's 6 4 2
-Ive 1 0 1
-Ivory 1 1 0
-JUST 1 0 1
-Jalapeno-Lime 1 1 0
-Jameson 3 0 3
-Jameson. 1 0 1
-Jammin' 1 1 0
-Jersey. 2 2 0
-Jim 1 0 1
-Jim, 1 0 1
-Jules 1 0 1
-Just 1 0 1
-Keep 1 1 0
-Kendall 1 0 1
-Keylime 1 1 0
-Kinda 1 0 1
-Kitchen 1 1 0
-Last 3 1 2
-Later 1 0 1
-Law 1 1 0
-Let 1 1 0
-Life 1 0 1
-Lobster 1 1 0
-Long 1 0 1
-Looking 1 1 0
-Looks 1 0 1
-Lose 1 0 1
-Love 2 2 0
-Loved 4 4 0
-Lovely 1 1 0
-Luckily, 1 0 1
-Luxembourg, 1 0 1
-ME 1 0 1
-Made 2 1 1
-Maine 1 1 0
-Manager 1 0 1
-Manhattan 3 1 2
-Many 1 1 0
-Margarita 1 1 0
-Margharita 1 1 0
-Margherita 2 2 0
-Mars 1 0 1
-Maybe 4 0 4
-Me 1 0 1
-Medallions 1 1 0
-Melt, 1 1 0
-Menu 1 1 0
-Mexican 4 0 4
-Michelin 1 0 1
-Michelin-starred 1 0 1
-Mignon 2 2 0
-Minuscule 1 0 1
-Mistral 2 0 2
-Mistral, 1 0 1
-Mom's 2 2 0
-Mon, 1 1 0
-Money 1 0 1
-Mushroom 2 2 0
-Must 1 1 0
-My 26 16 10
-N 1 0 1
-NE 1 1 0
-NEVER 1 0 1
-NJ 3 2 1
-NOT 1 0 1
-NYC 2 0 2
-NYC) 1 0 1
-NYC), 1 0 1
-NYC, 2 1 1
-NYCs. 1 0 1
-Nation 1 1 0
-Near 1 0 1
-Needless 1 1 0
-Never 1 0 1
-Nevertheless, 1 0 1
-New 3 2 1
-Nice 1 0 1
-Nicholas. 1 0 1
-No 7 0 7
-Normally, 1 0 1
-Norway, 1 0 1
-Norwegian 1 1 0
-Not 10 3 7
-Nothing 2 1 1
-Now 3 1 2
-OK 1 0 1
-OMG 1 1 0
-ON 1 1 0
-ONLY 1 0 1
-October 1 1 0
-October. 1 0 1
-Of 2 1 1
-Oh 1 0 1
-Oh, 1 1 0
-Ok. 1 0 1
-On 3 0 3
-One 11 5 6
-Only 1 1 0
-Ordered 3 1 2
-Otherwise, 1 0 1
-Our 9 9 0
-Overall 1 1 0
-Overall, 1 1 0
-Overpriced, 1 1 0
-POINT 1 1 0
-Paloma 1 1 0
-Parking 1 0 1
-Pastor. 1 0 1
-Peacock 1 0 1
-Per 1 0 1
-Perfect 2 2 0
-Phenomenal 1 1 0
-Pick 1 1 0
-Pizza 2 2 0
-Please 3 0 3
-Pluto 1 0 1
-Point 5 5 0
-Point! 1 1 0
-Poisoning' 1 0 1
-Poland, 1 0 1
-Politely 1 0 1
-Pollo 1 0 1
-Pom 1 1 0
-Poor 1 0 1
-Portions 2 1 1
-Post 1 0 1
-Potter 1 1 0
-Pretentious 1 0 1
-Price: 1 0 1
-Prices 1 0 1
-Princeton 16 9 7
-Princeton! 2 2 0
-Princeton's 1 0 1
-Princeton, 3 2 1
-Princeton. 9 8 1
-Princetonian 1 1 0
-Professional, 1 0 1
-Pros 1 0 1
-Pros: 1 0 1
-Pulp 1 0 1
-Qdoba 3 0 3
-Queen 1 1 0
-Quick 1 1 0
-Ravioli 1 1 0
-Raviore 1 0 1
-Reading 1 1 0
-Real 1 0 1
-Really 2 2 0
-Really? 1 0 1
-Republic, 1 0 1
-Restaurant 2 0 2
-Restaurants 1 1 0
-Rib 1 0 1
-Ricotta 1 1 0
-Rider 1 1 0
-Right 2 1 1
-Robert, 1 1 0
-SERIOUS 1 0 1
-SEVERE 1 0 1
-STAY 1 0 1
-Salad 2 1 1
-Salmon 1 1 0
-Salmon: 1 1 0
-San 1 0 1
-Sancerre. 1 1 0
-Sandwhich 1 0 1
-Santa 1 0 1
-Sashimi 1 0 1
-Saturday 2 1 1
-Saturday. 2 1 1
-Sauce 1 0 1
-Scallops 1 1 0
-Scallops, 1 1 0
-Scallops. 1 1 0
-School 1 1 0
-Scott 3 0 3
-Se 1 0 1
-Sea 1 1 0
-Seabass 2 2 0
-Seared 1 1 0
-Seasonal 1 0 1
-Second 2 1 1
-Second, 1 1 0
-Seriously, 1 0 1
-Service 17 13 4
-Service: 1 0 1
-Shame 1 0 1
-She 7 4 3
-Shell 1 0 1
-Short 2 2 0
-Shrimp 1 1 0
-Since 1 1 0
-Small, 1 1 0
-So 6 4 2
-Some 2 0 2
-Somebody 1 0 1
-Someone 1 1 0
-Something 3 0 3
-Souflee 1 0 1
-Soup 1 0 1
-Spend 1 0 1
-Squash 1 0 1
-Staff 1 1 0
-Starters: 1 1 0
-Starting 1 1 0
-Steal 1 0 1
-Stone 1 0 1
-Such 2 2 0
-Sun. 1 1 0
-Sunday 3 1 2
-Super 2 1 1
-Sure, 1 0 1
-Sweden, 1 0 1
-Switzerland, 1 0 1
-Swordfish 1 1 0
-TBH, 1 1 0
-THINGS 1 0 1
-TOO 1 0 1
-Taco 1 0 1
-Tacoria. 1 0 1
-Tartare 1 1 0
-Tartare, 1 1 0
-Taste 1 0 1
-Tasted 1 0 1
-Tasteless. 1 0 1
-Taylor 1 1 0
-Tex-Mex 1 0 1
-Texan 1 0 1
-Thank 3 3 0
-Thanks 2 1 1
-Thanks, 1 0 1
-That 5 1 4
-The 130 60 70
-Their 1 1 0
-Then 4 2 2
-There 5 3 2
-There's 1 1 0
-They 31 9 22
-Things 1 0 1
-This 31 8 23
-This). 1 1 0
-Three 1 0 1
-Thur 1 1 0
-Till 1 1 0
-To 1 1 0
-Today 1 1 0
-Tomato 1 1 0
-Tonight 1 1 0
-Too 1 1 0
-Took 1 0 1
-Top 2 2 0
-Total 1 1 0
-Totally 2 1 1
-Tues 1 1 0
-Tuesday 1 0 1
-Tuna 3 3 0
-Two 1 0 1
-Tyler!) 1 1 0
-U.K., 1 0 1
-Uncontrollable 1 0 1
-Unexpectedly 1 1 0
-Unfortunately, 1 0 1
-Unfriendly 1 0 1
-University 1 1 0
-Update. 1 0 1
-Upon 1 0 1
-Upscale/cool. 1 0 1
-Utterly 1 0 1
-Valet 1 0 1
-Very 11 3 8
-Virginia 4 4 0
-Virginia! 1 1 0
-Virginia, 1 1 0
-Visited 1 1 0
-WOW! 1 1 0
-Waiter 1 1 0
-Walked 2 0 2
-Was 3 0 3
-We 66 47 19
-Wed... 1 1 0
-Wednesday 1 0 1
-Well, 3 0 3
-Went 1 1 0
-What 3 3 0
-When 8 1 7
-Whenever 1 1 0
-Which 2 2 0
-While 1 0 1
-Whoever 1 0 1
-Why 1 0 1
-Will 7 6 1
-Wish 2 2 0
-With 3 2 1
-Witherspoon, 1 0 1
-Without 1 0 1
-Worth 1 0 1
-Would 3 2 1
-Yelp 2 0 2
-Yelp. 1 1 0
-Yes, 2 2 0
-York 1 0 1
-Yorker 1 1 0
-You 8 4 4
-Yuk. 1 0 1
-a 331 142 189
-a$$hole 1 0 1
-a$$hole- 1 0 1
-able 7 5 2
-about 23 5 18
-about. 1 0 1
-above 1 0 1
-above--they 1 0 1
-absolute 1 1 0
-absolutely 9 8 1
-abysmal. 1 0 1
-access 1 0 1
-accommodate 2 0 2
-accommodating! 1 1 0
-accommodating!! 2 2 0
-accommodating, 1 1 0
-accompanying 1 0 1
-accounts 1 0 1
-acknowledged 1 0 1
-across 3 2 1
-acts 1 0 1
-actual 2 0 2
-actually 3 1 2
-add 3 1 2
-added 5 0 5
-added. 1 1 0
-addition 2 2 0
-addition, 2 0 2
-additional 1 1 0
-additions 1 0 1
-additions, 1 0 1
-address 1 0 1
-adhered 1 1 0
-adjacent 1 0 1
-aesthetics: 1 1 0
-after 14 5 9
-afternoon 2 2 0
-afternoon. 1 0 1
-afterwards 1 0 1
-again 6 3 3
-again! 2 2 0
-again!! 2 2 0
-again!!! 1 1 0
-again, 2 1 1
-again. 5 3 2
-again... 1 0 1
-aged 1 1 0
-aging 1 1 0
-agnoloti. 1 1 0
-agnolotti 1 1 0
-ago 1 0 1
-ago, 1 0 1
-ago. 1 0 1
-agony 1 1 0
-agreed, 1 0 1
-ahead 1 0 1
-ahead, 1 0 1
-ahi 1 1 0
-al 3 1 2
-alas 1 1 0
-alcohol 1 0 1
-alive, 1 0 1
-all 41 17 24
-all, 2 1 1
-all-around 1 1 0
-all. 1 0 1
-allergies 1 0 1
-allergies, 1 0 1
-allergies. 2 0 2
-allergies? 1 0 1
-allergy 5 0 5
-allergy. 5 0 5
-alley 1 1 0
-almost 6 2 4
-almost. 1 0 1
-alone 1 1 0
-alone. 1 0 1
-alongside 1 1 0
-alot 1 0 1
-already 3 1 2
-also 26 18 8
-although 4 3 1
-always 19 15 4
-am 7 4 3
-amazing 8 8 0
-amazing! 1 1 0
-amazing). 1 1 0
-amazing, 1 1 0
-amazing. 5 5 0
-ambiance 2 2 0
-ambiance, 2 2 0
-ambiance. 1 1 0
-ambience 2 2 0
-ambitious 1 0 1
-american 1 0 1
-amount 7 5 2
-amounts 2 0 2
-amuse 2 0 2
-amuses, 1 0 1
-amuses. 1 0 1
-amusing. 1 0 1
-an 47 18 29
-and 522 282 240
-angel 1 0 1
-angry 1 0 1
-anise 1 0 1
-anniversary 1 0 1
-annoyed 1 0 1
-another 12 5 7
-answer, 1 0 1
-answer. 1 0 1
-answers. 1 0 1
-ante. 1 0 1
-anticipating 1 0 1
-anxiety 1 0 1
-anxiously 1 0 1
-any 11 5 6
-anymore. 1 0 1
-anyone 5 4 1
-anyone. 1 0 1
-anything 6 3 3
-anytime 2 1 1
-anyway 1 1 0
-anyway. 2 0 2
-anywhere 1 1 0
-apart. 1 1 0
-apologetic 1 0 1
-apologies. 1 0 1
-apologize 1 0 1
-apologize, 1 0 1
-apologized. 1 1 0
-app 3 2 1
-app. 2 2 0
-apparently 1 0 1
-appearance 1 1 0
-appeared 1 1 0
-appetite 2 0 2
-appetite. 1 0 1
-appetizer 6 4 2
-appetizers 3 1 2
-appetizers. 1 0 1
-appetizers: 1 1 0
-appetizing. 1 1 0
-apple 4 2 2
-apple, 1 0 1
-appreciated 2 2 0
-are 53 21 32
-are: 1 1 0
-area 6 6 0
-area! 2 2 0
-area, 1 1 0
-area- 1 1 0
-area. 4 3 1
-area... 1 0 1
-argue. 1 0 1
-arm 1 0 1
-arms 2 1 1
-around 11 4 7
-arrangements 1 0 1
-arrived 1 0 1
-arrogance 1 0 1
-arrogant 2 0 2
-arrogantly 1 0 1
-artisan 2 1 1
-as 54 23 31
-asada 2 0 2
-ashamed 1 0 1
-ask 2 0 2
-asked 8 0 8
-asked, 1 0 1
-asking 2 0 2
-asparagus 2 1 1
-aspects 1 1 0
-associate 1 0 1
-assortment 1 1 0
-assure 1 0 1
-at 57 11 46
-ate 6 1 5
-atmosphere 7 7 0
-atmosphere. 4 3 1
-attack 1 0 1
-attempted 1 0 1
-attempts 1 0 1
-attention. 2 0 2
-attentive 6 3 3
-attentive. 3 2 1
-attitude 1 0 1
-attitude. 1 0 1
-attractive 1 0 1
-authentic 1 0 1
-available, 1 0 1
-average 1 0 1
-avocado 2 0 2
-avocado) 1 0 1
-avocado. 1 0 1
-avoid 1 0 1
-avoiding 1 0 1
-awaited 1 0 1
-aware 1 0 1
-away 3 0 3
-away. 2 0 2
-awesome 7 6 1
-awesome!!! 1 1 0
-awesome, 2 2 0
-awful. 1 0 1
-awhile. 1 1 0
-awkward 1 0 1
-baby 3 2 1
-back 30 21 9
-back! 3 2 1
-back!! 1 1 0
-back, 1 1 0
-back. 4 3 1
-back... 1 0 1
-bacon), 1 1 0
-bad 10 0 10
-bad, 1 0 1
-bad. 2 0 2
-badge 1 0 1
-balanced 1 1 0
-ballet 1 1 0
-balsamic 1 1 0
-banana 1 1 0
-banging 1 1 0
-bank 2 0 2
-bar 2 0 2
-bar! 1 0 1
-bar, 1 0 1
-bar. 3 1 2
-barely 1 0 1
-bartender 3 1 2
-bartender. 1 0 1
-bartenders 1 0 1
-based 3 2 1
-basement 1 1 0
-basically 1 1 0
-basing 1 1 0
-bass 3 3 0
-bass, 1 1 0
-bass. 2 2 0
-bath 1 0 1
-be 60 23 37
-be. 1 1 0
-beans 1 0 1
-beans. 1 0 1
-beat 1 1 0
-beautiful 6 3 3
-beautifully 2 1 1
-beaver 1 0 1
-became 1 0 1
-because 20 7 13
-become). 1 0 1
-beef 3 2 1
-been 27 12 15
-beer 3 3 0
-beer! 1 1 0
-beet 3 2 1
-before 8 5 3
-before. 1 0 1
-began 1 0 1
-being 11 2 9
-beings. 1 0 1
-believes 1 0 1
-belly 2 2 0
-belly. 1 0 1
-belongs 1 0 1
-benedict 1 1 0
-bent 1 1 0
-besides 1 0 1
-best 21 12 9
-best, 1 0 1
-bet 1 1 0
-better 8 5 3
-between 5 3 2
-beyond 1 0 1
-bi 1 1 0
-biased 1 1 0
-big 4 4 0
-bigger 4 1 3
-biggest 1 0 1
-bill 6 0 6
-bill. 1 0 1
-bird 2 0 2
-bird's 1 0 1
-birthday 8 8 0
-birthday! 1 1 0
-bisque. 3 3 0
-bit 5 2 3
-bite 1 0 1
-bites 1 1 0
-bites). 1 0 1
-bites, 1 0 1
-bitter 1 0 1
-black 2 1 1
-bland 2 0 2
-bland, 1 0 1
-bland. 2 0 2
-blocks 1 0 1
-blood 1 0 1
-bloody 1 0 1
-bloom 1 0 1
-blueberry 3 3 0
-blush 1 0 1
-board 1 1 0
-boat 1 0 1
-boiled 1 0 1
-bold 1 1 0
-bonus 1 0 1
-book. 1 0 1
-boot. 1 0 1
-bordered 1 0 1
-bored 1 0 1
-both 10 7 3
-bothersome, 1 1 0
-bottle 2 1 1
-bouche 1 0 1
-bought 1 0 1
-bowl 5 0 5
-boy 1 0 1
-boyfriend 4 1 3
-braised 1 1 0
-brave 1 0 1
-brawl. 2 0 2
-bread 1 0 1
-bread. 1 1 0
-bread... 1 0 1
-breathtaking 1 0 1
-bridal 1 1 0
-bring 1 1 0
-broken. 1 0 1
-bronzino 2 2 0
-brother, 1 1 0
-brought 2 1 1
-brown, 1 1 0
-brunch 5 4 1
-brunch! 1 1 0
-brunch, 1 1 0
-brunch. 3 3 0
-brussels 1 0 1
-buffalo 2 2 0
-build 1 0 1
-building 1 0 1
-bulli 1 0 1
-bullshitting. 1 0 1
-bun 1 1 0
-bun. 1 1 0
-bunch 1 1 0
-burger 7 6 1
-burger! 1 1 0
-burger, 2 2 0
-burgers 1 1 0
-burned 1 0 1
-burning 1 0 1
-burnt. 1 1 0
-burrata 2 2 0
-burrata, 1 1 0
-burrito 6 0 6
-burrito. 1 0 1
-burritos 2 0 2
-burritos. 1 0 1
-bus 1 0 1
-businesses 1 0 1
-bussing 1 0 1
-bust. 1 0 1
-busy 2 1 1
-but 79 35 44
-but, 1 0 1
-butter 4 3 1
-butter, 1 1 0
-butter. 1 1 0
-buy 1 0 1
-by 28 8 20
-byob 1 1 0
-cake 9 3 6
-cakes 4 4 0
-cakes. 2 2 0
-calamari 1 1 0
-calamari, 2 2 0
-caliber, 1 0 1
-call 6 2 4
-called 9 1 8
-calm 1 0 1
-came 16 7 9
-camouflage 1 0 1
-campus. 1 0 1
-can 19 10 9
-can't 9 5 4
-cancel 1 0 1
-cannot 4 2 2
-cant 1 1 0
-cappuccino 1 1 0
-car 2 0 2
-caramel 1 1 0
-care 2 1 1
-care. 1 0 1
-cared 1 0 1
-carefully 1 1 0
-carne 2 0 2
-carried 2 1 1
-carrot 3 3 0
-carte 1 0 1
-carte,appetizers 1 0 1
-carte. 2 0 2
-cary 1 1 0
-cashier 2 0 2
-cashier. 1 0 1
-catch 1 1 0
-cause 1 1 0
-caused 1 0 1
-celebrate 1 1 0
-celebrating 1 0 1
-celebration 2 2 0
-celebrations 1 1 0
-celebratory 1 1 0
-cellar 1 1 0
-center 1 0 1
-certain 1 0 1
-certainly 3 0 3
-chair 1 0 1
-chair, 2 0 2
-chair. 1 0 1
-challenge 1 1 0
-chance 1 1 0
-change 1 1 0
-charge 3 0 3
-charge. 1 0 1
-charged 1 0 1
-charm 1 0 1
-charming; 1 1 0
-charred 1 1 0
-check 4 0 4
-check, 1 0 1
-checked 2 1 1
-checking 2 1 1
-cheese 6 3 3
-cheese) 1 0 1
-cheese. 1 0 1
-cheeseboard 4 4 0
-cheeseboard. 1 1 0
-cheesecake 1 1 0
-cheeses 1 1 0
-chef 7 2 5
-chef's 3 0 3
-chef, 1 0 1
-chef-in-training 1 0 1
-chef. 1 0 1
-chef; 1 0 1
-chef? 1 0 1
-chefs 6 2 4
-chefs, 1 0 1
-chewy 2 0 2
-chewy. 2 0 2
-chicken 9 6 3
-chicken, 3 2 1
-chickpea 2 0 2
-chilaquiles 1 1 0
-child-free 1 0 1
-chilean 1 1 0
-chili 3 3 0
-chilly 1 1 0
-chip 1 0 1
-chipotle 1 0 1
-chocolate 2 2 0
-choice 3 0 3
-choice, 1 0 1
-choice. 1 1 0
-choices 5 4 1
-chomped 1 0 1
-choose 3 3 0
-choosing 1 1 0
-chose 3 3 0
-chowder, 1 1 0
-chowder. 1 1 0
-chugged 1 0 1
-chunks 1 1 0
-cinnamon 1 1 0
-circumstances. 1 1 0
-cities 1 0 1
-citrus 1 1 0
-city 1 0 1
-city, 1 0 1
-claimed 2 0 2
-claims 1 0 1
-clam 2 2 0
-class. 1 0 1
-classic, 1 1 0
-classics. 1 0 1
-classmate 1 1 0
-clean 1 1 0
-cleaned...anyways, 1 0 1
-cleaned? 1 0 1
-cleaning 1 0 1
-clear 1 0 1
-client 1 0 1
-close 7 2 5
-closed 2 0 2
-closed. 1 0 1
-closed... 1 0 1
-clubs. 1 1 0
-clue 2 1 1
-coattails 1 1 0
-cocktail 2 2 0
-cocktail, 2 2 0
-cocktails 1 1 0
-coconut 2 0 2
-coffee 2 1 1
-coffee. 1 1 0
-cold 7 3 4
-cold, 1 0 1
-colder 1 0 1
-cole 1 1 0
-colleague 1 0 1
-colorless 1 0 1
-comb. 1 1 0
-combination 1 1 0
-combinations. 1 0 1
-combine 1 0 1
-come 14 10 4
-come. 1 1 0
-comes 11 2 9
-comfortable 1 1 0
-comfortable, 1 1 0
-comfortable. 1 1 0
-comfortably. 1 1 0
-coming 6 4 2
-company 1 1 0
-compare. 1 0 1
-compete 1 0 1
-competing 1 0 1
-complaint. 1 0 1
-complement. 1 0 1
-complementary 2 1 1
-complete 3 0 3
-completed 1 1 0
-completely 1 0 1
-complicated 3 0 3
-complicated) 1 0 1
-complicating 1 0 1
-components 5 1 4
-composted 1 1 0
-compote 1 1 0
-concept 1 0 1
-concept! 1 1 0
-concerned 1 0 1
-condemned 1 0 1
-condescension. 1 0 1
-condiment 1 0 1
-confection 1 0 1
-confirm 1 1 0
-confrontational? 1 0 1
-confusing 1 0 1
-confusion 1 0 1
-connoisseur, 1 1 0
-conscience! 1 0 1
-consider 1 1 0
-considerate 1 0 1
-consideration 1 0 1
-considering 2 0 2
-consistency 1 0 1
-consistent 1 1 0
-consistently 2 1 1
-constantly 3 2 1
-containing 1 0 1
-contaminated 1 0 1
-continue 1 0 1
-convenient. 1 1 0
-conversations 1 0 1
-cook's 1 0 1
-cooked 13 11 2
-cooked!) 1 1 0
-cooked, 1 0 1
-cooked. 1 1 0
-cooking 2 0 2
-cool 3 2 1
-cooler 1 0 1
-copious 1 0 1
-corn 2 0 2
-corner 1 0 1
-correct 1 0 1
-cost 3 0 3
-costs 2 0 2
-cottage-cheese 1 0 1
-could 19 9 10
-couldn't 1 0 1
-count 1 1 0
-countries, 1 0 1
-country 1 1 0
-country's 1 0 1
-couple 5 2 3
-course 19 2 17
-course, 3 0 3
-course. 4 0 4
-course; 1 0 1
-courses 2 0 2
-courses, 2 0 2
-courses. 3 0 3
-courteous 1 1 0
-courtyard 1 1 0
-covid 1 1 0
-coworkers, 1 0 1
-cozy 1 1 0
-crab 8 8 0
-cracked 1 1 0
-cranking 1 0 1
-crap 1 0 1
-crappy 1 0 1
-crave 1 1 0
-crazy 1 1 0
-cream 2 1 1
-cream) 1 0 1
-cream, 1 1 0
-cream. 2 0 2
-creamed 1 1 0
-creamy 1 1 0
-creamy, 1 1 0
-create 1 0 1
-created 1 0 1
-creative 3 0 3
-creative. 1 0 1
-creativity 3 0 3
-credit 1 1 0
-crema 2 0 2
-crema, 1 0 1
-crew 1 1 0
-crisp. 2 2 0
-crispy 3 3 0
-critical, 1 0 1
-croque 1 0 1
-croquette. 1 0 1
-crossed 1 0 1
-crossed! 1 1 0
-crowd. 1 1 0
-cruel 1 0 1
-cruelty 1 0 1
-crumble 2 2 0
-crunchy 1 0 1
-crust 1 1 0
-crusted 1 1 0
-cry. 1 0 1
-cuisine 1 0 1
-cuisine, 1 1 0
-culinary 1 0 1
-cup 3 2 1
-curated 1 0 1
-curb 1 1 0
-curbside 2 2 0
-curry 1 1 0
-customer 2 0 2
-customers 2 0 2
-customers!! 1 0 1
-cut 2 0 2
-cute 1 1 0
-dairy 1 0 1
-dairy. 1 0 1
-damn 1 0 1
-dark 1 1 0
-date 1 0 1
-date. 2 2 0
-daughter 2 2 0
-day 6 4 2
-day, 4 3 1
-day. 3 2 1
-days 1 1 0
-de 1 0 1
-dead, 1 0 1
-deal! 1 0 1
-deal. 1 1 0
-decent 3 0 3
-decent). 1 0 1
-decide 1 1 0
-decided 8 3 5
-decision 1 0 1
-declined 1 0 1
-decor 6 2 4
-decor, 1 1 0
-decor. 1 0 1
-dedicated, 1 0 1
-dedication 1 0 1
-deer 1 0 1
-defeat! 1 1 0
-defend 1 0 1
-definitely 17 12 5
-degree 1 0 1
-delectability 1 1 0
-delectable, 1 1 0
-delicious 11 7 4
-delicious! 3 2 1
-delicious, 1 1 0
-delicious. 8 8 0
-delish 1 1 0
-deliver 4 1 3
-delivered 3 2 1
-delivered. 1 1 0
-delivery 1 0 1
-demanded 1 0 1
-demands 1 0 1
-demonstrated 1 0 1
-dense 1 0 1
-describe 1 1 0
-described 1 1 0
-descriptions. 1 1 0
-desert 2 0 2
-desert. 2 0 2
-deserve 2 0 2
-deserved 1 0 1
-deserves 1 0 1
-designed 2 0 2
-desired. 1 0 1
-despite 1 1 0
-dessert 5 2 3
-dessert! 1 1 0
-dessert, 3 3 0
-dessert. 3 2 1
-dessert...) 1 1 0
-desserts 3 2 1
-desserts! 1 1 0
-desserts. 1 1 0
-desserts; 1 1 0
-detailed 1 0 1
-details 1 0 1
-deuce? 1 0 1
-deviled 1 0 1
-did 14 7 7
-did, 1 0 1
-didn't 24 2 22
-different 9 8 1
-difficult 1 1 0
-dime!! 1 1 0
-dine 1 0 1
-dined 2 1 1
-diner 1 0 1
-dining 11 7 4
-dining, 3 2 1
-dining. 1 1 0
-dinner 25 16 9
-dinner, 1 0 1
-dinner. 7 6 1
-directly 1 0 1
-dirty 1 0 1
-disappoint 1 1 0
-disappoint. 1 1 0
-disappointed 6 1 5
-disappointed. 2 1 1
-disappointing 1 0 1
-disappointing! 1 0 1
-disappointing, 1 0 1
-disappointing. 1 0 1
-disappoints!! 2 2 0
-disaster 1 0 1
-disaster, 1 0 1
-discerning 1 1 0
-discussed 1 0 1
-discussion 1 0 1
-diseased 1 0 1
-dish 18 6 12
-dish, 1 1 0
-dish. 4 1 3
-dishes 8 3 5
-dishes, 1 0 1
-dishes. 3 3 0
-disliked 1 1 0
-distance 2 1 1
-distance. 1 0 1
-distancing 1 1 0
-distancing. 1 1 0
-distaste 1 0 1
-do 14 7 7
-do. 1 0 1
-do? 1 0 1
-does 3 0 3
-doesn't 4 0 4
-doesn't. 1 0 1
-dog 1 1 0
-doing 4 2 2
-doing, 1 0 1
-dollar 1 1 0
-dollars 1 1 0
-don't 16 4 12
-don't. 1 0 1
-done 4 2 2
-done. 1 0 1
-doomed. 3 0 3
-door 4 2 2
-door, 2 0 2
-dough 1 1 0
-douse 1 0 1
-down 11 7 4
-down, 2 1 1
-downgrade 1 0 1
-downgraded 1 0 1
-downgrading 1 0 1
-downstairs 1 1 0
-downtown 1 1 0
-drastic 1 0 1
-dressings 1 1 0
-dribbled 1 0 1
-drink 3 1 2
-drink. 1 0 1
-drinkers 1 0 1
-drinking 3 0 3
-drinks 3 2 1
-drinks, 3 3 0
-driving 1 0 1
-drove 1 0 1
-dry 3 1 2
-dry. 1 0 1
-duck 2 1 1
-duck, 1 1 0
-duck. 1 1 0
-ducks 1 0 1
-dumbasses, 1 0 1
-dump 1 0 1
-during 8 5 3
-dying 1 1 0
-e-mailing 1 0 1
-each 12 4 8
-eagerly 1 0 1
-early 1 1 0
-early, 1 0 1
-earthy 1 0 1
-easier 1 1 0
-easily 2 1 1
-easy 1 0 1
-eat 21 7 14
-eat, 1 0 1
-eat. 3 1 2
-eaten 4 0 4
-eatery. 1 1 0
-eating 8 2 6
-eating. 3 0 3
-eating.... 1 0 1
-eats 1 0 1
-eclectic 1 0 1
-efficient. 2 1 1
-egg 3 2 1
-egg, 1 1 0
-eggplant 1 1 0
-eggs 6 3 3
-eggs. 2 1 1
-eggs... 1 0 1
-either 1 0 1
-either. 3 1 2
-elements 6 0 6
-elements, 1 0 1
-elements. 2 0 2
-elicit 1 0 1
-else 2 0 2
-else's 1 0 1
-else, 1 1 0
-else. 1 0 1
-else? 2 0 2
-elsewhere 1 0 1
-elsewhere. 1 0 1
-email. 1 0 1
-emails. 1 0 1
-emphasis 1 0 1
-employees 1 1 0
-empty 1 0 1
-empty. 1 0 1
-end 10 4 6
-end, 1 0 1
-end. 1 0 1
-ended 3 2 1
-engaging 1 1 0
-enjoy 3 2 1
-enjoyed 9 9 0
-enjoyed. 1 1 0
-enjoys 1 1 0
-enough 4 3 1
-enough, 1 0 1
-ensued. 1 0 1
-ensuring 1 1 0
-enter 1 0 1
-enticing, 1 0 1
-entire 1 0 1
-entirely 2 0 2
-entree 4 3 1
-entree)! 1 1 0
-entrees 7 2 5
-entrée. 1 1 0
-entrées. 1 1 0
-epic 1 0 1
-equally 3 2 1
-escalated 1 0 1
-especially 5 2 3
-espouses: 1 1 0
-establishments 1 0 1
-etc; 1 1 0
-even 24 10 14
-evening 2 1 1
-evening). 1 1 0
-evening. 1 1 0
-event 1 1 0
-ever 8 3 5
-ever! 1 0 1
-every 12 9 3
-everyone 7 2 5
-everything 9 8 1
-everything, 1 1 0
-exact 1 0 1
-exactly 1 1 0
-example, 2 0 2
-exceeded 2 2 0
-excellent 9 8 1
-excellent, 2 2 0
-excellent. 3 3 0
-excels 1 1 0
-except 4 0 4
-exception 1 1 0
-exceptional, 1 1 0
-excessively 1 0 1
-excited 4 2 2
-exciting 1 1 0
-excluding 1 0 1
-excusable 1 0 1
-execute 1 0 1
-executed 1 1 0
-execution 2 0 2
-exotic. 1 0 1
-expect 4 1 3
-expectations 3 1 2
-expectations. 4 3 1
-expected 2 1 1
-expected, 1 1 0
-expecting 1 0 1
-expecting. 1 1 0
-expensive 3 0 3
-expensive, 2 1 1
-expensive. 1 0 1
-experience 5 1 4
-experience, 1 0 1
-experience. 9 6 3
-experienced 1 1 0
-experiences 1 1 0
-experiences, 1 0 1
-experiencing 1 1 0
-explain 2 0 2
-explain: 1 1 0
-explained 4 2 2
-explained. 1 0 1
-explanation 2 0 2
-explanations 1 0 1
-explode; 1 0 1
-explored 1 1 0
-exposition 1 0 1
-extensive 1 1 0
-extent. 1 0 1
-extra 1 0 1
-extreme 1 0 1
-extremely 12 7 5
-extremes 1 0 1
-eyes 2 1 1
-f-bombs, 1 0 1
-fabulous 2 1 1
-faced 1 0 1
-facelift, 1 0 1
-fact 3 1 2
-fact, 2 1 1
-fail 1 0 1
-fail. 1 0 1
-failed 1 1 0
-failures 1 0 1
-fair 1 1 0
-fairly 3 2 1
-fake, 1 1 0
-fall, 1 1 0
-falling 1 1 0
-familiar 1 0 1
-family 2 1 1
-family, 1 1 0
-family: 1 1 0
-fantastic 4 2 2
-fantastic! 2 2 0
-fantastic!! 1 1 0
-fantastic. 1 1 0
-far 3 1 2
-far, 1 1 0
-far. 1 0 1
-farm 7 7 0
-farm-to-table 3 2 1
-farm-to-table. 1 1 0
-farmer). 1 0 1
-fast 1 0 1
-fat 2 0 2
-fat) 1 1 0
-fat, 1 0 1
-fat. 1 0 1
-father's 1 1 0
-fatty 1 0 1
-fav 1 1 0
-favor 1 1 0
-favorite 8 7 1
-favorite. 2 1 1
-favourite 1 0 1
-fearful 1 1 0
-feeding 1 0 1
-feel 4 1 3
-feeling 2 0 2
-feels 2 1 1
-felt 3 0 3
-female 1 0 1
-few 12 5 7
-field 1 0 1
-fifties 1 1 0
-figured 1 0 1
-filet 1 1 0
-filled 1 1 0
-filler. 1 1 0
-filling 1 0 1
-final 1 0 1
-finally 4 2 2
-find 4 1 3
-fine 3 0 3
-fine; 1 0 1
-fingerling 1 0 1
-finish 2 1 1
-finish. 1 0 1
-finished 3 2 1
-first 14 7 7
-first, 2 2 0
-fish 12 5 7
-fish) 1 0 1
-fish, 3 2 1
-fish. 2 1 1
-fish:)) 1 1 0
-fishes 2 2 0
-fishiness 1 0 1
-fits 1 1 0
-five 1 0 1
-fixe 1 0 1
-fixed 2 1 1
-fixing. 1 0 1
-fixture 1 1 0
-flaky 1 1 0
-flapjacks. 1 1 0
-flashy 1 1 0
-flatbread 8 8 0
-flatbread, 1 1 0
-flatbreads 1 1 0
-flavor 5 0 5
-flavor! 1 1 0
-flavor) 1 0 1
-flavor, 3 2 1
-flavor. 4 3 1
-flavorful 1 0 1
-flavorful! 1 1 0
-flavorful. 3 2 1
-flavorless. 1 0 1
-flavors 4 1 3
-flavors, 1 1 0
-flavors. 2 0 2
-flesh. 1 1 0
-floor 1 0 1
-floor. 1 1 0
-flour 1 0 1
-fluffy 1 1 0
-flying 1 1 0
-foam 2 0 2
-folks 2 1 1
-followed 1 1 0
-food 77 31 46
-food! 2 2 0
-food, 11 2 9
-food. 12 6 6
-food: 1 1 0
-foodie 1 0 1
-foods. 1 0 1
-foot 1 0 1
-football, 1 1 0
-for 153 70 83
-force-fed 1 0 1
-foremost, 1 1 0
-forget 1 1 0
-forgot 1 1 0
-forks 1 1 0
-forward 5 4 1
-found 6 0 6
-four 3 0 3
-fragile 1 0 1
-frankly 1 0 1
-frees 1 1 0
-freezing 1 1 0
-frequented 1 1 0
-fresco 1 1 0
-fresh 24 22 2
-fresh! 2 2 0
-fresh, 1 1 0
-fresh. 2 2 0
-freshman 2 2 0
-freshness 1 1 0
-freshness, 1 0 1
-friday. 1 0 1
-fried 3 3 0
-friend 5 3 2
-friend's 1 1 0
-friend, 2 1 1
-friendly 5 3 2
-friendly, 2 1 1
-friendly. 4 3 1
-friends 2 1 1
-friends, 1 1 0
-friends. 1 0 1
-fries 4 4 0
-friggin 1 1 0
-from 36 9 27
-from. 2 2 0
-frommage. 1 0 1
-front 4 0 4
-frozen 1 1 0
-fulfill 1 0 1
-full 4 2 2
-full, 1 0 1
-full. 1 0 1
-fun 2 0 2
-funghi 1 0 1
-funk 1 1 0
-funky 1 0 1
-funky, 1 0 1
-funnel 1 0 1
-future 1 0 1
-g 1 1 0
-gagging 1 0 1
-gallo 1 0 1
-garlic 3 2 1
-gas 1 0 1
-gave 6 2 4
-gazpacho 1 1 0
-geese--many 1 0 1
-gem 2 1 1
-general 2 1 1
-generous 3 3 0
-generous. 1 0 1
-gestures 1 0 1
-get 22 9 13
-get, 1 1 0
-gets 3 0 3
-getting 4 2 2
-giant, 1 1 0
-gimmicky 1 0 1
-ginger 5 5 0
-girl 1 1 0
-girls 1 1 0
-give 9 1 8
-given 5 3 2
-giving 1 1 0
-glad 1 1 0
-glance 1 1 0
-glass 1 1 0
-glaze 1 1 0
-gnocchi, 2 2 0
-go 24 9 15
-go, 3 1 2
-go-to 1 0 1
-go. 3 2 1
-goat 1 1 0
-gods 1 0 1
-goers. 1 0 1
-goi 1 1 0
-going 17 9 8
-going, 1 1 0
-golden 4 2 2
-gone 4 2 2
-gone, 1 0 1
-gone--it's 1 0 1
-goo 1 0 1
-good 43 16 27
-good! 1 1 0
-good!!! 1 1 0
-good, 6 2 4
-good. 8 4 4
-good: 1 0 1
-goods. 1 0 1
-got 22 11 11
-gotten 2 0 2
-gourmet 1 0 1
-grace 1 0 1
-graciously 1 0 1
-grads 1 1 0
-grain 1 1 0
-grainy 1 1 0
-gras 1 0 1
-gratuit 1 0 1
-gratuity 1 0 1
-great 46 33 13
-great! 1 1 0
-great, 4 2 2
-great. 10 7 3
-great...once 1 0 1
-greatly 1 1 0
-green 1 1 0
-greens 3 1 2
-greens, 1 0 1
-grill 1 1 0
-grill/fresh 1 1 0
-grilled 5 4 1
-grocery 1 0 1
-grossed 1 0 1
-group 3 0 3
-grow 1 1 0
-grown 1 1 0
-guacamole 2 2 0
-guess 1 0 1
-guess, 1 0 1
-guess. 1 0 1
-guy, 1 1 0
-guys 4 1 3
-guys, 1 1 0
-had 94 50 44
-had. 2 2 0
-hadn't 1 1 0
-hair 2 0 2
-half 2 1 1
-halibut 1 1 0
-halibut, 1 1 0
-ham 2 1 1
-ham/egg/cheese 1 0 1
-hamachi 1 0 1
-hand 4 0 4
-handle 1 0 1
-hands 1 1 0
-hands. 1 0 1
-hands? 1 0 1
-happen 2 0 2
-happen. 1 1 0
-happened 1 0 1
-happened!!! 1 0 1
-happened. 2 0 2
-happening. 1 0 1
-happens 3 1 2
-happier 1 0 1
-happy 4 4 0
-happy! 1 1 0
-happy. 1 1 0
-hard 5 2 3
-hard, 2 0 2
-hard. 1 0 1
-harmonious 1 0 1
-harsh 1 1 0
-has 21 7 14
-hash 1 1 0
-hash. 1 1 0
-hasn't 1 0 1
-hasn't. 1 1 0
-hate 1 0 1
-have 77 28 49
-haven't 2 0 2
-having 6 3 3
-he 14 2 12
-head 2 0 2
-heads 1 0 1
-health 1 0 1
-healthy 1 1 0
-hear 2 0 2
-heard 7 2 5
-hearing 1 0 1
-heart 1 0 1
-heartbroken 1 0 1
-heat, 2 1 1
-heated 1 1 0
-heated. 1 1 0
-heater 1 1 0
-heating 1 1 0
-heavy. 1 0 1
-heirloom 2 2 0
-helped 1 1 0
-helpful 2 2 0
-helpful, 1 0 1
-helpful. 1 1 0
-hen 1 0 1
-hence 1 0 1
-her 9 3 6
-her. 1 0 1
-herbs, 1 1 0
-here 32 22 10
-here! 1 1 0
-here, 1 0 1
-here- 1 0 1
-here. 9 4 5
-here...stay 1 1 0
-here; 1 0 1
-hesitant 1 1 0
-hide 1 0 1
-high 3 1 2
-high, 2 0 2
-high-end 1 1 0
-high. 1 0 1
-highlight 1 1 0
-highly 5 5 0
-hiking, 1 0 1
-him 13 0 13
-his 9 0 9
-hit 3 3 0
-hold 1 0 1
-hole 1 0 1
-holiday 1 1 0
-home 5 1 4
-home! 1 1 0
-home, 1 0 1
-home-cooked 1 0 1
-home. 2 0 2
-homemade 4 3 1
-honest 1 1 0
-honest, 1 1 0
-honestly 3 1 2
-honestly, 1 0 1
-honey 3 3 0
-honeycomb 2 2 0
-horrendous. 1 0 1
-horrible 1 0 1
-horrific. 1 0 1
-hostess 2 1 1
-hostile. 1 0 1
-hot 2 1 1
-hot, 1 0 1
-hour 2 1 1
-hours 1 0 1
-hours! 1 0 1
-hours. 1 0 1
-house 3 2 1
-house. 1 0 1
-houses 1 1 0
-how 17 3 14
-however 1 0 1
-however, 1 1 0
-however. 1 0 1
-huge 3 0 3
-human 1 0 1
-hummus 1 1 0
-hungry 1 0 1
-hungry, 1 0 1
-hurried 1 0 1
-hurry 1 1 0
-husband 6 2 4
-husband, 1 0 1
-i 3 1 2
-ice 6 3 3
-ice. 1 0 1
-iceberg 1 1 0
-ideal 1 1 0
-ideas 1 0 1
-if 23 8 15
-ill. 1 0 1
-imagine 1 1 0
-imagined 1 1 0
-impeccable 3 2 1
-impeccable! 1 1 0
-impeccable. 1 1 0
-important 2 1 1
-imposter 1 0 1
-impress 1 0 1
-impressed 5 4 1
-improved! 1 1 0
-in 141 64 77
-in)... 1 0 1
-in, 1 1 0
-in-house 3 3 0
-in. 2 1 1
-included 4 2 2
-includes 1 0 1
-including 6 3 3
-inconsiderate! 1 0 1
-inconsistent. 1 0 1
-incredible 2 0 2
-incredible. 2 2 0
-incredibly 3 2 1
-individuals 1 0 1
-industrial, 1 1 0
-inedible. 2 0 2
-inexpensive 1 0 1
-informed 1 0 1
-infused 1 0 1
-ingredient 1 0 1
-ingredients 6 5 1
-ingredients. 1 1 0
-innovative. 1 0 1
-inside 1 1 0
-inside. 2 0 2
-insolent 1 0 1
-instead 1 1 0
-insulted 1 1 0
-intended)! 1 1 0
-intended). 1 1 0
-interact 1 0 1
-interesting 4 0 4
-interesting. 1 0 1
-interior 1 0 1
-interior/ambiance 1 1 0
-interrupt 1 0 1
-interview, 1 1 0
-intimate 1 1 0
-intimate, 1 0 1
-intimate. 1 1 0
-into 6 1 5
-intriguing 1 0 1
-inviting. 1 1 0
-involved 1 0 1
-irreparably 1 0 1
-is 156 77 79
-is, 2 1 1
-is. 1 1 0
-is? 1 0 1
-isn't 1 0 1
-issue 2 1 1
-issue. 3 0 3
-issues 2 0 2
-it 113 51 62
-it! 1 1 0
-it's 13 4 9
-it, 5 2 3
-it. 15 6 9
-item 2 1 1
-items 6 5 1
-its 1 0 1
-jackets 2 2 0
-jalapeño 1 1 0
-job 3 1 2
-job. 1 1 0
-joint. 1 0 1
-joking 1 0 1
-joy. 1 0 1
-juicy 1 1 0
-juicy. 1 1 0
-jumbo 2 2 0
-just 33 12 21
-justify 1 0 1
-kale 4 3 1
-kale, 1 0 1
-keep 3 1 2
-keeping 1 1 0
-ketchup, 1 1 0
-kick 1 1 0
-kicked 1 0 1
-kid, 1 0 1
-kids; 1 0 1
-kill 1 0 1
-killed 1 0 1
-kimchee 1 1 0
-kimchi 1 1 0
-kimchi). 1 1 0
-kind 12 6 6
-kinds 1 1 0
-kinks, 1 0 1
-kiss 1 1 0
-kitchen 6 1 5
-kitchen, 1 0 1
-kitchen. 1 0 1
-kitchen.) 1 0 1
-knew 1 0 1
-know 14 5 9
-know. 1 1 0
-knowing 2 0 2
-knowledgeable 1 1 0
-knowledgeable. 1 0 1
-known 1 1 0
-la 5 0 5
-labels 1 0 1
-lacked 2 2 0
-lacking 1 0 1
-lacks 1 0 1
-lad 1 0 1
-lag 1 0 1
-lamb 1 1 0
-large 2 1 1
-larger 1 1 0
-last 10 1 9
-last. 2 1 1
-late 3 1 2
-late. 1 0 1
-later 1 0 1
-laughable 1 0 1
-laughed 1 0 1
-laundry 1 1 0
-lavender 1 0 1
-layered 1 1 0
-lean 1 0 1
-leaning 2 0 2
-least 5 0 5
-leave 4 0 4
-leave. 1 0 1
-leaves, 1 0 1
-leaves. 1 0 1
-leaving 1 0 1
-lecture 1 0 1
-led 2 1 1
-left 2 0 2
-left. 1 0 1
-legged 1 0 1
-lemon, 1 1 0
-less 5 1 4
-let 3 3 0
-let's 1 0 1
-lets 1 1 0
-lettuce 1 0 1
-lettuce). 1 1 0
-level 1 0 1
-lick 1 1 0
-lie 1 1 0
-lied 1 0 1
-life)! 1 1 0
-light 1 1 0
-light, 1 1 0
-like 35 7 28
-liked 3 3 0
-likely 1 1 0
-liking. 1 1 0
-lime 2 2 0
-line 1 0 1
-lips! 1 1 0
-liquor 3 3 0
-list 2 1 1
-listened 1 1 0
-literally 4 1 3
-litmus 1 0 1
-little 14 8 6
-live 3 1 2
-liver 1 0 1
-lives 1 1 0
-living 1 1 0
-lobster 4 4 0
-local 3 2 1
-local-organic 1 0 1
-locally 2 2 0
-locals 1 0 1
-location 3 1 2
-location. 2 0 2
-log; 1 0 1
-lol 1 0 1
-long 6 2 4
-longer 1 0 1
-look 4 2 2
-look, 1 0 1
-looked 8 2 6
-looking 4 2 2
-looks 3 1 2
-lose 2 1 1
-losing 1 0 1
-lost 3 2 1
-lot 6 1 5
-lots 1 1 0
-loud 2 0 2
-loud. 1 1 0
-louder 1 0 1
-love 10 5 5
-loved 8 6 2
-lovely 1 1 0
-lovely. 1 0 1
-lover, 1 1 0
-loves 1 0 1
-low 1 1 0
-luck! 1 0 1
-luke 1 0 1
-lukewarm 1 0 1
-lumps 1 0 1
-lumps) 1 1 0
-lunch 9 6 3
-lunch! 2 2 0
-lunch, 1 0 1
-lunch...and 1 1 0
-lunch/early 1 1 0
-machine 1 0 1
-madam 1 0 1
-made 22 10 12
-made. 1 0 1
-magic 1 0 1
-main 2 0 2
-mains 1 1 0
-mains, 1 1 0
-maintaining 1 1 0
-major 1 0 1
-make 17 4 13
-make. 1 1 0
-makes 4 1 3
-making 1 1 0
-male 1 0 1
-man 5 0 5
-management 1 1 0
-manager 2 1 1
-manager, 1 0 1
-managers 1 0 1
-manger, 1 0 1
-many 11 3 8
-many? 1 0 1
-margarita 2 2 0
-marinated 1 0 1
-mark 2 0 2
-mark. 1 0 1
-marrying 1 0 1
-martini 1 0 1
-mash 2 2 0
-mash. 1 1 0
-mashed 1 1 0
-masks, 1 1 0
-masquerading 1 0 1
-match 1 0 1
-matched 1 1 0
-matter 1 1 0
-mature 1 1 0
-may 4 0 4
-maybe 3 0 3
-me 34 13 21
-me, 1 1 0
-me. 2 0 2
-meal 13 7 6
-meal, 7 5 2
-meal. 11 4 7
-meals 5 4 1
-meals, 1 1 0
-meals. 2 2 0
-meaningful 1 1 0
-meaningful!!! 1 1 0
-means 1 0 1
-measure 1 1 0
-measure. 1 0 1
-meat 6 3 3
-meat, 1 1 0
-meat/game 1 0 1
-meaty 1 1 0
-mediocre 1 0 1
-mediocre, 1 0 1
-mediocre. 1 0 1
-medium-done 1 1 0
-meet 1 0 1
-meets 2 1 1
-meh. 1 0 1
-melt 1 0 1
-melted, 1 0 1
-melting 1 1 0
-member 2 2 0
-memorable. 1 0 1
-memory. 1 0 1
-men 3 0 3
-mention 1 1 0
-mention, 1 0 1
-menu 25 17 8
-menu! 2 1 1
-menu, 3 1 2
-menu. 5 2 3
-menu; 1 0 1
-menu? 1 0 1
-mess 1 0 1
-mess. 1 0 1
-mess....the 1 0 1
-messages. 1 0 1
-micro 1 1 0
-mid 1 1 0
-middle 2 1 1
-might 2 1 1
-miles 1 0 1
-milk-fed 1 0 1
-min 1 0 1
-mind 2 0 2
-minuscule 1 0 1
-minute 2 0 2
-miso 1 1 0
-miss! 1 1 0
-misses 1 0 1
-missing 1 0 1
-mission 1 0 1
-misspelled 1 0 1
-mistake 1 0 1
-mistook 1 0 1
-mix 1 1 0
-mixed 3 1 2
-models 1 0 1
-modern 1 1 0
-moist 1 1 0
-mold 1 0 1
-mom, 1 0 1
-money 6 1 5
-money. 3 0 3
-months 1 0 1
-months. 2 1 1
-mood 2 0 2
-more 14 8 6
-more) 1 0 1
-more,the 1 0 1
-mornay 1 0 1
-morning. 1 0 1
-moss 1 0 1
-mossy 1 0 1
-most 11 6 5
-mostly 1 0 1
-motions 1 0 1
-motivated 1 0 1
-mouth 2 0 2
-mouth. 1 1 0
-mouthful 1 0 1
-mouthwatering 1 1 0
-move 1 0 1
-moved 1 1 0
-much 18 7 11
-much, 1 0 1
-much. 3 1 2
-much? 1 0 1
-multiple 2 2 0
-mushroom 3 3 0
-mushrooms 1 1 0
-mushrooms. 2 2 0
-mussels, 1 1 0
-must 4 2 2
-must-stop 1 1 0
-must-try), 1 1 0
-muttering 1 0 1
-my 90 44 46
-my, 1 1 0
-myself 1 0 1
-myself. 1 0 1
-mystery 1 0 1
-mystique 1 0 1
-nailed 1 0 1
-name 1 0 1
-name. 2 2 0
-narrow, 1 0 1
-native 1 0 1
-nature 1 0 1
-navigating 1 1 0
-near 2 0 2
-nearby 1 0 1
-nearly 1 0 1
-necessary. 1 1 0
-need 7 1 6
-needed 3 1 2
-needing 1 0 1
-needs 3 0 3
-negligence 1 0 1
-negligence. 1 0 1
-nerve 1 0 1
-nest, 1 0 1
-never 11 5 6
-new 9 2 7
-new, 1 0 1
-next 10 5 5
-nice 27 21 6
-nicely 3 3 0
-night 14 1 13
-night! 1 1 0
-night, 3 0 3
-night. 10 4 6
-no 21 3 18
-nod 1 1 0
-noisy. 1 0 1
-nondescriptive, 1 0 1
-none 1 1 0
-none. 1 1 0
-nonexistent....all 1 0 1
-noon 1 1 0
-nor 1 0 1
-normal 1 0 1
-north 1 1 0
-not 86 28 58
-not. 2 0 2
-notch 2 2 0
-notch, 2 1 1
-note, 1 0 1
-nothing 7 3 4
-nothing, 1 0 1
-notice 1 0 1
-noticed 2 0 2
-novelty 1 0 1
-now 4 0 4
-nowhere 1 0 1
-ny 1 0 1
-obliged 1 1 0
-obliterating 1 0 1
-obscure 1 0 1
-occasion 4 2 2
-occasion. 1 0 1
-occasions 1 1 0
-occupancy 1 0 1
-occurred 1 0 1
-octopus 4 3 1
-octopus, 1 1 0
-octopus. 1 1 0
-oddly 1 0 1
-of 202 94 108
-off 14 8 6
-off, 1 1 0
-off-flavored 1 0 1
-off-putting. 1 0 1
-off. 1 0 1
-offered 2 0 2
-offering. 1 1 0
-offers. 1 1 0
-often 1 1 0
-often, 1 1 0
-oh 1 1 0
-oh, 1 0 1
-oil-- 1 1 0
-ok 1 0 1
-ok, 1 0 1
-ok. 2 1 1
-old 3 0 3
-on 95 50 45
-on! 1 1 0
-on), 1 1 0
-on, 1 0 1
-on. 2 0 2
-once 2 2 0
-one 36 8 28
-one. 2 0 2
-ones 1 1 0
-online, 1 1 0
-only 23 8 15
-open 6 2 4
-opened 2 1 1
-opinion) 1 1 0
-opinion. 1 0 1
-opted 1 1 0
-optimist 1 0 1
-option 3 2 1
-option), 1 0 1
-options 3 2 1
-options! 1 1 0
-options, 1 1 0
-options. 3 3 0
-or 33 6 27
-orange 1 1 0
-order 8 4 4
-order!! 1 0 1
-ordered 20 15 5
-ordered! 1 1 0
-ordered, 1 1 0
-ordering 1 0 1
-ordering...I 1 0 1
-orders 1 1 0
-ordinary, 1 0 1
-ordinary. 1 1 0
-organic 1 0 1
-orgasmic, 1 0 1
-original 1 0 1
-other 6 2 4
-other, 1 0 1
-others 5 0 5
-ounce, 1 0 1
-ounces 1 0 1
-our 30 20 10
-ours. 1 1 0
-out 37 6 31
-out, 1 0 1
-out. 5 1 4
-outdoor 5 5 0
-outside 6 3 3
-outside, 3 0 3
-outside. 2 0 2
-outstanding 1 1 0
-outstanding, 2 2 0
-over 7 2 5
-over-priced. 1 0 1
-over. 1 0 1
-overall 2 2 0
-overbearing 1 0 1
-overbearing) 1 1 0
-overcooked 1 0 1
-overcooked. 1 0 1
-overhaul 2 0 2
-overlooked 1 0 1
-overly 5 4 1
-overpaid 1 0 1
-overpowered 1 0 1
-overpowering. 1 0 1
-overpriced 4 0 4
-overpriced. 1 0 1
-overrated 1 0 1
-overwrought 1 0 1
-own 4 2 2
-own, 1 0 1
-owners 1 0 1
-oyster 2 2 0
-oysters 5 5 0
-oysters. 2 2 0
-oz 1 1 0
-packed 2 0 2
-packed. 2 2 0
-paid 1 0 1
-paired 1 1 0
-pairing 3 0 3
-pairing. 1 1 0
-pairings 2 0 2
-palate 1 0 1
-pancakes 1 1 0
-pancakes, 1 1 0
-pandemic 1 1 0
-pandemic. 1 1 0
-pansies 1 0 1
-paper/plastic). 1 1 0
-par 1 0 1
-parents 1 1 0
-parents. 2 0 2
-parfait) 1 0 1
-park 2 1 1
-parking 7 0 7
-parking, 1 0 1
-part 5 1 4
-particular)....the 1 1 0
-particularly 1 0 1
-parting 1 0 1
-partner. 1 0 1
-parts 1 0 1
-parts. 1 0 1
-party 1 1 0
-pass 1 0 1
-pass. 1 0 1
-passed 1 0 1
-passion 1 0 1
-past 2 0 2
-pasta 5 2 3
-pastor 2 0 2
-pathetic 1 0 1
-patio 2 2 0
-patio. 1 1 0
-patronizing. 1 0 1
-pay 8 2 6
-paying 2 0 2
-pea 1 1 0
-peach 2 2 0
-peaches 1 1 0
-peanut 2 2 0
-penny 1 1 0
-penny! 1 1 0
-people 12 2 10
-people!!! 1 1 0
-people) 1 0 1
-people, 2 0 2
-people. 3 2 1
-pepper 1 0 1
-pepperoni 1 1 0
-per 5 0 5
-perfect 5 5 0
-perfect!!! 1 1 0
-perfect. 3 3 0
-perfection 1 1 0
-perfection, 1 1 0
-perfection. 2 2 0
-perfectly 8 5 3
-perfectly, 2 2 0
-perfectly- 1 1 0
-perfectly. 1 1 0
-periods. 1 0 1
-person 5 1 4
-person. 3 0 3
-personally. 1 0 1
-pesto 1 1 0
-phenomenal 2 2 0
-phenomenal. 3 3 0
-phone 1 0 1
-phone. 1 0 1
-photos 3 1 2
-pick 2 1 1
-picked 2 1 1
-pickup, 1 1 0
-pickup. 1 1 0
-pico 1 0 1
-pie. 1 1 0
-piece 4 1 3
-pieces 1 0 1
-pieces, 1 0 1
-pig 3 0 3
-pig, 1 0 1
-pile 1 0 1
-pineapple. 1 1 0
-pistachio/parmesan 1 1 0
-pizza 6 5 1
-pizza, 1 1 0
-place 46 18 28
-place! 1 1 0
-place, 4 1 3
-place- 1 0 1
-place. 8 5 3
-places 4 2 2
-places, 1 0 1
-places. 1 1 0
-plainly 1 0 1
-plans 1 0 1
-plant 3 2 1
-plate 3 1 2
-plate, 1 0 1
-plate. 2 1 1
-plates 1 1 0
-plates. 1 0 1
-plates?), 1 0 1
-play 1 1 0
-pleasant 4 3 1
-pleasant! 1 1 0
-pleasant. 2 0 2
-pleasantly 1 1 0
-please 1 0 1
-pleased 2 2 0
-pleasing 1 1 0
-pleasure 1 0 1
-plenty 1 1 0
-plus 2 2 0
-plus. 1 1 0
-poached 3 2 1
-pocket 1 0 1
-point 8 7 1
-point! 1 1 0
-point, 3 0 3
-point. 1 0 1
-pointed 1 0 1
-poise 1 0 1
-poise, 1 0 1
-poisoning. 1 0 1
-poke 1 1 0
-policy 1 1 0
-polished, 1 0 1
-polite 1 1 0
-politely, 1 0 1
-pomegranate 1 1 0
-pomegranite 1 0 1
-poop--fine 1 0 1
-poor 2 0 2
-poor, 1 0 1
-poorer. 1 0 1
-poorly 3 0 3
-pope 1 0 1
-poppyseed 1 0 1
-popular 2 0 2
-porcelain 1 0 1
-pork 8 1 7
-pork! 1 1 0
-pork. 2 0 2
-portions 7 2 5
-poses 1 0 1
-positive 1 0 1
-positive. 1 0 1
-possible 1 0 1
-potato 1 1 0
-potatoes 4 3 1
-potent 1 1 0
-potpourri 1 0 1
-pound 1 0 1
-pour, 1 0 1
-powering 2 1 1
-prayer 1 0 1
-pre-fix 1 1 0
-precautions. 1 1 0
-preceded 1 0 1
-prefer 3 0 3
-preferably 1 0 1
-preference 1 1 0
-preferred 1 0 1
-premium 2 1 1
-preparations 1 1 0
-prepare 2 0 2
-prepared 4 4 0
-present 1 1 0
-presentation 7 1 6
-presentation. 1 1 0
-presented 3 0 3
-pretentious 3 0 3
-pretentious, 1 0 1
-pretentiousness 1 0 1
-pretty 10 7 3
-previous 1 0 1
-previously 1 0 1
-price 7 1 6
-price) 1 1 0
-price, 1 1 0
-price. 1 0 1
-priced 2 1 1
-priced, 1 1 0
-prices 4 1 3
-prices, 3 0 3
-prices. 3 0 3
-pricey 3 2 1
-pricey, 2 2 0
-pricier 1 1 0
-pricy 1 1 0
-pricy. 1 0 1
-prime 1 1 0
-private 1 1 0
-privilege 1 0 1
-probably 5 3 2
-problem. 2 2 0
-process. 1 1 0
-produced 1 0 1
-production 2 0 2
-professional 2 1 1
-professionalism. 1 0 1
-professionally 1 1 0
-profusely, 1 0 1
-progression 1 0 1
-prohibited 1 0 1
-projectile 1 0 1
-projectile! 1 0 1
-promise 1 0 1
-promising 1 0 1
-prompt 1 0 1
-proper 2 0 2
-properly 1 0 1
-properly, 1 0 1
-props 1 0 1
-protein 1 0 1
-protocols 1 1 0
-provides 1 1 0
-providing. 1 0 1
-puking 1 0 1
-pull 1 0 1
-pulled 1 0 1
-pumpkin 4 4 0
-pun 1 1 0
-punch, 1 1 0
-punch. 1 1 0
-purchase 1 1 0
-puree 1 0 1
-puree, 2 0 2
-put 3 1 2
-quail 1 0 1
-quality 14 12 2
-quality. 4 2 2
-quesadilla 1 0 1
-quesadilla, 1 0 1
-quesadilla. 1 0 1
-quest 1 1 0
-questions. 1 0 1
-quick 2 2 0
-quiet 2 1 1
-quite 7 3 4
-radish 1 0 1
-raisins 2 2 0
-rajas, 1 0 1
-ran 1 0 1
-randomly 1 1 0
-ranged 1 0 1
-rare 2 2 0
-rather 1 0 1
-rave 3 1 2
-ravioli 2 2 0
-ravioli, 2 2 0
-ravioli. 2 2 0
-raw 3 2 1
-raw, 1 0 1
-read 5 1 4
-reading 3 2 1
-real 3 1 2
-realize 1 0 1
-really 32 14 18
-really, 1 1 0
-reason 1 0 1
-reasonable 1 0 1
-reasonably 2 2 0
-reasons: 1 0 1
-receive 2 0 2
-received 3 0 3
-recent 4 1 3
-recently 1 1 0
-recommend 14 11 3
-recommend: 1 1 0
-recommendations, 1 1 0
-recommended 6 4 2
-red 1 1 0
-reduction 1 0 1
-refreshing, 1 0 1
-refunded 1 0 1
-refuse 1 0 1
-refused 1 0 1
-refused. 1 0 1
-regal 1 1 0
-regret 1 1 0
-regular 2 1 1
-regular, 1 1 0
-regulars 1 0 1
-reheated 1 1 0
-relegated 1 0 1
-remain 1 0 1
-remains 1 0 1
-remedied 1 0 1
-remember 3 2 1
-remoulade. 1 1 0
-rendition 1 1 0
-replace 1 1 0
-replacement. 1 0 1
-replied 1 0 1
-request. 1 0 1
-requested 1 0 1
-reservation 6 3 3
-reservations 1 1 0
-reservations, 1 1 0
-reserve 1 1 0
-reserved 2 0 2
-residential 1 0 1
-respect 3 3 0
-respectable 1 1 0
-response 1 0 1
-response. 2 0 2
-rest 5 2 3
-rest! 1 0 1
-restaurant 53 23 30
-restaurant's 1 1 0
-restaurant, 3 2 1
-restaurant--did 1 1 0
-restaurant. 12 7 5
-restaurants 10 2 8
-restaurants, 1 0 1
-retrain 1 0 1
-retrieving 1 0 1
-return 4 2 2
-return. 3 2 1
-returned 1 0 1
-reused 1 1 0
-reused? 1 0 1
-review 5 2 3
-review! 1 1 0
-review. 2 1 1
-reviewing 1 0 1
-reviews 6 2 4
-reviews, 2 1 1
-reviews. 1 0 1
-rib 7 7 0
-rib, 1 1 0
-rib. 1 1 0
-rib: 1 1 0
-ribeye 1 1 0
-ribeye, 1 1 0
-ribs 4 3 1
-ribs, 1 1 0
-rice 2 1 1
-rice, 1 0 1
-rice. 1 0 1
-ricotta 1 1 0
-riddled 1 0 1
-ridiculous. 1 0 1
-right 6 5 1
-right, 1 0 1
-right. 2 1 1
-rip 1 0 1
-road 1 1 0
-roast. 1 1 0
-roasted 1 1 0
-rock, 1 0 1
-role 1 0 1
-roll). 1 1 0
-roof. 1 1 0
-rooftop 2 2 0
-rookies, 1 0 1
-room 4 1 3
-rooms, 1 1 0
-rooms. 1 1 0
-root 1 1 0
-rose 1 0 1
-rosemary 1 0 1
-round!! 1 1 0
-roundtrip 1 0 1
-routine. 1 1 0
-royal 1 0 1
-rubbery. 1 0 1
-rude 4 0 4
-ruin 1 0 1
-run 1 0 1
-run, 1 0 1
-runner, 1 0 1
-runners. 1 0 1
-running 2 1 1
-runny 1 1 0
-runny. 1 1 0
-rush, 1 1 0
-rushed 1 1 0
-rustic 2 1 1
-rutabaga 2 2 0
-s'mores 2 2 0
-s'mores, 1 1 0
-sad 2 0 2
-sad, 1 0 1
-sad. 1 0 1
-sadly 1 0 1
-safety 3 1 2
-said 6 3 3
-said, 2 0 2
-salad 5 2 3
-salad, 1 1 0
-salad. 3 3 0
-salads, 1 1 0
-salmon 5 5 0
-salmon, 1 1 0
-salmon. 3 3 0
-salsa 4 0 4
-salsa. 2 0 2
-salt, 1 0 1
-salted 1 0 1
-salty. 5 0 5
-same 6 4 2
-sampler 1 1 0
-sand, 1 0 1
-sandwich 1 1 0
-sandwich, 1 1 0
-sandwich. 1 1 0
-sandwich: 1 0 1
-sandy 1 0 1
-sans-enfants 1 0 1
-sashimi 2 0 2
-sat 1 0 1
-satisfaction. 1 1 0
-satisfying. 1 1 0
-sauce 10 4 6
-sauce. 4 3 1
-sauce? 1 0 1
-save 4 1 3
-saving 1 0 1
-savor 2 2 0
-savory 1 0 1
-savory!). 1 1 0
-saw 1 0 1
-say 7 4 3
-saying 2 0 2
-says 2 0 2
-scallops 3 3 0
-scallops, 3 2 1
-scallops. 2 1 1
-school 1 0 1
-scoop 1 1 0
-scotch 1 0 1
-scream 1 0 1
-scrumptious. 2 2 0
-sea 7 7 0
-sea/storm 1 0 1
-seafood 12 8 4
-seafood-lover 1 1 0
-seafood. 5 2 3
-seared 1 1 0
-season. 1 1 0
-seasoned 2 1 1
-seat 2 1 1
-seated 3 3 0
-seating 4 4 0
-seating, 1 1 0
-seating. 1 1 0
-seats 2 1 1
-second 4 2 2
-second. 1 1 0
-secret 1 1 0
-seduced 1 0 1
-see 7 2 5
-see. 1 1 0
-seem 4 0 4
-seemed 4 1 3
-seems 3 0 3
-selection 4 4 0
-selling 1 0 1
-sells 1 1 0
-semblance 1 0 1
-send 2 0 2
-sent 1 0 1
-separate 1 1 0
-sept. 1 0 1
-serendipitously' 1 0 1
-series 1 0 1
-serious 2 0 2
-seriously 1 0 1
-serve 1 0 1
-served 8 3 5
-served, 1 0 1
-served. 2 0 2
-server 8 6 2
-server, 2 2 0
-servers 2 0 2
-servers. 1 0 1
-service 23 12 11
-service, 6 4 2
-service. 10 2 8
-services. 1 0 1
-serving 4 2 2
-serving. 1 1 0
-set 1 0 1
-setting 1 0 1
-settled 1 0 1
-setup 1 1 0
-several 5 4 1
-severely 1 0 1
-shake 1 0 1
-shame, 1 0 1
-share 4 4 0
-shared 8 7 1
-sharing 1 1 0
-sharing. 1 1 0
-shavings 1 0 1
-she 7 5 2
-shocked 2 2 0
-shocking 1 0 1
-short 15 13 2
-should 9 0 9
-shoulder. 2 0 2
-shouting 1 0 1
-show 2 1 1
-showcases 1 1 0
-shower 2 2 0
-shower, 1 1 0
-shower. 1 1 0
-showered 1 0 1
-shrimp 7 7 0
-shrimp. 2 2 0
-shrugged 1 0 1
-shrunk 1 0 1
-shut 1 0 1
-sick 2 0 2
-sick. 2 0 2
-sickness 1 0 1
-side 5 3 2
-side, 1 1 0
-side. 3 2 1
-sidewalk 1 1 0
-silver 1 1 0
-simple 2 1 1
-simple. 1 1 0
-simply 1 1 0
-sin) 1 0 1
-since 9 4 5
-sincere. 1 1 0
-single 5 4 1
-sister 1 1 0
-sister's 1 1 0
-sit 1 1 0
-sitting 2 1 1
-six 2 0 2
-size 1 0 1
-size, 1 0 1
-sized 2 2 0
-skeptical. 1 0 1
-skin 2 2 0
-skip 1 0 1
-slack 1 0 1
-slaw 1 1 0
-slightly 4 3 1
-sliver 1 0 1
-sloths 1 0 1
-slow 3 1 2
-slow, 1 0 1
-slow. 1 0 1
-small 5 2 3
-small, 1 1 0
-small. 2 0 2
-smelled 3 0 3
-smoked 2 1 1
-smooth 1 1 0
-smooth, 1 0 1
-snapper 1 0 1
-snobs 1 0 1
-so 52 28 24
-so-so. 1 0 1
-so. 1 0 1
-social 2 2 0
-soda 2 2 0
-soda. 1 1 0
-soft 1 1 0
-soft. 1 1 0
-softer, 1 1 0
-solid 1 1 0
-some 29 13 16
-some. 1 1 0
-somebody 1 0 1
-somehow 2 1 1
-someone 8 2 6
-something 11 5 6
-something, 1 1 0
-something. 1 1 0
-sometimes 2 1 1
-somewhat 1 0 1
-somewhat-decent 1 0 1
-somewhere 1 0 1
-son 2 2 0
-son's 1 1 0
-soo 1 1 0
-soon 4 3 1
-soon!). 1 1 0
-soon. 3 2 1
-sooo 1 1 0
-sophisticated 1 1 0
-sorry, 2 0 2
-sorts 1 0 1
-sounded 1 1 0
-sounds 1 0 1
-soup 6 4 2
-soup, 1 0 1
-soup. 1 0 1
-soups 1 1 0
-sour 1 0 1
-source. 1 1 0
-sourced 1 1 0
-soy 1 0 1
-space 2 2 0
-space). 1 0 1
-space, 2 0 2
-speaking 1 0 1
-special 9 2 7
-specials 1 0 1
-specials, 1 1 0
-specifically 1 0 1
-spectacular, 1 1 0
-spectacular. 3 3 0
-spend 3 0 3
-spending 2 1 1
-spice 1 0 1
-spice. 1 1 0
-spiced 1 1 0
-spices 1 1 0
-spicy 4 1 3
-spicy)... 1 0 1
-spicy, 2 1 1
-spicy... 1 0 1
-spin. 1 1 0
-spinach. 1 1 0
-splendid 2 2 0
-splendid! 1 1 0
-split 1 1 0
-splurge 1 0 1
-spoke 1 0 1
-spoon. 1 1 0
-spot 6 5 1
-spot! 1 1 0
-spot. 1 1 0
-spread 1 1 0
-sprouts 3 1 2
-sprouts). 1 0 1
-squares 1 0 1
-squash 2 1 1
-staff 21 11 10
-staff's 1 0 1
-staff). 1 0 1
-staff, 3 0 3
-staff. 4 2 2
-staff....trying 1 0 1
-stairs 1 1 0
-stale. 1 0 1
-standards 1 0 1
-standards, 1 0 1
-standards. 1 0 1
-standoffish 1 0 1
-stands 2 0 2
-star 7 3 4
-stars 1 0 1
-stars, 1 0 1
-start 1 0 1
-start, 1 1 0
-started 10 4 6
-starters 1 1 0
-starts 2 0 2
-starts. 1 0 1
-stated 1 0 1
-station 1 0 1
-stay 2 0 2
-steak 6 6 0
-steak, 2 1 1
-steak. 1 0 1
-steep 1 1 0
-step 1 0 1
-step. 1 1 0
-stepping 1 1 0
-sterile 1 0 1
-still 6 0 6
-stingy. 1 0 1
-stomach 1 1 0
-stop 4 0 4
-stopped 1 0 1
-stops 1 0 1
-store 3 3 0
-stores 1 0 1
-strange 1 0 1
-street 6 1 5
-stretch 1 0 1
-stringy 1 0 1
-strong, 1 1 0
-stuffed 1 1 0
-stumble 1 1 0
-stun-gun 1 0 1
-stunning 1 0 1
-stupid 1 0 1
-style 3 1 2
-style. 1 0 1
-stylish 1 1 0
-substance 1 0 1
-substitute 1 0 1
-substitutions. 1 0 1
-such 4 1 3
-such. 1 0 1
-sudden 1 0 1
-suggest 1 1 0
-suggested 1 0 1
-suing 1 0 1
-summer 2 2 0
-summers, 1 0 1
-sunny 1 0 1
-super 9 9 0
-super, 1 0 1
-superior 1 0 1
-superiors, 1 0 1
-support 1 0 1
-supposed 1 0 1
-sure 3 1 2
-sure. 1 1 0
-surf 1 1 0
-surprise. 1 1 0
-surprised 3 1 2
-surprised. 2 1 1
-surprisingly 1 1 0
-suspicion 1 1 0
-suvee, 1 0 1
-swap 1 1 0
-sweaty 1 0 1
-sweet 4 4 0
-sweet! 1 0 1
-sweet. 1 0 1
-sweet; 1 1 0
-sweeter 1 1 0
-swelling 1 0 1
-switch 1 1 0
-swordfish. 1 1 0
-tIme!! 1 1 0
-tab 1 1 0
-tab, 1 0 1
-table 15 8 7
-table, 3 0 3
-table. 2 1 1
-tables 5 1 4
-tableware 1 1 0
-tabs 1 0 1
-taco 1 0 1
-tacos 4 0 4
-tag 1 1 0
-tag. 1 0 1
-tahini 1 1 0
-tail. 2 1 1
-take 3 1 2
-take-out 1 1 0
-takeaway 1 0 1
-taken 2 1 1
-takeout 2 1 1
-takes 2 0 2
-taking 4 2 2
-talented 1 1 0
-talk 1 0 1
-talk, 1 0 1
-talking 1 0 1
-tangy 1 0 1
-taps 1 0 1
-tart(?). 1 1 0
-tart. 1 1 0
-tartar 1 0 1
-tartare 1 1 0
-tartare. 1 1 0
-taste 9 1 8
-taste) 1 0 1
-taste. 3 1 2
-tasted 5 2 3
-tasted. 2 1 1
-tasteless. 1 0 1
-tastes 3 3 0
-tasting 12 0 12
-tasting. 3 0 3
-tastings 1 0 1
-tasty 5 5 0
-tasty, 1 1 0
-tasty. 1 1 0
-tax 1 0 1
-tax. 1 0 1
-tea 1 0 1
-team 2 2 0
-teammate, 1 1 0
-tedious, 1 0 1
-tell 5 2 3
-temper 1 0 1
-temperature 1 1 0
-temperature. 2 1 1
-tender 4 4 0
-tender, 1 1 0
-terms 1 1 0
-terrible 1 0 1
-terrible, 1 0 1
-terrible. 1 0 1
-terrific. 1 1 0
-test 1 0 1
-texting 1 0 1
-texture 1 0 1
-texture, 1 1 0
-textures 1 1 0
-than 17 5 12
-thank 2 1 1
-thankfully 1 0 1
-thanks 1 1 0
-that 103 40 63
-that's 1 1 0
-that, 2 1 1
-that. 2 1 1
-the 661 327 334
-theater. 1 1 0
-their 36 14 22
-them 8 2 6
-them. 6 2 4
-theme 1 0 1
-themed 1 1 0
-themselves 1 0 1
-then 14 5 9
-there 29 11 18
-there! 2 1 1
-there's 4 1 3
-there) 1 1 0
-there. 5 2 3
-therefore 1 0 1
-these 8 2 6
-these, 1 1 0
-they 70 19 51
-they're 1 0 1
-they've 1 1 0
-thickened. 1 1 0
-thing 8 4 4
-thing?). 1 0 1
-things 9 2 7
-things. 2 0 2
-think 4 3 1
-thinking 3 1 2
-third 2 0 2
-this 82 30 52
-this, 1 0 1
-thoroughly 1 1 0
-those 4 0 4
-though 4 2 2
-though. 1 0 1
-thought 6 2 4
-thought, 1 0 1
-thoughtful. 1 1 0
-three 15 4 11
-three, 1 0 1
-three-star 1 0 1
-threw 2 2 0
-thrill 1 1 0
-through 2 0 2
-thrown 1 0 1
-thru 1 0 1
-thumbs 1 1 0
-till 2 2 0
-time 16 8 8
-time, 2 1 1
-time. 5 4 1
-timely, 1 0 1
-times 4 2 2
-times! 1 1 0
-times. 1 0 1
-tiny 3 0 3
-tip 2 0 2
-tip. 1 0 1
-tipped 1 0 1
-tips 1 1 0
-title 1 0 1
-to 314 116 198
-toast), 1 0 1
-today 1 0 1
-today's 1 0 1
-today. 1 0 1
-told 20 2 18
-tolls. 1 0 1
-tomato 4 2 2
-tomatoes 2 2 0
-tongue 2 1 1
-tonight 1 1 0
-too 34 12 22
-too!! 1 1 0
-too!) 1 1 0
-too. 2 2 0
-too?) 1 1 0
-took 6 5 1
-tooooo 1 1 0
-tooth 1 0 1
-top 5 4 1
-top-level 1 0 1
-top-notch. 1 1 0
-top. 4 1 3
-tortilla 3 0 3
-tortillas 2 0 2
-touch. 1 0 1
-touches. 1 1 0
-tourist 1 0 1
-toward 1 1 0
-tower 1 1 0
-town 3 2 1
-town! 1 1 0
-town. 4 3 1
-towns 1 1 0
-track 1 0 1
-trained, 1 0 1
-transcend 1 0 1
-trap 1 0 1
-trendy 1 1 0
-tried 11 3 8
-tried, 1 0 1
-tried. 1 0 1
-tries 3 0 3
-trip 1 1 0
-trip, 1 0 1
-trips 1 1 0
-troll. 1 0 1
-trout. 1 1 0
-truck 1 0 1
-truffle 1 1 0
-truly 1 0 1
-trust 1 1 0
-try 20 10 10
-trying 3 1 2
-tucked 1 0 1
-tuna 3 3 0
-tuned! 1 1 0
-turf. 1 1 0
-turn 1 1 0
-turned 4 2 2
-twice 5 2 3
-twice, 1 1 0
-twists, 1 0 1
-two 16 5 11
-two. 1 1 0
-type 3 0 3
-types 1 1 0
-u 1 1 0
-uh.....no. 1 0 1
-unauthentic 1 0 1
-unaware 1 0 1
-unbearable 1 0 1
-unbelievable, 1 0 1
-undercooked 4 0 4
-understand 1 0 1
-undertones 1 1 0
-uneaten 1 0 1
-unexpected 1 1 0
-unfortunate 1 0 1
-unfriendly 1 0 1
-unhealthy. 1 0 1
-unimpressive 1 0 1
-uninspiring. 1 0 1
-unique 6 3 3
-unique. 1 1 0
-unlike 2 1 1
-unmemorable 1 0 1
-unpleasant 1 0 1
-until 3 1 2
-unusual 1 0 1
-up 28 13 15
-up, 1 0 1
-up. 2 0 2
-updated 1 0 1
-updating 1 1 0
-uplifted. 1 0 1
-upon 1 1 0
-upscale 2 0 2
-upscale/cool 1 0 1
-upwards 1 0 1
-us 22 9 13
-us, 1 1 0
-us. 2 1 1
-use 3 2 1
-used 4 0 4
-used. 1 1 0
-usually 1 0 1
-valet 1 0 1
-value. 1 0 1
-vanilla 1 0 1
-variety 3 3 0
-vastly 1 0 1
-veg. 1 0 1
-vegan 1 1 0
-vegetables 2 0 2
-vegetables, 1 1 0
-vegetarian. 1 0 1
-vegetarians. 1 0 1
-vehicle 1 0 1
-venison, 1 0 1
-very 53 22 31
-very, 1 0 1
-vibe 4 4 0
-victory 1 1 0
-vinegar. 1 1 0
-violently 1 0 1
-violently. 1 0 1
-visit 7 5 2
-visit! 1 1 0
-visit, 1 1 0
-visit. 1 0 1
-visited 2 0 2
-visiting 1 1 0
-visitor. 1 0 1
-visits 1 1 0
-vomited 1 0 1
-vomiting 1 0 1
-vomiting. 1 0 1
-w/menu 1 0 1
-wafer-thin 1 1 0
-wagyu 1 0 1
-wait 13 7 6
-waiter 5 3 2
-waiters 1 1 0
-waiting 3 0 3
-waitress 7 4 3
-waitstaff 1 1 0
-walk 3 1 2
-walked 3 1 2
-walking 2 2 0
-wall 1 0 1
-walnut 1 0 1
-want 15 0 15
-wanted 12 1 11
-wanted/needed. 1 1 0
-wanting 1 1 0
-wants 1 1 0
-warm 2 2 0
-warm. 1 0 1
-warn 2 0 2
-warned 1 0 1
-wary 2 1 1
-was 317 164 153
-was, 1 0 1
-was? 1 1 0
-washing 2 1 1
-wasn't 8 2 6
-wasn't, 1 0 1
-waste 2 0 2
-water 2 0 2
-water. 1 0 1
-way 8 4 4
-way...it 1 0 1
-we 67 32 35
-we'll 1 1 0
-we're 3 2 1
-wear 1 0 1
-website 1 0 1
-website, 2 0 2
-wedding 1 0 1
-week 1 0 1
-week, 1 1 0
-week. 2 1 1
-weekday 1 0 1
-weekends. 1 1 0
-weekly 1 1 0
-weekly! 1 1 0
-weeks 2 0 2
-weeks. 1 0 1
-weird 3 0 3
-weird, 1 0 1
-well 15 10 5
-well! 3 3 0
-well!! 1 1 0
-well) 1 1 0
-well, 2 1 1
-well-seasoned 1 1 0
-well. 2 1 1
-went 16 4 12
-went! 1 1 0
-were 109 69 40
-were, 1 0 1
-weren't 2 0 2
-what 22 6 16
-what? 2 1 1
-when 35 16 19
-whenever 1 1 0
-where 7 3 4
-whether 1 1 0
-which 37 21 16
-while 2 2 0
-while. 1 1 0
-while.. 1 1 0
-whim 2 1 1
-white 3 1 2
-whlie 1 0 1
-who 23 5 18
-whole 3 1 2
-whom 1 0 1
-why 4 1 3
-wife 12 8 4
-wife's 1 1 0
-wife. 1 0 1
-will 33 16 17
-windy 1 1 0
-wine 11 3 8
-wine. 3 3 0
-wineries. 1 1 0
-wines 2 1 1
-winter. 1 0 1
-wish 4 2 2
-with 124 68 56
-with. 1 0 1
-within 2 0 2
-without 8 4 4
-woman 2 1 1
-won't 3 0 3
-wonderful 5 3 2
-wonderful). 1 1 0
-wonderful. 1 1 0
-word 1 0 1
-words 1 0 1
-words. 1 0 1
-words: 1 0 1
-wore 1 0 1
-work 5 2 3
-work! 1 1 0
-work). 1 0 1
-work, 1 1 0
-worked 2 2 0
-worked! 1 1 0
-worker 1 0 1
-works 1 1 0
-works. 1 0 1
-world 2 0 2
-world!!! 1 1 0
-worried 2 2 0
-worried. 1 0 1
-worse 3 0 3
-worst 3 0 3
-worst, 1 0 1
-worth 13 5 8
-would 38 16 22
-would've 1 1 0
-wouldn't 1 0 1
-wow 3 2 1
-write 3 1 2
-writing 1 1 0
-wrong 2 1 1
-wrong. 1 0 1
-yak 1 0 1
-yard, 1 1 0
-year 2 0 2
-year, 1 1 0
-year. 1 1 0
-years 4 3 1
-years! 1 1 0
-yelled 1 0 1
-yelling 1 0 1
-yelp 1 0 1
-yes, 1 0 1
-yesterday 1 1 0
-yet 2 0 2
-yoga 1 0 1
-you 75 29 46
-you! 1 0 1
-you'd 1 1 0
-you're 5 2 3
-you. 2 1 1
-your 26 6 20
-yourself 1 1 0
-yourself. 1 0 1
-yourselves 1 0 1
-yum. 1 1 0
-yummy 1 1 0
-yummy. 1 1 0
-yummy: 1 1 0
-zeppelin. 1 0 1
-zero 1 0 1
-zing 1 1 0
-#
+ "bun 1 0
+ $20 0 2
+ 1 0 2
+ 2 0 3
+ 3 0 3
+ 4 0 3
+ able 4 0
+ absolutely 5 0
+ added 0 2
+ after 2 0
+ again 3 2
+ agricola 3 2
+ ahi 5 0
+ all 8 8
+ allergy 6 11
+ almost 0 15
+ also 8 11
+ always 13 10
+ am 17 8
+ amazing 21 8
+ ananas 23 4
+ and 18 6
+ another 20 9
+ any 20 11
+ anyone 23 9
+ area 14 9
+ artisan 14 9
+ asked 14 11
+ ate 12 13
+ atmosphere 15 8
+ awesome 17 8
+ awesome, 19 6
+ back 26 9
+ bad 23 18
+ bank 21 20
+ beautiful 25 19
+ being 25 23
+ best 30 29
+ better 26 29
+ big 26 29
+ bigger 16 32
+ bill 16 33
+ bit 16 26
+ blue 19 24
+ blueberry 21 21
+ both 19 21
+ brunch 24 17
+ brussels 16 19
+ burger 20 13
+ burrito 18 17
+ burritos 16 19
+ cake 16 18
+ called 16 19
+ came 21 17
+ can 18 20
+ can't 19 22
+ cannot 19 22
+ carrot 17 22
+ cashier 17 22
+ charge 17 22
+ check 13 24
+ cheeseboard 16 20
+ chef 16 24
+ chef's 16 25
+ chefs 16 22
+ chicken 14 22
+ chilean 16 19
+ chipotle 13 21
+ choose 16 19
+ closed 14 21
+ coconut 11 23
+ cold 13 23
+ come 21 24
+ comes 23 26
+ coming 22 28
+ complete 22 25
+ cooked 27 22
+ cost 27 23
+ could 28 28
+ crab 32 28
+ curbside 34 26
+ date 33 26
+ day, 35 24
+ decent 35 24
+ decor 33 26
+ definitely 35 26
+ delicious 32 30
+ dessert 32 29
+ desserts 33 29
+ did 37 27
+ didn't 35 38
+ different 39 36
+ dining 41 35
+ dinner 43 42
+ dish 46 41
+ dishes 42 43
+ do 42 41
+ does 36 43
+ doesn't 34 45
+ doing 34 45
+ don't 32 48
+ doomed 32 49
+ door, 32 49
+ drink 30 51
+ duck 32 49
+ each 27 52
+ eat 31 58
+ eating 31 60
+ eggs 28 62
+ elements 24 67
+ end 26 72
+ enjoyed 28 61
+ entrees 24 64
+ equally 24 64
+ even 27 62
+ excellent 28 62
+ experience 28 58
+ explain 25 60
+ explained 25 60
+ extremely 28 61
+ fantastic 32 60
+ far 32 60
+ farm 34 58
+ feel 32 61
+ felt 32 60
+ few 36 63
+ filet 38 61
+ first 40 61
+ fish 41 64
+ fish, 43 61
+ fishes 45 51
+ food 58 73
+ food, 60 72
+ found 60 73
+ four 60 71
+ fresh 65 71
+ friday 65 66
+ fried 65 66
+ front 65 65
+ fun 63 67
+ generous 62 67
+ get 59 71
+ give 59 70
+ given 61 68
+ gnocchi, 63 66
+ go 69 67
+ go, 66 69
+ going 69 73
+ golden 67 75
+ good 74 84
+ good, 74 84
+ got 78 86
+ great 102 95
+ great, 102 91
+ grilled 101 91
+ guess 99 93
+ had 110 102
+ hair 108 104
+ hand 108 103
+ happened 105 105
+ happy 106 105
+ hard 106 105
+ has 109 90
+ have 104 106
+ having 102 108
+ hear 102 107
+ heard 102 106
+ her 102 107
+ highly 98 107
+ him 98 108
+ his 96 111
+ home 98 109
+ huge 98 110
+ i'm 96 113
+ if 98 109
+ impeccable 96 109
+ ingredients 98 107
+ issue 96 111
+ it's 94 113
+ jameson 88 116
+ jumbo 90 112
+ just 96 119
+ kale 95 119
+ kind 95 117
+ kitchen 93 122
+ know 93 123
+ la 86 127
+ last 86 118
+ late 84 120
+ least 80 125
+ leave 80 122
+ less 56 124
+ like 56 118
+ liked 58 116
+ liquor 58 116
+ literally 58 116
+ little 54 120
+ lobster 56 109
+ long 56 110
+ looked 56 111
+ lot 56 111
+ love 53 113
+ loved 53 113
+ lunch 52 113
+ made 55 108
+ main 43 110
+ make 43 100
+ man 43 101
+ manhattan 43 101
+ many 43 103
+ me 45 104
+ meal 46 108
+ menu 58 110
+ mistral 58 109
+ money 56 113
+ more 56 112
+ most 62 112
+ much 60 114
+ my 72 135
+ need 70 139
+ new 72 142
+ nice 80 140
+ nicely 82 137
+ night 80 143
+ nj 76 143
+ no 78 141
+ none 78 141
+ not 87 162
+ old 87 158
+ one 92 162
+ only 95 160
+ open 95 159
+ optimist 95 158
+ order 95 155
+ ordered 102 157
+ organic 102 156
+ other, 102 152
+ others 100 154
+ our 104 160
+ out 104 161
+ outside 97 163
+ outside, 97 160
+ outstanding, 97 160
+ over 97 158
+ overall 99 155
+ overcooked 99 154
+ overpaid 99 153
+ overpriced 97 154
+ oyster 97 154
+ pandemic 99 152
+ par 96 153
+ park 96 152
+ parking 96 148
+ part 96 146
+ pass 96 145
+ past 96 143
+ pasta 94 145
+ pathetic 94 141
+ pay 90 144
+ paying 90 141
+ peacock 90 137
+ people 78 142
+ per 78 141
+ perfect 80 137
+ perfection 83 135
+ perfectly 77 136
+ phenomenal 80 133
+ phone 80 132
+ photos 80 112
+ pick 65 113
+ picked 65 110
+ piece 65 104
+ pile 63 105
+ pizza 57 105
+ place 69 122
+ place, 69 117
+ plant 69 117
+ plate 67 119
+ plates 67 113
+ pleasant 68 114
+ plus 70 89
+ pluto 61 90
+ poached 61 90
+ point 66 85
+ point, 61 87
+ politely, 61 86
+ pomegranite 58 87
+ pope 58 87
+ porcelain 58 87
+ pork 58 89
+ portions 59 87
+ possible 52 88
+ potato 53 87
+ preceded 53 87
+ preferred 53 86
+ premium 47 87
+ preparations 48 81
+ prepare 48 79
+ presentation 48 79
+ presented 48 81
+ pretentious 46 83
+ pretentiousness 46 83
+ pretty 47 85
+ previous 47 85
+ previously 47 85
+ price 47 89
+ price, 46 89
+ prices 44 90
+ prices, 44 90
+ pricey, 45 89
+ pricier 46 87
+ prime 47 86
+ princeton 64 89
+ princeton, 66 88
+ private 67 86
+ privilege 67 86
+ probably 69 83
+ production 69 83
+ professional 69 83
+ progression 69 79
+ prohibited 69 79
+ projectile 67 80
+ promising 64 81
+ proper 64 81
+ props 61 82
+ protein 61 82
+ protocols 62 81
+ providing 62 81
+ pulp 62 81
+ pumpkin 64 80
+ put 64 81
+ qdoba 62 83
+ quality 68 70
+ quesadilla 54 71
+ quick 55 70
+ quite 54 71
+ radish 54 70
+ rave 54 70
+ ravioli 55 69
+ raviore 52 70
+ raw 51 70
+ raw, 51 70
+ read 52 70
+ real 47 71
+ really 55 77
+ reason 55 76
+ reasonable 55 76
+ reasonably 56 75
+ received 56 76
+ recent 56 76
+ recommend 57 73
+ recommended 56 74
+ refused 56 73
+ regular 57 73
+ regular, 57 73
+ reheated 58 72
+ relegated 58 72
+ remain 57 73
+ replace 58 72
+ replacement 57 73
+ requested 57 73
+ reservation 60 74
+ reserve 61 71
+ reserved 61 71
+ residential 61 71
+ respectable 62 69
+ response 59 71
+ rest 60 73
+ restaurant 74 86
+ restaurant, 75 82
+ restaurants 74 84
+ restaurants, 74 84
+ retrieving 74 84
+ return 75 85
+ review 76 87
+ reviewing 75 88
+ reviews 76 85
+ rice 60 85
+ ricotta 61 84
+ riddled 59 85
+ ridiculous 58 86
+ right 60 86
+ road 59 86
+ roasted 60 85
+ rock, 60 85
+ roof 61 84
+ rooftop 62 83
+ rose 62 83
+ royal 62 83
+ rude 62 83
+ run 62 83
+ runners 62 83
+ running 61 84
+ rush, 62 83
+ rushed 63 82
+ rutabaga 63 82
+ s'mores 64 80
+ s'mores, 65 78
+ sad 65 75
+ safety 60 75
+ said, 60 75
+ salad 60 75
+ salmon 63 74
+ salmon, 63 74
+ salsa 63 74
+ same 67 74
+ sancerre 67 74
+ santa 67 74
+ sashimi 66 76
+ saturday 67 76
+ sauce 68 77
+ savor 68 77
+ savory 68 77
+ say 71 70
+ scallops 65 71
+ scallops, 65 71
+ school 65 71
+ scoop 65 71
+ scott 65 70
+ scrumptious 66 69
+ sea 67 68
+ sea/storm 66 69
+ seafood 71 68
+ seating 72 67
+ second 75 68
+ seduced 74 69
+ see 74 72
+ seems 73 73
+ selection 74 72
+ sells 75 71
+ send 74 73
+ sept 74 73
+ serious 74 74
+ served 74 72
+ server 71 74
+ servers 70 76
+ service 73 79
+ service, 75 78
+ set 74 79
+ setting 74 78
+ several 78 76
+ severe 77 77
+ severely 63 78
+ shame, 63 65
+ share 64 65
+ shared 65 64
+ sharing 66 62
+ shell 66 62
+ shocked 67 61
+ shocking 65 62
+ short 73 61
+ should 71 64
+ shoulder 71 63
+ shouting 71 63
+ show 71 64
+ shrimp 72 63
+ shrugged 71 64
+ shut 70 65
+ sickness 70 65
+ side 73 65
+ simply 74 64
+ single 73 64
+ sitting 72 65
+ six 71 67
+ size 71 67
+ skeptical 70 68
+ skip 69 69
+ slightly 71 69
+ sliver 71 69
+ slow 72 69
+ small 74 72
+ smelled 74 72
+ smooth 75 71
+ smooth, 74 72
+ so 85 75
+ so-so 83 76
+ solid 83 76
+ some 86 84
+ someone 88 84
+ something 89 86
+ something, 90 85
+ sometimes 89 86
+ somewhat 86 87
+ somewhat-decent 85 88
+ soo 86 87
+ soon 87 87
+ sophisticated 84 87
+ sounds 83 88
+ soup 84 87
+ speaking 84 86
+ special 85 90
+ specials, 85 90
+ spectacular 87 88
+ spend 86 89
+ spice 86 89
+ spiced 87 88
+ spicy 85 88
+ splendid 87 87
+ spoke 85 88
+ spot 88 88
+ sprouts) 88 88
+ staff 91 90
+ staff's 90 91
+ staff) 90 91
+ staff, 89 92
+ stairs 89 92
+ star 90 91
+ start 85 92
+ start, 85 92
+ started 82 93
+ starters 83 91
+ steak 85 90
+ steak, 85 90
+ steep 86 87
+ step 87 86
+ stepping 87 86
+ still 86 88
+ stone 86 87
+ stop 86 88
+ stops 86 87
+ street 86 90
+ stretch 86 89
+ stumble 87 87
+ stun-gun 84 88
+ stunning 84 84
+ stylish 83 84
+ substitutions 83 84
+ such 83 85
+ sudden 83 85
+ suggest 80 85
+ summer 81 84
+ sunday 82 83
+ super 87 82
+ supposed 85 83
+ sure 85 83
+ surprised 84 85
+ sweet 85 84
+ sweeter 85 84
+ switch 86 83
+ tab 79 83
+ tab, 79 81
+ table 85 83
+ table" 86 82
+ table, 86 82
+ tables 86 83
+ taco 85 84
+ tacos 85 85
+ take 86 84
+ take-out 87 83
+ takes 84 84
+ taking 85 84
+ tangy 84 85
+ taste 84 90
+ taste) 84 90
+ tasted 84 90
+ tasting 84 93
+ tasty 86 92
+ tax 86 92
+ taylor 87 91
+ tea 85 92
+ tedious, 85 92
+ tell 85 94
+ temperature 85 95
+ tender, 86 91
+ terrible 84 93
+ terrific 85 92
+ that 85 93
+ the 86 92
+ theater 87 89
+ their 82 101
+ them 84 104
+ then 83 105
+ there 86 100
+ these 83 104
+ they 87 115
+ things 85 116
+ think 88 115
+ thinking 86 116
+ third 85 118
+ this, 85 118
+ those 85 119
+ thought 86 119
+ thought, 85 120
+ three 86 123
+ three, 86 123
+ threw 86 123
+ thrill 87 122
+ time 88 125
+ tiny 88 125
+ tip 88 121
+ tipped 87 122
+ toast), 86 123
+ told 84 132
+ tomatoes 85 131
+ too 84 137
+ took 83 138
+ tooth 82 139
+ top 83 143
+ top-level 83 143
+ tortilla 83 145
+ tortillas 80 146
+ tourist 80 146
+ town 86 145
+ tried 84 150
+ tried, 84 150
+ tries 84 150
+ truffle 85 149
+ truly 84 150
+ try 88 154
+ trying 89 153
+ tuesday 88 154
+ tuna 90 153
+ two 91 159
+ tyler 90 159
+ u 90 160
+ unaware 89 161
+ unbelievable, 88 162
+ undercooked 87 164
+ understand 87 163
+ uneaten 87 163
+ uninspiring 87 162
+ unique 88 161
+ unmemorable 88 158
+ unpleasant 88 158
+ until 88 158
+ unusual 88 158
+ up 88 158
+ updating 88 158
+ upscale 88 159
+ us 93 163
+ us, 94 162
+ use 94 162
+ used 94 162
+ usually 93 163
+ valet 88 164
+ variety 91 163
+ vegetables 90 164
+ vegetarian 90 163
+ vegetarians 89 164
+ very 97 176
+ vibe 99 176
+ victory 99 176
+ virginia 100 175
+ visit 104 172
+ visiting 99 172
+ visitor 98 173
+ vomited 98 173
+ wafer-thin 99 172
+ wait 99 175
+ waiter 100 176
+ waitstaff 101 174
+ walking 101 174
+ wall" 100 175
+ walnut 100 175
+ want 100 178
+ wanted 99 184
+ wanted/needed 100 183
+ warm 100 183
+ warn 100 180
+ was 101 179
+ wasn't 101 178
+ wasn't, 101 175
+ waste 99 176
+ water 99 177
+ way 98 181
+ we 103 190
+ wednesday 103 190
+ week 104 188
+ weekends 105 187
+ weeks 104 188
+ weird 103 189
+ weird, 103 188
+ well 109 191
+ well, 109 191
+ well-seasoned 110 190
+ went 111 194
+ were 111 197
+ weren't 111 186
+ what 104 187
+ which 104 187
+ while 104 187
+ whim 105 187
+ white 102 188
+ whole 103 186
+ why 103 187
+ wine 104 185
+ wines 101 185
+ winter 101 174
+ wish 102 175
+ witherspoon, 99 176
+ without 99 176
+ woman 100 175
+ won't 100 175
+ wonderful 101 175
+ wonderful) 102 173
+ word 101 174
+ words 101 174
+ work 102 173
+ work, 101 173
+ worked 103 170
+ worker 103 170
+ works 102 171
+ world 102 173
+ worried 101 174
+ worse 101 172
+ worst 101 172
+ worth 101 172
+ would 112 184
+ wouldn't 112 184
+ write 113 177
+ writing 113 177
+ wrong 113 172
+ year 114 173
+ years 116 172
+ yelled 113 173
+ yelp 114 169
+ yesterday 115 168
+ you 119 173
+ your 122 179
+ yourself 122 179
+ yourselves 116 180
+" 119 178
+" that 120 178
+"bun 122 173
+"can you 122 173
+"class 122 173
+"course", and 121 174
+"curated" and 121 174
+"elements experience" 116 175
+"extremely spicy" 116 172
+"farm 117 172
+"fatty liver" 117 172
+"field greens" 115 173
+"fresh grill/fresh 117 167
+"funk" 117 167
+"great restaurant 116 168
+"hole 116 168
+"ice wine" 117 168
+"kale and 119 167
+"love it" 119 167
+"mexican" food 119 166
+"oh, it's 119 166
+"rubbery 119 166
+"serendipitously' found 119 166
+"spice" (whatever 118 167
+"what do 118 167
+$0 118 167
+$100 117 168
+$12 per 117 168
+$135+per person 117 168
+$18 116 169
+$20 116 170
+$20 off 111 173
+$300+, 111 169
+$42 110 171
+$461 109 173
+$50 108 175
+$500 108 176
+$59 per 108 177
+$6 107 177
+$69/ $89 107 178
+$700 107 179
+$86 course 107 180
+$89 98 182
+$9 98 172
+& 100 175
+& friendly 104 175
+& hops 103 178
+& margarita 101 178
+& sandwhich 100 180
+& sea 102 179
+& tender 104 178
+'two words: 103 180
+( if 102 182
+($125) 102 181
+($500+) we 104 179
+(a 103 183
+(a la 102 187
+(a must-try), 103 187
+(a parfait) 103 188
+(a weird 103 189
+(almost cold 103 187
+(although one 103 183
+(and 102 185
+(and price) 103 185
+(as 106 183
+(as bacon), 108 183
+(as lettuce) 110 182
+(asked 110 183
+(big 113 182
+(big lumps) 116 180
+(big thanks 118 176
+(but not 115 176
+(but they 115 168
+(carlos 117 167
+(cavatelli) - 116 169
+(chipotle and 116 170
+(considering it's 115 172
+(cookie thing 115 173
+(devoid 115 174
+(entree) 115 175
+(even 113 175
+(excellently cooked 118 172
+(fried avocado) 117 174
+(hopefully something 120 174
+(i 118 176
+(i imagined 121 172
+(if you 123 172
+(in front 123 171
+(in my 126 170
+(incidentally, 126 171
+(it 129 167
+(jamie) and 130 167
+(like daniel 129 169
+(literally 132 168
+(main course 132 169
+(meat, chickpea 131 171
+(more emphasis 131 172
+(nice and 133 172
+(no pun 136 171
+(not 141 173
+(note: they 147 171
+(pork roll) 152 171
+(pun intended) 157 170
+(random ones 160 170
+(really did 160 170
+(salad) 160 171
+(shellfish and 160 172
+(simple 159 174
+(spelling 159 174
+(sweet and 162 174
+(tell 162 175
+(that wasn't 165 175
+(that's right, 165 176
+(the 170 175
+(the birthday 174 175
+(the full 173 177
+(the honeycomb 176 177
+(this 181 176
+(too loud 181 177
+(vs paper/plastic) 184 177
+(whatever 184 177
+(which 183 180
+(which elements 183 182
+(which he 183 183
+) 183 186
+, 189 189
+, masks, 184 189
+, sea 190 176
+, slightly 196 175
+- 214 222
+- always 233 220
+- and 251 267
+- bitter 251 313
+- but 250 351
+- complicated 250 353
+- cons 248 357
+- except 248 360
+- good 247 365
+- if 246 370
+- margharita 261 370
+- needed 261 367
+- nice 258 373
+- not 275 371
+- oh 280 370
+- perfectly 280 374
+- pretty 282 374
+- probably 280 379
+- sun 283 379
+- tasty 288 378
+- thankfully 288 381
+- they 293 384
+- though 298 383
+- timely, 298 386
+- too 298 389
+- tucked 296 393
+- undercooked 296 396
+- unique 296 401
+- we 294 407
+-- 303 415
+-- 300 303 422
+-- except 303 427
+-- i'm 312 427
+-- wines 310 433
+1 321 437
+1 arm 321 441
+1 wine 321 445
+1* edit 321 449
+1/2 star 321 452
+10 335 455
+11 335 458
+11:30, you 349 457
+12, 349 460
+12:10 360 459
+15 countries, 360 462
+2 372 472
+2 bites, 372 480
+2 dishes 372 488
+2 ounces 372 497
+2 over 372 505
+2-3 being 372 508
+20 min 372 511
+20%, even 372 514
+2000 miles 372 517
+2016 382 517
+2020, agricola 394 515
+21st birthday 405 513
+24 405 517
+24 hour 405 521
+24 hours 405 525
+24th birthday 410 525
+26 degree 410 528
+2x, but 405 534
+3 415 540
+3 blocks 413 549
+3 course 413 556
+3 legged 411 565
+3 months 409 574
+3 weeks 409 577
+3-4 hours 409 580
+300 409 587
+300 poorer 407 596
+350 dinner 407 601
+3pm 407 606
+3rd (main 405 615
+3rd order 415 613
+4 425 621
+4 course 425 629
+4 hours 425 637
+4 people 434 635
+4 people, 432 645
+4 years 438 645
+400$ including 435 655
+45 each 433 665
+45th wedding 433 670
+4:15 439 670
+5 436 677
+5 people 434 684
+5 star 441 691
+50% mark 441 696
+5p 448 696
+5pm (note: 457 694
+6 very 457 699
+69 each 457 704
+7 466 702
+7pm 474 700
+8 oz 482 698
+8/20: i've 477 704
+80th birthday 480 704
+9 480 708
+9-course tasting 476 714
+:) 486 712
+:) the 493 712
+:) yes, 500 712
+= not 500 716
+a 515 728
+a bit 533 738
+a cashier 530 750
+a cool 545 750
+a creamy 563 748
+a customer 560 760
+a good 560 771
+a great 578 769
+a little 594 767
+a local 607 767
+a must 620 767
+a must-stop 622 767
+a nice 630 765
+a vastly 624 778
+a white 618 785
+a$$hole and 613 792
+a$$hole- 609 799
+a-mazing 617 797
+able 634 805
+about 634 812
+above 634 819
+above--they were 634 826
+absolute 648 826
+absolute best 666 824
+absolute gem 680 824
+absolutely 706 822
+absolutely delicious 728 822
+absolutely incredible 750 822
+absolutely love 777 820
+absolutely loved 795 820
+absolutely necessary 809 820
+absolutely on 827 818
+absolutely perfect 841 818
+absolutely right 859 816
+absolutely unimpressive 859 822
+abysmal 859 828
+ac 869 826
+access 869 830
+accommodate 869 834
+accommodate our 863 842
+accommodate us 857 850
+accommodating 865 850
+accommodating, and 873 850
+accompanying wine 873 811
+accounts excluding 854 819
+acknowledged 835 827
+across 851 788
+across agricola 848 788
+acts like 848 748
+actual 848 718
+actual cooking 848 722
+actual salad 848 726
+actually 848 731
+actually compare 848 735
+actually improved 864 730
+actually smelled 845 739
+add 845 744
+add on 861 738
+add soy 861 742
+add up 844 751
+added 855 766
+added gratuity 855 775
+added much 850 789
+added some 850 798
+addition 864 798
+addition, 859 814
+additional spices 878 810
+additions my 873 826
+additions, unlike 873 838
+address 868 853
+adhered 885 849
+adjacent 885 856
+aesthetics: very 900 852
+after 923 871
+after 7pm 946 865
+after course 946 882
+after goi 968 874
+after he 957 897
+after hearing 957 911
+after leaving 957 926
+after looking 946 947
+after lunch 968 941
+after reading 980 941
+after that, 980 957
+after three 980 973
+after tip 980 989
+after years 980 995
+afternoon 1004 991
+afternoon and 1014 991
+afternoon lunch/early 1037 987
+afterwards and 1037 993
+again 1059 1014
+again  1095 1010
+again no 1084 1031
+again today 1084 1048
+again without 1120 1037
+again, 1108 1059
+again, ate 1108 1070
+again, nothing 1144 1059
+again, too 1144 1070
+aged steak 1179 1060
+aging process 1208 1055
+agnoloti 1237 1050
+agnolotti which 1266 1045
+ago 1266 1064
+ago we 1254 1088
+ago, got 1242 1112
+agony 1260 1112
+agreed, yes, 1260 1130
+agricola 1310 1124
+agricola (in 1359 1118
+agricola excels 1398 1118
+agricola first 1447 1112
+agricola threw 1486 1106
+agricola twice 1522 1097
+agricola, 1548 1097
+agricola--a harvest 1584 1088
+ahead 1584 1097
+ahead, spend 1584 1102
+ahi 1622 1093
+ahi tuna 1662 1088
+al 1662 1099
+al fresco 1702 1090
+al pastor 1702 1099
+alas 1742 1107
+alcohol and 1742 1115
+alive, 1742 1123
+all 1806 1175
+all accounts 1796 1227
+all around 1870 1269
+all aspects 1931 1259
+all byob 1984 1249
+all came 1975 1301
+all camouflage 1975 1343
+all costs 1966 1395
+all day 1966 1437
+all delicious 2019 1427
+all different 2072 1420
+all familiar 2063 1470
+all going 2116 1463
+all his 2116 1504
+all just 2107 1552
+all night 2160 1593
+all others 2160 1634
+all our 2204 1634
+all respect 2248 1634
+all sorts 2248 1665
+all super 2302 1658
+all their 2293 1671
+all things 2285 1684
+all three 2277 1697
+all top 2329 1691
+all types 2371 1691
+all way 2421 1685
+all were 2473 1679
+all, 2490 1692
+all-around dining 2499 1692
+allergies 2489 1711
+allergies into 2489 1724
+allergies, which 2471 1743
+allergy 2471 1765
+allergy and 2453 1800
+allergy is 2453 1823
+allergy not 2453 1846
+alley which 2454 1846
+alliana (spelling 2436 1881
+almost 2456 1911
+almost always 2476 1898
+almost angry 2458 1940
+almost entirely 2442 1982
+almost have 2446 1982
+almost mistook 2430 2024
+almost out 2422 2066
+alone 2414 2106
+alone and 2434 2093
+alongside our 2454 2086
+alot 2454 2116
+already 2454 2147
+already dead, 2446 2185
+already gone 2449 2185
+already warned 2449 2204
+alright, first, 2469 2195
+also 2507 2218
+also always 2544 2209
+also amazing) 2563 2209
+also attentive 2582 2209
+also byob 2601 2209
+also can 2610 2209
+also delicious 2618 2209
+also delicious, 2626 2209
+also demonstrated 2599 2240
+also downgrading 2576 2271
+also excellent, 2592 2271
+also got 2608 2271
+also had 2624 2271
+also heard 2640 2271
+also included 2674 2262
+also loved 2708 2253
+also means 2698 2284
+also not 2698 2307
+also noticed 2698 2329
+also probably 2732 2321
+also said 2766 2313
+also sent 2752 2338
+also too 2738 2363
+also very 2756 2355
+also, they 2756 2372
+although 2778 2364
+although each 2762 2389
+although it's 2784 2381
+although they 2790 2381
+although you'd 2812 2374
+always 2856 2395
+always absolutely 2900 2387
+always call 2944 2379
+always close 2988 2370
+always consistent 3032 2361
+always do 3060 2361
+always end 3104 2352
+always friendly 3148 2342
+always get 3177 2342
+always has 3222 2333
+always have 3267 2324
+always impressed 3267 2338
+always just 3251 2367
+always meets 3296 2353
+always my 3340 2339
+always packed 3384 2325
+always phenomenal 3406 2325
+always present 3447 2309
+always stay 3428 2337
+always works 3469 2321
+am 3516 2336
+am also 3516 2352
+am not 3527 2352
+am wary 3527 2365
+amazing 3567 2365
+amazing and 3600 2365
+amazing burrata 3656 2342
+amazing but 3689 2342
+amazing farm 3745 2319
+amazing meal 3779 2319
+amazing oysters 3835 2296
+amazing place 3891 2274
+amazing quality 3946 2253
+amazing server 4001 2232
+amazing) 4034 2232
+amazing, 4066 2232
+ambiance 4128 2211
+ambiance, 4192 2190
+ambiance, not 4256 2169
+ambience 4322 2158
+ambience and 4364 2158
+ambitious entrees 4340 2182
+american restaurant 4317 2206
+amount 4389 2222
+amount 5 4353 2248
+amount we 4422 2227
+amounts 4386 2256
+amuse 4386 2266
+amuse bouche 4386 2276
+amuses 4350 2307
+amuses, course 4350 2316
+amusing 4350 2325
+amy, 4314 2353
+an 4314 2360
+an accompanying 4279 2389
+an awesome 4319 2389
+an poorly 4290 2418
+ana foremost, 4311 2418
+ananas 4353 2394
+ananas and 4394 2370
+ananas cocktail, 4435 2346
+and 4815 2690
+and "fatty 4815 3008
+and "love 4765 3350
+and "serendipitously' 4716 3692
+and absolutely 5076 3692
+and accommodating 5437 3692
+and acts 5398 4034
+and agreed, 5362 4376
+and ahi 5736 4376
+and all 6110 4720
+and alliana 6110 5046
+and also 6521 5032
+and always 6894 5032
+and am 6854 5375
+and ambiance 7265 5359
+and another 7636 5359
+and any 8044 5341
+and apple 8004 5684
+and asked 8004 6010
+and ate 8004 6335
+and atmosphere 8004 6659
+and attentive 8409 6948
+and away 8335 7289
+and balsamic 8739 7237
+and bar 9069 7237
+and based 9069 7526
+and beet 9412 7526
+and best 9762 7526
+and bird 9762 7815
+and blueberry 10165 7763
+and both 10165 8052
+and bullshitting 10165 8341
+and businesses 10112 8681
+and butter 10059 9021
+and can't 10059 9311
+and caramel 10409 9311
+and celebrations 10808 9263
+and certainly 10808 9308
+and charming; 11204 9260
+and charred 11547 9260
+and cheese 11547 9238
+and chewy 11494 9264
+and chicken 11838 9264
+and chilean 12235 9226
+and chili 12577 9226
+and chocolate 12973 9213
+and chose 13369 9200
+and cocktail 13681 9187
+and cocktails 13658 9187
+and cooked 13637 9187
+and could 13615 9187
+and cranky 13591 9187
+and creamed 13619 9174
+and creamy, 13619 9174
+and creative 13600 9200
+and crema 13600 9207
+and crunchy 13600 9214
+and dayboat 13627 9195
+and decent) 13627 9187
+and decided 13627 9177
+and decor 13627 9167
+and definitely 13627 9157
+and delicious 13635 9157
+and delivery 13635 9147
+and demands 13615 9171
+and deserved 13615 9153
+and dessert, 13622 9153
+and desserts 13622 9135
+and didn't 13622 9118
+and dinner 13629 9118
+and disappointing 13629 9101
+and discussed 13629 9084
+and dog 13656 9044
+and don't 13636 9069
+and down 13643 9069
+and drinks 13670 9032
+and dry 13670 9019
+and each 13697 8981
+and efficient 13704 9006
+and eggs 13731 8977
+and ended 13711 9002
+and enjoyed 13700 9002
+and enough 13727 8970
+and ensuring 13717 8970
+and entrée 13707 8970
+and even 13670 8995
+and every 13659 8995
+and everyone 13624 9020
+and everything 13616 9020
+and exceeded 13608 9020
+and execute 13608 9014
+and explained 13608 9008
+and extremely 13600 9008
+and falling 13593 9008
+and fantastic 13586 9008
+and farm 13579 9008
+and filled 13572 9008
+and find 13538 9034
+and finished 13565 9003
+and fish) 13565 8998
+and flaky 13592 8968
+and flavorful 13586 8968
+and flavorless 13552 8994
+and flavors 13552 8995
+and food 13582 8970
+and forks 13594 8970
+and found 13594 8972
+and frankly 13572 8998
+and fresh 13603 8973
+and fried 13612 8973
+and friendly 13590 8999
+and fries 13599 8999
+and garlic 13586 8999
+and gave 13617 8996
+and geese--many 13573 9022
+and ginger 13560 9022
+and give 13516 9048
+and go 13472 9075
+and good 13460 9075
+and grain" 13448 9075
+and great 13437 9075
+and grocery 13392 9102
+and had 13381 9131
+and haven't 13336 9160
+and having 13336 9160
+and he 13371 9162
+and helpful 13362 9162
+and hence 13318 9193
+and her 13310 9193
+and him 13269 9224
+and his 13228 9255
+and homemade 13264 9227
+and honey 13258 9227
+and i 13211 9258
+and i'll 13211 9258
+and if 13246 9227
+and in-house 13253 9227
+and inconsiderate 13253 9234
+and industrial, 13233 9234
+and inedible 13177 9265
+and ingredients 13156 9265
+and interesting 13100 9295
+and intimate 13079 9295
+and into 13023 9325
+and inviting 13002 9325
+and it's 12946 9355
+and jalapeno-lime 12926 9355
+and juicy 12906 9355
+and just 12885 9355
+and keylime 12862 9355
+and knowledgeable 12800 9385
+and lacking 12736 9414
+and larger 12704 9414
+and last 12669 9414
+and leave 12603 9443
+and left 12603 9449
+and light, 12634 9425
+and local-organic 12562 9455
+and looked 12562 9459
+and looking 12593 9433
+and looks 12555 9433
+and love 12586 9404
+and loved 12586 9403
+and lumps 12586 9401
+and made 12618 9399
+and make 12649 9395
+and makes 12649 9391
+and marrying 12649 9390
+and mars 12649 9386
+and maybe 12649 9382
+and meat 12580 9407
+and melting 12611 9378
+and micro 12591 9378
+and moist 12578 9378
+and money 12537 9403
+and mushroom 12524 9403
+and mushrooms 12142 9403
+and must 12142 9084
+and my 12171 8767
+and narrow, 12171 8450
+and ne 12200 8108
+and nice 11821 8133
+and nod 11441 8133
+and nondescriptive, 11441 7816
+and not 11472 7500
+and now 11062 7528
+and off-putting 11062 7212
+and offered 10652 7240
+and one 10652 6925
+and our 10274 6925
+and overpriced 9863 6954
+and pasta 9896 6611
+and photos 9518 6611
+and pig 9107 6640
+and pistachio/parmesan 8732 6640
+and pleasant 8732 6326
+and poor 8732 6012
+and pork 8732 5699
+and potatoes 8765 5358
+and preferably 8360 5387
+and pretentious, 8360 5074
+and pretty 8393 4733
+and priced 8022 4733
+and professionalism 7618 4761
+and pumpkin 7651 4420
+and quick 7280 4420
+and quite 6910 4448
+and raisins 6943 4107
+and raw 6540 4135
+and read 6540 3822
+and real 6573 3481
+and really 6606 3141
+and really, 6639 2801
+and recommendations, 6671 2461
+and recommended 6300 2461
+and regal 5933 2461
+and remoulade 5965 2368
+and rustic 5601 2396
+and salmon 5237 2396
+and sand, 5237 2398
+and satisfying 5269 2372
+and saturday 4872 2400
+and savor 4505 2400
+and savory 4139 2400
+and says 3743 2428
+and sea 3376 2428
+and seafood 3094 2428
+and seasoned 3094 2428
+and selling 3065 2456
+and service 3066 2485
+and serving 3067 2485
+and settled 3039 2514
+and shared 3012 2542
+and she 3042 2516
+and short 3072 2490
+and sidewalk 3102 2464
+and sincere 3105 2464
+and sloths 3105 2464
+and so 3135 2466
+and social 3165 2441
+and some 3195 2416
+and sounded 3198 2416
+and sour 3198 2418
+and spend 3198 2420
+and splendid 3228 2396
+and started 3231 2396
+and such" 3231 2397
+and sunny 3231 2397
+and surf 3234 2397
+and sweet 3264 2372
+and swordfish 3294 2347
+and taps 3267 2372
+and taste 3297 2347
+and tasted 3270 2372
+and tasteless 3243 2398
+and their 3273 2373
+and then 3276 2400
+and there 3280 2427
+and there's 3311 2402
+and therefore 3284 2429
+and they 3315 2432
+and they've 3319 2432
+and told 3292 2460
+and tolls 3265 2488
+and tried 3269 2516
+and try 3301 2520
+and turf 3306 2520
+and turned 3337 2495
+and unhealthy 3310 2524
+and unique 3312 2524
+and updated 3312 2528
+and value 3312 2532
+and vanilla 3285 2560
+and very 3290 2588
+and visits 3294 2588
+and wait 3267 2616
+and waiting 3240 2644
+and walk 3240 2645
+and wanted 3213 2672
+and warm 3244 2646
+and wasn't 3217 2673
+and way 3220 2673
+and we 3254 2677
+and we're 3288 2651
+and well 3292 2651
+and were 3299 2681
+and wife 3299 2684
+and worth 3299 2688
+and would 3268 2717
+and wow 3274 2717
+and you 3311 2720
+anderson 3280 2752
+anderson and 3249 2784
+anderson came 3249 2789
+anderson, whom 3218 2820
+angel cake 3218 2825
+angry 3187 2856
+anise flavor 3187 2860
+anniversary dinner, 3187 2863
+annoyed 3155 2893
+another 3164 2931
+another celebration 3172 2931
+another city, 3172 2942
+another couple 3179 2981
+another disaster, 3179 2991
+another dish 3179 3001
+another lunch 3179 3011
+another meal 3220 2980
+another restaurant 3226 3019
+another serving 3231 3019
+another whole 3231 3027
+another woman 3195 3063
+answer 3195 3068
+answer, except 3195 3073
+anticipating 3159 3109
+anxiety attack 3124 3145
+anxiously awaited 3124 3149
+any 3170 3158
+any additions, 3135 3196
+any allergies 3100 3234
+any creative 3100 3241
+any day, 3110 3241
+any flavor, 3110 3248
+any occasion 3120 3248
+any other 3120 3256
+any point 3130 3256
+any seafood 3130 3264
+any seafood-lover 3140 3264
+anymore 3140 3272
+anyone 3156 3313
+anyone before 3171 3313
+anyone else 3137 3354
+anyone getting 3105 3387
+anything 3159 3392
+anything memorable 3159 3397
+anything new, 3127 3431
+anything other 3096 3465
+anything they 3150 3436
+anytime soon 3204 3440
+anyway 3173 3476
+anyway because 3224 3446
+anywhere else, 3275 3416
+apart 3295 3416
+apologetic 3264 3452
+apologies 3233 3488
+apologize profusely, 3233 3494
+apologize, like 3233 3501
+apologized 3284 3472
+app 3307 3508
+apparently 3307 3519
+apparently don't 3276 3557
+appearance you 3331 3530
+appeared appetizing 3386 3503
+appetite 3386 3515
+appetite because 3386 3527
+appetizer 3442 3542
+appetizer and 3468 3542
+appetizer which 3495 3542
+appetizers 3466 3585
+appetizers so 3519 3560
+appetizers were 3491 3604
+appetizers: fried 3517 3604
+appetizing 3570 3579
+apple 3624 3599
+apple cinnamon 3649 3599
+apple crumble 3703 3574
+apple funnel 3674 3619
+apple pieces 3674 3639
+apple, no 3644 3684
+appreciated 3670 3684
+appreciated (vs 3722 3659
+are: scallops, 3774 3633
+area 3810 3679
+area -- 3877 3651
+area and 3944 3623
+area which 4009 3595
+area, amazing 4071 3566
+area- do 4100 3566
+argue 4100 3583
+arm and 4067 3629
+arms and 4095 3629
+arms crossed 4095 3644
+around 4126 3700
+around 11:30, 4190 3671
+around 12:10 4254 3642
+around such 4254 3669
+arrangements 4221 3725
+arrived because 4221 3752
+arrogance 4221 3779
+arrogant 4188 3835
+arrogant dumbasses, 4155 3891
+arrogant troll 4155 3919
+arrogantly comes 4122 3975
+artisan 4155 3975
+artisan cheeseboard 4190 3975
+artisan make 4190 4003
+as 4227 4063
+as always 4227 4095
+as soon 4297 4067
+asada 4264 4127
+asada burritos 4231 4187
+asada no 4198 4245
+asado burrito 4166 4302
+ashamed 4134 4359
+ask 4102 4418
+asked 4070 4488
+asked "what 4070 4530
+asked him 4038 4598
+asked if 4006 4665
+asked many 4006 4703
+asked why 3974 4769
+asked, 3974 4807
+asking 3944 4874
+asking her 3914 4940
+asking me 3914 4977
+asparagus 3952 4977
+asparagus appetizer 3922 5042
+aspects 3957 5042
+associate moss 3957 5079
+assortment 3992 5079
+assure you 3992 5115
+at 3963 5178
+ate 3963 5213
+ate -- 3963 5249
+ate there 3997 5314
+atelier crenn 3967 5379
+atlantic salmon 3998 5379
+atmosphere 4045 5447
+atmosphere and 4121 5421
+atmosphere there 4167 5421
+atmosphere were 4243 5394
+atmosphere: upscale/cool 4213 5461
+attack waiting 4183 5528
+attempted 4153 5595
+attempts 4153 5635
+attention 4153 5679
+attentive 4205 5752
+attentive and 4259 5825
+attitude 4259 5875
+attitude and 4259 5924
+attractive 4229 5998
+august 2020, 4282 5998
+australian rib 4252 6072
+authentic mexican 4252 6121
+available, and 4222 6195
+average 4222 6243
+avocado 4222 6292
+avocado appetizers 4192 6359
+avocado mission 4162 6423
+avocado) 4162 6460
+avoid 4131 6524
+avoiding 4131 6561
+awaited since 4100 6625
+aware and 4100 6662
+away 4069 6737
+awesome 4163 6709
+awesome and 4227 6783
+awesome meal, 4322 6755
+awesome place 4416 6727
+awesome rooftop 4510 6699
+awesome selection 4573 6699
+awesome time 4658 6670
+awesome, 4709 6670
+awesome, my 4761 6670
+awful 4730 6744
+awhile 4813 6715
+awkward 4784 6789
+baby 4868 6760
+baby pig, 4868 6805
+baby shower 4952 6777
+baby shower, 5036 6749
+back 5124 6841
+back again 5213 6841
+back alley 5330 6813
+back and 5448 6878
+back anytime 5566 6851
+back next 5682 6824
+back seat 5651 6916
+back soon 5766 6889
+back way 5850 6889
+back yard, 5930 6889
+back, my 6044 6859
+bacon), and 6124 6859
+bad 6090 6964
+bad and 6090 7035
+bad decision 6053 7135
+bad desert 6053 7205
+bad food 6053 7274
+bad memory 6053 7344
+bad mood 6016 7442
+bad overpriced 6016 7510
+bad place 5979 7607
+bad this 5979 7672
+bad, 5979 7737
+badge 5979 7803
+balanced nicely 6093 7772
+ballet 6207 7741
+balsamic vinegar 6321 7710
+banana and 6435 7680
+banging burger 6543 7650
+bank 6543 7717
+bank down 6502 7813
+bank parking 6502 7871
+bar 6560 7974
+bar and 6560 8037
+bar, get 6519 8137
+barely eaten 6519 8198
+barns) 6519 8259
+bartender 6519 8324
+bartender (jamie) 6618 8285
+bartender seemed 6577 8389
+bartenders didn't 6577 8454
+based 6639 8558
+based options 6701 8558
+basement area 6800 8519
+basically 6898 8483
+basically lied 6898 8551
+basing 6994 8515
+bass 7096 8479
+bass all 7197 8443
+bass and 7289 8408
+bass i've 7380 8368
+bass, which 7425 8368
+bath room 7425 8432
+be 7516 8394
+beans 7516 8460
+beans and 7471 8564
+beat 7562 8526
+beautiful 7612 8632
+beautiful farm-to-table 7706 8594
+beautiful fresh 7754 8594
+beautiful if 7754 8662
+beautiful night 7802 8662
+beautiful place, 7802 8730
+beautiful restaurant 7802 8795
+beautifully 7845 8795
+beautifully (considering 7795 8901
+beautifully cooked 7889 8860
+beautifully prepared 7982 8827
+beaver tail 7982 8898
+became so 7928 8999
+because 8032 9083
+because there 8032 9167
+because they 8137 9253
+because we 8083 9373
+become) 8083 9459
+beef 8127 9459
+beef chewy 8127 9532
+beef since 8148 9532
+been 8182 9651
+been able 8131 9769
+been always 8216 9733
+been amazing 8300 9697
+been cleaned 8300 9779
+been coming 8384 9743
+been condemned 8333 9860
+been disappointed 8362 9860
+been going 8445 9824
+been going, 8528 9786
+been happier 8528 9853
+been here 8557 9853
+been hot 8502 9957
+been looking 8502 10024
+been more 8586 9987
+been my 8586 10051
+been remedied 8530 10155
+been served 8473 10260
+been standoffish 8416 10365
+been there 8416 10427
+been thinking 8363 10532
+been too 8447 10488
+been wanting 8478 10488
+beer 8514 10488
+beer matched 8603 10443
+beer tips 8638 10443
+beet 8674 10549
+beet ketchup, 8710 10549
+beet salad 8710 10611
+beet tomato 8800 10566
+before 8893 10636
+before 5p 8928 10636
+before covid 8968 10636
+before dinner 9008 10636
+before my 9008 10704
+before noon 9033 10704
+before someone 8966 10818
+before you 8899 10932
+began 8834 11041
+being 8870 11154
+being confrontational 8808 11267
+being kicked 8808 11334
+being out 8808 11401
+being overly 8747 11514
+being quite 8747 11581
+being said, 8747 11635
+being served, 8683 11745
+being too 8713 11745
+being unbearable 8649 11855
+being very 8649 11909
+beings 8649 11963
+believes 8649 12017
+bell and 8649 12071
+bellini 8745 12015
+belly 8842 12068
+belly (as 8939 12012
+belly (sweet 9036 11956
+belongs 8970 12065
+benedict 9000 12172
+benedict - 9098 12116
+benedict which 9126 12116
+bent spoon 9221 12056
+besides "extremely 9221 12103
+best 9262 12218
+best (if 9373 12158
+best all-around 9484 12098
+best and 9484 12155
+best app 9484 12213
+best chef 9595 12156
+best chefs, 9595 12212
+best dinner 9705 12142
+best dish 9815 12072
+best execution 9815 12119
+best fish 9925 12052
+best menu 10031 11986
+best much 10031 12027
+best part 10031 12055
+best restaurant 10133 11988
+best restaurants 10234 12016
+best sea 10334 11951
+best seafood 10369 11951
+best thing 10369 11978
+best unauthentic 10305 12070
+best, been 10305 12097
+bet one 10343 12097
+beth 10343 12124
+better 10450 12142
+better deliver 10450 12158
+better dining 10450 12174
+better not 10481 12174
+better pairing 10576 12109
+better place 10671 12044
+better quality 10705 12044
+better service 10628 12124
+better still 10628 12136
+better than 10647 12136
+between 10669 12217
+between courses 10593 12298
+between f-bombs, 10593 12312
+between multiple 10691 12245
+between two 10788 12178
+beyond strange 10788 12192
+bi weekly 10885 12122
+biased new 10982 12049
+big 11000 12049
+big and 11015 12049
+big deal 11015 12057
+big portions 11111 11982
+big thank 11207 11908
+big thumbs 11303 11834
+bigger 11220 11916
+bigger bar 11220 11924
+bigger group 11220 11932
+bigger inside 11315 11858
+bigger space, 11315 11867
+biggest rip 11315 11873
+bill 11315 11898
+bill came 11315 11921
+bird 11315 11943
+bird entree 11315 11965
+bird poop--fine 11315 11987
+bird's nest, 11315 12009
+birthday 11419 11945
+birthday and 11523 11870
+birthday brunch 11529 11870
+birthday brunch, 11629 11796
+birthday cake 11633 11796
+birthday celebration 11637 11796
+birthday dinner 11642 11796
+birthday girl 11644 11796
+birthday lunch 11644 11796
+bisque 11658 11796
+bit 11674 11885
+bit expensive 11591 11966
+bit expensive, 11689 11892
+bit out 11606 11973
+bit pricey 11703 11899
+bite 11619 11980
+bites 11716 11906
+bites) 11632 11987
+bites, my 11548 12068
+bitter and 11548 12057
+black beans 11428 12138
+black coffee 11405 12138
+bland 11288 12224
+bland and 11170 12311
+bland, and 11170 12305
+blocks 11052 12392
+blood and 10936 12479
+bloody mess 10936 12474
+bloom 10821 12561
+blt, 10802 12561
+blue 10790 12561
+blue hill 10676 12648
+blue point 10670 12648
+blueberry 10780 12543
+blueberry compote 10875 12442
+blueberry crisp 10970 12342
+blueberry peach 11065 12242
+bluepoint grill 11160 12143
+blush but 11160 12131
+board 11255 12033
+boat tasting 11255 12023
+boiled pork 11255 12005
+bold roast 11350 11908
+bonus 11350 11890
+book 11350 11872
+boot 11236 11951
+bordered 11122 12030
+bored 11008 12109
+both 10998 12190
+both - 10890 12271
+both and 10994 12174
+both got 11098 12078
+both had 11200 12063
+both loved 11302 11960
+both original 11203 12041
+both soups 11305 11940
+both were 11405 11840
+bothersome, but 11505 11740
+bottle 11605 11721
+bouche 11605 11698
+bought 11506 11776
+bowl 11506 11758
+bowl came 11506 11740
+boy 11403 11829
+boy have 11403 11814
+boy if 11300 11902
+boyfriend 11297 11992
+boyfriend and 11296 11992
+boyfriend got 11296 11978
+boyfriend has 11200 12068
+boyfriend puking 11098 12158
+bpg offers 11094 12158
+braised short 11099 12158
+brave and 11008 12246
+brawl 10917 12337
+bread 11014 12327
+bread and 10923 12419
+breathtaking meal 10923 12407
+bridal shower 11020 12303
+bring 11024 12303
+broken 10929 12389
+bronzino 11025 12283
+bronzino filet 11027 12283
+bronzino had 11030 12283
+brother, 11126 12177
+brought more 11033 12258
+brought my 11129 12152
+brown, and 11222 12046
+brunch 11233 12130
+brunch and 11338 12107
+brunch experience 11349 12107
+brunch one 11256 12190
+brunch only 11361 12084
+brunch, 11466 11983
+brussels 11362 12067
+brussels sprouts 11467 12034
+buffalo 11565 11916
+buffalo calamari, 11558 11916
+buffalo shrimp 11656 11796
+build your 11656 11759
+building and 11656 11722
+bulli 11558 11805
+bullshitting 11558 11779
+bun and 11584 11779
+bunch 11597 11779
+burger 11706 11660
+burger (that 11815 11542
+burger and 11839 11542
+burger thrown 11755 11625
+burger, 11865 11507
+burger, and 11889 11507
+burger, scallops, 11995 11390
+burgers and 12016 11390
+burned 11933 11473
+burning distaste 11850 11556
+burnt 11955 11451
+burrata 11977 11451
+burrata and 12083 11347
+burrata cheese 12189 11243
+burrata, 12211 11243
+burrito 12211 11233
+burrito bowl 12211 11225
+burrito without 12211 11215
+burritos 12211 11205
+burritos - 12211 11194
+burritos and 12211 11183
+bus boy 12127 11277
+businesses 12043 11371
+bussing 11954 11465
+bust 11865 11559
+busy kitchen 11776 11653
+busy saturday 11786 11653
+but 11930 11708
+but $6 11982 11708
+but again 11982 11762
+but again, 12034 11923
+but alas 12176 11808
+but also 12083 11969
+but always 12134 11969
+but could 12042 12130
+but decided 12092 12130
+but definitely 12234 12177
+but had 12142 12339
+but heard 12142 12387
+but honestly 12284 12273
+but it's 12425 12324
+but kind 12327 12484
+but last 12327 12531
+but made 12327 12578
+but never 12327 12625
+but nice 12461 12512
+but not 12596 12560
+but nothing 12596 12610
+but only 12731 12500
+but presentation 12731 12548
+but see 12637 12702
+but she 12772 12592
+but stingy 12772 12636
+but their 12772 12678
+but these 12772 12720
+but they 12772 12764
+but those 12676 12917
+but too 12676 12959
+but virginia 12714 12959
+but waitress 12752 12959
+but we 12792 13110
+but well 12929 13001
+but worth 13069 12894
+but would 12971 13045
+but your 12873 13196
+but, 12775 13350
+butter 12823 13350
+butter and 12823 13396
+butter cup 12854 13396
+butter lacked 12996 13281
+butter tart( 13027 13281
+butter, and 13058 13281
+butternut squash 13200 13166
+buy food 13200 13203
+byo because 13231 13203
+byob 13383 13088
+byob although 13425 13088
+byob and 13467 13088
+byob frees 13619 12973
+byob policy 13661 12973
+byob so 13707 12973
+byob, there 13855 12866
+cake 13998 12931
+cake and 14039 12931
+cake around 13938 13090
+cake delivered 14081 12996
+cake desert 13981 13155
+cake they 13879 13314
+cake which 14022 13222
+cakes 14172 13130
+cakes , 14322 13038
+cakes dinner 14369 13038
+cakes were 14519 12946
+calamari 14669 12865
+calamari, 14713 12865
+calamari, oysters 14864 12785
+calamari, scallops, 15009 12705
+caliber, well, 14914 12864
+california 14819 13023
+call 14867 13184
+call and 14915 13184
+call him 14915 13265
+call projectile 14915 13346
+call themselves 14820 13506
+called 14963 13592
+called again 14865 13759
+called ahead 14865 13845
+called and 14865 13931
+called apple 14767 14098
+called me 14670 14265
+called one 14670 14351
+called twice 14573 14518
+calm down, 14476 14682
+came 14530 14848
+came across 14585 14848
+came around 14585 14931
+came here 14644 14931
+came home 14548 15096
+came out 14452 15263
+came over 14452 15346
+came they 14452 15429
+camouflage 14452 15512
+campus 14357 15677
+can 14522 15768
+can actually 14522 15860
+can assure 14522 15941
+can beat 14687 15854
+can definitely 14851 15768
+can easily 15015 15682
+can imagine 15179 15596
+can purchase 15343 15510
+can read 15239 15683
+can ruin 15135 15809
+can see 15199 15916
+can sit 15250 15916
+can stop 15151 16023
+can tell 15167 16023
+can wear 15068 16130
+can work 15087 16130
+can't 15113 16240
+can't eat 15014 16351
+can't even 15014 16373
+can't go 15035 16373
+can't keep 15035 16402
+can't rave 15057 16402
+can't remember 15177 16321
+can't wait 15202 16321
+cancel 15202 16350
+cannot 15228 16461
+cannot accommodate 15228 16491
+cannot lie 15351 16410
+cannot retrain 15351 16440
+cannot wait 15474 16359
+cant wait 15499 16359
+cappuccino looked 15621 16273
+car 15621 16298
+car driving 15621 16323
+car out 15621 16347
+car were 15743 16260
+caramel dessert 15865 16173
+carbo heavy 15865 16197
+care 15891 16311
+cared 15789 16425
+carefully separate 15909 16338
+carne 15801 16453
+carne asada 15691 16569
+carried 15716 16569
+carried them 15621 16685
+carrot 15645 16685
+carrot and 15666 16685
+carrot cake 15782 16598
+carrot soup 15803 16598
+carte 15803 16630
+carte prices, 15803 16670
+carte,appetizers $18 15708 16789
+cary 15824 16710
+cashier 15824 16754
+cashier and 15824 16798
+catch 15940 16719
+cause both 16056 16640
+caused 15952 16763
+cc and 15952 16804
+ceasar salad 16068 16723
+celebrate my 16080 16723
+celebrating 15976 16844
+celebration 16091 16763
+celebration (hopefully 16096 16763
+celebration and 16101 16763
+celebrations here 16208 16682
+celebratory meal 16213 16682
+cellar area 16220 16682
+center and 16120 16803
+certain elements 16120 16843
+certainly 16020 16964
+certainly added 16020 16999
+certainly doesn't 16020 17037
+certainly don't 16020 17067
+chair 16020 17099
+chair - 16020 17128
+chair, 16020 17159
+chair, just 16020 17191
+challenge 16127 17101
+chance and 16138 17101
+change 16146 17101
+changed 16146 17128
+chanterelles 16146 17155
+charge 16146 17187
+charge 5 16049 17309
+charge me 15952 17431
+charged $59 15952 17458
+charm and 15952 17482
+charming; 15960 17482
+charred but 16065 17390
+check 16065 17418
+check her 16065 17446
+check yelp 15968 17566
+check, 15873 17686
+checked 15873 17720
+checked up 15882 17720
+checking menu, 15786 17840
+checking up 15794 17840
+cheese 15800 17964
+cheese (that's 15800 18007
+cheese and 15704 18123
+cheese board 15713 18123
+cheese we 15713 18155
+cheese were 15710 18155
+cheese) 15710 18187
+cheeseboard 15715 18187
+cheeseboard (a 15720 18187
+cheeseboard and 15829 18104
+cheeseboard between 15833 18104
+cheeseboard spread 15837 18104
+cheeseboard, 15946 18020
+cheesecake and 15949 18020
+cheeses were 16057 17935
+chef 16068 18058
+chef always 16075 18058
+chef anderson 15977 18181
+chef but 15977 18221
+chef considering 15977 18261
+chef down 15977 18301
+chef showcases 16075 18218
+chef would 15977 18334
+chef's 15879 18452
+chef's table 15770 18570
+chef's table, 15661 18689
+chef, 15552 18808
+chef-in-training 15552 18844
+chef; not 15442 18963
+chefs 15434 19085
+chefs creativity 15328 19207
+chefs here 15322 19207
+chefs table 15322 19244
+chefs visit 15322 19280
+chefs, except 15217 19399
+chewy 15111 19523
+chewy and 15005 19648
+chicken 15004 19774
+chicken and 14994 19774
+chicken chilaquiles 15090 19680
+chicken flatbread 15187 19584
+chicken quesadilla, 15187 19615
+chicken sandwich 15285 19520
+chicken sandwich, 15383 19426
+chicken something 15383 19458
+chicken tacos 15383 19489
+chicken, 15483 19520
+chicken, & 15583 19426
+chickpea 15583 19458
+chickpea puree 15583 19490
+chickpea puree, 15483 19615
+chilaquiles flatbread 15439 19615
+child-free weeks 15439 19578
+chilean 15400 19578
+chilean sea 15504 19417
+chilean seabass 15462 19417
+chili 15564 19256
+chili butter 15525 19256
+chili flavor 15628 19095
+chilly and 15587 19095
+chip 15587 19058
+chipotle 15445 19185
+chipotle bowl 15445 19150
+chipotle meets 15303 19276
+chipotle sauce 15303 19238
+chocolate 15404 19076
+chocolate cake 15363 19076
+chocolate peanut 15464 18916
+chocolate souflee 15323 19039
+choice 15424 19006
+choice, but 15424 18973
+choices 15530 18813
+choices :) 15636 18653
+choices were 15608 18779
+chomped 15608 18742
+choose 15581 18742
+choose from 15690 18581
+choose mature 15664 18581
+choosing agricola 15771 18423
+chose 15882 18269
+chose well 15858 18269
+chowder 15972 18115
+chowder, lobster 16086 17963
+chugged 16086 17935
+chunks 16200 17782
+cindy our 16314 17629
+cinnamon bun 16428 17478
+cities (like 16293 17602
+citrus flavor 16272 17602
+city 16135 17728
+city and 16135 17703
+city, atelier 15998 17829
+claimed 15858 17957
+claimed they 15858 17932
+claims 15858 17907
+clam 15972 17753
+clam chowder 15943 17753
+clam chowder, 16057 17600
+classic, not 16029 17600
+classics 15887 17726
+classmate and 15859 17726
+clean 15831 17726
+cleaned 15689 17855
+cleaning my 15689 17831
+clear everyone 15547 17959
+client 15395 18087
+close 15359 18222
+close early, 15207 18356
+close my 15171 18490
+closed 15019 18630
+closed within 14867 18770
+clubs 14835 18770
+clue 14808 18909
+coattails were 14924 18750
+cocktail 14899 18750
+cocktail quality 15017 18591
+cocktail, 14993 18591
+cocktail, and 15110 18432
+cocktail, but 15227 18273
+cocktails were 15201 18273
+coconut 15051 18410
+coconut ice 14901 18548
+cod and 14863 18548
+cody kendall 14713 18686
+coffee 14674 18686
+coffee afterwards 14523 18824
+coffee drink 14483 18824
+cold 14451 18966
+cold (even 14564 18807
+cold and 14677 18790
+cold rice 14677 18768
+cold windy 14647 18768
+cold, colorless 14504 18907
+colder than 14504 18885
+cole slaw 14617 18724
+colleague graciously 14617 18703
+colorless and 14617 18675
+comb 14587 18675
+combination 14699 18508
+combinations 14699 18480
+combine flavors 14699 18452
+come 14822 18426
+come anyway 14945 18259
+come back 15071 18233
+come close 15071 18207
+come here 15197 18043
+come more 15323 17877
+come try 15289 17877
+comes 15258 18029
+comes across 15258 18017
+comes out 15103 18162
+comes out, 15103 18140
+comes over 15103 18117
+comes up 15103 18096
+comfortable 15229 17931
+comfortable (nice 15354 17766
+comfortable and 15478 17601
+comfortable, and 15437 17601
+comfortably 15561 17428
+coming 15688 17401
+coming back 15816 17374
+coming here 15779 17374
+company dinner 15740 17374
+compare 15576 17520
+compete 15412 17664
+competing 15248 17808
+complaint 15248 17778
+complement 15248 17795
+complementary s'mores 15208 17795
+complementary tastings 15208 17831
+complete 15057 17976
+complete confusion 15057 18011
+complete overhaul 14942 18154
+completed 15065 18047
+completely over-priced 14950 18189
+complicated 14830 18334
+complicated and 14830 18369
+complicated they 14830 18400
+complicated) and 14830 18430
+complicating it 14710 18570
+components 14831 18604
+components (meat, 14711 18748
+composted menu, 14711 18748
+compote and 14709 18748
+concept 14829 18782
+concerned but 14706 18926
+condemned 14706 18959
+condescension 14706 18991
+condiment table 14583 19134
+confection we 14583 19166
+confirm my 14579 19166
+confrontational 14457 19309
+confusing potpourri 14335 19452
+confusion 14335 19480
+congrats 14335 19508
+connoisseur, had 14454 19397
+cons = 14332 19537
+cons: - 14210 19677
+consider 14329 19566
+consider myself 14207 19706
+considerate and 14207 19732
+consideration and 14207 19757
+considering 14087 19899
+consistency substance 14087 19926
+consistent quality 14206 19810
+consistently checking 14202 19810
+consistently stale 14202 19836
+constantly 14200 19836
+constantly and 14201 19836
+constantly bordered 14085 19978
+containing any 13969 20120
+contaminated 13969 20143
+continue eating 13969 20165
+convenient 14086 20046
+conversations 13970 20187
+cook's food 13970 20205
+cooked 14101 20225
+cooked better 14115 20225
+cooked each 14129 20225
+cooked just 14259 20102
+cooked perfectly 14388 19980
+cooked perfectly, 14401 19980
+cooked perfectly- 14414 19980
+cooked properly, 14414 20001
+cooked so 14427 20001
+cooked, flavorful 14320 20143
+cooking 14213 20287
+cooking and 14106 20431
+cool 14127 20575
+cool day 14148 20575
+cool thing 14276 20454
+cooler heads 14276 20476
+copious amounts 14276 20497
+corn 14276 20524
+corn soup 14276 20552
+corner 14276 20580
+correct up 14276 20602
+cost 14404 20626
+cost - 14404 20648
+costs 14404 20672
+costs if 14297 20813
+cottage-cheese type 14190 20952
+could 14221 21100
+could almost 14357 20983
+could come 14492 20866
+could eat 14627 20744
+could even 14627 20770
+could get 14627 20795
+could have 14764 20828
+could not 14764 20861
+could only 14659 21009
+could order 14691 21154
+could remember 14828 21034
+could say 14828 21059
+could specifically 14828 21083
+could tell 14965 20963
+couldn't even 14965 20987
+couldn't have 14997 20987
+count and 15133 20867
+countries, including 15029 21011
+country touches 15063 21011
+country's best 15063 21031
+couple 15202 21054
+couple and 15202 21085
+couple were 15100 21232
+course 15240 21290
+course (entree) 15138 21463
+course (salad) 15138 21518
+course ) 15028 21688
+course after 14918 21858
+course and 14809 22021
+course deal 14840 22021
+course meal 14731 22182
+course meal, 14622 22343
+course pre-fix 14654 22343
+course price 14546 22504
+course tasting 14437 22668
+course there's 14437 22708
+course, 14332 22873
+course, fia, 14332 22915
+course; 14332 22956
+courses 14332 23004
+courses all 14332 23052
+courses and 14234 23223
+courses, 14234 23280
+courses, so 14234 23335
+courteous 14373 23217
+courtyard out 14512 23098
+covid 14654 22979
+covid issue 14796 22860
+covid meal 14938 22741
+covid takeout 15080 22619
+covid times 15122 22619
+coworkers, 15122 22670
+cozy and 15165 22670
+crab 15314 22550
+crab (big 15463 22431
+crab but 15610 22312
+crab cakes 15762 22188
+crab kind 15914 22063
+cracked egg, 15961 22063
+cranking out 15961 22110
+cranky car 16017 22110
+crap if 15921 22281
+crappy amuses 15824 22452
+crave 15976 22326
+crazy over 16030 22326
+cream 15932 22500
+cream (this 16074 22374
+cream and 16074 22423
+cream) 16074 22470
+cream, 16116 22470
+creamed spinach 16158 22470
+creamy texture, 16296 22344
+creamy, and 16434 22218
+create 16434 22265
+created 16334 22437
+creative 16334 22491
+creative combinations 16231 22669
+creative presentation 16127 22847
+creative sauce 16027 23023
+creativity 15925 23201
+credit because 15960 23201
+crema 15857 23380
+crema and 15756 23560
+crema, one 15756 23616
+crenn 15756 23669
+crepes 15894 23543
+crew again 16031 23417
+crisp 16170 23293
+crispy 16210 23293
+crispy and 16248 23293
+crispy but 16286 23293
+crispy skin 16425 23170
+critical, until 16324 23350
+croque madam 16324 23403
+croquette 16324 23456
+crossed 16357 23456
+crossed saying 16251 23636
+crowd 16284 23636
+cruel 16284 23690
+cruelty involved 16284 23746
+crumble 16317 23746
+crumble and 16346 23746
+crunchy - 16237 23926
+crust and 16267 23926
+crusted trout 16293 23926
+cry 16182 24106
+cuisine and 16068 24286
+cuisine, which 16091 24286
+culinary sin) 16091 24342
+cup 16116 24522
+cup dessert, 16141 24522
+curb side 16166 24522
+curbside 16306 24398
+curbside pickup 16332 24398
+curbside pickup, 16472 24272
+curry flavor 16612 24146
+customer 16612 24201
+customer had 16612 24252
+customer service 16612 24303
+customers 16612 24357
+customers may 16498 24537
+cut 16384 24718
+cut into 16270 24899
+cut princeton 16156 25080
+cute 16297 24954
+cute and 16324 24954
+cute street 16351 24954
+czech republic, 16351 25006
+dairy 16351 25061
+dairy no 16351 25116
+damn it 16351 25170
+daniel 16351 25217
+danielle 16378 25217
+danielle fixed 16521 25083
+dark ambience 16547 25083
+date 16691 25131
+daughter 16836 24991
+daughter and 16970 24851
+day 16992 25037
+day and 16992 25083
+day out 17014 25083
+day which 17036 25083
+day" 17056 25083
+day, 17077 25268
+day, but 17096 25268
+day, then 17117 25268
+day, whether 17138 25268
+dayboat scallops 17158 25268
+days 17295 25131
+de gallo 17295 25178
+dead, don't 17184 25363
+deal 17321 25410
+decent 17210 25598
+decent dish 17210 25647
+decent taco 17099 25833
+decent) 17099 25877
+decide 17123 25877
+decided 17144 26072
+decision 17144 26124
+declined my 17031 26316
+decor 17168 26376
+decor - 17055 26574
+decor seemed 17055 26633
+decor, giving 17192 26494
+dedicated, 17079 26692
+dedicated, wonderful 17079 26751
+dedication 17079 26802
+deer 16966 26992
+deer venison, 16854 27182
+def 16854 27232
+defeat 16991 27093
+defend 16991 27141
+defend his 16868 27330
+definitely 16899 27523
+definitely come 17053 27382
+definitely enough 17081 27382
+definitely fresh 17235 27241
+definitely gone, 17109 27434
+definitely not 16983 27629
+definitely order 17017 27629
+definitely recommend 17048 27629
+definitely return 17202 27477
+definitely see 17355 27325
+definitely try 17507 27180
+degree 17507 27232
+degree night 17507 27283
+delectability 17658 27139
+delectable 17683 27139
+delectable, 17709 27139
+delicious 17765 27340
+delicious - 17821 27340
+delicious and 17874 27340
+delicious but 17874 27393
+delicious confection 17747 27592
+delicious dessert 17924 27446
+delicious flavor 17796 27645
+delicious food 17845 27645
+delicious fresh 17897 27645
+delicious homemade 17897 27698
+delicious meal, 18075 27554
+delicious melt 18075 27603
+delicious, although 18253 27460
+delish 18424 27317
+delish and 18471 27317
+delish burger 18642 27174
+deliver 18808 27205
+deliver anything 18808 27239
+deliver entrees 18808 27272
+delivered 18854 27448
+delivered (although 18854 27482
+delivered and 19023 27337
+delivered exactly 19192 27192
+delivery 19192 27226
+demanded 19192 27261
+demanded my 19192 27297
+demands 19071 27474
+demonstrated 19071 27504
+demonstrated poise 19071 27534
+denmark, 18951 27708
+denmark, finland, 18831 27881
+dense 18711 28054
+dense squash 18711 28083
+describe and 18880 27939
+described 19049 27795
+descriptions 19218 27652
+desert 19218 27685
+desert - 19218 27714
+desert which 19099 27886
+deserve 19099 27917
+deserve it, 19099 27947
+deserved 19099 27981
+deserves 19099 28016
+designed 18980 28192
+designed (too 18980 28228
+designed order 18980 28264
+desired 18861 28441
+despite 19030 28478
+dessert 19212 28520
+dessert (a 19212 28563
+dessert (cookie 19212 28603
+dessert we 19394 28461
+dessert wine 19457 28461
+dessert, 19527 28461
+dessert, great 19713 28319
+desserts 19788 28501
+desserts packed 19671 28683
+desserts were 19862 28541
+desserts; definitely 20052 28399
+detailed 20052 28435
+detailed explanations 20052 28471
+details 19935 28649
+deuce 19935 28687
+deviled 19935 28725
+deviled eggs 19804 28902
+did 20001 28943
+did and 19871 29126
+did because 19938 29126
+did have 19808 29308
+did not 19878 29491
+did she 19749 29674
+did so 19620 29857
+did, 19620 29898
+did, scott 19492 30081
+didn't 19692 30144
+didn't care 19692 30206
+didn't complement 19692 30268
+didn't continue 19692 30330
+didn't deserve 19564 30536
+didn't eat 19436 30742
+didn't even 19308 30948
+didn't finish 19308 31011
+didn't fulfill 19308 31074
+didn't happen 19508 30931
+didn't have 19508 30993
+didn't know 19508 31055
+didn't like 19508 31119
+didn't live 19380 31323
+didn't make 19380 31385
+didn't mind 19380 31446
+didn't need 19580 31302
+didn't pay 19580 31364
+didn't really 19580 31428
+didn't want 19444 31634
+didn't work) 19444 31691
+diegan, 19308 31897
+different 19380 32103
+different answers 19245 32309
+different cheese 19451 32161
+different dishes 19657 32014
+different every 19863 31866
+different kinds 19932 31866
+different occasions 20138 31718
+different place 20343 31570
+different such 20548 31425
+different textures 20616 31425
+difficult times 20684 31425
+dime 20888 31280
+dine 20888 31342
+dine somewhere 20751 31548
+dined 20751 31610
+dined twice 20818 31610
+diner 20682 31814
+diner feeling 20682 31874
+dining 20758 32082
+dining experience 20972 32146
+dining experiences 21185 31999
+dining out 21046 32207
+dining room 21259 32268
+dining rooms 21472 32121
+dining rooms, 21685 31947
+dining, 21758 32153
+dining, save 21758 32186
+dining, social 21971 32016
+dining, well 22184 31846
+dinner 22427 31900
+dinner and 22671 31737
+dinner did 22774 31737
+dinner everyone 23016 31576
+dinner here 23258 31415
+dinner i've 23356 31415
+dinner items 23594 31254
+dinner menu 23833 31090
+dinner options 24072 30927
+dinner sans-enfants 24072 30986
+dinner some 24309 30821
+dinner today 24309 30881
+dinner tonight 24546 30710
+dinner we 24546 30759
+dinner, 24546 30805
+directly 24546 30850
+dirty 24546 30895
+dirty tables 24407 31111
+disappoint 24507 31111
+disappoint either 24604 31111
+disappointed 24704 31332
+disappointed  24562 31553
+disappointed after 24420 31774
+disappointing 24278 31998
+disappointing restaurant 24278 32049
+disappointing, 24136 32273
+disappointing, however 23987 32497
+disappoints 24083 32497
+disaster 23936 32722
+disaster, 23784 32947
+disaster, pork 23632 33172
+discerning steak 23725 33172
+discussed 23725 33225
+discussion 23573 33451
+discussion into 23573 33506
+diseased 23573 33557
+diseased and 23421 33779
+dish 23524 34019
+dish (cavatelli) 23524 34085
+dish :) 23635 34085
+dish and 23635 34152
+dish but 23886 34217
+dish lacked 23994 34217
+dish made 23852 34454
+dish wasn't 23714 34691
+dish we 23576 34928
+dish you 23576 34993
+dish, which 23825 34821
+dishes 24082 34886
+dishes had 24082 34951
+dishes including 24339 34773
+dishes out 24339 34840
+dishes we 24583 34662
+dishes were 24445 34903
+dishes, 24445 34965
+dishes, one 24445 35026
+disliked 24684 34846
+distance 24923 34909
+distance away 24785 35152
+distancing 24889 35152
+distancing , 24991 35152
+distaste 24850 35396
+do 24960 35654
+do consider 25070 35654
+do go 24931 35912
+do not 25181 35993
+do recommend 25431 35813
+do you 25431 35895
+do yourself 25542 35895
+does 25542 35982
+does not 25403 36249
+does nothing 25403 36336
+doesn't 25403 36428
+doesn't deserve 25262 36700
+doesn't justify 25124 36972
+doesn't scream 25124 37064
+doesn't work 24987 37335
+dog friendly 25100 37335
+doing 25352 37424
+doing everything 25604 37244
+doing yoga 25467 37513
+doing your 25467 37602
+doing, 25467 37691
+doing, including 25328 37959
+dollar sized 25431 37959
+dollars 25516 37959
+don't 25604 38242
+don't add 25464 38525
+don't create 25324 38808
+don't deliver 25184 39091
+don't forget 25411 38910
+don't get 25411 39015
+don't go 25638 38838
+don't honestly 25638 38941
+don't kill 25638 39044
+don't know 25865 39146
+don't like 26092 38965
+don't list 26092 39067
+don't need 25951 39350
+don't really 25810 39633
+don't they 25669 39916
+don't turn 25895 39735
+don't walk 25895 39831
+don't want 25895 39925
+done 26122 40024
+done (simple 26122 40123
+done extremely 26205 40123
+done without 26288 40123
+dont 26146 40404
+dont know 26002 40685
+doomed 26002 40788
+door 26086 41074
+door and 25952 41360
+door open 25814 41646
+door, 25814 41748
+door, fia 25814 41851
+doubtful 25676 42140
+dough 25767 42140
+douse 25629 42429
+douse their 25629 42526
+down 25726 42813
+down - 25824 42813
+down and 25686 43100
+down best 25784 43100
+down my 25883 43100
+down oysters 25982 43100
+down, 25982 43202
+down, but 26218 43017
+down, talk 26218 43118
+downgrade 26081 43404
+downgrade elements 26081 43502
+downgraded 26081 43601
+downgraded elements 26081 43701
+downgrading 26081 43780
+downstairs space 26180 43780
+downtown princeton 26416 43585
+drastic 26282 43849
+drastic should 26282 43919
+drenched 26282 43992
+dressings 26376 43992
+dribbled 26376 44059
+drink 26600 44131
+drink here 26600 44203
+drink outside 26463 44473
+drink specials 26463 44545
+drinkers 26463 44616
+drinkers come 26463 44695
+drinking 26463 44777
+drinking copious 26463 44859
+drinking men 26463 44942
+drinks 26553 45215
+drinks but 26553 45299
+drinks rather 26553 45383
+drinks spot 26780 45190
+drinks were 26852 45190
+drinks, 26925 45190
+drinks, and 26998 45190
+drinks, atmosphere 27067 45190
+driving 27067 45268
+drove 27067 45344
+drove up 26913 45615
+dry 26982 45890
+dry aged 27051 45890
+dry aging 27121 45890
+dry and 26969 46165
+duck 27188 46246
+duck and 27405 46051
+duck, and 27471 46051
+ducks 27320 46327
+ducks and 27169 46603
+dumbasses, 26989 46879
+dumbasses, and 26989 46954
+dump 26809 47230
+dump those 26632 47506
+during 26855 47583
+during hot, 26855 47660
+during my 26900 47660
+during restaurant 27122 47461
+during slow 26945 47737
+during these 26990 47737
+dying 27205 47538
+e-mailing 27027 47815
+each 27245 47908
+each and 27067 48194
+each dining 27114 48194
+each dish 26943 48482
+each get 26990 48482
+each got 26990 48587
+each had 26824 48858
+each ordered 27042 48682
+each time 27260 48506
+eagerly 27260 48601
+eagerly anticipating 27091 48872
+early dinner 27309 48696
+early, 27140 48967
+early, so 26971 49238
+earthy 26971 49333
+earthy and 26971 49428
+easier 27189 49252
+easily 27189 49346
+easily could 27189 49443
+easily share 27407 49269
+easy 27407 49367
+eat 27633 49483
+eat and 27633 49596
+eat food 27633 49709
+eat half 27464 49995
+eat here 27524 50279
+eat here, 27355 50563
+eat it 27355 50672
+eat lunch 27584 50500
+eat one 27584 50613
+eat out 27584 50724
+eat some 27813 50551
+eat whenever 28035 50377
+eat, 28035 50488
+eaten 28035 50604
+eaten all 28035 50720
+eatery 28255 50544
+eating 28476 50674
+eating alone 28528 50674
+eating here 28528 50804
+eating outside 28567 50804
+eating there 28567 50929
+eats 28567 51054
+eats fish 28567 51179
+eclectic 28385 51486
+eclectic cuisine 28203 51793
+edit 28017 52095
+edit 8/20: 27831 52383
+efficient 28052 52490
+egg 28082 52779
+egg and 28304 52597
+egg, cheeseboard, 28335 52597
+eggplant agnolotti 28345 52597
+eggs 28542 52716
+eggs benedict 28739 52836
+eggs were 28937 52658
+eggs were, 28937 52776
+either 29135 52898
+either seafood 29135 53022
+el 29135 53135
+el bulli 28938 53431
+elements 28938 53573
+elements but 28741 53898
+elements doesn't 28741 54041
+elements has 28542 54366
+elements our 28542 54508
+elements so 28542 54649
+elements three 28542 54791
+elements through 28542 54933
+elements, 28542 55075
+elements, fresh 28542 55195
+elicit 28342 55517
+elicit princeton 28342 55623
+else 28342 55736
+else gets 28342 55846
+else go 28342 55955
+else's 28342 56063
+else's empty 28342 56168
+else, but 28538 55962
+elsewhere 28538 56069
+elsewhere -- 28338 56381
+email 28338 56488
+emails 28338 56592
+emilio, 28534 56388
+emphasis 28534 56495
+employees 28730 56291
+empty 28730 56401
+empty plates 28530 56714
+end 28730 56834
+end up 28931 56955
+end, 28931 57074
+ended 29136 57194
+ended up 29341 57313
+engaging atmosphere 29545 57107
+enjoy 29544 57433
+enjoy it 29750 57227
+enjoyed 29764 57227
+enjoyed it 29778 57227
+enjoyed their 29792 57227
+enjoys having 29805 57227
+enough 29823 57553
+enough bar 29618 57865
+enough, 29413 58177
+enough, some 29208 58489
+ensued 29003 58802
+ensuring satisfaction 29020 58802
+enter 29020 58908
+enter and 29020 59014
+enticing, 29020 59120
+enticing, until 28816 59432
+entire 28816 59540
+entire piece 28816 59648
+entirely 28604 59961
+entirely awkward 28604 60066
+entirely fat 28390 60379
+entree 28608 60485
+entree and 28613 60485
+entree options 28831 60277
+entree) 28836 60277
+entrees 29056 60387
+entrees (not 29061 60387
+entrees had 28848 60704
+entrees we 29061 60498
+entrees were 29061 60816
+entrée 29274 60610
+entrées 29274 60610
+epic 29061 60928
+epic fail 28818 61246
+equally 29032 61339
+equally delicious 29002 61339
+equally fresh 28972 61339
+escalated 28730 61656
+especially 28703 61978
+especially attractive 28465 62300
+especially during 28227 62622
+especially enjoyed 28202 62622
+especially since 27963 62944
+espouses: being 28171 62720
+essentially 27934 63041
+essentially paid 27934 63138
+establishments 27697 63459
+establishments and 27697 63560
+etc; agricola 27905 63343
+even 28126 63464
+even before 28347 63246
+even better 28568 63030
+even cancel 28329 63369
+even during 28311 63369
+even eat 28069 63706
+even get 28069 63819
+even good, 28069 63932
+even just 28290 64045
+even know 28290 64155
+even let 28510 63931
+even more 28730 63707
+even my 28730 63817
+even princeton's 28485 64151
+even though 28485 64261
+even up 28705 64036
+even waste 28705 64146
+even wed 28680 64146
+even went 28896 63920
+evening 29115 64029
+evening and 29115 64138
+evening) 29334 63916
+event 29553 63694
+ever 29519 64035
+ever again 29519 64136
+ever back 29740 63896
+ever had 29708 63896
+ever lol 29708 63996
+ever popular 29457 64337
+ever said 29457 64441
+ever tasted 29207 64782
+every 29438 64885
+every and 29669 64648
+every friggin 29899 64411
+every night 30128 64174
+every night, 29879 64514
+every one 29622 64854
+every penny 29852 64611
+every single 30082 64708
+every time 30051 64708
+everyone 30279 64811
+everyone else's 30035 65157
+everyone going 30035 65262
+everyone had 30263 65021
+everyone happy 30491 64780
+everyone really 30480 64780
+everyone seemed 30241 65124
+everything 30486 65226
+everything came 30731 64983
+everything done 30735 64983
+everything else 30494 65328
+everything right 30739 65084
+everything takes 30490 65429
+everything tasted 30735 65171
+everything we 30732 65171
+everything, 30976 64913
+exact 30726 65257
+exact same 30726 65340
+exactly 30720 65340
+example, 30720 65425
+exceeded 30715 65425
+exceeded our 30961 65158
+excellent 31219 65238
+excellent and 31478 64971
+excellent appetizer 31737 64699
+excellent chef-in-training 31737 64774
+excellent octopus, 31995 64502
+excellent service 32253 64230
+excellent time 32511 63959
+excellent we 32519 63959
+excellent wine 32524 63959
+excellent, 32783 63690
+excellent, if 32790 63690
+excels 33047 63421
+except 33047 63507
+except two 33047 63593
+exception but 33299 63325
+exceptional service, 33309 63325
+exceptional, 33337 63325
+excessively 33109 63678
+excessively sweet 33109 63747
+excited 33364 63819
+exciting had 33619 63536
+excluding 33619 63609
+excusable 33392 63965
+excusable but 33392 64037
+execute 33165 64393
+execute them 33165 64466
+executed concept 33417 64183
+execution 33190 64542
+exotic 33190 64619
+expect 33215 64982
+expect me 33215 65062
+expect someone 33215 65140
+expectations 33473 65222
+expectations and 33731 64939
+expectations were 33505 65304
+expected 33505 65391
+expected (it 33763 65114
+expected, 33794 65114
+expectedly, 34052 64833
+expecting 34310 64919
+expensive 34084 65286
+expensive prayer 33858 65652
+expensive than 33858 65737
+expensive, 33858 65820
+expensive, but 34109 65535
+expensive, considering 33880 65899
+experience 34144 65988
+experience" 34144 66078
+experience, 34144 66169
+experienced great 34405 65881
+experiences i've 34666 65593
+experiences, 34666 65681
+experiences, but 34437 66058
+experiencing difficult 34698 65769
+explain 34698 65866
+explain parts 34698 65958
+explain: a 34723 65958
+explained 34751 66340
+explained every 34751 66435
+explained my 34515 66817
+explanation 34279 67202
+explanations 34043 67573
+explode; 34043 67652
+explored 34070 67652
+explored everything 34333 67366
+exposition 34333 67446
+exposition kitchen 34333 67526
+exquisite 34596 67240
+exquisite brunch 34859 66954
+extensive 35121 66689
+extensive menu 35147 66689
+extent 34911 67056
+extra 34911 67159
+extra $0 34911 67262
+extreme 34911 67363
+extreme cruelty 34680 67729
+extremely 34949 67834
+extremely biased 34994 67834
+extremely chewy 34994 67935
+extremely disappointing 34994 68036
+extremely expensive, 34994 68134
+extremely fresh 35264 67864
+extremely friendly 35530 67595
+extremely helpful 35796 67326
+extremely pleased 36061 67054
+extremely pricy 36061 67148
+extremely professionally 36325 66876
+extremely spicy, 36098 67242
+extremely tasty 36362 66969
+extremely tiny 36362 67057
+extremes 36362 67137
+eye 36135 67491
+eyes 36174 67846
+f-bombs, 35947 68201
+f-bombs, didn't 35720 68556
+fabulous 35762 68911
+fabulous and 36027 68640
+fabulous exposition 36027 68724
+faced 36027 68808
+faced ham 36027 68888
+facelift, 35804 69243
+facelift, and 35581 69598
+fact 35620 69955
+fact delicious 35881 69680
+fact we 35662 70037
+fact, 35922 70116
+fact, my 35963 70116
+fail 35746 70469
+failed 36004 70193
+failures 36004 70270
+failures things 36004 70347
+fair 36262 70071
+fair great 36520 69795
+fairly 36778 69871
+fairly crappy 36778 69945
+fairly large 36813 69945
+fairly routine 37071 69669
+fake, 37098 69669
+fake, they 37120 69669
+fall, 37364 69393
+falling 37385 69393
+falling apart 37413 69393
+familiar 37413 69466
+familiar with 37413 69530
+family 37436 69881
+family down 37675 69595
+family, 37696 69595
+family, and 37933 69307
+family: 37952 69307
+family: buffalo 38189 69026
+fantastic 38438 69089
+fantastic all 38469 69089
+fantastic and 38251 69413
+fantastic banana 38498 69142
+fantastic food 38745 68871
+fantastic meal 38527 69195
+far 38775 69252
+far superior 38775 69309
+far, 39024 69038
+farm 39283 68767
+farm fresh 39324 68767
+farm-to-table 39585 68824
+farm-to-table and 39585 68881
+farm-to-table restaurant 39629 68881
+farmer) 39629 68937
+fast 39629 68976
+fast food 39403 69304
+fat 39403 69351
+fat) 39665 69065
+fat) and 39927 68779
+fat, 39927 68828
+fat, thought 39698 69161
+father's 39959 68877
+father's day 40220 68592
+fav 40252 68592
+fav restaurant 40513 68307
+favor 40772 68022
+favor and 40791 68022
+favorite 40826 68353
+favorite dinner 41083 68067
+favorite dishes 41340 67775
+favorite item 41597 67483
+favorite out 41377 67812
+favorite places 41634 67505
+favorite restaurant 41671 67505
+favorites 41708 67505
+favorites are: 41966 67198
+favourite 41745 67527
+favourite restaurant 41745 67549
+fe, 41745 67571
+fe, 2000 41745 67593
+fearful 42004 67286
+feeding 42004 67307
+feeding us 42004 67333
+feel 42263 67376
+feel like 42042 67708
+feeling 42042 67752
+feeling full 41820 68085
+feeling uplifted 41820 68129
+feels 41856 68462
+feels good 41892 68462
+feels very 41692 68794
+felt 41495 69128
+felt entirely 41495 69165
+felt like 41298 69497
+female 41298 69526
+female bartender 41100 69850
+few 41362 69883
+few additional 41424 69883
+few bites 41684 69582
+few choices 41943 69281
+few folks 42192 68984
+few kinks, 42192 69018
+few menu 42441 68693
+few months 42441 68698
+few others 42441 68703
+few pansies 42441 68708
+few people 42441 68714
+few regulars 42441 68721
+fia 42441 68734
+fia has 42441 68747
+fia needs 42441 68760
+fia stands 42441 68774
+fia, 42441 68792
+fiction, 42441 68820
+fiction, overcooked 42441 68841
+fifties 42690 68525
+fifties but 42939 68210
+fig 43187 67896
+fig and 43433 67585
+figure 43237 67926
+figured 43237 67956
+filet 43484 67644
+filet mignon 43730 67331
+filled 43977 67021
+filler 44029 67021
+filling 44029 67052
+filling done 43833 67394
+final 43833 67422
+final complaint 43833 67450
+finally 43882 67792
+finally got 43882 67811
+finally receive 43681 68153
+finally shared 43919 67829
+finally went 44152 67504
+find 44180 67849
+find agricola 44413 67524
+find dirty 44208 67865
+fine 44208 67884
+fine dining 44004 68227
+fine dining, 43798 68570
+fine; 43798 68587
+fine; they're 43592 68930
+fingerling 43372 69273
+fingerling potatoes 43152 69616
+finish 43165 69961
+finish even 43179 69961
+finish my 42955 70305
+finished 43188 70319
+finished and 43188 70347
+finished around 43421 70035
+finished off 43654 69723
+finland, 43654 69750
+finland, germany, 43433 70090
+fire 43433 70118
+fire & 43433 70146
+first 43675 70181
+first ana 43916 69869
+first and 44155 69557
+first blush 44155 69592
+first clue 44155 69612
+first course 44155 69630
+first covid 44383 69317
+first meaningful 44392 69317
+first off 44619 69003
+first off, 44628 69003
+first opened 44410 69334
+first punch 44419 69334
+first time 44426 69334
+first visit 44426 69347
+first visit, 44435 69347
+first, 44664 69030
+first, after 44679 69030
+fish 44708 69371
+fish and 44950 69394
+fish dish 44737 69736
+fish out 44524 70078
+fish sauce 44524 70102
+fish) 44524 70126
+fish) allergy 44310 70467
+fish, 44553 70491
+fish, i 44582 70491
+fish, which 44612 70832
+fish:)) 44855 70515
+fish:)) great 44882 70515
+fishes 45125 70193
+fishes once 45368 69871
+fishiness 45368 69891
+fits 45398 69891
+five 45398 69906
+five times 45190 70243
+fixe 45190 70259
+fixe ante 45190 70275
+fixed 45434 70291
+fixed priced 45434 70307
+fixed that, 45467 70307
+fixing 45246 70645
+fixture 45486 70306
+flaky 45505 70306
+flaky and 45524 70306
+flank 45524 70303
+flank steal 45303 70639
+flapjacks 45544 70302
+flashy 45785 69968
+flashy dishes 46026 69634
+flatbread 46054 69634
+flatbread and 46299 69300
+flatbread had 46538 68966
+flatbread incredible 46557 68966
+flatbread pizza, 46576 68966
+flatbread which 46815 68632
+flatbread, 47054 68298
+flatbread, and 47292 67963
+flatbreads 47309 67963
+flatbreads were 47546 67628
+flavor 47570 67971
+flavor and 47354 68314
+flavor but 47135 68656
+flavor just 47135 68659
+flavor obliterating 47135 68662
+flavor) 46916 69000
+flavor) and 46697 69338
+flavor, 46942 69334
+flavor, and 46966 69334
+flavor, besides 46966 69330
+flavor, but 46990 69330
+flavorful 47018 69670
+flavorless 47018 69670
+flavors 47260 69678
+flavors and 47260 69685
+flavors were 47502 69344
+flavors, 47512 69344
+flavors, nothing 47753 69004
+flesh 47764 69004
+floor 47777 69351
+floor during 47548 69698
+flour 47548 69706
+fluffy 47791 69366
+fluffy silver 47804 69366
+flying 47817 69366
+flying around 48060 69026
+foam 47834 69372
+foam - 47606 69714
+foam dribbled 47606 69710
+foie 47606 69708
+foie gras 47606 69708
+folks 47622 70053
+folks claimed 47394 70397
+followed 47411 70397
+food 47722 70479
+food ( 47477 70905
+food - 47788 70986
+food allergies 47543 71412
+food and 47618 71839
+food beautifully 47938 71494
+food choices 47693 71921
+food experience, 47693 72002
+food extremely 47448 72427
+food i'm 47202 72852
+food interesting 46958 73277
+food just 46958 73356
+food last 46958 73436
+food makes 46714 73860
+food might 46714 73937
+food options 46789 73937
+food place- 46543 74359
+food poisoning 46543 74433
+food poisoning' 46285 74854
+food presentation 46346 74854
+food properly 46087 75275
+food quality 46408 74928
+food runner, 46150 75349
+food safety 45892 75771
+food sat 45634 76193
+food seem 45376 76611
+food somebody 45119 77027
+food style 44860 77443
+food tasted 44922 77443
+food tastes 44985 77443
+food tasting 44985 77504
+food than 44985 77565
+food truck 44733 77981
+food used 44481 78392
+food were 44549 78392
+food would 44869 78039
+food, 45192 78103
+food, and 45515 77748
+food, but 45260 78164
+food, drinks, 45328 78164
+food, especially 45328 78224
+food, honestly, 45328 78284
+food, nor 45328 78344
+food, save 45328 78404
+food, were 45328 78464
+food, which 45076 78879
+food: 45399 78935
+food: creative 45399 78990
+food: got 45722 78627
+foodie 45470 79040
+foodie (and 45470 79090
+foods 45470 79143
+foot 45470 79192
+foot inside 45212 79605
+football, 45277 79605
+football, " 45600 79240
+for 45930 79289
+for dessert 46002 79289
+for drinks, 46074 79289
+for entrees 46146 79289
+for example, 45888 79705
+for good 46218 79338
+for my 46542 78971
+force-fed 46542 79021
+force-fed ducks 46542 79071
+foremost, 46862 78707
+foremost, we 46931 78707
+forget 47251 78343
+forget your 47571 77968
+forgot 47628 77968
+forks 47949 77592
+forks flying 48270 77215
+forward 48337 77632
+found 48076 78057
+found out 48076 78107
+four 48076 78160
+four course 47815 78591
+fragile 47815 78643
+fragile chair 47815 78695
+frankly 47554 79126
+frankly they 47290 79557
+frees 47614 79175
+frees up 47933 78793
+freezing 48252 78411
+freezing there 48569 78026
+frequented 48886 77655
+frequented constantly 49202 77289
+fresco 49255 77289
+fresco dining, 49308 77289
+fresh 49656 77350
+fresh  50004 76984
+fresh and 50099 77412
+fresh everything 50194 77412
+fresh food 50291 77412
+fresh ingredients 50389 77412
+fresh raw 50742 77045
+fresh sea 51094 76678
+fresh, 51446 76311
+fresh, and 51798 75945
+freshest fish 52150 75579
+freshly 52233 75579
+freshly prepared 52584 75208
+freshman 52668 75208
+freshman year, 53021 74837
+freshness 53375 74466
+freshness, 53375 74526
+freshness, interesting 53105 74954
+friday 52839 75384
+friday and 52573 75814
+fried 52666 75814
+fried calamari, 53024 75448
+fried chicken 53118 75448
+fried green 53476 75082
+friend 53572 75514
+friend and 53928 75585
+friend ordered, 54284 75232
+friend quite 54640 74878
+friend's 54731 74878
+friend's bridal 55087 74523
+friend, 55443 74600
+friend, and 55443 74677
+friend, my 55534 74677
+friendly 55898 74757
+friendly and 55999 74757
+friendly but 55999 74837
+friendly staff 56365 74917
+friendly, 56729 74997
+friendly, attentive 56729 75077
+friendly, very 57093 74722
+friends 57458 74802
+friends and 57196 75239
+friends got 57300 75239
+friends, 57665 74882
+friends, family, 57770 74882
+fries 58139 74527
+fries and 58249 74527
+fries were 58618 74174
+friggin 58729 74174
+friggin dime 59098 73821
+from 59474 73906
+frommage 59216 74345
+front 58958 74790
+front door 58700 75235
+frozen 59077 74883
+fulfill 59077 74977
+fulfill their 58819 75421
+full 58940 75869
+full bar 58691 76317
+full boat 58447 76765
+full dinner 58581 76765
+full price 58338 77212
+full, 58095 77659
+fun 58095 77757
+fun starts 58095 77855
+fun time 58095 77952
+funghi 57854 78400
+funghi served 57615 78848
+funky 57376 79296
+funky and 57139 79744
+funky, 56902 80192
+funky, nature 56665 80639
+funnel 56665 80752
+funnel cake 56416 81199
+future 56167 81645
+g 56546 81321
+gagging 56299 81766
+gagging after 56052 82211
+gallo 56052 82332
+gallo added 56052 82449
+garlic 56184 82894
+garlic mash 56556 82566
+garlic pieces, 56307 83011
+gas 56048 83456
+gas and 55789 83901
+gave 56163 84020
+gave great 56276 84020
+gave me 56276 84137
+gave us 56014 84583
+gazpacho 56389 84255
+geese--many 56389 84373
+geese--many restaurants 56389 84490
+gem 56765 84603
+general 56879 85050
+general vibe 56993 85050
+generally 56993 85165
+generous 57371 85280
+generous amount 57488 85280
+generous and 57605 85280
+generous chunks 57722 85280
+germany, 57461 85728
+germany, israel, 57202 86176
+gestures 56954 86624
+gestures going 56697 87072
+get 57089 87207
+get away 56832 87671
+get back 56966 87671
+get burned 56709 88134
+get dessert 57100 87805
+get her 56843 88267
+get in 56585 88729
+get me 56327 89191
+get my 56454 89191
+get out 56454 89325
+get served 56454 89459
+get up 56454 89591
+get, 56832 89262
+get, go 56951 89262
+gets 56951 89397
+gets good 56951 89531
+gets ill 56951 89662
+gets you 56692 90124
+getting 57070 90249
+getting contaminated 57070 90373
+getting killed 57070 90497
+getting quality 57448 90164
+getting really 57826 89831
+giant, 57946 89831
+gimmicky 57688 90288
+gimmicky elements 57688 90413
+ginger 58070 90079
+ginger beer 58452 89745
+girl 58834 89413
+girls 59216 89087
+give 59598 89228
+give elements 59598 89364
+give him 59336 89826
+give me 59076 90287
+give you 58816 90748
+given 58943 91212
+giving 59080 91212
+glad 59466 90882
+glance 59603 90882
+glass 59989 90552
+glaze 60375 90222
+gnocchi, 60762 89892
+go 61163 90043
+go ) 61163 90194
+go - 61163 90338
+go ahead, 61163 90482
+go back 61566 90627
+go elsewhere 61566 90771
+go here 61566 90915
+go outside 61566 91059
+go outside, 61566 91204
+go up 61317 91689
+go, 61471 92175
+go, but 61223 92661
+go, go 60977 93147
+go-to 60977 93291
+go-to place, 60977 93434
+goat 61133 93434
+gods 60887 93919
+gods i've 60640 94403
+goers 60392 94886
+goi 60788 94544
+going 61196 94696
+going and 61196 94849
+going back 61604 94508
+going here 61604 94658
+going here- 61355 95150
+going on 61355 95300
+going, 61763 94958
+golden 61934 95451
+golden avocado 61701 95945
+gone 62111 96096
+gone off 61878 96592
+gone, 61645 97087
+gone, sadly 61645 97241
+gone--it's 61645 97393
+goo 61645 97546
+goo came 61645 97699
+good 62087 97890
+good  62087 98081
+good - 62087 98272
+good although 62087 98463
+good and 62532 98655
+good anymore 62299 99186
+good but 62066 99717
+good chipotle 62066 99904
+good food 62066 100094
+good food, 61833 100624
+good home-cooked 61833 100814
+good luck 61600 101342
+good meal 61367 101864
+good measure 61367 102046
+good note, 61367 102227
+good places 61367 102408
+good restaurant 61367 102589
+good restaurants 61367 102763
+good service 61125 103284
+good service, 60884 103805
+good size, 60645 104326
+good thing 60645 104500
+good though 60645 104688
+good way 60645 104878
+good, 60863 105404
+good, and 60636 105930
+good, but 60409 106456
+good: 60182 106982
+good: detailed 60182 107177
+goods 59955 107704
+got 60194 108244
+got (fried 60194 108453
+got 2 59967 108993
+got did 59738 109532
+got home 59510 110066
+got my 59510 110259
+got sick 59268 110793
+got thru 59268 110986
+got violently 59026 111520
+gotten 59026 111715
+gourmet 59026 111910
+gourmet eggs 59026 112105
+grace 59026 112301
+graciously 59026 112497
+graciously did 58783 113033
+grads 59249 112692
+grain" 59469 112692
+grainy 59686 112692
+gras 59686 112890
+gras - 59443 113429
+gras production 59201 113964
+gratuit 58958 114496
+gratuit included 58715 115028
+gratuity 58715 115218
+gratuity because 58471 115750
+great 58993 115963
+great and 59519 116176
+great chefs 59519 116388
+great customer 59519 116600
+great details 59275 117149
+great experience 59275 117359
+great food 59803 117022
+great food, 59562 117567
+great meals 59562 117774
+great passion 59322 118319
+great pork 59082 118808
+great steak 58842 119272
+great tasting 58842 119400
+great things 58842 119528
+great, 59128 119994
+great, and 59414 119994
+great, attentive 59173 120459
+greatly 59451 120459
+green 59734 120459
+greens 60023 120924
+greens and 59784 121389
+greens" 59545 121854
+greens" salad 59306 122319
+greens, 59067 122784
+greens, no 58829 123249
+grill 59129 123249
+grill, 59429 123249
+grill/fresh 59722 123249
+grilled 60262 123371
+grilled octopus 60803 123028
+grocery 60803 123151
+grocery stores 60803 123278
+grossed 60803 123405
+grossed me 60803 123532
+group 61344 123663
+grouper 61640 123663
+grow 62181 123326
+grown 62477 123326
+guacamole 63019 122989
+guess 63316 123459
+guess, 63067 123929
+guy, 63609 123589
+guys 64151 123719
+guys, 64408 123719
+had 64977 123908
+had dinner 65547 123560
+had some 65305 124099
+hadn't 65625 124099
+hair 65384 124641
+half 65703 125183
+halibut 66264 124836
+halibut, 66582 124836
+ham 67142 125031
+ham/egg/cheese 67142 125225
+hamachi 66899 125767
+hand 66656 126315
+handle 66413 126862
+hands 66732 127404
+hands down 67296 127058
+happen 67860 127261
+happened 67860 127471
+happening 67860 127679
+happens 68424 127888
+happier 68180 128443
+happy 68751 128098
+hard 69325 128315
+hard, 69080 128877
+harmonious 69080 129013
+harry 69343 129013
+harsh 69917 128587
+harvest 70491 128161
+has 70760 128740
+has been 71341 128894
+hash 71923 128467
+hasn't 72179 129047
+hate 71859 129627
+hats 72435 129200
+have 73047 129419
+have any 73047 129640
+have been 73664 129866
+haven't 73664 130091
+haven't been 73664 130319
+having 74285 130547
+he 74907 130796
+head 74907 131046
+heads 74587 131720
+health 74587 131972
+healthy 75208 131551
+hear 75208 131805
+heard 75510 132481
+hearing 75510 132734
+heart 75189 133408
+heartbroken 75189 133659
+heat, 75811 133908
+heated 76434 133486
+heater 77057 133068
+heating 77680 132652
+heavy 77680 132907
+heirloom 77983 132907
+helped 78287 132907
+helpful 78913 132491
+helpful, 78913 132746
+hen 78913 133004
+hence 78913 133267
+her 79219 133946
+herbs, 79522 133946
+here 79869 134648
+here again 80540 134232
+here" 80217 134934
+here, 80217 135220
+here- 79894 135921
+here; 79894 136206
+hesitant 80565 135790
+hide 80565 136075
+high 81236 136362
+high, 81236 136651
+high-end 81907 136236
+highlight 82255 136236
+highly 82932 135821
+highly recommend 83615 135406
+hiking, 83292 136111
+hill 83292 136403
+him 83292 136715
+him and 83292 137025
+his 83292 137343
+hit 83954 136930
+hold 83631 137662
+holiday 83964 137662
+home 84621 137986
+home and 84291 138726
+home, 83961 139466
+home-cooked 83631 140206
+homemade 83950 140945
+honest 84599 140529
+honest, 84917 140529
+honestly 85240 141269
+honestly, 85240 141593
+honey 85889 141177
+honeycomb 86219 141177
+hops 85899 141917
+horchata 85579 142657
+horrendous 85259 143397
+horrible 84938 144134
+horrific 84617 144869
+hostess 84946 145604
+hostile 84618 146339
+hot 85268 146657
+hot, 85268 146964
+hour 85918 147269
+hours 85918 147576
+house 86569 147883
+house made 87221 147452
+houses 87872 147021
+how 87872 147328
+however 87872 147641
+however, 88203 148386
+huge 87884 149132
+human 87565 149878
+hummus 87903 149878
+hungry 87586 150624
+hungry, 87270 151370
+hurried 86954 152116
+hurry 87293 152116
+husband 87601 152865
+husband and 87601 153189
+husband, 87253 153940
+i 87906 154264
+i'd 88203 155017
+i'll 87845 155770
+i'm 88150 156529
+i'm sorry, 87790 157289
+i've 88106 158055
+i've been 87754 158823
+i've had 88073 158823
+ice 88391 159594
+ice cream 88039 160367
+iceberg 88357 160367
+icelandic 88676 160367
+ideal 88993 160367
+ideas 88640 161140
+if 88974 161939
+if someone 88974 162311
+if they 88974 162684
+if you 89668 163069
+if you're 89668 163452
+ill 89310 164265
+imagine 89647 164265
+imagined 89984 164265
+impeccable 90321 165077
+important 90655 165889
+imposter 90655 166269
+impress 90299 167081
+impressed 90997 167461
+improved 91339 167461
+in 91684 168277
+in addition, 91328 169094
+in) 90972 169911
+in, 91317 169911
+in-house 92019 169479
+inattentive 92019 169864
+included 92366 170682
+includes 92002 171500
+including 92709 171887
+inconsiderate 92343 172709
+inconsistent 92343 173096
+incredible 92688 173906
+incredibly 93400 174277
+individuals 93036 175083
+industrial, 93745 174648
+inedible 93745 175022
+inexpensive 93381 175831
+informed 93381 176203
+infused 93016 177012
+ingredient 93016 177383
+ingredients 93367 178191
+ingredients were 93720 178191
+inn 93355 178999
+innovative 92986 179805
+inside 93335 180616
+insolent 92966 181427
+instead 93314 181427
+insulted 93662 181427
+intended) 94379 180989
+interact 94003 181800
+interesting 94003 182177
+interior 94003 182548
+interior/ambiance 94717 182103
+interrupt 94340 182919
+interview, 95054 182475
+intimate 95769 182031
+intimate, 95390 182847
+into 96104 183222
+intriguing 96104 183590
+inviting 96818 183142
+involved 96440 183957
+irreparably 96440 184324
+is 97154 184690
+is, 97868 185055
+isn't 97868 185420
+israel, 97868 185784
+issue 98582 186153
+issues 98582 186508
+it 99330 186901
+it" 99330 187294
+it's 100084 187702
+it, 100838 188113
+item 101592 188523
+items 102353 188933
+its 102353 189343
+ive 101974 190199
+ivory 102735 189754
+jackets 103497 189309
+jalapeno-lime 104259 188864
+jalapeño 105021 188419
+jameson 104641 189277
+jammin' 105403 188832
+jersey 105794 188832
+jim 105794 189245
+jim, 105794 189657
+job 106556 190070
+joint 106182 190928
+joking 106182 191339
+joy 105808 192197
+juicy 106571 191752
+jules 106571 192164
+jumbo 106960 192164
+just 107738 192602
+just ok 107738 193042
+just wasn't 107738 193482
+justify 107362 194361
+kale 107757 195237
+kale, 107757 195666
+keep 108148 196543
+keeping 108915 196095
+kendall 108915 196524
+ketchup, 109304 196524
+keylime 109693 196524
+kick 110082 196524
+kicked 109704 197401
+kid, 109704 197829
+kids; 109704 198256
+kill 109704 198683
+killed 109704 199109
+kimchee 110079 199109
+kimchi 110845 198643
+kimchi) 111611 198179
+kind 111994 199064
+kind and 112770 198601
+kinds 113151 198601
+kiss 113922 198139
+kitchen 114694 198571
+know 115473 199018
+knowing 115088 199928
+knowledgeable 115867 199465
+known 116645 199002
+la 116645 199455
+la carte 116267 200371
+lacked 116666 200371
+lamb 117443 199908
+large 118220 199446
+larger 118997 198984
+last 119776 199449
+last night 119398 200350
+late 119398 200791
+later 119398 201233
+leaning 119398 201676
+least 119020 202582
+least spicy 118642 203486
+leave 118264 204397
+left 118264 204855
+less 118264 205316
+let 118664 205316
+let me 119065 205316
+like 119472 206280
+like most 119090 207245
+liked 119492 207245
+lime 120275 206780
+lime shrimp 121059 206314
+liquor 121845 205852
+liquor store 122633 205391
+literally 122633 205897
+little 123034 206869
+little too 123034 207378
+live 122648 208352
+lobster 123052 208352
+lobster bisque 123455 208352
+local 123859 208352
+locally 124263 208352
+location 123876 209329
+location and 123876 209825
+long 124265 210807
+look 125034 211310
+look forward 125795 210828
+looked 126554 211336
+looked great 126910 211336
+looked like 126910 211846
+looking 127662 212357
+looking forward 128405 211873
+looks 128405 212385
+looks like 128405 212897
+lose 128405 213410
+lost 128748 213410
+lot 128748 213928
+loud 128748 214446
+love 129507 214970
+loved 130282 215496
+loved their 131046 215011
+lovely 131358 215011
+lunch 132081 215542
+lunch and 132803 215058
+made 133538 215613
+made me 133877 215613
+main 133877 216158
+make 134208 217216
+makes 134208 217772
+man 133800 218824
+manager 133800 219385
+manhattan 133800 219947
+many 134541 220517
+many components 134133 221582
+margarita 134467 221582
+margarita pizza 135208 221089
+margherita 135945 220595
+mark 135535 221662
+mash 136274 221166
+may 136274 221742
+maybe 136274 222328
+me 137028 222944
+meal 137797 223578
+meal, 138569 224212
+meal, and 139342 223716
+meals 140122 223182
+meals were 140461 223182
+meaningful 141243 222648
+meat 142026 223246
+mediocre 142026 223845
+member 142812 223308
+men 142367 224443
+menu 143180 225069
+menu and 143994 224538
+menu but 144809 224007
+menu items 145572 223477
+menu, 145572 224107
+mess 145572 224742
+mexican 145572 225379
+mignon 146300 224857
+mind 146300 225501
+minuscule 146300 226147
+minute 146300 226794
+mistral 146300 227442
+mixed 146300 228091
+mom's 147028 227570
+money 147028 228231
+months 147028 228893
+mood 147028 229543
+more 147763 230196
+more than 147763 230850
+most 148059 232029
+mouth 148059 232683
+much 148810 233356
+much less 148810 234030
+multiple 149562 233504
+mushroom 150318 232978
+mushroom flatbread 151073 232451
+mushrooms 151831 231911
+must 152127 233112
+my 152948 233828
+my appetite 152948 234545
+my birthday 153765 234006
+my boyfriend 153765 234731
+my daughter 154580 234197
+my favorite 155401 233663
+my first 155401 234389
+my food 155401 235116
+my friend 156222 234579
+my husband 157044 235306
+my last 157044 236034
+my meal, 157867 235496
+my son 158691 234959
+my wife 159516 235691
+myself 159050 236962
+name 159412 236962
+near 158952 238237
+need 158952 238983
+needed 158952 239730
+needs 158952 240486
+negligence 158952 241246
+never 159780 242013
+never disappoints 160609 241481
+never had 160609 242249
+new 160919 243556
+new location 160919 244314
+next 161729 245078
+next door 162007 245078
+nice 162826 245849
+nice and 163646 245300
+nice decor 163646 246072
+nice outdoor 164465 245525
+nicely 164757 245525
+night 165586 246329
+night, 165586 247136
+nj 166415 246591
+no 167246 247477
+no dairy 167246 248389
+no one 167246 249300
+no problem 168077 248836
+no salsa 167550 250169
+none 168384 249703
+not 168727 251104
+not disappoint 169597 250639
+not great 169070 252040
+not overly 169415 252040
+not return 168887 253441
+not so 168887 254377
+not too 169760 253912
+not very 169760 254850
+not worth 169760 255794
+notch 170631 255329
+nothing 171505 256280
+noticed 170968 257699
+now 170431 259123
+nyc 169894 260545
+occasion 170742 261506
+octopus 171037 261506
+off 171343 262940
+offered 171343 263909
+ok 171343 264882
+old 171343 265856
+old location 171343 266828
+on 171650 268271
+once 172499 267802
+one 172826 269293
+one al 172285 270784
+one dish 171744 272275
+only 172078 273784
+only eat 171536 275292
+only had 172407 274822
+only happens 172407 275858
+only one 171865 277364
+open 172189 278873
+option 173055 278402
+options 173430 278402
+order 173741 279905
+ordered 174647 280877
+ordering 174077 282389
+other 174982 283365
+others 174421 284886
+our 175354 285825
+our expectations 175728 285825
+our first 176665 285283
+our server 177041 285283
+our waitress 177418 286750
+our wonderful 177797 286750
+out 178747 287732
+out and 178747 288710
+outdoor 179701 288168
+outdoor seating 180655 287620
+outside 181612 288599
+outside, 181050 290126
+outstanding, 182008 289584
+over 182401 291117
+overall 183359 290572
+overcooked 182795 292103
+overhaul 182795 293068
+overly 183756 292516
+overpriced 183756 293481
+own 184154 295002
+oyster 185116 294447
+oysters 185516 294447
+oysters and 186487 293886
+packed 185913 295410
+pairing 185913 296373
+pairings 185913 297336
+pandemic 186304 297336
+parents 185730 298860
+parking 185156 300394
+parking lot 185156 301351
+part 184576 302894
+parts 184576 303860
+pass 183995 305409
+past 183413 306959
+pasta 184378 307933
+pastor 183802 309490
+patio 184764 308910
+pay 185151 310473
+paying 185151 311392
+peach 185502 311392
+peanut 186466 310746
+peanut butter 187431 310095
+penny 187780 310095
+people 188740 311020
+people, 188740 311936
+per 188119 313494
+per person 188119 314401
+perfect 188468 314401
+perfection 189437 313728
+perfectly 190410 314615
+perfectly and 191384 313941
+perfectly, 192357 313267
+person 191736 314839
+phenomenal 192714 314164
+phone 192092 315737
+photos 192092 316637
+pick 193071 315963
+piece 193071 316868
+pig 193071 317778
+pizza 193432 317778
+pizza and 194413 317107
+place 194814 318734
+place and 194191 320362
+place, 193568 321992
+places 194593 322945
+plant 194995 322945
+plate 195396 324559
+plates 194770 326175
+pleasant 195797 327116
+please 195797 328057
+pleased 196826 327383
+plus 197855 326704
+poached 198258 326704
+point 198681 328321
+point grill 199729 327619
+point never 200108 327619
+point, 199437 329233
+poor 199437 330146
+poor service 199437 331060
+poorly 199437 331977
+poorly designed 199437 332895
+popular 198766 334514
+pork 199811 335443
+portions 200857 336378
+portions were 201231 336378
+positive 201231 337312
+potatoes 201607 337312
+prefer 200936 338955
+prepare 200259 340601
+prepared 200626 340601
+prepared and 201677 339896
+presentation 202730 340844
+presented 202730 341774
+pretentious 202730 342708
+pretty 203788 343636
+pretty much 204185 343636
+price 204185 344573
+prices 203529 346252
+prices, 203529 347192
+pricey 203932 347192
+pricey, 204992 346452
+princeton 206081 347396
+princeton area 207173 346656
+princeton so 208266 345917
+princeton, 208711 345917
+probably 209160 347601
+problem 209594 347601
+production 208947 349288
+projectile 208947 350234
+proper 208947 351178
+pumpkin 209368 351178
+pumpkin ravioli 209782 351178
+puree, 209782 352122
+put 209782 353067
+qdoba 209782 354016
+quality 210869 354975
+quesadilla 210869 355939
+quick 211308 355939
+quite 212397 356906
+raisins 213483 356171
+rare 213920 356171
+rave 213920 357136
+rave reviews 213920 358103
+ravioli 214362 358103
+ravioli, 215455 357371
+raw 216549 356634
+raw oysters 216993 356634
+read 216993 357602
+reading 217439 357602
+real 216788 359309
+really 217900 360297
+really didn't 217900 361280
+really enjoyed 218357 361280
+really good 219469 360535
+really nice 220580 359789
+really wanted 220580 360765
+really well 219925 362487
+reasonably 221026 361741
+receive 221026 362712
+received 221026 363685
+recent 220371 365403
+recommend 221486 366374
+recommended 221949 368097
+refused 221949 369069
+remember 223069 368318
+reservation 224193 369269
+reserved 223540 370972
+respect 224668 370219
+response 224013 371925
+rest 225144 372869
+restaurant 226323 373863
+restaurant and 225659 375618
+restaurant, 226839 374858
+restaurants 228024 375856
+restaurants and 227355 377621
+return 228543 378620
+review 229062 380393
+reviews 230251 381401
+reviews and 230771 381401
+rib 231971 380628
+rib hash 232501 380628
+ribs 233028 380628
+rice 232358 382406
+ricotta 233555 381633
+right 234073 383412
+rooftop 235280 382613
+room 235280 383596
+rude 235280 384581
+rude and 235280 385552
+runny 235795 385552
+rutabaga 237005 384739
+s'mores 238216 383926
+sad 237521 385716
+safety 236826 387506
+said 238042 388484
+said, 237347 390277
+salad 238571 391261
+salad - 237877 393058
+salmon 239110 392246
+salmon and 240343 391434
+salsa 240343 392429
+salty 239645 394245
+same 240177 396061
+sandwich 240707 396061
+sashimi 240707 397062
+saturday 241937 398063
+sauce 243175 399078
+save 242474 400912
+save your 241772 402747
+savor 243012 401930
+say 243553 403767
+saying 243553 404787
+says 243553 405808
+scallops 244095 405808
+scallops were 245343 404986
+scallops, 246586 404164
+scallops, and 247829 403342
+scott 247829 404371
+scott anderson 247118 406209
+scrumptious 248360 405403
+sea 248896 405403
+sea bass 250147 404597
+seabass 250689 404597
+seafood 251951 405635
+seafood allergy 251951 406674
+seafood place 253214 405865
+seared 254477 405056
+seated 255741 404248
+seating 257008 403440
+seating and 257558 403440
+second 258111 405289
+second course 258111 406328
+see 259385 407376
+seem 259385 408425
+seemed 258668 410287
+seems 258668 411336
+selection 259231 411336
+send 258514 413195
+serious 257797 415056
+serious seafood 257797 416107
+served 259073 417163
+server 260352 418220
+server, 260912 418220
+servers 260912 419279
+service 261512 421191
+service and 262111 421191
+service here 262111 422288
+service, 262715 424200
+serving 264034 425287
+several 265348 424471
+share 265953 424471
+shared 267272 423656
+sharing 268591 422842
+she 269205 424758
+she explained 270530 423945
+shocked 271141 423945
+short 272478 425032
+short rib 273821 424219
+short ribs 275165 423407
+should 274451 425292
+should have 274451 426362
+shoulder 274451 427439
+shower 275797 426598
+shrimp 276405 426598
+shrimp and 277750 425757
+shrimp app 278335 425757
+sick 278335 426783
+side 278916 428667
+simple 280248 427809
+since 280832 429699
+single 282168 428842
+single staff 283504 427985
+six 282743 429876
+sized 284079 429020
+skin 285415 428164
+slightly 285990 428164
+slightly more 286564 428164
+slow 285802 430057
+small 286376 431956
+small, 287707 431098
+smelled 286945 432996
+so 287527 434928
+so fresh 288872 434070
+so good 290217 433213
+so kind 290800 433213
+so much 290800 434288
+so we 292145 433430
+so you 293491 432572
+social 294837 431714
+social distancing 295414 431714
+soda 296757 430856
+soft 297332 430856
+some 298687 431923
+some flavor 297909 433875
+somebody 297909 434943
+someone 299261 436017
+something 300619 437109
+something different 301974 436233
+son 302558 436233
+soon 303918 437328
+sorry, 303918 438401
+soup 304512 440355
+soup and 305105 440355
+space 306465 439478
+space, 305698 441432
+special 306233 443392
+special menu 305466 445353
+special occasion 305466 446439
+spectacular 306772 445563
+spend 306772 446653
+spicy 306772 447745
+splendid 308079 446871
+spot 308624 446871
+sprouts 307858 448839
+squash 307092 450808
+staff 308424 451910
+staff member 308982 451910
+staff, 308206 453899
+standards 307434 455889
+stands 306663 457875
+star 307224 459859
+started 308561 460948
+starts 308561 462022
+stay 307782 464001
+steak 309119 463091
+steak and 309677 463091
+still 308899 465067
+stop 308899 466131
+stop leaning 308899 467190
+store 309457 467190
+street 308680 469169
+style 307903 471139
+such 308465 473105
+summer 309802 472178
+sunday 309023 474143
+super 310368 473242
+sure 311710 474311
+surprised 313054 475380
+sweet 314381 476447
+swordfish 315709 475541
+table 317046 476615
+table, 317046 477683
+table, and 317046 478746
+tables 317046 479808
+taco 316264 481787
+tacos 315481 483768
+take 314692 485747
+takes 314692 486745
+taking 316028 487716
+tartare 316581 487716
+taste 317133 489664
+tasted 317687 491614
+tasteless 316901 493562
+tastes 317451 493562
+tasting 317451 494559
+tasting menu 317451 495554
+tasty 318008 495554
+tax 318008 496546
+team 319352 495572
+tell 319908 497538
+temperature 320438 497538
+tender 320965 497538
+tender and 321493 497538
+terrible 321493 498524
+than 322814 499523
+than food 322814 500518
+thank 323346 500518
+thank you 323901 500518
+thanks 325223 499533
+that 325786 501511
+the 326408 503555
+the appetizers 326408 504609
+the atmosphere 327028 504609
+the bill 327028 505659
+the chefs 327649 505659
+the first 327649 506708
+the food 328278 508753
+the ginger 329650 507757
+the man 329650 508802
+the next 329650 509844
+the only 328904 511886
+the person 328904 512923
+the restaurant 328904 513958
+the service 330277 514988
+the staff 330888 514988
+the three 330113 517027
+the wine 330113 518054
+the worst 329349 520085
+their 330006 522124
+their food 329283 524164
+them 330653 525189
+then 331308 527238
+there 332710 528284
+there were 331975 530365
+there's 332644 532447
+these 334044 533494
+these prices 333305 535573
+they 334728 536666
+they call 334728 537766
+they charge 334728 538862
+they close 334728 539957
+they did 334728 541046
+they didn't 333987 543189
+they do 335408 544247
+they don't 336828 545301
+they had 336085 547415
+they have 336756 549521
+they made 336019 551629
+they make 337416 550562
+they told 336677 552669
+they were 338077 553707
+they would 338077 554735
+thing 338698 556838
+things 340074 557838
+think 340684 557838
+thinking 340684 558821
+third 340684 559804
+this 341300 561940
+this place 340527 564082
+this restaurant 341134 566225
+those 340353 568372
+though 340958 570522
+thought 341559 572677
+three 342940 573710
+three course 344318 572577
+threw 344912 572577
+through 344912 573607
+till 345479 573607
+time 346877 574620
+time  347461 574620
+times 348047 576789
+times and 347284 578958
+tiny 347284 579968
+tip 347284 580976
+today 347284 581980
+told 347956 584170
+told him 347956 585191
+told me 347956 586211
+told us 347956 587219
+tomato 349355 588222
+tomatoes 350754 587052
+tonight 351427 587052
+too 352850 588063
+too hard 352850 589073
+too many 352850 590043
+too much 353534 592185
+too salty 353534 593155
+took 354957 594124
+top 355645 596273
+top notch 357075 595094
+tortilla 357075 596062
+tortillas 356324 598209
+town 357761 599155
+tried 359202 600112
+tries 358450 602270
+tries too 357694 604427
+try 358394 606600
+trying 357636 608772
+tuna 359095 607571
+tuna tartare 359793 607571
+turned 361255 608483
+twice 361896 610652
+twice and 361896 611564
+two 362547 613742
+two people 362547 614661
+type 361732 616836
+undercooked 360911 619013
+undercooked and 360911 619925
+unfriendly 360911 620836
+unique 361560 623006
+until 361560 623912
+up 362222 626102
+up all 363697 624837
+up and 362874 627028
+upscale 362050 629202
+upscale restaurant 362050 630098
+upscale/cool 361225 632261
+us 362710 633171
+us and 363369 635329
+use 364851 634054
+used 364851 634933
+valet 364851 635811
+valet parking 364851 636683
+variety 366337 635391
+vegetables 366337 636189
+very 367018 638302
+very disappointed 366189 640415
+very fresh 367697 639115
+very good 367697 639926
+very good, 366865 642044
+very rude 366865 642853
+very tasty 368369 641539
+vibe 369067 641539
+violently 368263 643651
+virginia 369772 642331
+visit 370469 644446
+visited 369649 646558
+vomiting 369649 647349
+wait 370338 649465
+wait staff 371004 651584
+waiter 372494 652350
+waiting 371665 654468
+waitress 373159 655234
+walk 372330 657352
+walked 371499 659470
+walking 372993 658095
+want 372993 658856
+want good 372993 659618
+wanted 372162 661772
+warm 373656 660439
+warn 372822 662593
+warn everyone 371952 664746
+was 371952 665499
+wasn't 372574 667654
+waste 372574 668405
+waste your 371701 670523
+water 371701 671230
+way 373195 671942
+way out 372322 674055
+we 373896 674807
+we also 375470 673398
+we always 376173 673398
+we could 376173 674136
+we each 375299 676290
+we enjoyed 376870 674871
+we finally 378428 673447
+we had 379992 674183
+we have 379144 676341
+we ordered 380710 674915
+we shared 381444 674915
+we started 382166 674915
+we told 382166 675637
+we took 383735 674203
+we went 383735 674918
+we were 385317 675638
+we're 386897 674201
+website, 386049 676358
+week 386049 677069
+weekly 386780 677069
+weeks 385912 679227
+weird 385912 679895
+well 387511 680567
+well done 387511 681239
+well, 387511 681894
+went 388241 684065
+went here 389843 682557
+were 390646 684774
+were all 392320 683268
+were closed 392320 683946
+were cooked 393994 682437
+were good 394793 682437
+were great 395577 682437
+were impressed 396351 682437
+were perfectly 397999 680934
+were pretty 398767 680934
+were seated 400415 679424
+were still 399509 681586
+were there 401157 680074
+were too 400252 682239
+were two 401900 680724
+weren't 401900 681367
+what 402621 681367
+when 402621 682052
+whenever 403338 682052
+which 404092 684237
+which had 404837 684237
+while 406511 682770
+while my 407246 682770
+white 406307 684951
+whole 405357 687131
+why 405357 687789
+wife 407035 688454
+wife and 407760 690639
+wife had 408486 690639
+will 410170 689113
+will definitely 410897 689113
+wine 412587 689774
+wine pairing 411629 691963
+wish 413325 692621
+with 414066 694812
+within 413108 697002
+without 414808 697664
+won't 414808 698343
+wonderful 415548 700539
+words 415548 701211
+work 416276 703404
+worked 417970 701883
+world 417008 704075
+worried 417733 704075
+worse 416762 706266
+worse than 416762 706931
+worst 416762 707596
+worst part 416762 708261
+worth 417496 710464
+worth every 419196 708940
+would 420909 709635
+would definitely 422614 708099
+would have 424319 708787
+would highly 426024 707241
+would not 426024 707925
+wow 427730 706375
+write 426765 708607
+wrong 426765 709285
+year 426765 709959
+years 427513 709959
+yelp 426550 712187
+yes, 428260 710624
+yet 428260 711288
+you 429049 713577
+you can 429841 715861
+you expect 428876 718136
+you have 427910 720413
+you like 428706 720413
+you prefer 428706 721111
+you really 428706 721817
+you want 428706 722531
+you're 430462 723240
+your 431223 725523
+your expectations 430254 727806
+your food 429281 730089

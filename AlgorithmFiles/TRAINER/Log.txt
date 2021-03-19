@@ -1,1 +1,11 @@
 LoyTrainingSet.txt opened successfully | 03-10-2021 22:03:16
+03-18-2021 15:04:14 | NegTrainingSet.txt opened successfully 
+03-18-2021 15:04:37 | NovTrainingSet.txt opened successfully 
+03-18-2021 15:04:38 | LoyTrainingSet.txt opened successfully 
+03-18-2021 15:04:42 | Training Completed
+
+03-18-2021 15:11:10 | NegTrainingSet.txt opened successfully 
+03-18-2021 15:11:28 | NovTrainingSet.txt opened successfully 
+03-18-2021 15:11:30 | LoyTrainingSet.txt opened successfully 
+03-18-2021 15:11:39 | Training Completed
+
