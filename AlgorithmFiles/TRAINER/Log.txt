@@ -9,3 +9,86 @@ LoyTrainingSet.txt opened successfully | 03-10-2021 22:03:16
 03-18-2021 15:11:30 | LoyTrainingSet.txt opened successfully 
 03-18-2021 15:11:39 | Training Completed
 
+03-23-2021 16:17:20 | NegTrainingSet.txt opened successfully 
+03-23-2021 16:17:24 | NovTrainingSet.txt opened successfully 
+03-23-2021 16:17:24 | LoyTrainingSet.txt opened successfully 
+03-23-2021 16:17:26 | Training Completed
+
+03-23-2021 16:21:33 | NegTrainingSet.txt opened successfully 
+03-23-2021 16:21:36 | NovTrainingSet.txt opened successfully 
+03-23-2021 16:21:36 | LoyTrainingSet.txt opened successfully 
+03-23-2021 16:21:38 | Training Completed
+
+03-23-2021 16:25:07 | NegTrainingSet.txt opened successfully 
+03-23-2021 16:25:10 | NovTrainingSet.txt opened successfully 
+03-23-2021 16:25:11 | LoyTrainingSet.txt opened successfully 
+03-23-2021 16:25:33 | Training Completed
+
+03-23-2021 16:26:24 | NegTrainingSet.txt opened successfully 
+03-23-2021 16:26:27 | NovTrainingSet.txt opened successfully 
+03-23-2021 16:26:27 | LoyTrainingSet.txt opened successfully 
+03-23-2021 16:26:31 | Training Completed
+
+03-23-2021 16:28:04 | NegTrainingSet.txt opened successfully 
+03-23-2021 16:28:08 | NovTrainingSet.txt opened successfully 
+03-23-2021 16:28:08 | LoyTrainingSet.txt opened successfully 
+03-23-2021 16:28:10 | Training Completed
+
+03-25-2021 13:41:45 | NegTrainingSet.txt opened successfully 
+03-25-2021 13:41:49 | NovTrainingSet.txt opened successfully 
+03-25-2021 13:41:50 | LoyTrainingSet.txt opened successfully 
+03-25-2021 13:41:53 | Training Completed
+
+03-25-2021 13:43:45 | NegTrainingSet.txt opened successfully 
+03-25-2021 13:43:50 | NovTrainingSet.txt opened successfully 
+03-25-2021 13:43:51 | LoyTrainingSet.txt opened successfully 
+03-25-2021 13:43:54 | Training Completed
+
+03-25-2021 18:01:11 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:01:18 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:01:18 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:02:06 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:02:16 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:09:10 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:09:46 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:10:15 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:10:28 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:15:02 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:15:35 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:15:46 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:19:09 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:19:24 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:19:26 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:19:38 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:19:54 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:22:16 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:22:35 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:27:42 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:27:55 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:30:37 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:30:51 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:35:28 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:35:38 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:35:41 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:36:39 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:36:46 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:36:46 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:40:35 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:40:42 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:40:43 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:56:40 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:56:46 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:56:47 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:57:05 | Training Completed
+
+03-25-2021 18:57:18 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:57:25 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:57:25 | LoyTrainingSet.txt opened successfully 
+03-25-2021 18:57:59 | NegTrainingSet.txt opened successfully 
+03-25-2021 18:58:05 | NovTrainingSet.txt opened successfully 
+03-25-2021 18:58:06 | LoyTrainingSet.txt opened successfully 
+03-27-2021 20:01:19 | NegTrainingSet.txt opened successfully 
+03-27-2021 20:01:29 | NovTrainingSet.txt opened successfully 
+03-27-2021 20:01:29 | LoyTrainingSet.txt opened successfully 
+03-27-2021 20:01:34 | Training Completed
+

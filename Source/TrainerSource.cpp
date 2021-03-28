@@ -18,6 +18,14 @@ Non-primitive Data Types:
 		ncounts: vector storing number of instances of each word in all negative reviews of the vector<word>.
 		numberOfmembers: number of words contained in a vector<word>, equivalent to size of counts vector.
 
+Powerful Features:
+		- Puts all reviews on the same scale(different people may generally rate stores differently; each person
+		  has a different sense of a 3 star service, for example. Looking at the content and sentiment of the
+		  review gives a better measure of how much the reviewer liked the service as opposed to other reviewers.
+		- Converts discrete 5 stars to a continuous range
+		- Loyal/Novel cannot be found without seperate hand-picked sets; we have measures for these qualities
+		  as well.
+
 Functions:
 	Union: combines two vector<word>s(positive and negative in this case) into one.
 	Compress: converts raw words into a word set.
@@ -54,21 +62,20 @@ struct word {
 // Global Variables
 ofstream Log;
 int SetType; // 0 -> positive, 1 -> negative, 2 -> novel, 3 -> loyal
+bool newSentenceFlag;
+bool negationFlag;
 int punctuationCounts[4][3];
-int OtherData[4][4] = { { 0,0,0,0 }, { 0,0,0,0 }, { 0,0,0,0 }, {0,0,0,0} };
-//         0              1              2             3               
-//  uniqueWordCountP 
-//   rawWordCountP  rawWordCountN  rawWordCountO  rawWordCountL   
-//   numPosReviews  numNegReviews  numNovReviews  numLoyReviews  
-//      ngramP         ngramN           ngramO       ngramL
+int OtherData[4][7] = { { 0,0,0,0 }, { 0,0,0,0 }, { 0,0,0,0 }, {0,0,0,0} };
+//		Rows: (0)uniqueWordCount, (1)rawWordCount, (2)numPosReviews, (3)ngramSize
+//	 Columns: (0)p, (1)n, (2)o, (3)l, (4), (5), (6)trash 
+
 
 
 
 // Constants
 const string AbsPath = "C:\\Users\\750010316\\Documents\\GFacil\\GlobalizationFacilitator\\AlgorithmFiles\\TRAINER\\";
 const string LogFileName = "Log.txt";
-const string Param1FileName = "ModelParameters\\Param1.txt";
-const string Param2FileName = "ModelParameters\\Param2.txt";
+const string ParamFolderName = "ModelParameters\\";
 const string posDataFileName = "TrainingSets\\PosTrainingSet\\PosTrainingSet.txt";
 const string negDataFileName = "TrainingSets\\NegTrainingSet\\NegTrainingSet.txt";
 const string novDataFileName = "TrainingSets\\NovTrainingSet\\NovTrainingSet.txt";
@@ -78,6 +85,7 @@ const string metadataFolderName = "Metadata\\";
 // Metadata
 string delimiter;
 string taboo_chars;
+vector<string> taboo_words;
 vector<string> stop_words;
 vector<string> negation_words;
 
@@ -88,8 +96,10 @@ string Preprocess(string raw_word);
 vector<word> Union(vector<vector<word>> All);
 vector<word> Compress(vector<string> raw_words);
 vector<word> Trim(vector<vector<word>> All);
-int Evaluate(counts c);
-void OutputFile(vector<word>::iterator set, int n);
+int Evaluate(counts c, int SetType);
+void OutputFile(vector<word>::iterator pnbeg, vector<word>::iterator pnend, vector<word>::iterator olbeg, vector<word>::iterator olend);
+
+
 
 
 
@@ -109,6 +119,7 @@ string getDate() {
 	string str(buffer);
 	return str;
 }
+
 
 vector<word> ProcessDocument(string filename, int ngram) {
 
@@ -152,12 +163,26 @@ vector<word> ProcessDocument(string filename, int ngram) {
 		int i = 0;
 		refined_phrases.clear();
 
+		negationFlag = false;
+		newSentenceFlag = true;
+
+		for (int i = 0; i < raw_words.size(); i++) {
+			raw_words[i] = Preprocess(raw_words[i]);
+		}
+
+
 		while (i < raw_words.size() - n) {
 			phrase = "";
 			for (int j = 0; j < n; j++) {
-				phrase += raw_words[i + j] + " ";
+				string phrase2 = raw_words[i + j];
+				if (!any_of(taboo_words.begin(), taboo_words.end(), [phrase2](string s) {return s == phrase2;}))
+					phrase += " " + raw_words[i + j];
+				else{					
+					j--;
+					i++;
+				}
 			}
-			phrase.erase(phrase.end() - 1);
+			phrase.erase(phrase.begin());
 
 
 			if (phrase.find(delimiter) != string::npos) {
@@ -165,17 +190,36 @@ vector<word> ProcessDocument(string filename, int ngram) {
 				continue;
 			}
 
-			refined_phrases.push_back(Preprocess(phrase));
+
+			/*
+			int index = 0;
+			int index2 = 0;
+
+			phrase = "Wher to going";
+			n = 3;
+
+			string phrase2 = phrase + " ";
+			phrase = "";
+			for (int k = 0; k < n; k++) {
+				index2 = phrase2.find(" ", index+1);
+				phrase += Preprocess(phrase2.substr(index, index2-index));
+				index = index2;
+			}
+			//phrase.erase(phrase.end() - 1);
+			refined_phrases.push_back(phrase);
+			*/
+			refined_phrases.push_back(phrase);
 			i++;
 		}
 		All[n - 1] = Compress(refined_phrases);
 	}
 
 
-	return Trim(All);
+	return Union(All);
 
 
 }
+
 
 string Preprocess(string raw_word) {
 
@@ -186,35 +230,87 @@ string Preprocess(string raw_word) {
 		t = raw_word.find_first_of(taboo_chars);
 	}
 
+
+	if (raw_word == "a") {
+		cout << "Ok";
+	}
+
 	
 
-	// deleting stopwords
-	raw_word.insert(raw_word.begin(), ' ');
-	raw_word.insert(raw_word.end(), ' ');
 
+
+	// deleting stopwords
+	string raw_word2 = raw_word;
+	for (int i = 0; i < raw_word2.size(); i++) { raw_word2[i] = tolower(raw_word2[i]); }
+	raw_word2.insert(raw_word2.begin(), ' ');
+	raw_word2.insert(raw_word2.end(), ' ');
 	for (int i = 0; i < stop_words.size(); i++) {
-		t = raw_word.find(" " + stop_words[i] + " ");
+		t = raw_word2.find(" " + stop_words[i] + " ");
 		if (t != string::npos)
-			raw_word.erase(t+1, t + stop_words[i].size());
+			raw_word.erase(t, t + stop_words[i].size());
 	}
-	raw_word.erase(raw_word.begin());
-	raw_word.erase(raw_word.end()-1);
+	
+
+	if (raw_word == delimiter) {
+		negationFlag = false;
+	}
+
+
+	// append _NOT if negationFlag is up
+	if (negationFlag) {
+		raw_word = raw_word + "_NOT";
+	}
+	else {
+		// search for negation words
+		raw_word2 = raw_word;
+		for (int i = 0; i < raw_word2.size(); i++) { raw_word2[i] = tolower(raw_word2[i]); }
+		raw_word2.insert(raw_word2.begin(), ' ');
+		raw_word2.insert(raw_word2.end(), ' ');
+		for (int i = 0; i < negation_words.size(); i++) {
+			t = raw_word2.find(" " + negation_words[i] + " ");
+			if (t != string::npos) {
+				raw_word.erase(t, t + negation_words[i].size());
+				negationFlag = true;
+			}
+		}
+		
+	}
+
+	
+
+
+
+	// lowercase if newSentence
+	if (newSentenceFlag) {
+		raw_word[0] = tolower(raw_word[0]);
+		newSentenceFlag = false;
+	}
+
+	if (raw_word == delimiter) {
+		newSentenceFlag = true;
+	}
 
 
 	// checking for punctuation
 	for (int i = 0; i < raw_word.size(); i++) {
-
+		
 		if (raw_word[i] == '.') {
 			punctuationCounts[SetType][0]++;
 			raw_word.erase(i);
+			newSentenceFlag = true;
+			negationFlag = false;
 		}
 		else if (raw_word[i] == '!') {
 			punctuationCounts[SetType][1]++;
 			raw_word.erase(i);
+			newSentenceFlag = true;
+			negationFlag = false;
 		}
 		else if (raw_word[i] == '?') {
 			punctuationCounts[SetType][2]++;
 			raw_word.erase(i);
+			newSentenceFlag = true;
+			negationFlag = false;
 		}
 		else {
 			i++;
@@ -222,9 +318,7 @@ string Preprocess(string raw_word) {
 		i--; // if punctuation char was deleted
 	}
 
-	for (int i = 0; i < raw_word.size(); i++) {
-		raw_word[i] = tolower(raw_word[i]);
-	}
+	
 
 	return raw_word;
 }
@@ -262,16 +356,17 @@ vector<word> Union(vector<vector<word>> All) { // lazily coded, kinda slow
 				l += c[j].count.l;
 			}
 
-			cset.push_back(word{ c[i].text,{p,n,o,l}, Evaluate({p,n,o,l}) });
+			cset.push_back(word{ c[i].text,{p,n,o,l}, 1});
 		}
 	}
 
-
+	OtherData[0][SetType] = cset.size();
 	return cset;
 }
 
 
 vector<word> Compress(vector<string> raw_words) { // CHECK
+	/*
 	sort(raw_words.begin(), raw_words.end());
 
 	int count = 1;
@@ -295,7 +390,7 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 			else if (SetType == 3)
 				c.l = count;
 
-			set.push_back(word{ text, c, Evaluate(c) }); // correct struct declaration?
+			set.push_back(word{ text, c, 0}); // correct struct declaration?
 			count = 1;
 			text = raw_words[i];
 		}
@@ -303,64 +398,84 @@ vector<word> Compress(vector<string> raw_words) { // CHECK
 
 
 
-	if (set[0].text == "") {
-		set.erase(set.begin());
+	// Erasing unwanted words {"" , "_NOT"}
+	for (int i = 0; i < taboo_words.size(); i++) {
+		string taboo_word = taboo_words[i];
+		vector<word>::iterator index = find_if(set.begin(), set.end(), [taboo_word](word a) {return a.text == taboo_word; });
+		if (index != set.end()) {
+			set.erase(index);
+		}
 	}
-
+	*/
+	vector<word> set;
+	for (int i = 0; i < raw_words.size(); i++){
+		set.push_back(word{raw_words[i], 1, 0 });
+	}
 
 	return set;
 }
 
-int Evaluate(counts c) {
-
-	return c.p + c.n + c.o + c.l;
+int Evaluate(counts c, int SetType) {
+	if (SetType == 6)
+		return abs(c.p - c.n);
+	else if (SetType == 7)
+		return abs(c.o - c.l);
 
 }
 
 // temporary trimming --> lopping off bottom half
-vector<word> Trim(vector<vector<word>> All) {
+void Trim(vector<word> &All) {
 
-
-
-	for (int i = 0; i < All.size(); i++) {
-
-		for (vector<word>::iterator j = All[i].begin(); j < All[i].end(); j++) {
-			Evaluate((*j).count);
-		}
-		sort(All[i].begin(), All[i].end(), [](word a, word b) {return a.value > b.value; }); // sorting in correct order?
-
-		All[i].erase(All[i].begin() + All[i].size() / 2, All[i].end()); // how much to trim?? (rn just lopping off bottom half values)
+	for (vector<word>::iterator j = All.begin(); j < All.end(); j++) {
+		Evaluate((*j).count,SetType);
 	}
+	sort(All.begin(), All.end(), [](word a, word b) {return a.value < b.value; }); // sorting in correct order?
 
-
-
-	return Union(All);
-
+	All.erase(All.begin() + (All.size())/ 2, All.end()); // how much to trim?? (rn just lopping off bottom half values)
 
 
 }
 
 
-
-void OutputFile(vector<word>::iterator set, int n) {
+void OutputFile(vector<word>::iterator pnbeg, vector<word>::iterator pnend, vector<word>::iterator olbeg, vector<word>::iterator olend) {
 
 	ofstream outf;
 
-
-
-	// First Parameters File: Word Counts
-	outf.open(AbsPath + Param1FileName);
+	// First Parameters File: Positive-Negative Word Counts
+	outf.open(AbsPath + ParamFolderName + "Param1.txt");
 
 	// Preliminary Information
-	outf << "Parameters for Naive Bayes\n";
-	outf << "(Word Counts)\n";
-	outf << "<text> [p] [n] [o] [l]\n";
+	outf << "Parameters for Prediction\n";
+	outf << "(";
+	outf << "Positive-Negative";
+	outf << ")\n";
+	outf << "<text> [p] [n]\n";
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
 
-	for (int i = 0; i < n; i++) {
-		outf << (*set).text << " " << (*set).count.p << " " << (*set).count.n << " " << (*set).count.o << " " << (*set).count.l << endl;
-		set++;
+	// Recording Word Counts
+	for (; pnbeg < pnend; pnbeg++) {
+		outf << (*pnbeg).text << " " << (*pnbeg).count.p << " " << (*pnbeg).count.n << endl;
+	}
+
+	outf << "#";
+	outf.close();
+
+	// Second Parameters File: Novel-Loyal Word Counts
+	outf.open(AbsPath + ParamFolderName + "Param2.txt");
+
+	// Preliminary Information
+	outf << "Parameters for Prediction\n";
+	outf << "(";
+	outf << "Novel-Loyal";
+	outf << ")\n";
+	outf << "<text> [o] [l]\n";
+	outf << "Last Modified: " << getDate() << "\n";
+	outf << "#" << "\n"; // Data Starts Here
+
+	// Recording Word Counts
+	for (; olbeg < olend; olbeg++) {
+		outf << (*olbeg).text << " " << (*olbeg).count.o << " " << (*olbeg).count.l << endl;
 	}
 
 	outf << "#";
@@ -370,9 +485,9 @@ void OutputFile(vector<word>::iterator set, int n) {
 
 
 
-	// Second Parameter File: Qualities of Word Counts
-	outf.open(AbsPath + Param2FileName);
-	outf << "Parameters for Naive Bayes\n";
+	// Third Parameter File: Qualities of Word Counts
+	outf.open(AbsPath + ParamFolderName + "Param3.txt");
+	outf << "Parameters for Prediction\n";
 	outf << "(Class Probability and Sums Data)\n";
 	outf << "Last Modified: " << getDate() << "\n";
 	outf << "#" << "\n"; // Data Starts Here
@@ -416,18 +531,9 @@ void OutputFile(vector<word>::iterator set, int n) {
 
 
 
-
-
-
-
-
-
-
-
 int main() {
 
-	
-	// Setup
+// Setup
 
 	Log.open(AbsPath + LogFileName, ostream::out | ostream::app);
 
@@ -436,35 +542,53 @@ int main() {
 			punctuationCounts[i][j] = 0;
 		}
 	}
+	
+	newSentenceFlag = true;
+
+	negationFlag = false;
 
 	ifstream inFile;
 	string temp;
 	vector<string> taboo_chars2;
-	char temp2;
 	inFile.open(AbsPath + metadataFolderName + "Delimiter.txt");
 	inFile >> delimiter;
 	inFile.close();
-	inFile.open(AbsPath + metadataFolderName + "StopWordList.txt");
+	inFile.open(AbsPath + metadataFolderName + "StopWordList2.txt");
 	while (inFile) {
 		inFile >> temp;
 		stop_words.push_back(temp);
 	}
+	stop_words.erase(stop_words.end()-1); // repeated elem at end
+	inFile.close();
 	inFile.open(AbsPath + metadataFolderName + "NegationWords.txt");
 	while (inFile) {
 		inFile >> temp;
 		negation_words.push_back(temp);
 	}
+	negation_words.erase(negation_words.end()-1);
+	inFile.close();
 	inFile.open(AbsPath + metadataFolderName + "TabooChars.txt");
 	while (inFile) {
 		inFile >> temp;
 		taboo_chars2.push_back(temp);
 	}
+	taboo_chars2.erase(taboo_chars2.end()-1);
+	inFile.close();
 	taboo_chars = "";
 	for (int i = 0; i < taboo_chars2.size(); i++) {
 		taboo_chars = taboo_chars + taboo_chars2[i];
 	}
+	inFile.open(AbsPath + metadataFolderName + "TabooWords.txt");
+	taboo_words.push_back("");
+	while (inFile) {
+		inFile >> temp;
+		taboo_words.push_back(temp);
+	}
+	taboo_words.erase(taboo_words.end() - 1);
+	inFile.close();
 
-	// Positive/Negative Training
+
+// Positive/Negative Training
 	SetType = 0;
 	vector<word> Pos = ProcessDocument(AbsPath + posDataFileName, 2);
 	SetType = 1;
@@ -473,18 +597,21 @@ int main() {
 	vector<word> Nov = ProcessDocument(AbsPath + novDataFileName, 3);
 	SetType = 3;
 	vector<word> Loy = ProcessDocument(AbsPath + loyDataFileName, 3);
-	vector<word> All = Union({ Pos, Neg, Nov, Loy });
+	SetType = 6;
+	vector<word> PosNeg = Union({ Pos, Neg });
+	Trim(PosNeg);
+	SetType = 7;
+	vector<word> NovLoy = Union({ Nov, Loy });
+	Trim(NovLoy);
+
+
+
+
 
 
 	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
-	vector<double> OtherData(6);
 
+	OutputFile(PosNeg.begin(), PosNeg.end(), NovLoy.begin(), NovLoy.end());
 
-
-
-
-	// OtherData: PcPos  PcNeg  sum  psum  nsum numberOfmembers
-
-	OutputFile(All.begin(), All.size());
 }
 
