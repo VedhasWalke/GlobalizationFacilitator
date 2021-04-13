@@ -1,4 +1,3 @@
-LoyTrainingSet.txt opened successfully | 03-10-2021 22:03:16
 03-18-2021 15:04:14 | NegTrainingSet.txt opened successfully 
 03-18-2021 15:04:37 | NovTrainingSet.txt opened successfully 
 03-18-2021 15:04:38 | LoyTrainingSet.txt opened successfully 
@@ -92,3 +91,94 @@ LoyTrainingSet.txt opened successfully | 03-10-2021 22:03:16
 03-27-2021 20:01:29 | LoyTrainingSet.txt opened successfully 
 03-27-2021 20:01:34 | Training Completed
 
+03-27-2021 21:30:29 | NegTrainingSet.txt opened successfully 
+03-27-2021 21:31:19 | NovTrainingSet.txt opened successfully 
+03-27-2021 21:31:25 | LoyTrainingSet.txt opened successfully 
+03-27-2021 21:33:40 | NegTrainingSet.txt opened successfully 
+03-27-2021 21:33:42 | NovTrainingSet.txt opened successfully 
+03-27-2021 21:33:42 | LoyTrainingSet.txt opened successfully 
+03-27-2021 21:35:17 | NegTrainingSet.txt opened successfully 
+03-27-2021 21:35:19 | NovTrainingSet.txt opened successfully 
+03-27-2021 21:35:19 | LoyTrainingSet.txt opened successfully 
+03-27-2021 21:37:52 | Training Completed
+
+03-27-2021 21:38:40 | NegTrainingSet.txt opened successfully 
+03-27-2021 21:38:41 | NovTrainingSet.txt opened successfully 
+03-27-2021 21:38:41 | LoyTrainingSet.txt opened successfully 
+03-27-2021 21:38:43 | Training Completed
+
+03-27-2021 21:39:07 | NegTrainingSet.txt opened successfully 
+03-27-2021 21:39:08 | NovTrainingSet.txt opened successfully 
+03-27-2021 21:39:09 | LoyTrainingSet.txt opened successfully 
+03-27-2021 21:39:10 | Training Completed
+
+03-27-2021 21:59:47 | NegTrainingSet.txt opened successfully 
+03-27-2021 22:01:18 | NovTrainingSet.txt opened successfully 
+03-27-2021 22:01:25 | LoyTrainingSet.txt opened successfully 
+03-27-2021 22:01:40 | Training Completed
+
+03-27-2021 22:02:12 | NegTrainingSet.txt opened successfully 
+03-27-2021 22:02:18 | NovTrainingSet.txt opened successfully 
+03-27-2021 22:02:19 | LoyTrainingSet.txt opened successfully 
+03-27-2021 22:02:48 | NegTrainingSet.txt opened successfully 
+03-27-2021 22:02:50 | NovTrainingSet.txt opened successfully 
+03-27-2021 22:02:50 | LoyTrainingSet.txt opened successfully 
+03-27-2021 22:05:58 | NegTrainingSet.txt opened successfully 
+03-27-2021 22:06:00 | NovTrainingSet.txt opened successfully 
+03-27-2021 22:06:00 | LoyTrainingSet.txt opened successfully 
+03-27-2021 22:06:09 | Training Completed
+
+04-09-2021 16:38:27 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 16:18:46 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 16:25:35 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 17:19:25 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 17:58:43 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 18:57:29 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 18:58:42 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:00:20 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:04:53 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:06:33 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:06:48 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:07:03 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:08:59 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:10:06 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:15:26 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:15:43 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:16:07 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:18:19 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:18:34 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:18:50 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:19:14 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:19:27 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:19:42 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:19:56 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:20:17 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:20:36 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:21:10 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:24:17 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:25:35 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:27:00 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:28:18 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:33:29 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:34:05 | PTS_Industrial_Scientific.txt opened successfully 
+04-12-2021 19:34:32 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 10:49:27 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 10:50:04 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 10:52:57 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 10:56:00 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 10:59:08 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 11:00:44 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 11:01:24 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 11:05:31 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 11:33:57 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 11:35:20 | PTS_Industrial_Scientific.txt opened successfully 
+04-13-2021 13:45:57 | PTS_Appliances.txt opened successfully 
+04-13-2021 13:48:01 | PTS_Appliances.txt opened successfully 
+04-13-2021 13:49:09 | PTS_Appliances.txt opened successfully 
+04-13-2021 14:07:24 | PTS_Appliances.txt opened successfully 
+04-13-2021 14:09:00 | PTS_Appliances.txt opened successfully 
+04-13-2021 14:21:40 | PTS_Appliances.txt opened successfully 
+04-13-2021 15:02:18 | PTS_Appliances.txt opened successfully 
+04-13-2021 15:03:04 | PTS_Appliances.txt opened successfully 
+04-13-2021 15:09:37 | PTS_Appliances.txt opened successfully 
+04-13-2021 15:34:02 | PTS_Appliances.txt opened successfully 
