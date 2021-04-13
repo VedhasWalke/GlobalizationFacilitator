@@ -1,0 +1,15 @@
+Installing Main Directory...
+
+Testing main algorithm: 412984
+Testing trainer : 191234
+Checking fieldsets: 293845
+Resetting IO_Num: 3465346
+Checking All Metadata: 239847
+
+
+===================================
+Successful Installation of GFacil Algorithm.
+Succcessful Installation of GFacil GUI.
+4/8/2021
+9:50
+===================================
