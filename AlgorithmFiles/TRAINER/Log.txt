@@ -182,3 +182,70 @@
 04-13-2021 15:03:04 | PTS_Appliances.txt opened successfully 
 04-13-2021 15:09:37 | PTS_Appliances.txt opened successfully 
 04-13-2021 15:34:02 | PTS_Appliances.txt opened successfully 
+04-13-2021 16:54:28 | NegTrainingSet.txt opened successfully 
+04-13-2021 16:54:30 | NovTrainingSet.txt opened successfully 
+04-13-2021 16:54:30 | LoyTrainingSet.txt opened successfully 
+04-13-2021 16:54:32 | Training Completed
+
+04-13-2021 16:54:55 | NegTrainingSet.txt opened successfully 
+04-13-2021 16:54:57 | NovTrainingSet.txt opened successfully 
+04-13-2021 16:54:57 | LoyTrainingSet.txt opened successfully 
+04-13-2021 16:54:58 | Training Completed
+
+04-13-2021 16:55:04 | NegTrainingSet.txt opened successfully 
+04-13-2021 16:55:05 | NovTrainingSet.txt opened successfully 
+04-13-2021 16:55:06 | LoyTrainingSet.txt opened successfully 
+04-13-2021 16:55:07 | Training Completed
+
+04-13-2021 16:55:55 | NegTrainingSet.txt opened successfully 
+04-13-2021 16:55:56 | NovTrainingSet.txt opened successfully 
+04-13-2021 16:55:57 | LoyTrainingSet.txt opened successfully 
+04-13-2021 16:55:58 | Training Completed
+
+04-13-2021 16:58:31 | PTS_Appliances.txt opened successfully 
+04-13-2021 17:00:59 | PTS_Appliances.txt opened successfully 
+04-13-2021 17:04:54 | PTS_Appliances.txt opened successfully 
+04-13-2021 17:07:45 | PTS_Appliances.txt opened successfully 
+04-14-2021 06:54:10 | PTS_Appliances.txt opened successfully 
+04-14-2021 07:06:52 | PTS_Appliances.txt opened successfully 
+04-14-2021 07:09:13 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:11:55 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:16:03 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:18:40 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:31:36 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:36:17 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 07:44:37 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 08:02:26 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 08:42:47 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 08:44:00 | PTS_Appliances.txt opened successfully 
+04-14-2021 08:47:53 | PTS_Appliances.txt opened successfully 
+04-14-2021 08:52:53 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 08:55:59 | PTS_Appliances.txt opened successfully 
+04-14-2021 08:57:26 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 08:58:25 | PTS_Automotive.txt opened successfully 
+04-14-2021 08:59:22 | ERROR: Filename invalid |NegTrainingSet.txt did not opened successfully
+04-14-2021 09:07:27 | PTS_Appliances.txt opened successfully 
+04-14-2021 09:08:19 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 09:09:15 | PTS_Automotive.txt opened successfully 
+04-14-2021 09:10:12 | ERROR: Filename invalid |NegTrainingSet.txt did not opened successfully
+04-14-2021 09:12:02 | PTS_Appliances.txt opened successfully 
+04-14-2021 09:23:32 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 09:25:26 | PTS_Automotive.txt opened successfully 
+04-14-2021 09:30:07 | ERROR: Filename invalid |NegTrainingSet.txt did not opened successfully
+04-14-2021 09:31:14 | PTS_Appliances.txt opened successfully 
+04-14-2021 09:32:10 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 09:33:12 | PTS_Automotive.txt opened successfully 
+04-14-2021 09:34:20 | ERROR: Filename invalid |NegTrainingSet.txt did not opened successfully
+04-14-2021 10:29:55 | NTS_Appliances.txt opened successfully 
+04-14-2021 10:30:04 | NTS_Appliances.txt opened successfully 
+04-14-2021 10:30:48 | NTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 10:31:26 | NTS_Automotive.txt opened successfully 
+04-14-2021 10:32:02 | NovTrainingSet.txt opened successfully 
+04-14-2021 10:32:07 | LoyTrainingSet.txt opened successfully 
+04-14-2021 12:07:56 | NTS_Appliances.txt opened successfully 
+04-14-2021 12:08:11 | NTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 12:08:24 | NTS_Automotive.txt opened successfully 
+04-14-2021 12:08:36 | NovTrainingSet.txt opened successfully 
+04-14-2021 12:08:37 | LoyTrainingSet.txt opened successfully 
+04-14-2021 12:08:48 | Training Completed
+

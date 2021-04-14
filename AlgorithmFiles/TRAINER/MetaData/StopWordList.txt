@@ -26,7 +26,6 @@ by
 can't
 cannot
 could
-couldn't
 did
 didn't
 do
@@ -71,7 +70,6 @@ if
 in
 into
 is
-isn't
 it
 it's
 its
@@ -83,9 +81,7 @@ most
 mustn't
 my
 myself
-no
 nor
-not
 of
 off
 on
@@ -138,7 +134,6 @@ until
 up
 very
 was
-wasn't
 we
 we'd
 we'll
@@ -162,7 +157,6 @@ why's
 with
 won't
 would
-wouldn't
 you
 you'd
 you'll

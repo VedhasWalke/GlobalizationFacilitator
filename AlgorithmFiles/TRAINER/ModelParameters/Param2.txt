@@ -1,899 +1,1148 @@
 Parameters for Prediction
 (Novel-Loyal)
 <text> [o] [l]
-Last Modified: 03-27-2021 20:01:34
+Last Modified: 04-14-2021 12:08:48
 #
-& 0 0
-& cozy 0 0
-6 0 0
-6 years 0 0
-6 years quality 0 0
-7 0 0
-7 8 0 0
-7 8 years 0 0
-8 0 0
-8 years 0 0
-8 years now 0 0
-BPG 0 0
-BPG several 0 0
-BPG several years 0 0
-Blue 0 0
-Blue Point 0 0
-Blue Point Grill 0 0
-COVID 0 0
-COVID meal 0 0
-COVID meal out 0 0
-EXACTLY 0 0
-EXACTLY i 0 0
-EXACTLY i like 0 0
-FINALLY 0 0
-FINALLY time 0 0
-FINALLY time change 0 0
-Friday 0 0
-Friday Saturday 0 0
-Gem 0 0
-Gem town 0 0
-Grill 0 0
-Grill first 0 0
-Heather 0 0
-Heather because_NOT 0 0
-Heather she 0 0
-Heather she gets 0 0
-Heather so 0 0
-I 0 0
-I can 0 0
-I can get 0 0
-I come 0 0
-I come here 0 0
-I go 0 0
-I go all 0 0
-I have 0 0
-I have always 0 0
-I have been 0 0
-I have dined 0 0
-I have ever 0 0
-I have had_NOT 0 0
-I like 0 0
-I made 0 0
-I made last 0 0
-I stumble 0 0
-I stumble across 0 0
-I thought 0 0
-I thought time 0 0
-I'd 0 0
-I'd back 0 0
-I'll_NOT 0 0
-I'll_NOT go_NOT 0 0
-I'll_NOT go_NOT back_NOT 0 0
-I'm 0 0
-I'm ever 0 0
-I'm ever back 0 0
-I've 0 0
-I've come 0 0
-I've come has 0 0
-I've gotta 0 0
-I've gotta update 0 0
-I've_NOT 0 0
-I've_NOT been_NOT 0 0
-I've_NOT been_NOT patron 0 0
-I've_NOT found_NOT 0 0
-I've_NOT found_NOT her_NOT 0 0
-I_NOT 0 0
-I_NOT have_NOT 0 0
-I_NOT have_NOT ever_NOT 0 0
-I_NOT know_NOT 0 0
-I_NOT know_NOT her_NOT 0 0
-I_NOT would_NOT 0 0
-I_NOT would_NOT give_NOT 0 0
-Iove 0 0
-Iove restaurant 0 0
-Masa 0 0
-Masa close 0 0
-Masa close 7 0 0
-Masa has 0 0
-Masa has been 0 0
-Point 0 0
-Point Grill 0 0
-Point Grill first 0 0
-Princeton 0 0
-Princeton area 0 0
-Princeton awhile 0 0
-Princeton we'll 0 0
-Princeton we'll again 0 0
-Saturday 0 0
-Saturday nights 0 0
-TMH 0 0
-TMH again 0 0
-Yelp 0 0
-across 0 0
-across restaurant 0 0
-actually 0 0
-actually tasted 0 0
-actually tasted food 0 0
-after 0 0
-after reading 0 0
-after reading reviews 0 0
-after seeing 0 0
-after seeing high 0 0
-after so 0 0
-after so many 0 0
-again 0 0
-again please 0 0
-again please try 0 0
-again_NOT 0 0
-again_NOT but_NOT 0 0
-again_NOT but_NOT I_NOT 0 0
-ages 0 0
-ago 0 0
-agricola 0 0
-agricola one 0 0
-all 0 0
-all been 0 0
-all been great 0 0
-all time 0 0
-always 0 0
-always amazing 0 0
-always ask 0 0
-always ask him 0 0
-always been 0 0
-always been happy 0 0
-always been reliably 0 0
-always been very 0 0
-always been worth 0 0
-always comfortably 0 0
-always comfortably full 0 0
-always delicious 0 0
-always enjoyed 0 0
-always enjoyed atmosphere 0 0
-always fantastic 0 0
-always find 0 0
-always find myself 0 0
-always find something 0 0
-always fresh 0 0
-always fresh and 0 0
-always friendly 0 0
-always friendly and 0 0
-always go 0 0
-always good 0 0
-always good vibes 0 0
-always great 0 0
-always great service 0 0
-always had 0 0
-always had best 0 0
-always had friendly 0 0
-always have 0 0
-always have great 0 0
-always keep 0 0
-always keep coming 0 0
-always know 0 0
-always know I 0 0
-always leave 0 0
-always leave impressed 0 0
-always love 0 0
-always prompt 0 0
-always recommended 0 0
-always remembers 0 0
-always remembers us 0 0
-always so 0 0
-always so consistent 0 0
-always spot 0 0
-always welcoming 0 0
-always welcoming and 0 0
-always worth 0 0
-always worth going 0 0
-am 0 0
-am really 0 0
-am really happy 0 0
-am regular_NOT 0 0
-amazing 0 0
-amazing food 0 0
-amazing food and 0 0
-amazing you 0 0
-amazing you go_NOT 0 0
-ambiencez 0 0
-and 0 0
-and I 0 0
-and I go 0 0
-and I have 0 0
-and I made 0 0
-and atmosphere 0 0
-and atmosphere keeps 0 0
-and casual 0 0
-and casual bar 0 0
-and consistently 0 0
-and consistently good 0 0
-and continue 0 0
-and continue thrive 0 0
-and drinks 0 0
-and drinks always 0 0
-and every 0 0
-and every time 0 0
-and friends 0 0
-and had_NOT 0 0
-and it's 0 0
-and it's always 0 0
-and patrons 0 0
-and patrons friendly 0 0
-and regretted 0 0
-and religiously 0 0
-and religiously order 0 0
-and remembers 0 0
-and remembers you 0 0
-and service 0 0
-and service always 0 0
-and service and 0 0
-and soon 0 0
-and they 0 0
-and they have 0 0
-and walked_NOT 0 0
-another 0 0
-another celebration 0 0
-another_NOT 0 0
-another_NOT try_NOT 0 0
-anyone 0 0
-anyone just 0 0
-anything_NOT 0 0
-anything_NOT quite_NOT 0 0
-anything_NOT quite_NOT like_NOT 0 0
-anytime 0 0
-anytime I've 0 0
-anytime I've come 0 0
-area 0 0
-area it's 0 0
-area it's must 0 0
-around 0 0
-arriving 0 0
-arriving wholly 0 0
-arriving wholly unimpressed 0 0
-ask 0 0
-ask him 0 0
-ask seated 0 0
-atmosphere 0 0
-atmosphere here 0 0
-atmosphere here Friday 0 0
-atmosphere keeps 0 0
-average 0 0
-away 0 0
-awhile 0 0
-back 0 0
-back Princeton 0 0
-back and 0 0
-back and soon 0 0
-back another 0 0
-back but 0 0
-back but maybe 0 0
-back here 0 0
-back here again 0 0
-back soon 0 0
-back_NOT 0 0
-back_NOT again_NOT 0 0
-back_NOT again_NOT but_NOT 0 0
-bad 0 0
-bad_NOT 0 0
-bad_NOT experience_NOT 0 0
-bad_NOT experience_NOT here_NOT 0 0
-bad_NOT meal 0 0
-bad_NOT meal_NOT 0 0
-bar 0 0
-bar always 0 0
-bar always comfortably 0 0
-bar evenings 0 0
-bar evenings and 0 0
-because_NOT 0 0
-because_NOT I've_NOT 0 0
-because_NOT I've_NOT found_NOT 0 0
-because_NOT I_NOT 0 0
-because_NOT I_NOT know_NOT 0 0
-beef 0 0
-been 0 0
-been BPG 0 0
-been coming 0 0
-been coming here 0 0
-been coming long 0 0
-been eating 0 0
-been eating here 0 0
-been frequenting 0 0
-been go 0 0
-been going 0 0
-been going Masa 0 0
-been going few 0 0
-been great 0 0
-been happy 0 0
-been here 0 0
-been here I 0 0
-been here plenty 0 0
-been here several 0 0
-been location 0 0
-been lot 0 0
-been many 0 0
-been many times 0 0
-been reliably 0 0
-been reliably tasty 0 0
-been there 0 0
-been there brunches 0 0
-been there since 0 0
-been very 0 0
-been very good 0 0
-been worth 0 0
-been_NOT 0 0
-been_NOT patron 0 0
-before 0 0
-before arriving 0 0
-before arriving wholly 0 0
-best 0 0
-best I 0 0
-best I have 0 0
-best meal 0 0
-best_NOT 0 0
-best_NOT server_NOT 0 0
-best_NOT server_NOT over_NOT 0 0
-bookmarked 0 0
-bookmarked Princeton 0 0
-brought 0 0
-brought us 0 0
-brought us restaurant 0 0
-brunches 0 0
-brunches dinner 0 0
-brunches dinner and 0 0
-buffet 0 0
-buffet so 0 0
-buffet so much 0 0
-busy 0 0
-busy but 0 0
-busy but worth 0 0
-but 0 0
-but goody 0 0
-but maybe 0 0
-but maybe during 0 0
-but surprisingly 0 0
-but surprisingly different 0 0
-but worth 0 0
-but worth wait 0 0
-but_NOT 0 0
-but_NOT I_NOT 0 0
-but_NOT I_NOT would_NOT 0 0
-but_NOT because_NOT 0 0
-but_NOT because_NOT I've_NOT 0 0
-can 0 0
-can always 0 0
-can always find 0 0
-can definitely 0 0
-can definitely see 0 0
-can get 0 0
-can get good 0 0
-card 0 0
-card prove 0 0
-casual 0 0
-casual bar 0 0
-casual bar evenings 0 0
-celebration 0 0
-chance 0 0
-change 0 0
-check 0 0
-check out 0 0
-chow 0 0
-chow especially 0 0
-chow especially their 0 0
-close 0 0
-close 7 0 0
-come 0 0
-come all 0 0
-come all time 0 0
-come back 0 0
-come has 0 0
-come here 0 0
-come here many 0 0
-come here often 0 0
-comfortably 0 0
-comfortably full 0 0
-comfortably full and 0 0
-coming 0 0
-coming back 0 0
-coming back here 0 0
-coming here 0 0
-coming here most 0 0
-coming here years 0 0
-coming long 0 0
-consistent 0 0
-consistently 0 0
-consistently delicious 0 0
-consistently good 0 0
-consistently good chow 0 0
-continue 0 0
-continue coming 0 0
-continue coming back 0 0
-continue frequent 0 0
-continue frequent restaurant 0 0
-continue thrive 0 0
-cook 0 0
-cook EXACTLY 0 0
-cozy 0 0
-cozy ambiencez 0 0
-day 0 0
-day out 0 0
-decided 0 0
-decided check 0 0
-decided check out 0 0
-decided give 0 0
-decided give place 0 0
-decided give try 0 0
-decided stop 0 0
-decided stop other 0 0
-decided try 0 0
-definitely 0 0
-definitely back_NOT 0 0
-definitely coming 0 0
-definitely coming back 0 0
-definitely dining 0 0
-definitely go 0 0
-definitely go back 0 0
-definitely going 0 0
-definitely going back 0 0
-definitely recommend 0 0
-definitely recommend spot 0 0
-definitely return 0 0
-definitely return again 0 0
-definitely see 0 0
-definitely see us 0 0
-delicious 0 0
-deliver_NOT 0 0
-deliver_NOT pleasant_NOT 0 0
-deliver_NOT pleasant_NOT dining_NOT 0 0
-did 0 0
-did disappoint_NOT 0 0
-did expect_NOT 0 0
-didn't 0 0
-didn't know 0 0
-different 0 0
-different place 0 0
-different place next 0 0
-different time 0 0
-diminishes_NOT 0 0
-dine 0 0
-dine here 0 0
-dine here after 0 0
-dined 0 0
-dined Blue 0 0
-dined Blue Point 0 0
-dined twice 0 0
-dined twice outdoor 0 0
-dining 0 0
-dining TMH 0 0
-dining TMH again 0 0
-dining experience 0 0
-dining experience ages 0 0
-dining out 0 0
-dining out during 0 0
-dining_NOT 0 0
-dining_NOT experience 0 0
-dinner 0 0
-dinner and 0 0
-dinner and casual 0 0
-disappoint_NOT 0 0
-disappointed 0 0
-disappointed_NOT 0 0
-disappoints 0 0
-doing 0 0
-doing well 0 0
-done 0 0
-done pink_NOT 0 0
-dozen 0 0
-dozen times 0 0
-dozen times and 0 0
-drinks 0 0
-drinks always 0 0
-drinks great 0 0
-during 0 0
-during different 0 0
-during pandemic 0 0
-e 0 0
-e they 0 0
-each 0 0
-each and 0 0
-each and every 0 0
-each time 0 0
-early 0 0
-early evening 0 0
-early evening reservation 0 0
-eat 0 0
-eat here 0 0
-eat next 0 0
-eat next trip 0 0
-eaten 0 0
-eaten here 0 0
-eaten here many 0 0
-eating 0 0
-eating here 0 0
-eating here since 0 0
-else_NOT 0 0
-else_NOT go_NOT 0 0
-encounter 0 0
-enjoy 0 0
-enjoy every 0 0
-enjoy every time 0 0
-enjoyable 0 0
-enjoyable experience 0 0
-enjoyable experience must 0 0
-enjoyed 0 0
-enjoyed atmosphere 0 0
-especially 0 0
-especially their 0 0
-especially their beef 0 0
-even 0 0
-even have 0 0
-even have rewards 0 0
-evening 0 0
-evening reservation 0 0
-evenings 0 0
-evenings and 0 0
-evenings and they 0 0
-ever 0 0
-ever actually 0 0
-ever actually tasted 0 0
-ever back 0 0
-ever back Princeton 0 0
-ever had 0 0
-ever_NOT 0 0
-ever_NOT had_NOT 0 0
-ever_NOT had_NOT bad_NOT 0 0
-every 0 0
-every time 0 0
-every time I 0 0
-every_NOT 0 0
-every_NOT single_NOT 0 0
-every_NOT single_NOT time 0 0
-everything 0 0
-everything always 0 0
-everytime 0 0
-everytime I 0 0
-everytime I come 0 0
-excellent 0 0
-excellent service 0 0
-excellent service every 0 0
-exceptional 0 0
-excited 0 0
-excited dine 0 0
-excited return 0 0
-existed_NOT 0 0
-expect_NOT 0 0
-expectations 0 0
-expectations were 0 0
-expectations were too 0 0
-expected_NOT 0 0
-expecting 0 0
-expecting farm 0 0
-experience 0 0
-experience ages 0 0
-experience but 0 0
-experience but surprisingly 0 0
-experience must 0 0
-experience_NOT 0 0
-experience_NOT here_NOT 0 0
-experienced_NOT 0 0
-experienced_NOT anything_NOT 0 0
-experienced_NOT anything_NOT quite_NOT 0 0
-experiences 0 0
-experiences here 0 0
-experiencing 0 0
-explore 0 0
-extremely 0 0
-extremely pleased 0 0
-fail_NOT 0 0
-fail_NOT me_NOT 0 0
-failed_NOT 0 0
-failed_NOT deliver_NOT 0 0
-fairly 0 0
-fairly new 0 0
-family 0 0
-family and 0 0
-family and friends 0 0
-family loves 0 0
-fantastic 0 0
-far 0 0
-far I 0 0
-far I have 0 0
-farm 0 0
-farm like 0 0
-farm like experience 0 0
-farm table 0 0
-farm table restaurant 0 0
-fate 0 0
-fate brought 0 0
-fate brought us 0 0
-fave 0 0
-fave place 0 0
-fave place hanging 0 0
-fave spot 0 0
-favorite 0 0
-favorite area 0 0
-favorite hole 0 0
-favorite hole wall 0 0
-favorite place 0 0
-favorite place eat 0 0
-favorite post 0 0
-favorite post movie 0 0
-favorite restaurants 0 0
-favorite restaurants I 0 0
-favorite resteraunt 0 0
-favorite spot 0 0
-favorite spot town 0 0
-few 0 0
-few times 0 0
-few times year 0 0
-few years 0 0
-few years now 0 0
-finally 0 0
-finally returned 0 0
-finally returned here 0 0
-find 0 0
-find myself 0 0
-find myself coming 0 0
-find something 0 0
-find something I 0 0
-first 0 0
-first COVID 0 0
-first COVID meal 0 0
-first encounter 0 0
-first impression 0 0
-first indoor 0 0
-first indoor dining 0 0
-first restaurants 0 0
-first time 0 0
-first time dining 0 0
-first time today 0 0
-flyer 0 0
-food 0 0
-food always 0 0
-food always fantastic 0 0
-food and 0 0
-food and atmosphere 0 0
-food and drinks 0 0
-food and service 0 0
-food before 0 0
-food consistently 0 0
-food here 0 0
-forever 0 0
-forever so 0 0
-forever so quite 0 0
-forward 0 0
-forward coming 0 0
-forward experiencing 0 0
-forward going 0 0
-forward going back 0 0
-forward many 0 0
-found_NOT 0 0
-found_NOT her_NOT 0 0
-found_NOT her_NOT best_NOT 0 0
-frequent 0 0
-frequent flyer 0 0
-frequent restaurant 0 0
-frequenting 0 0
-frequenting many 0 0
-frequenting many years 0 0
-fresh 0 0
-fresh and 0 0
-fresh and service 0 0
-friendly 0 0
-friendly and 0 0
-friendly and service 0 0
-friendly prompt 0 0
-friendly prompt helpful 0 0
-friends 0 0
-friends and 0 0
-friends and I 0 0
-friends come 0 0
-friends come here 0 0
-full 0 0
-full and 0 0
-full and patrons 0 0
-get 0 0
-get good 0 0
-get right 0 0
-get right away 0 0
-gets 0 0
-gets our 0 0
-gets our order 0 0
-girls 0 0
-girls day 0 0
-girls day out 0 0
-give 0 0
-give one 0 0
-give place 0 0
-give try 0 0
-give_NOT 0 0
-give_NOT recommendation_NOT 0 0
-give_NOT these_NOT 0 0
-give_NOT these_NOT guys_NOT 0 0
-go 0 0
-go all 0 0
-go all time 0 0
-go back 0 0
-go here 0 0
-go here quite 0 0
-go place 0 0
-go place my 0 0
-go places 0 0
-go places happy 0 0
-go spot 0 0
-go sushi/Japanese 0 0
-go sushi/Japanese spot 0 0
-go typically 0 0
-go typically eat 0 0
-go_NOT 0 0
-go_NOT back_NOT 0 0
-go_NOT back_NOT again_NOT 0 0
-go_NOT here_NOT 0 0
-go_NOT wrong 0 0
-going 0 0
-going Masa 0 0
-going back 0 0
-going back and 0 0
-going back another 0 0
-going back soon 0 0
-going few 0 0
-going my 0 0
-going there 0 0
-going_NOT 0 0
-going_NOT back_NOT 0 0
-gone 0 0
-gone there 0 0
-gone there since 0 0
-good 0 0
-good always 0 0
-good chow 0 0
-good chow especially 0 0
-good meal 0 0
-good meal here 0 0
-good vibes 0 0
-good vibes & 0 0
-good work 0 0
-good_NOT 0 0
-good_NOT start_NOT 0 0
-goody 0 0
-gotta 0 0
-gotta update 0 0
-great 0 0
-great and 0 0
-great and I 0 0
-great experience 0 0
-great experiences 0 0
-great experiences here 0 0
-great service 0 0
-great service our 0 0
-great things 0 0
-guys_NOT 0 0
-guys_NOT another_NOT 0 0
-guys_NOT another_NOT try_NOT 0 0
-had 0 0
-had best 0 0
-had dozen 0 0
-had farm 0 0
-had friendly 0 0
-had friendly prompt 0 0
-had idea_NOT 0 0
-had same 0 0
-had try 0 0
-had wanted 0 0
-had wanted try 0 0
-had_NOT 0 0
-had_NOT bad_NOT 0 0
-had_NOT bad_NOT meal 0 0
-had_NOT bad_NOT meal_NOT 0 0
-had_NOT issue_NOT 0 0
-hanging 0 0
-hanging out 0 0
-happy 0 0
-happy hour 0 0
-happy they're 0 0
-has 0 0
-has always 0 0
-has always been 0 0
-has been 0 0
-has been go 0 0
-has been great 0 0
-has passed 0 0
-has passed test 0 0
-have 0 0
-have all 0 0
-have all been 0 0
-have always 0 0
-have always been 0 0
-have always enjoyed 0 0
-have always had 0 0
-have been 0 0
-have been coming 0 0
-have been here 0 0
-have been location 0 0
-have been there 0 0
-have come 0 0
-have come here 0 0
-have dined 0 0
-have dined twice 0 0
-have ever 0 0
-have ever actually 0 0
-have ever had 0 0
-have great 0 0
-have great experiences 0 0
-have had 0 0
-have had same 0 0
-have had_NOT 0 0
-have once_NOT 0 0
-have rewards 0 0
-have_NOT 0 0
-have_NOT ever_NOT 0 0
-have_NOT ever_NOT had_NOT 0 0
-haven't 0 0
-haven't been 0 0
-haven't been BPG 0 0
-he 0 0
-he always 0 0
-he always remembers 0 0
-heard 0 0
-heard so 0 0
-heard so many 0 0
-helpful 0 0
-helpful service 0 0
-her 0 0
-her section 0 0
-her section each 0 0
-her_NOT 0 0
-her_NOT best_NOT 0 0
-her_NOT personally_NOT 0 0
-her_NOT personally_NOT but_NOT 0 0
-here 0 0
-here Friday 0 0
-here Friday Saturday 0 0
-here I 0 0
-here I have 0 0
-here after 0 0
-here after reading 0 0
-here again 0 0
-here always 0 0
-here always amazing 0 0
-here delicious 0 0
-here girls 0 0
-here i've 0 0
-here i've had 0 0
-here many 0 0
-here many many 0 0
-here many times 0 0
-here most 0 0
-here most time 0 0
-here often 0 0
-here often so 0 0
-here plenty 0 0
-here plenty times 0 0
-here quite 0 0
-here quite often 0 0
-here several 0 0
-here several times 0 0
-here since 0 0
-here since they 0 0
-here years 0 0
-here_NOT 0 0
-hesitate_NOT 0 0
-hesitate_NOT give_NOT 0 0
-high 0 0
-high before 0 0
-high before arriving 0 0
-high praise 0 0
-high praise here 0 0
-highly 0 0
-highly recommended 0 0
-highly recommended if 0 0
-him 0 0
-hole 0 0
-hole wall 0 0
-hour 0 0
-husband 0 0
-husband and 0 0
-husband and I 0 0
-i 0 0
-i Iove 0 0
-i Iove restaurant 0 0
-i always 0 0
-i always know 0 0
-i always love 0 0
-i am 0 0
-i can 0 0
+& 0 1
+& cozy 0 1
+6 0 1
+6 years 0 1
+6 years quality 0 1
+7 0 1
+7 8 0 1
+7 8 years 0 1
+8 0 1
+8 years 0 1
+8 years now 0 1
+BPG 1 0
+BPG several 1 0
+Blue 1 0
+Blue Point 1 0
+Blue Point Grill 1 0
+COVID 1 0
+COVID meal 1 0
+EXACTLY 0 1
+EXACTLY like 0 1
+FINALLY 0 1
+FINALLY time 0 1
+FINALLY time change 0 1
+Friday 0 1
+Friday Saturday 0 1
+Friday Saturday nights 0 1
+Gem 0 1
+Gem town 0 1
+Grill 1 0
+Grill first 1 0
+Heather 0 3
+Heather gets 0 1
+Heather know_NOT 0 1
+Heather know_NOT personally_NOT 0 1
+Heather professional 0 1
+Iove 0 1
+Iove restaurant 0 1
+Iove restaurant everything 0 1
+Masa 0 2
+Masa close 0 1
+Masa close 7 0 1
+Masa goto 0 1
+Point 1 0
+Point Grill 1 0
+Point Grill first 1 0
+Princeton 3 1
+Princeton area 1 1
+Princeton awhile 1 0
+Saturday 0 1
+Saturday nights 0 1
+TMH 1 0
+Yelp 1 0
+across 0 1
+across restaurant 0 1
+actually 1 0
+actually tasted 1 0
+actually tasted food 1 0
+again 1 1
+ages 1 0
+ago 0 1
+agricola 0 1
+agricola one 0 1
+always 0 37
+always amazing 0 2
+always ask 0 1
+always best 0 1
+always best meal 0 1
+always comfortably 0 1
+always comfortably full 0 1
+always consistent 0 1
+always delicious 0 1
+always enjoyed 0 1
+always fantastic 0 1
+always find 0 2
+always find coming 0 1
+always find something 0 1
+always fresh 0 1
+always friendly 0 2
+always friendly prompt 0 1
+always friendly service 0 1
+always go 0 1
+always good 0 3
+always good vibes 0 1
+always great 0 5
+always great experiences 0 1
+always great service 0 1
+always happy 0 1
+always keep 0 1
+always keep coming 0 1
+always know 0 1
+always know can 0 1
+always leave 0 1
+always leave impressed 0 1
+always love 0 1
+always prompt 0 1
+always recommended 0 1
+always reliably 0 1
+always reliably tasty 0 1
+always remembers 0 1
+always remembers us 0 1
+always spot 0 1
+always welcoming 0 1
+always welcoming remembers 0 1
+always worth 0 2
+amazing 0 4
+amazing food 0 1
+amazing food service 0 1
+amazing will 0 1
+ambiencez 0 1
+another 1 0
+another celebration 1 0
+another_NOT 1 0
+another_NOT try_NOT 1 0
+anyone 1 0
+anyone just 1 0
+anyone just wants 1 0
+anything_NOT 1 0
+anything_NOT quite_NOT 1 0
+anything_NOT quite_NOT like_NOT 1 0
+anytime 0 1
+anytime come 0 1
+anytime come great 0 1
+area 2 3
+area must 0 1
+around 1 0
+arriving 1 0
+arriving wholly 1 0
+arriving wholly unimpressed 1 0
+ask 0 2
+ask seated 0 1
+atmosphere 0 2
+atmosphere Friday 0 1
+atmosphere keeps 0 1
+atmosphere keeps coming 0 1
+average 1 0
+away 0 1
+awhile 1 0
+back 16 6
+back Princeton 1 0
+back another 1 0
+back maybe 1 0
+back soon 2 1
+back_NOT 3 0
+back_NOT give_NOT 1 0
+bad 1 1
+bad experience 0 1
+bad_NOT 0 2
+bad_NOT meal_NOT 0 2
+bar 0 2
+bar always 0 1
+bar always comfortably 0 1
+bar evenings 0 1
+bar evenings great 0 1
+beef 0 1
+best 2 1
+best ever 2 0
+best meal 0 1
+best_NOT 0 1
+best_NOT server_NOT 0 1
+best_NOT server_NOT years_NOT 0 1
+bookmarked 1 0
+bookmarked Princeton 1 0
+brought 1 0
+brought us 1 0
+brought us restaurant 1 0
+brunches 0 1
+brunches dinner 0 1
+buffet 0 1
+buffet much 0 1
+busy 0 1
+busy worth 0 1
+can 1 2
+can always 0 1
+can always find 0 1
+can definitely 1 0
+can definitely see 1 0
+can get 0 1
+can get good 0 1
+card 0 1
+card prove 0 1
+casual 0 1
+casual bar 0 1
+casual bar evenings 0 1
+celebration 1 0
+chance 1 0
+change 0 1
+check 1 0
+chow 0 1
+chow especially 0 1
+chow especially beef 0 1
+close 0 1
+close 7 0 1
+come 1 6
+come back 1 0
+come great 0 1
+come many 0 1
+come often 0 2
+come often knew 0 1
+come time 0 1
+comfortably 0 1
+comfortably full 0 1
+comfortably full patrons 0 1
+coming 3 10
+coming back 3 5
+coming long 0 1
+coming long time 0 1
+coming time 0 1
+coming years 0 1
+consistent 0 1
+consistently 0 2
+consistently delicious 0 1
+consistently good 0 1
+consistently good chow 0 1
+continue 0 3
+continue coming 0 1
+continue coming back 0 1
+continue frequent 0 1
+continue thrive 0 1
+cook 0 1
+cook EXACTLY 0 1
+cook EXACTLY like 0 1
+cozy 0 1
+cozy ambiencez 0 1
+day 2 0
+decided 5 0
+decided check 1 0
+decided give 2 0
+decided give place 1 0
+decided give try 1 0
+decided stop 1 0
+decided stop day 1 0
+decided try 1 0
+definitely 9 0
+definitely back 1 0
+definitely coming 2 0
+definitely coming back 1 0
+definitely dining 1 0
+definitely go 1 0
+definitely go back 1 0
+definitely going 1 0
+definitely going back 1 0
+definitely recommend 1 0
+definitely return 1 0
+definitely see 1 0
+definitely see us 1 0
+delicious 0 3
+deliver_NOT 0 1
+deliver_NOT pleasant_NOT 0 1
+deliver_NOT pleasant_NOT dining_NOT 0 1
+different 4 0
+different place 1 0
+different place next 1 0
+different time 1 0
+diminishes_NOT 0 1
+dine 1 0
+dine reading 1 0
+dined 1 1
+dined Blue 1 0
+dined Blue Point 1 0
+dined twice 0 1
+dined twice outdoor 0 1
+dining 3 0
+dining TMH 1 0
+dining experience 1 0
+dining experience ages 1 0
+dining pandemic 1 0
+dining_NOT 0 1
+dining_NOT experience_NOT 0 1
+dinner 0 1
+dinner casual 0 1
+dinner casual bar 0 1
+disappoint_NOT 2 0
+disappointed 1 0
+disappointed_NOT 0 1
+disappoints_NOT 0 1
+done 0 1
+done pink_NOT 0 1
+dozen 0 1
+dozen times 0 1
+dozen times always 0 1
+drinks 0 2
+drinks always 0 1
+drinks great 0 1
+drinks great bad_NOT 0 1
+e 0 1
+e cook 0 1
+early 1 0
+early evening 1 0
+early evening reservation 1 0
+eat 0 2
+eaten 0 1
+eaten many 0 1
+eaten many times 0 1
+eatin 1 0
+eatin next 1 0
+eatin next trip 1 0
+eating 0 1
+eating since 0 1
+else_NOT 1 0
+else_NOT go_NOT 1 0
+encounter 0 1
+enjoy 0 1
+enjoy every 0 1
+enjoy every time 0 1
+enjoyable 1 0
+enjoyable experience 1 0
+enjoyable experience must 1 0
+enjoyed 0 1
+enjoyed atmosphere 0 1
+enjoyed atmosphere Friday 0 1
+especially 0 1
+especially beef 0 1
+even 0 2
+even rewards 0 1
+evening 1 0
+evening reservation 1 0
+evenings 0 1
+evenings great 0 1
+ever 4 1
+ever actually 1 0
+ever actually tasted 1 0
+ever back 1 0
+ever back Princeton 1 0
+ever bad 0 1
+every 0 4
+every time 0 4
+every time always 0 1
+every_NOT 0 1
+every_NOT single_NOT 0 1
+every_NOT single_NOT time_NOT 0 1
+everything 0 1
+everything always 0 1
+everytime 0 1
+everytime come 0 1
+excellent 0 1
+excellent service 0 1
+exceptional 1 0
+excited 1 1
+excited dine 1 0
+excited dine reading 1 0
+excited return 0 1
+excited return agricola 0 1
+existed_NOT 1 0
+expect_NOT 1 0
+expectations 1 0
+expectations high 1 0
+expectations high arriving 1 0
+expected_NOT 1 0
+expecting 1 0
+expecting farm 1 0
+experience 3 2
+experience ages 1 0
+experience must 1 0
+experience surprisingly 1 0
+experience_NOT 0 1
+experienced_NOT 1 0
+experienced_NOT anything_NOT 1 0
+experienced_NOT anything_NOT quite_NOT 1 0
+experiences 0 1
+experiencing 1 0
+explore 1 0
+extremely 1 0
+extremely pleased 1 0
+fail_NOT 0 1
+failed_NOT 0 1
+failed_NOT deliver_NOT 0 1
+fairly 2 0
+fairly new 2 0
+family 0 2
+family friends 0 1
+family loves 0 1
+fantastic 0 1
+far 0 1
+far dined 0 1
+far dined twice 0 1
+farm 2 0
+farm like 1 0
+farm like experience 1 0
+farm table 1 0
+farm table restaurant 1 0
+fate 1 0
+fate brought 1 0
+fate brought us 1 0
+fave 1 1
+fave place 0 1
+fave place hanging 0 1
+fave spot 1 0
+favorite 0 8
+favorite area 0 1
+favorite hole 0 1
+favorite hole wall 0 1
+favorite place 0 1
+favorite place eat 0 1
+favorite post 0 1
+favorite post movie 0 1
+favorite restaurants 0 2
+favorite restaurants plenty 0 1
+favorite resteraunt 0 1
+favorite spot 0 1
+favorite spot town 0 1
+finally 1 0
+finally returned 1 0
+find 0 2
+find coming 0 1
+find something 0 1
+find something like 0 1
+first 12 1
+first COVID 1 0
+first encounter 0 1
+first impression 1 0
+first indoor 1 0
+first indoor dining 1 0
+first restaurants 1 0
+first time 7 0
+first time dining 1 0
+first time today 1 0
+flyer 0 1
+food 2 8
+food always 0 3
+food always amazing 0 1
+food always fantastic 0 1
+food always great 0 1
+food atmosphere 0 1
+food consistently 0 1
+food consistently delicious 0 1
+food delicious 0 1
+food drinks 0 1
+food drinks always 0 1
+food service 0 1
+forever 0 1
+forever quite 0 1
+forever quite refreshing 0 1
+forward 4 1
+forward coming 1 0
+forward coming back 1 0
+forward experiencing 1 0
+forward going 1 0
+forward many 0 1
+found_NOT 0 1
+found_NOT best_NOT 0 1
+frequent 0 3
+frequent flyer 0 1
+frequent restaurant 0 2
+frequent restaurant times 0 1
+frequenting 0 1
+frequenting many 0 1
+frequenting many years 0 1
+fresh 0 1
+fresh service 0 1
+fresh service always 0 1
+friendly 0 3
+friendly prompt 0 1
+friendly prompt helpful 0 1
+friendly service 0 1
+friends 1 2
+friends come 0 1
+friends made 1 0
+full 0 1
+full patrons 0 1
+get 0 2
+get good 0 1
+get right 0 1
+get right away 0 1
+gets 0 1
+gets order 0 1
+gets order right 0 1
+girls 1 0
+girls day 1 0
+give 3 0
+give one 1 0
+give one chance 1 0
+give place 1 0
+give try 1 0
+give_NOT 2 0
+give_NOT guys_NOT 1 0
+give_NOT recommendation_NOT 1 0
+give_NOT recommendation_NOT someone_NOT 1 0
+go 4 5
+go back 3 0
+go quite 0 1
+go quite often 0 1
+go spot 0 1
+go spot sushi 0 1
+go time 0 1
+go typically 0 1
+go typically eat 0 1
+go_NOT 3 1
+go_NOT back_NOT 2 0
+go_NOT back_NOT give_NOT 1 0
+go_NOT wrong_NOT 0 1
+going 4 3
+going Masa 0 1
+going back 3 0
+going back another 1 0
+going back soon 2 0
+going new 1 0
+going years 0 1
+going_NOT 1 0
+going_NOT back_NOT 1 0
+gone 0 1
+gone since 0 1
+good 1 7
+good always 0 1
+good chow 0 1
+good chow especially 0 1
+good meal 0 1
+good vibes 0 1
+good vibes & 0 1
+good work 0 1
+good_NOT 1 0
+good_NOT start_NOT 1 0
+goody 0 1
+goto 0 3
+goto place 0 1
+goto places 0 1
+goto places happy 0 1
+goto sushi/Japanese 0 1
+goto sushi/Japanese spot 0 1
+gotta 0 1
+gotta update 0 1
+great 1 8
+great bad_NOT 0 1
+great experience 0 1
+great experiences 0 1
+great service 0 1
+great service waitress 0 1
+great things 1 0
+guys_NOT 1 0
+guys_NOT another_NOT 1 0
+guys_NOT another_NOT try_NOT 1 0
+hanging 0 1
+happy 0 3
+happy hour 0 1
+happy well 0 1
+heard 1 0
+heard many 1 0
+heard many great 1 0
+helpful 0 1
+helpful service 0 1
+here 0 4
+hesitate_NOT 1 0
+hesitate_NOT give_NOT 1 0
+hesitate_NOT give_NOT guys_NOT 1 0
+high 2 0
+high arriving 1 0
+high praise 1 0
+highly 0 1
+highly recommended 0 1
+him 0 1
+hole 0 1
+hole wall 0 1
+hour 0 1
+husband 0 2
+husband go 0 1
+idea_NOT 1 0
+idea_NOT existed_NOT 1 0
+impressed 3 1
+impression 1 0
+improved 0 1
+improved tremendously 0 1
+improved tremendously since 0 1
+incredibly 0 1
+incredibly rare 0 1
+incredibly rare stumble 0 1
+indoor 1 0
+indoor dining 1 0
+indoor dining experience 1 0
+ingredients 0 1
+ingredients always 0 1
+intend 1 0
+intend eatin 1 0
+issue_NOT 0 1
+it 1 1
+items 2 1
+items menu 1 0
+just 2 3
+just amazing 0 1
+just amazing will 0 1
+just expected_NOT 1 0
+just love 0 1
+just love place 0 1
+just place 0 1
+just wants 1 0
+just wants little 1 0
+keep 0 3
+keep coming 0 2
+keep coming back 0 2
+keep good 0 1
+keep good work 0 1
+keeps 0 1
+keeps coming 0 1
+knew 0 1
+knew get 0 1
+knew get right 0 1
+know 1 2
+know can 0 1
+know go 1 0
+know will 0 1
+know will fail_NOT 0 1
+know_NOT 0 1
+know_NOT personally_NOT 0 1
+last 1 0
+last minute 1 0
+last minute early 1 0
+leave 0 2
+leave impressed 0 1
+leave pleased 0 1
+leave pleased time 0 1
+like 1 3
+like experience 1 0
+like experience surprisingly 1 0
+like literally 0 1
+like literally come 0 1
+like well 0 1
+like well done 0 1
+like_NOT 1 0
+likely 1 0
+likely try 1 0
+likely try different 1 0
+literally 0 1
+literally come 0 1
+literally come time 0 1
+little 1 0
+little nice 1 0
+little nice lunch 1 0
+location 0 1
+location many 0 1
+location many times 0 1
+long 0 1
+long time 0 1
+look 2 1
+look forward 2 1
+look forward going 1 0
+look forward many 0 1
+looking 2 0
+looking forward 2 0
+lot 0 1
+love 2 10
+love coming 0 3
+love coming back 0 1
+love go 1 0
+love go back 1 0
+love order 1 0
+love order next 1 0
+love place 0 5
+love place even 0 1
+love place religiously 0 1
+love place staff 0 1
+love redid 0 1
+loved 1 0
+loved place 1 0
+loveeee 0 1
+loves 0 1
+lunch 1 0
+made 1 0
+made last 1 0
+made last minute 1 0
+make 0 2
+make sure 0 1
+make sure stop 0 1
+make trips 0 1
+make trips town 0 1
+makes 0 1
+makes excited 0 1
+many 1 9
+many great 1 0
+many great things 1 0
+many many 0 1
+many many times 0 1
+many times 0 4
+many times bad_NOT 0 1
+many times love 0 1
+many visits 0 1
+many years 0 3
+many years ago 0 1
+many years gotta 0 1
+many years now 0 1
+maybe 1 0
+maybe different 1 0
+maybe different time 1 0
+meal 1 2
+meal_NOT 0 2
+meh 1 0
+menu 1 2
+menu FINALLY 0 1
+menu forever 0 1
+minute 1 0
+minute early 1 0
+minute early evening 1 0
+missing 0 1
+missing buffet 0 1
+missing buffet much 0 1
+movie 0 1
+movie place 0 1
+movie place go 0 1
+much 0 1
+much will 0 1
+much will back 0 1
+must 1 1
+must try 1 0
+must try Princeton 1 0
+new 3 1
+new area 1 0
+new fave 1 0
+new fave spot 1 0
+new items 0 1
+next 5 0
+next time 4 0
+next trip 1 0
+nice 1 1
+nice lunch 1 0
+nice server 0 1
+nice server always 0 1
+nights 0 1
+normally 0 1
+normally busy 0 1
+normally busy worth 0 1
+now 0 3
+often 0 3
+often knew 0 1
+often thought 0 1
+old 0 1
+old goody 0 1
+on 0 1
+one 2 5
+one Gem 0 1
+one Gem town 0 1
+one chance 1 0
+one favorite 0 2
+one favorite restaurants 0 1
+one first 1 0
+one goto 0 1
+one goto places 0 1
+open 0 1
+open continue 0 1
+opened 0 1
+opened many 0 1
+opened many years 0 1
+opening 0 1
+order 1 2
+order next 1 0
+order right 0 1
+order right every 0 1
+outdoor 0 1
+outdoor seating 0 1
+outdoor seating setup 0 1
+outstanding 1 0
+pandemic 1 0
+pandemic regretted 1 0
+passed 0 1
+passed test 0 1
+passed test time 0 1
+past 0 1
+past 6 0 1
+past 6 years 0 1
+pathetic 1 0
+patron_NOT 0 1
+patron_NOT since 0 1
+patrons 0 1
+patrons friendly 0 1
+perfect 1 0
+perfect first 1 0
+perfect first impression 1 0
+personally_NOT 0 1
+personally_NOT found_NOT 0 1
+personally_NOT found_NOT best_NOT 0 1
+pink_NOT 0 1
+pink_NOT every_NOT 0 1
+pink_NOT every_NOT single_NOT 0 1
+place 6 11
+place always 0 1
+place always good 0 1
+place eat 0 1
+place even 0 1
+place go 0 1
+place hanging 0 1
+place husband 0 1
+place next 1 0
+place next time 1 0
+place religiously 0 1
+place staff 0 1
+place try 1 0
+places 0 1
+places happy 0 1
+pleasant_NOT 0 1
+pleasant_NOT dining_NOT 0 1
+pleasant_NOT dining_NOT experience_NOT 0 1
+please 0 1
+please try 0 1
+pleased 1 1
+pleased time 0 1
+plenty 0 1
+plenty times 0 1
+possibly 1 0
+possibly give 1 0
+post 0 1
+post movie 0 1
+post movie place 0 1
+praise 1 0
+probably 1 1
+probably favorite 0 1
+probably favorite spot 0 1
+probably go 1 0
+probably go back 1 0
+professional 0 1
+professional ask 0 1
+professional ask seated 0 1
+prompt 0 2
+prompt helpful 0 1
+prompt helpful service 0 1
+prove 0 1
+quality 0 2
+quality diminishes_NOT 0 1
+quality food 0 1
+quality food atmosphere 0 1
+quick 1 0
+quick snacktogo 1 0
+quite 0 2
+quite often 0 1
+quite often thought 0 1
+quite refreshing 0 1
+quite refreshing see 0 1
+quite_NOT 1 0
+quite_NOT like_NOT 1 0
+rare 0 1
+rare stumble 0 1
+ratings 1 0
+reading 1 0
+reading reviews 1 0
+reading reviews Yelp 1 0
+really 0 1
+really happy 0 1
+really happy well 0 1
+recommend 1 0
+recommend spot 1 0
+recommend spot anyone 1 0
+recommendation_NOT 1 0
+recommendation_NOT someone_NOT 1 0
+recommended 0 2
+recommended Princeton 0 1
+recommended Princeton area 0 1
+redid 0 1
+redid menu 0 1
+redid menu FINALLY 0 1
+refreshing 0 1
+refreshing see 0 1
+regretted 1 0
+regular_NOT 1 0
+reliably 0 1
+reliably tasty 0 1
+religiously 0 1
+religiously order 0 1
+remembers 0 2
+remembers us 0 1
+request 0 1
+request sit 0 1
+request sit Heather 0 1
+rereview 0 1
+reservation 1 0
+restaurant 3 5
+restaurant bookmarked 1 0
+restaurant bookmarked Princeton 1 0
+restaurant everything 0 1
+restaurant everything always 0 1
+restaurant makes 0 1
+restaurant makes excited 0 1
+restaurant times 0 1
+restaurants 1 2
+restaurants plenty 0 1
+resteraunt 0 1
+return 3 1
+return agricola 0 1
+return agricola one 0 1
+returned 1 0
+returning 1 0
+review_NOT 0 1
+review_NOT surprisingly_NOT 0 1
+reviews 1 0
+reviews Yelp 1 0
+rewards 0 1
+rewards card 0 1
+rewards card prove 0 1
+right 0 2
+right away 0 1
+right every 0 1
+saw 1 0
+saw ratings 1 0
+say 1 1
+say back 1 0
+say back maybe 1 0
+say please 0 1
+seated 0 1
+seated section 0 1
+seated section time 0 1
+seating 0 1
+seating setup 0 1
+seating setup restaurant 0 1
+section 0 1
+section time 0 1
+see 1 1
+see new 0 1
+see new items 0 1
+see us 1 0
+see us going 1 0
+seeing 1 0
+seeing high 1 0
+server 0 2
+server Heather 0 1
+server Heather professional 0 1
+server always 0 1
+server_NOT 0 1
+server_NOT years_NOT 0 1
+service 0 9
+service always 0 5
+service always great 0 1
+service always prompt 0 1
+service every 0 1
+service every time 0 1
+service waitress 0 1
+service walked_NOT 0 1
+service walked_NOT disappointed_NOT 0 1
+setup 0 1
+setup restaurant 0 1
+several 1 1
+several times 0 1
+several years 1 0
+since 0 4
+since first 0 1
+since opened 0 1
+since opened many 0 1
+since opening 0 1
+single_NOT 0 1
+single_NOT time_NOT 0 1
+sit 0 1
+sit Heather 0 1
+snacktogo 1 0
+solid 0 1
+solid staple 0 1
+someone_NOT 1 0
+someone_NOT else_NOT 1 0
+someone_NOT else_NOT go_NOT 1 0
+something 0 1
+something like 0 1
+son's 0 1
+son's favorite 0 1
+son's favorite resteraunt 0 1
+soon 2 1
+spot 2 5
+spot anyone 1 0
+spot family 0 1
+spot sushi 0 1
+spot town 0 1
+staff 0 2
+staff always 0 2
+staff always friendly 0 1
+staff always welcoming 0 1
+staple 0 1
+staple dozen 0 1
+staple dozen times 0 1
+start_NOT 1 0
+stay 0 1
+stay open 0 1
+stay open continue 0 1
+still 0 1
+still good 0 1
+stop 1 1
+stop day 1 0
+stopped 1 0
+stopped quick 1 0
+stopped quick snacktogo 1 0
+stumble 0 1
+stumble across 0 1
+stumble across restaurant 0 1
+stumbled 2 0
+stumbled place 2 0
+sure 0 1
+sure stop 0 1
+sure_NOT 2 0
+sure_NOT go_NOT 2 0
+sure_NOT go_NOT back_NOT 2 0
+surprised 1 0
+surprisingly 4 0
+surprisingly bad 1 0
+surprisingly different 2 0
+surprisingly good 1 0
+surprisingly_NOT 0 1
+sushi 0 1
+sushi/Japanese 0 1
+sushi/Japanese spot 0 1
+sushi/Japanese spot family 0 1
+table 1 0
+table restaurant 1 0
+table restaurant bookmarked 1 0
+tasted 1 0
+tasted food 1 0
+tasty 0 1
+test 0 1
+test time 0 1
+them 0 1
+there 0 1
+things 1 0
+think 0 1
+think ever 0 1
+think ever bad 0 1
+this 0 1
+thoroughly 0 1
+thoroughly enjoy 0 1
+thought 0 1
+thought time 0 1
+thought time rereview 0 1
+thrive 0 1
+time 12 13
+time always 0 1
+time change 0 1
+time dining 1 0
+time dining pandemic 1 0
+time even 0 1
+time even rewards 0 1
+time rereview 0 1
+time today 1 0
+time_NOT 0 1
+times 0 8
+times always 0 1
+times bad_NOT 0 1
+times consistently 0 1
+times consistently good 0 1
+times love 0 1
+times year 0 1
+today 1 0
+told 1 0
+told try 1 0
+town 0 3
+town fave 0 1
+town fave place 0 1
+town just 0 1
+town just place 0 1
+tremendously 0 1
+tremendously since 0 1
+tremendously since first 0 1
+trip 1 0
+trips 0 1
+trips town 0 1
+try 10 1
+try Princeton 1 0
+try different 1 0
+try items 2 0
+try items menu 1 0
+try restaurant 1 0
+try_NOT 1 0
+twice 0 1
+twice outdoor 0 1
+typically 0 1
+typically eat 0 1
+unimpressed 1 0
+unimpressed food 1 0
+unpleasantly 1 0
+unpleasantly surprised 1 0
+update 0 1
+us 2 1
+us going 1 0
+us going back 1 0
+us restaurant 1 0
+vibes 0 1
+vibes & 0 1
+vibes & cozy 0 1
+visit 1 0
+visit exceptional 1 0
+visited 1 0
+visited first 1 0
+visits 0 1
+wait 2 1
+wait try 2 0
+waitress 0 1
+waitress Heather 0 1
+waitress Heather gets 0 1
+walked_NOT 0 1
+walked_NOT disappointed_NOT 0 1
+wall 0 1
+wall spot 0 1
+wandering 1 0
+wandering around 1 0
+want 0 1
+want stay 0 1
+want stay open 0 1
+wanted 2 0
+wanted explore 1 0
+wanted try 1 0
+wants 1 0
+wants little 1 0
+welcoming 0 1
+welcoming remembers 0 1
+well 0 2
+well done 0 1
+well done pink_NOT 0 1
+went 1 0
+went girls 1 0
+whenever 0 1
+whenever area 0 1
+whenever area must 0 1
+wholly 1 0
+wholly unimpressed 1 0
+wholly unimpressed food 1 0
+will 8 7
+will always 0 2
+will always keep 0 1
+will back 2 1
+will back soon 0 1
+will continue 0 2
+will continue coming 0 1
+will continue frequent 0 1
+will definitely 3 0
+will definitely dining 1 0
+will definitely go 1 0
+will definitely return 1 0
+will fail_NOT 0 1
+will go_NOT 0 1
+will go_NOT wrong_NOT 0 1
+will likely 1 0
+will likely try 1 0
+will return 2 0
+wonderful 1 0
+wonderful place 1 0
+work 0 1
+worth 0 3
+worth going 0 1
+worth wait 0 1
+worth_NOT 1 0
+worth_NOT going_NOT 1 0
+wrong_NOT 0 1
+wrote_NOT 0 1
+wrote_NOT review_NOT 0 1
+wrote_NOT review_NOT surprisingly_NOT 0 1
+year 0 1
+years 0 8
+years Masa 0 1
+years Masa goto 0 1
+years ago 0 1
+years gotta 0 1
+years now 0 3
+years quality 0 1
+years quality diminishes_NOT 0 1
+years_NOT 0 1
 #
