@@ -8,7 +8,6 @@ def removeEmptyLines(filename):
         return
     with open(filename) as filehandle:
         lines = filehandle.readlines()
-
     with open(filename, 'w') as filehandle:
         lines = filter(lambda x: x.strip(), lines)
         filehandle.writelines(lines)

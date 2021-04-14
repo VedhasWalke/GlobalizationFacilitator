@@ -294,10 +294,8 @@ def process1(clientLink):
 	clientLink = clientLink.strip()
 	getAllBizInfo(clientLink)
 	competitorIDs =  getAllCompetitorsInfo(getAllCompetitorsList(clientLink.split('https://www.yelp.com/biz/')[1].split('?')[0]))	
-	
 	print("FINISHED PROCESS 1")
 	return competitorIDs
-
 
 """
 Process 2:
@@ -452,7 +450,6 @@ def process2(clientLink, locationRadius, minNumReviewsPerUser):
 	for id in userIDs:
 		getUserReviews(id, clientID, minNumReviewsPerUser, locationRadius)
 	browser.quit()
-
 	print('FINISHED PROCESS 2')
 	return True
 	
