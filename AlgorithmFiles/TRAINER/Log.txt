@@ -249,3 +249,43 @@
 04-14-2021 12:08:37 | LoyTrainingSet.txt opened successfully 
 04-14-2021 12:08:48 | Training Completed
 
+04-14-2021 13:26:04 | OTS_Services.txt opened successfully 
+04-14-2021 13:26:14 | LTS_Restaurant.txt opened successfully 
+04-14-2021 13:26:31 | LTS_Services.txt opened successfully 
+04-14-2021 13:28:40 | OTS_Services.txt opened successfully 
+04-14-2021 13:28:40 | LTS_Restaurant.txt opened successfully 
+04-14-2021 13:28:43 | LTS_Services.txt opened successfully 
+04-14-2021 13:37:52 | PTS_Appliances.txt opened successfully 
+04-14-2021 13:38:37 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 13:39:25 | PTS_Automotive.txt opened successfully 
+04-14-2021 13:40:14 | NegTrainingSet.txt opened successfully 
+04-14-2021 13:40:15 | NTS_Appliances.txt opened successfully 
+04-14-2021 13:40:29 | NTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-14-2021 13:40:40 | NTS_Automotive.txt opened successfully 
+04-14-2021 13:40:52 | OTS_Restaurant.txt opened successfully 
+04-14-2021 13:40:53 | OTS_Services.txt opened successfully 
+04-14-2021 13:40:53 | LTS_Restaurant.txt opened successfully 
+04-14-2021 13:40:56 | LTS_Services.txt opened successfully 
+04-14-2021 13:40:59 | Training Completed
+
+04-17-2021 08:52:17 | NegTrainingSet.txt opened successfully 
+04-17-2021 08:52:18 | OTS_Restaurant.txt opened successfully 
+04-17-2021 08:52:18 | OTS_Services.txt opened successfully 
+04-17-2021 08:52:19 | LTS_Restaurant.txt opened successfully 
+04-17-2021 08:52:22 | LTS_Services.txt opened successfully 
+04-17-2021 08:52:23 | Training Completed
+
+04-17-2021 08:55:24 | PTS_All_Beauty.txt opened successfully 
+04-17-2021 08:56:23 | PTS_Appliances.txt opened successfully 
+04-17-2021 08:57:14 | PTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-17-2021 08:58:10 | NegTrainingSet.txt opened successfully 
+04-17-2021 08:58:12 | NTS_All_Beauty.txt opened successfully 
+04-17-2021 08:58:25 | NTS_Appliances.txt opened successfully 
+04-17-2021 08:58:40 | NTS_Arts_Crafts_and_Sewing.txt opened successfully 
+04-17-2021 08:58:53 | OTS_Restaurant.txt opened successfully 
+04-17-2021 08:58:53 | OTS_Services.txt opened successfully 
+04-17-2021 08:58:54 | LTS_Restaurant.txt opened successfully 
+04-17-2021 08:58:56 | LTS_Services.txt opened successfully 
+04-17-2021 08:59:00 | Training Completed
+
+04-17-2021 09:03:05 | PTS_All_Beauty.txt opened successfully 

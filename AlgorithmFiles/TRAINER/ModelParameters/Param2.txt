@@ -1,1148 +1,4522 @@
 Parameters for Prediction
 (Novel-Loyal)
 <text> [o] [l]
-Last Modified: 04-14-2021 12:08:48
+Last Modified: 04-17-2021 08:59:00
 #
-& 0 1
-& cozy 0 1
-6 0 1
-6 years 0 1
-6 years quality 0 1
-7 0 1
-7 8 0 1
-7 8 years 0 1
-8 0 1
-8 years 0 1
-8 years now 0 1
-BPG 1 0
-BPG several 1 0
-Blue 1 0
-Blue Point 1 0
-Blue Point Grill 1 0
-COVID 1 0
-COVID meal 1 0
-EXACTLY 0 1
-EXACTLY like 0 1
-FINALLY 0 1
-FINALLY time 0 1
-FINALLY time change 0 1
-Friday 0 1
-Friday Saturday 0 1
-Friday Saturday nights 0 1
-Gem 0 1
-Gem town 0 1
-Grill 1 0
-Grill first 1 0
-Heather 0 3
-Heather gets 0 1
-Heather know_NOT 0 1
-Heather know_NOT personally_NOT 0 1
-Heather professional 0 1
-Iove 0 1
-Iove restaurant 0 1
-Iove restaurant everything 0 1
-Masa 0 2
-Masa close 0 1
-Masa close 7 0 1
-Masa goto 0 1
-Point 1 0
-Point Grill 1 0
-Point Grill first 1 0
-Princeton 3 1
-Princeton area 1 1
-Princeton awhile 1 0
-Saturday 0 1
-Saturday nights 0 1
-TMH 1 0
-Yelp 1 0
-across 0 1
-across restaurant 0 1
-actually 1 0
+always 4 438
+years 2 190
+place 21 174
+coming 6 131
+love 4 114
+time 46 152
+come 7 106
+many 2 85
+times 3 86
+great 6 88
+favorite 2 83
+service 21 101
+food 3 75
+good 7 74
+past 2 66
+since 2 61
+go 16 75
+ive 5 61
+love place 0 55
+every 1 54
+every time 0 49
+spot 6 54
+often 0 45
+service always 0 44
+always great 0 43
+coming back 4 47
+going 9 51
+one 5 47
+restaurant 3 44
+amazing 2 42
+like 7 47
+get 2 40
+definitely 40 2
+worth 1 37
+many times 1 37
+come often 0 36
+can 3 39
+will 49 85
+first 52 18
+here 2 36
+goto 3 37
+delicious 0 34
+now 4 37
+years now 0 32
+first time 32 0
+frequent 0 29
+many years 0 29
+friendly 0 29
+food always 0 29
+always good 0 28
+continue 2 30
+weve 1 29
+quality 1 29
+Spoon 0 27
+always worth 0 27
+i’ve 2 29
+cream 0 27
+love coming 0 27
+ice 0 27
+town 0 27
+keep 0 27
+ice cream 0 27
+quite 1 27
+back 31 57
+Princeton 3 28
+found 25 0
+used 2 26
+area 6 29
+long 1 24
+order 3 26
+home 2 24
+still 1 23
+well 5 27
+happy 11 32
+4 1 22
+staff 0 21
+always amazing 0 21
+will always 0 21
+will definitely 21 0
+review 1 22
+husband 0 20
+4 years 0 20
+use 24 4
+keep coming back 0 19
+family 1 20
+always go 0 19
+keep coming 0 19
+almost 0 19
+bar 0 19
+everyday 0 18
+can get 0 18
+Bent 0 18
+Bent Spoon 0 18
+addiction 0 18
+server 0 18
+leave 1 19
+coming past 0 18
+ask 0 18
+meal_NOT 0 18
+Heather 0 18
+always find 0 18
+always friendly 0 18
+remembers 0 18
+staff always 0 18
+i’ve coming 0 18
+consistently 0 18
+frequent restaurant 0 18
+everything 0 18
+year 4 22
+bad_NOT meal_NOT 0 18
+make 0 18
+drinks 0 18
+Masa 0 18
+bad_NOT 0 18
+decided 18 0
+prompt 0 17
+away 2 19
+will continue 2 19
+favorite restaurants 0 17
+one favorite 0 17
+issue_NOT 1 18
+eat 1 18
+card 0 17
+just 11 27
+even 1 17
+friends 2 18
+professional 0 16
+meal 1 17
+restaurants 1 17
+menu 2 18
+atmosphere 0 16
+Ive 6 22
+right 1 17
+customer 5 20
+two 0 15
+recommended 5 19
+know 6 20
+definitely use 10 0
+coming years 0 13
+overdue 0 13
+future 14 1
+two years 0 13
+always come 0 12
+tremendously since first 0 9
+2 0 12
+thoroughly enjoy every 0 9
+thoroughly enjoy 0 9
+always reliably tasty 0 9
+tremendously since 0 9
+approximately 11 0 9
+several 1 13
+new 22 10
+usually always go 0 9
+get seriously long 0 9
+normally busy 0 9
+always comfortably full 0 9
+always friendly service 0 9
+highly recommended 1 10
+try 22 10
+usually always 0 9
+comfortably full 0 9
+seriously long 0 9
+family loves 0 9
+comfortably full patrons 0 9
+really happy 0 9
+approximately 11 years 0 9
+religiously order 0 9
+really happy theyre 0 9
+go typically eat 0 9
+reliably tasty 0 9
+normally busy worth 0 9
+clearly well 0 9
+place always 0 12
+incredibly rare stumble 0 9
+clearly well known 0 9
+incredibly rare 0 9
+family friends 0 9
+friendly service 0 9
+experience 19 31
+typically eat 0 9
+place clearly well 0 9
+improved tremendously since 0 9
+reviews 12 1
+gets 0 11
+im 8 19
+literally come 0 8
+probably favorite 0 8
+incredibly 0 11
+long time 0 11
+find 9 20
+true 0 11
+friendly prompt 0 8
+usually 1 12
+like literally come 0 8
+friendly prompt helpful 0 8
+best 7 18
+ive going 0 11
+6 0 11
+6 years 0 11
+months 0 11
+say 4 15
+literally come time 0 8
+7 0 11
+probably favorite spot 0 8
+welcoming 0 10
+rare 0 10
+disappointed_NOT 1 11
+weeks 0 10
+always leave 0 10
+gone 0 10
+disappoints_NOT 0 10
+seriously 0 10
+home away home 0 10
+busy 0 10
+several times 0 10
+clearly 0 10
+away home 0 10
+him 0 10
+many many times 0 10
+much 2 12
+everytime 0 10
+regular 0 10
+absolute 0 10
+one_NOT 0 10
+always love 0 10
+always happy 0 10
+everytime come 0 10
+going years 0 10
+consistently good chow 0 7
+consistently good 0 7
+past 4 0 10
+location 0 10
+consistently delicious 0 7
+past two 0 10
+consistent 0 10
+customer years 0 10
+favorite area 0 10
+food consistently delicious 0 7
+dont 2 12
+whenever 0 10
+home away 0 10
+many many 0 10
+something 0 10
+always get 0 10
+next 10 0
+past years 0 10
+will go_NOT 0 10
+lot 1 11
+& 0 9
+love place religiously 0 9
+love place staff 0 9
+10* 0 9
+11 0 9
+11 years 0 9
+11 years overdue 0 9
+love redid 0 9
+15 years 0 9
+17 0 9
+17 months 0 9
+2 weeks 0 9
+2 weeks issue_NOT 0 9
+loves 0 9
+make sure 0 9
+make sure stop 0 9
+great bad_NOT 0 9
+make trips 0 9
+make trips town 0 9
+makes 1 10
+makes excited 0 9
+many times bad_NOT 0 9
+many times love 0 9
+many visits 0 9
+close 7 0 9
+knew get 0 9
+close 7 8 0 9
+many years Ive 0 9
+many years ago 0 9
+membership 0 9
+friends come 0 9
+membership card 0 9
+6 years quality 0 9
+7 8 0 9
+membership card since 0 9
+full 0 9
+8 0 9
+8 years 0 9
+8 years now 0 9
+menu FINALLY 0 9
+full patrons 0 9
+menu forever 0 9
+might 0 9
+come everyday 0 9
+come great 0 9
+might approximately 0 9
+missing 0 9
+come like 0 9
+great experiences 0 9
+come many 0 9
+come often knew 0 9
+Bent Spoon field 0 9
+missing buffet 0 9
+missing buffet much 0 9
+month_NOT 0 9
+month_NOT without_NOT 0 9
+movie 0 9
+ive many 0 9
+movie place 0 9
+comfortably 0 9
+movie place go 0 9
+much will 0 9
+coming long 0 9
+much will back 0 9
+coming long time 0 9
+experience true 0 9
+coming past 4 0 9
+need come 0 9
+coming time 0 9
+new items 0 9
+nice server 0 9
+nice server always 0 9
+normally 0 9
+often knew 0 9
+old 0 9
+knew 0 9
+experiences 0 9
+great service 1 10
+old goody 0 9
+gem 1 10
+goto places happy 0 9
+ive dozen 0 9
+one Gem 0 9
+one Gem town 0 9
+one goto 0 9
+one goto places 0 9
+one_NOT month_NOT 0 9
+FINALLY 0 9
+FINALLY time 0 9
+FINALLY time change 0 9
+one_NOT month_NOT without_NOT 0 9
+open continue 0 9
+opened 0 9
+opened many 0 9
+opened many years 0 9
+outdoor 0 9
+outdoor seating 0 9
+Gem 0 9
+Gem town 0 9
+outdoor seating setup 0 9
+past 17 0 9
+get good 0 9
+past 17 months 0 9
+past 2 0 9
+fail_NOT 0 9
+Heather professional 0 9
+Heather professional ask 0 9
+failed_NOT 0 9
+failed_NOT deliver_NOT 0 9
+past 2 weeks 0 9
+past 4 years 0 9
+past 6 0 9
+past 6 years 0 9
+patrons 0 9
+patrons friendly 0 9
+place 15 0 9
+place can 0 9
+place can get 0 9
+place clearly 0 9
+place deserves 0 9
+place deserves 10* 0 9
+place eat 0 9
+place even 0 9
+place go 0 9
+place hanging 0 9
+place husband 0 9
+place need 0 9
+place need come 0 9
+place quite 0 9
+place religiously 0 9
+place staff 0 9
+places happy 0 9
+pleasant_NOT 0 9
+pleasant_NOT dining_NOT 0 9
+continue coming 0 9
+Ive come 0 9
+pleasant_NOT dining_NOT experience_NOT 0 9
+continue coming back 0 9
+continue frequent 0 9
+fantastic 0 9
+continue thrive 0 9
+please 0 9
+Ive gotta 0 9
+Ive gotta update 0 9
+please try 0 9
+pleased time 0 9
+post 0 9
+get right 0 9
+post movie 0 9
+post movie place 0 9
+professional ask 0 9
+far dined 0 9
+far dined twice 0 9
+get right away 0 9
+quality degraded 0 9
+quality degraded past 0 9
+get seriously 0 9
+quality diminishes_NOT 0 9
+quality food 0 9
+quality food atmosphere 0 9
+Masa close 0 9
+Masa goto 0 9
+quite refreshing 0 9
+quite refreshing see 0 9
+quite time 0 9
+rare stumble 0 9
+cream Bent 0 9
+cream shop 0 9
+real 0 9
+real gem 0 9
+recommended Princeton 0 9
+recommended Princeton area 0 9
+redid 0 9
+redid menu 0 9
+Princeton classic 0 9
+Princeton time 0 9
+ive eating 0 9
+husband go 0 9
+refreshing 0 9
+refreshing see 0 9
+fave place 0 9
+regular customer 0 9
+fave place hanging 0 9
+husband go time 0 9
+relate 0 9
+reliably 0 9
+religiously 0 9
+favorite hole 0 9
+favorite hole wall 0 9
+remembers us 0 9
+restaurant makes 0 9
+favorite ice 0 9
+favorite ice cream 0 9
+Spoon Princeton 0 9
+Spoon field 0 9
+restaurant makes excited 0 9
+favorite place 0 9
+restaurant times 0 9
+favorite place eat 0 9
+favorite post 0 9
+favorite post movie 0 9
+return agricola 0 9
+return agricola one 0 9
+review might 0 9
+review might approximately 0 9
+review place 0 9
+saddened 0 9
+saddened chefs 0 9
+ice cream Bent 0 9
+feel 0 9
+absolute favorite 0 9
+absolute favorite ice 0 9
+saddened chefs aren’t 0 9
+say please 0 9
+say please try 0 9
+season 0 9
+season since 0 9
+season since lines 0 9
+seated 0 9
+seated section 0 9
+seating 0 9
+seating setup 0 9
+seating setup restaurant 0 9
+second_NOT 0 9
+feel like 0 9
+feel like review 0 9
+second_NOT chance_NOT 0 9
+feeling 0 9
+section 0 9
+across restaurant 0 9
+section time 0 9
+see new 0 9
+see new items 0 9
+server Heather 0 9
+server always 0 9
+service always prompt 0 9
+service every 0 9
+service every time 0 9
+feeling place 0 9
+ice cream shop 0 9
+service walked_NOT 0 9
+addiction can 0 9
+addiction can still 0 9
+icecream 0 9
+service walked_NOT disappointed_NOT 0 9
+setup 0 9
+icecream addiction 0 9
+setup restaurant 0 9
+since come 0 9
+ive eating since 0 9
+again 20 11
+since first 0 9
+field 0 9
+since kid 0 9
+field icecream 0 9
+since lines 0 9
+agricola 0 9
+agricola one 0 9
+field icecream addiction 0 9
+since opened 0 9
+since opened many 0 9
+single_NOT 0 9
+solid 0 9
+solid staple 0 9
+something like 0 9
+sooooo 0 9
+almost 4 0 9
+almost 4 years 0 9
+almost always 0 9
+almost always begin 0 9
+sooooo good 0 9
+spot family 0 9
+spot ice 0 9
+spot sushi 0 9
+staff always friendly 0 9
+staff always welcoming 0 9
+staple ive 0 9
+always ask 0 9
+always begin 0 9
+always begin end 0 9
+always best 0 9
+staple ive dozen 0 9
+stay 1 10
+stay open 0 9
+stay open continue 0 9
+still good 0 9
+still relate 0 9
+stumble 0 9
+stumble across 0 9
+always comfortably 0 9
+stumble across restaurant 0 9
+always delicious 0 9
+support_NOT 0 9
+always fantastic 0 9
+always find coming 0 9
+always find something 0 9
+support_NOT second_NOT 0 9
+support_NOT second_NOT chance_NOT 0 9
+sure 2 11
+sure stop 0 9
+sushi 0 9
+always go times 0 9
+sushi/Japanese 0 9
+always goto 0 9
+always goto spot 0 9
+always great experiences 0 9
+sushi/Japanese spot 0 9
+sushi/Japanese spot family 0 9
+tasty 0 9
+tear 0 9
+tear place 0 9
+tear place 15 0 9
+theyre 0 9
+always keep 0 9
+always keep coming 0 9
+always know 0 9
+always know can 0 9
+always leave impressed 0 9
+theyre well 0 9
+think ever 0 9
+this 0 9
+thoroughly 0 9
+thrive 0 9
+time change 0 9
+time visit 0 9
+time visit Princeton 0 9
+time will almost 0 9
+times always 0 9
+times bad_NOT 0 9
+always order 0 9
+times love 0 9
+times season 0 9
+times season since 0 9
+times year 0 9
+always prompt 0 9
+tons 0 9
+tons flavors 0 9
+town fave 0 9
+town fave place 0 9
+degraded 0 9
+degraded past 0 9
+always recommended 0 9
+degrading 0 9
+always reliably 0 9
+always remembers 0 9
+always remembers us 0 9
+town just 0 9
+town just place 0 9
+delicious ice 0 9
+tremendously 0 9
+delicious ice cream 0 9
+deliver_NOT 0 9
+deliver_NOT pleasant_NOT 0 9
+always welcoming 0 9
+always welcoming remembers 0 9
+tried tons 0 9
+deliver_NOT pleasant_NOT dining_NOT 0 9
+tried tons flavors 0 9
+always worth drive 0 9
+trips 0 9
+trips town 0 9
+amazing food 0 9
+amazing food service 0 9
+true feeling 0 9
+amazing will 0 9
+ive lot 0 9
+true feeling place 0 9
+find coming 0 9
+twice outdoor 0 9
+two years Bent 0 9
+deserve_NOT 0 9
+amazing’’ 0 9
+typically 0 9
+update 0 9
+deserve_NOT support_NOT 0 9
+deserves 0 9
+deserves 10* 0 9
+used come 0 9
+used come everyday 0 9
+value 0 9
+value degrading 0 9
+visit Princeton 0 9
+visit Princeton time 0 9
+visits 0 9
+walked_NOT 0 9
+walked_NOT disappointed_NOT 0 9
+wall 0 9
+wall spot 0 9
+want 0 9
+want stay 0 9
+diminishes_NOT 0 9
+want stay open 0 9
+find something 0 9
+weeks issue_NOT 0 9
+find something like 0 9
+welcoming remembers 0 9
+dined twice 0 9
+anytime 0 9
+well known 0 9
+went 9 0
+dined twice outdoor 0 9
+weve eaten 0 9
+weve eaten many 0 9
+weve going 0 9
+whenever im 0 9
+whenever im area 0 9
+will almost 0 9
+dining_NOT 0 9
+dining_NOT experience_NOT 0 9
+will almost always 0 9
+dinner 0 9
+dinner casual 0 9
+dinner casual bar 0 9
+approximately 0 9
+disappoint_NOT 2 11
+will always keep 0 9
+will always recommended 0 9
+will back soon 0 9
+area must 0 9
+will continue coming 0 9
+will continue frequent 0 9
+aren’t used 0 9
+kid gone_NOT one_NOT 0 9
+first encounter 0 9
+hanging 0 9
+go everyday 0 9
+will fail_NOT 0 9
+will go_NOT wrong_NOT 0 9
+i’ve coming past 0 9
+wish tear 0 9
+ask seated 0 9
+ask seated section 0 9
+without_NOT 0 9
+worth drive 0 9
+worth going 0 9
+atmosphere keeps 0 9
+atmosphere keeps coming 0 9
+worth wait 0 9
+wrong_NOT 0 9
+i’ve going almost 0 9
+years Bent 0 9
+years Ive 0 9
+years Ive gotta 0 9
+years Masa 0 9
+years Masa goto 0 9
+first review 0 9
+go spot 0 9
+go spot sushi 0 9
+go time 0 9
+go times 0 9
+go typically 0 9
+years ago 0 9
+years disappoint_NOT 0 9
+years overdue 0 9
+dont think 0 9
+dont think ever 0 9
+years quality 0 9
+bad experience 0 9
+bar always 0 9
+bar always comfortably 0 9
+bar evenings 0 9
+bar evenings great 0 9
+improved 0 9
+go_NOT wrong_NOT 0 9
+going Masa 0 9
+going Masa close 0 9
+begin 0 9
+begin end 0 9
+going almost 0 9
+improved tremendously 0 9
+dozen 0 9
+dozen times 0 9
+dozen times always 0 9
+bent 0 9
+bent Spoon 0 9
+bent Spoon Princeton 0 9
+happy hour 0 9
+drinks always 0 9
+drinks great 0 9
+drinks great bad_NOT 0 9
+drive 0 9
+hole 0 9
+eaten 0 9
+eaten many 0 9
+hole wall 0 9
+eating 0 9
+eating since 0 9
+happy theyre 0 9
+flavors 0 9
+flavors years 0 9
+flavors years disappoint_NOT 0 9
+flyer 0 9
+going years now 0 9
+ill say 0 9
+kid gone_NOT 0 9
+brunches 0 9
+brunches dinner 0 9
+buffet 0 9
+buffet much 0 9
+gone since 0 9
+gone_NOT 0 9
+encounter 0 9
+gone_NOT one_NOT 0 9
+end delicious 0 9
+end delicious ice 0 9
+food always amazing 0 9
+food always fantastic 0 9
+businesses 0 9
+businesses deserve_NOT 0 9
+businesses deserve_NOT support_NOT 0 9
+gone_NOT one_NOT month_NOT 0 9
+busy worth 0 9
+food always great 0 9
+enjoy 0 9
+kid 0 9
+enjoy every 0 9
+enjoy every time 0 9
+food atmosphere 0 9
+keeps coming 0 9
+food delicious 0 9
+food drinks 0 9
+food drinks always 0 9
+good always 0 9
+food service 0 9
+just place 0 9
+forever 0 9
+forever quite 0 9
+forever quite refreshing 0 9
+especially beef 0 6
+good meal 0 9
+im area 0 9
+came 9 0
+forward many 0 9
+evenings 0 9
+evenings great 0 9
+im frequent 0 9
+can always 0 9
+can always find 0 9
+ever bad 0 9
+ever bad experience 0 9
+can get good 0 9
+can get seriously 0 9
+can still 0 9
+can still relate 0 9
+goody 0 9
+open 0 9
+just amazing will 0 9
+just amazing 0 9
+card since 0 9
+card since come 0 9
+casual 0 9
+casual bar 0 9
+casual bar evenings 0 9
+everyday since 0 9
+everyday since kid 0 9
+chance_NOT 0 9
+goto place 0 9
+goto places 0 9
+keeps 0 9
+everything amazing’’ 0 9
+years quality diminishes_NOT 0 9
+chefs 0 9
+chefs aren’t 0 9
+chefs aren’t used 0 9
+children 0 9
+children go 0 9
+children go everyday 0 9
+i’ve going 0 9
+goto spot 0 9
+goto spot ice 0 9
+excellent 1 10
+goto sushi/Japanese 0 9
+chow especially beef 0 6
+classic 0 9
+excellent service 0 9
+frequent flyer 0 9
+frequent restaurant times 0 9
+frequenting 0 9
+excited return 0 9
+excited return agricola 0 9
+fresh 0 9
+goto sushi/Japanese spot 0 9
+gotta 0 9
+gotta update 0 9
+knew get right 0 9
+know can 0 9
+know will fail_NOT 0 9
+known 0 9
+leave impressed 0 9
+leave pleased 0 9
+leave pleased time 0 9
+like review 0 9
+lines 0 9
+lines place 0 9
+lines place can 0 9
+location many 0 9
+location many times 0 9
+look forward many 0 9
+love coming back 0 9
+love going 0 9
+love place even 0 9
+& cozy 0 8
+restaurants plenty 0 8
+15 1 9
+resteraunt 0 8
+every time always 0 8
+plenty 0 8
+ago 1 9
+prompt helpful 0 8
+prompt helpful service 0 8
+prove 0 8
+plenty times 0 8
+card prove 0 8
+close 1 9
+will definitely use 5 0
+wish 1 9
+work 12 20
+wrote_NOT 0 8
+wrote_NOT review_NOT 0 8
+review_NOT surprisingly_NOT 0 8
+wrote_NOT review_NOT surprisingly_NOT 0 8
+great experience 1 9
+go_NOT 3 11
+rewards 0 8
+always best meal 0 8
+come time 0 8
+rewards card 0 8
+quite often 0 8
+quite often thought 0 8
+rewards card prove 0 8
+im frequent flyer 0 8
+even rewards 0 8
+Dov 15 7
+right every 0 8
+always consistent 0 8
+helpful 0 8
+right away 1 9
+always fresh 0 8
+just love 0 8
+helpful service 0 8
+must 1 9
+see 1 9
+frequenting many 0 8
+great service waitress 0 8
+ingredients 0 8
+EXACTLY 0 8
+EXACTLY like 0 8
+always good vibes 0 8
+always great service 0 8
+service waitress 0 8
+single_NOT time_NOT 0 8
+often thought 0 8
+sons 0 8
+sons favorite 0 8
+sons favorite resteraunt 0 8
+every_NOT single_NOT time_NOT 0 8
+Heather gets 0 8
+spot town 0 8
+every_NOT single_NOT 0 8
+everything always 0 8
+staple 1 9
+one favorite restaurants 0 8
+change 1 9
+just love place 0 8
+every_NOT 0 8
+stop 3 11
+order right 0 8
+order right every 0 8
+surprisingly_NOT 0 8
+fresh service 0 8
+passed 0 8
+passed test 0 8
+test 0 8
+test time 0 8
+them 5 13
+there 1 9
+always spot 0 8
+passed test time 0 8
+ill 1 9
+Iove 0 8
+thought 0 8
+thought time 0 8
+thought time rereview 0 8
+time always 0 8
+time even 0 8
+time even rewards 0 8
+time rereview 0 8
+ambiencez 0 8
+cook 0 8
+cook EXACTLY 0 8
+cook EXACTLY like 0 8
+time will 1 9
+keep good 0 8
+fresh service always 0 8
+ingredients always 0 8
+good work 0 8
+to 1 9
+cozy ambiencez 0 8
+pink_NOT 0 8
+pink_NOT every_NOT 0 8
+gets order 0 8
+gets order right 0 8
+pink_NOT every_NOT single_NOT 0 8
+impressed 17 9
+Princeton area 1 9
+good vibes & 0 8
+give 9 1
+fave 1 9
+redid menu FINALLY 0 8
+love place quite 0 8
+good vibes 0 8
+place always good 0 8
+e cook 0 8
+e 0 8
+like literally 0 8
+dined 1 9
+reliable 0 8
+Yelp 8 0
+twice 1 9
+favorite restaurants plenty 0 8
+favorite resteraunt 0 8
+keep good work 0 8
+favorite spot town 0 8
+best meal 0 8
+go back 8 0
+loveeee 0 8
+us 3 11
+highly 4 12
+using 13 5
+vibes 0 8
+like well 0 8
+vibes & 0 8
+rereview 0 8
+aren’t 1 9
+vibes & cozy 0 8
+waitress 0 8
+waitress Heather 0 8
+waitress Heather gets 0 8
+places 1 9
+know will 1 9
+like well done 0 8
+done 5 13
+well done pink_NOT 0 8
+weve always 0 8
+weve always friendly 0 8
+go quite 0 8
+done pink_NOT 0 8
+go quite often 0 8
+it 2 9
+chow especially 0 7
+favorite spot 1 8
+nights 0 7
+Iove restaurant everything 0 7
+well done 1 8
+Friday 0 7
+excited 2 9
+shop 2 9
+several times consistently 0 7
+Iove restaurant 0 7
+good chow 0 7
+Friday Saturday 0 7
+restaurant everything 0 7
+chow 0 7
+always enjoyed 0 7
+Friday Saturday nights 0 7
+wont 9 2
+restaurant everything always 0 7
+enjoyed atmosphere 0 7
+especially 0 7
+food consistently 0 7
+enjoyed 0 7
+ive several 0 7
+hour 2 9
+service always great 0 7
+times consistently 0 7
+experience_NOT 2 9
+review_NOT 1 8
+nice 4 11
+soon 2 9
+end 2 9
+hes 1 8
+enjoyed atmosphere Friday 0 7
+good chow especially 0 7
+time_NOT 1 8
+need 6 13
+cozy 1 8
+atmosphere Friday 0 7
+will back 2 9
+literally 1 8
+back soon 2 9
+Saturday 0 7
+Saturday nights 0 7
+ive several times 0 7
+finally found 3 0
+really 8 14
+definitely coming 3 0
+looking 8 2
+definitely go 3 0
+nervous 6 0
+bad 3 9
+far 4 10
+definitely work 3 0
+look forward 3 9
+definitely return 3 0
+beef 0 6
+across 3 9
+cant wait 6 0
+items 3 9
+pleased 3 9
+another 6 0
+glad 6 0
+on 3 9
+finally 6 0
+job 5 11
+absolutely love 0 2
+look 4 9
+definitely using 2 0
+fairly new 2 0
+really great 0 2
+will definitely return 2 0
+definitely coming back 2 0
+trustworthy 0 5
+definitely recommend 2 0
+next time 5 0
+definitely work future 2 0
+pleasantly surprised 2 0
+search 5 0
+someone 5 0
+think 4 9
+surprisingly different 2 0
+enough 1 6
+come great experience 0 5
+loyal 0 5
+come back 5 0
+definitely hire 2 0
+probably 3 8
+definitely use service 2 0
+clearly knows great 0 1
+timely place always 0 1
+can definitely see 1 0
+care certainly prior 0 1
+took 4 0
+friendly hardworking 0 1
+early evening reservation 1 0
+3 0 4
+friendly hardworking team 0 1
+service completely satisfied 0 1
+friendly thorough 0 1
+friendly welcoming 0 1
+early evening 1 0
+tried 5 9
+tried definitely recommend 1 0
+hopefully dont 1 0
+clearly knows 0 1
+experience ever 4 0
+hopefully wont 1 0
+incredibly reliable 0 1
+ever actually tasted 1 0
+chow especially chicken 0 1
+unpleasantly surprised 1 0
+certainly willing 1 0
+use service 5 1
+gave 4 0
+loyal customer 0 4
+going back 4 0
+generally happy 0 1
+usually busy 0 1
+extremely happy 1 0
+extremely pleased 1 0
+extremely rude 1 0
+extremely rude disrespectful 1 0
+usually busy seem_NOT 0 1
+usually go 0 1
+usually use service 0 1
+luckily came 1 0
+hes consistently professional 0 1
+shop carefully reviewing 1 0
+fairly decent 1 0
+Ill 4 0
+visit 5 9
+fairly decent job 1 0
+fairly new area 1 0
+Ill definitely hire 1 0
+luckily came across 1 0
+luckily found 1 0
+luckily ran 1 0
+lucky 4 0
+family basically 0 1
+completely satisfied 0 1
+family impressed 1 0
+consistently professional 0 1
+consistently professional trustworthy 0 1
+consistently time 0 1
+family impressed quality 1 0
+Ive come great 0 4
+hes consistently time 0 1
+great work 0 4
+basically just follows 0 1
+pleasantly impressed 1 0
+went really nervous 1 0
+basically just 0 1
+importantly always 0 1
+hugely disappointing 1 0
+importantly always perfect 0 1
+ive finally found 1 0
+wholly unimpressed 1 0
+hesitate 4 0
+wholly unimpressed food 1 0
+will absolutely use 1 0
+Utopia 4 0
+day 5 1
+days highly recommend 0 1
+dov clearly knows 0 1
+absolutely adore 0 1
+absolutely great 0 1
+absolutely hire 1 0
+absolutely hire outstanding 1 0
+absolutely incredibly 0 1
+absolutely incredibly reliable 0 1
+absolutely love place 0 1
+absolutely reach 1 0
+absolutely reach Dov 1 0
+absolutely use 1 0
+decided give 4 0
+possibly give 1 0
+actually first 1 0
+actually meeting 0 1
+actually meeting client 0 1
+actually repair/service 0 1
+actually repair/service person 0 1
 actually tasted 1 0
 actually tasted food 1 0
-again 1 1
-ages 1 0
-ago 0 1
-agricola 0 1
-agricola one 0 1
-always 0 37
-always amazing 0 2
-always ask 0 1
-always best 0 1
-always best meal 0 1
-always comfortably 0 1
-always comfortably full 0 1
-always consistent 0 1
-always delicious 0 1
-always enjoyed 0 1
-always fantastic 0 1
-always find 0 2
-always find coming 0 1
-always find something 0 1
-always fresh 0 1
-always friendly 0 2
-always friendly prompt 0 1
-always friendly service 0 1
-always go 0 1
-always good 0 3
-always good vibes 0 1
-always great 0 5
-always great experiences 0 1
-always great service 0 1
-always happy 0 1
-always keep 0 1
-always keep coming 0 1
-always know 0 1
-always know can 0 1
-always leave 0 1
-always leave impressed 0 1
-always love 0 1
-always prompt 0 1
-always recommended 0 1
-always reliably 0 1
-always reliably tasty 0 1
-always remembers 0 1
-always remembers us 0 1
-always spot 0 1
-always welcoming 0 1
-always welcoming remembers 0 1
-always worth 0 2
-amazing 0 4
-amazing food 0 1
-amazing food service 0 1
-amazing will 0 1
-ambiencez 0 1
-another 1 0
-another celebration 1 0
-another_NOT 1 0
-another_NOT try_NOT 1 0
-anyone 1 0
-anyone just 1 0
-anyone just wants 1 0
-anything_NOT 1 0
-anything_NOT quite_NOT 1 0
-anything_NOT quite_NOT like_NOT 1 0
-anytime 0 1
-anytime come 0 1
-anytime come great 0 1
-area 2 3
-area must 0 1
-around 1 0
-arriving 1 0
-arriving wholly 1 0
-arriving wholly unimpressed 1 0
-ask 0 2
-ask seated 0 1
-atmosphere 0 2
-atmosphere Friday 0 1
-atmosphere keeps 0 1
-atmosphere keeps coming 0 1
-average 1 0
-away 0 1
-awhile 1 0
-back 16 6
-back Princeton 1 0
-back another 1 0
-back maybe 1 0
-back soon 2 1
-back_NOT 3 0
-back_NOT give_NOT 1 0
-bad 1 1
-bad experience 0 1
-bad_NOT 0 2
-bad_NOT meal_NOT 0 2
-bar 0 2
-bar always 0 1
-bar always comfortably 0 1
-bar evenings 0 1
-bar evenings great 0 1
-beef 0 1
-best 2 1
-best ever 2 0
-best meal 0 1
-best_NOT 0 1
-best_NOT server_NOT 0 1
-best_NOT server_NOT years_NOT 0 1
-bookmarked 1 0
-bookmarked Princeton 1 0
-brought 1 0
-brought us 1 0
-brought us restaurant 1 0
-brunches 0 1
-brunches dinner 0 1
-buffet 0 1
-buffet much 0 1
-busy 0 1
-busy worth 0 1
-can 1 2
-can always 0 1
-can always find 0 1
-can definitely 1 0
-can definitely see 1 0
-can get 0 1
-can get good 0 1
-card 0 1
-card prove 0 1
-casual 0 1
-casual bar 0 1
-casual bar evenings 0 1
-celebration 1 0
-chance 1 0
-change 0 1
-check 1 0
-chow 0 1
-chow especially 0 1
-chow especially beef 0 1
-close 0 1
-close 7 0 1
-come 1 6
-come back 1 0
-come great 0 1
-come many 0 1
-come often 0 2
-come often knew 0 1
-come time 0 1
-comfortably 0 1
-comfortably full 0 1
-comfortably full patrons 0 1
-coming 3 10
-coming back 3 5
-coming long 0 1
-coming long time 0 1
-coming time 0 1
-coming years 0 1
-consistent 0 1
-consistently 0 2
-consistently delicious 0 1
-consistently good 0 1
-consistently good chow 0 1
-continue 0 3
-continue coming 0 1
-continue coming back 0 1
-continue frequent 0 1
-continue thrive 0 1
-cook 0 1
-cook EXACTLY 0 1
-cook EXACTLY like 0 1
-cozy 0 1
-cozy ambiencez 0 1
-day 2 0
-decided 5 0
-decided check 1 0
-decided give 2 0
-decided give place 1 0
-decided give try 1 0
-decided stop 1 0
-decided stop day 1 0
-decided try 1 0
-definitely 9 0
+possibly give one 1 0
+will definitely coming 1 0
+will definitely dining 1 0
+will definitely goto 1 0
+will definitely hire 1 0
+will definitely using 1 0
+deeply impressed 1 0
+deeply impressed commitment 1 0
+finally decided 1 0
+finally done 1 0
+definitely Best 0 1
+definitely Best Cleaning 0 1
 definitely back 1 0
-definitely coming 2 0
-definitely coming back 1 0
+definitely back future 1 0
+definitely call 1 0
 definitely dining 1 0
-definitely go 1 0
 definitely go back 1 0
+definitely go plumber 1 0
 definitely going 1 0
 definitely going back 1 0
-definitely recommend 1 0
-definitely return 1 0
+definitely goto 1 0
+definitely guys 0 1
+always friendly welcoming 0 1
+definitely keeping 1 0
+definitely keeping Dov 1 0
+definitely new 1 0
+definitely new staple 1 0
+definitely reach 1 0
+definitely reach w/ 1 0
+definitely return salon 1 0
 definitely see 1 0
 definitely see us 1 0
-delicious 0 3
-deliver_NOT 0 1
-deliver_NOT pleasant_NOT 0 1
-deliver_NOT pleasant_NOT dining_NOT 0 1
+definitely stop 1 0
+definitely use future 1 0
+definitely use guys 1 0
+definitely use plumbing 1 0
+definitely use problem 1 0
+definitely use services 1 0
+definitely will 1 0
+will definitely work 1 0
+definitely wont 1 0
+incredibly personable 0 1
+definitely work Dov 1 0
+will likely try 1 0
+finally found go 1 0
+will surely using 1 0
+officially found 1 0
+finally found plumber 1 0
+finally found someone 1 0
+finally returned 1 0
+probably best 1 0
+wont absolutely reach 1 0
+working 1 5
+happily use next 1 0
+gladly recommend 1 0
+probably best experience 1 0
+didnt 4 0
+probably cleanest 1 0
+probably cleanest salon 1 0
+gladly recommend services 1 0
 different 4 0
-different place 1 0
-different place next 1 0
-different time 1 0
-diminishes_NOT 0 1
-dine 1 0
-dine reading 1 0
-dined 1 1
-dined Blue 1 0
-dined Blue Point 1 0
-dined twice 0 1
-dined twice outdoor 0 1
+find really need 1 0
+wouldnt 4 0
+skilled strongly recommend 0 1
+year generally happy 0 1
+year now 0 4
+literally anywhere 1 0
+anytime Ive 0 4
+probably wont 1 0
+probably wont go 1 0
+professionally efficiently 1 0
+highly impressed 1 0
+highly recommend 2 1
+highly recommend making 1 0
+highly recommended Dov 0 1
+arriving wholly unimpressed 1 0
+highly say 0 1
+go literally anywhere 1 0
+happily use 1 0
+especially chicken 0 1
+quick friendly thorough 0 1
+quickly fix 1 0
+quickly fix things 1 0
+many years now 0 4
+honestly negative_NOT say_NOT 0 1
+ive absolutely love 0 1
+rarely ever 1 0
+rarely ever leave 1 0
+rarely write 1 0
+rarely write reviews 1 0
+certainly using company 1 0
+really amazing 1 0
+really amazing 4 1 0
+really bad 1 0
+really bad delivery 1 0
+really blessing 0 1
+really blessing plumbing 0 1
+really get 1 0
+really great recommend 0 1
+really great work 0 1
+calling 4 0
+really impressed 1 0
+really impressed whole 1 0
+really liked 1 0
+really liked work 1 0
+really need 1 0
+really need guys 1 0
+really nervous 1 0
+really nervous Ive 1 0
+really nice 1 0
+really really 0 1
+really really seriously 0 1
+really seriously 0 1
+really seriously absolutely 0 1
+called 4 0
+certainly using 1 0
+i’ll definitely using 1 0
+minute early evening 1 0
+certainly prior actually 0 1
+job really really 0 1
+rely going 1 0
+rely going forward 1 0
+respect highly say 0 1
+honestly negative_NOT 0 1
+move 4 0
+return 6 10
+honestly mediocre 1 0
+likely try 1 0
+salon highly recommend 1 0
+literally anywhere else 1 0
+certainly prior 0 1
+little 4 0
+easily favorite 0 1
+easily best plumber 0 1
+likely try different 1 0
+search finally done 1 0
+likely use 1 0
+easily best 0 1
+strongly recommend 0 1
+strongly recommend services 0 1
+incredibly personable takes 0 1
+stumbled 4 0
+honestly little 1 0
+likely use another 1 0
+surely return 1 0
+surely return recommend 1 0
+surely using 1 0
+surprised 4 0
+surprisingly 4 0
+surprisingly bad 1 0
+surprisingly good 1 0
+honestly far good 1 0
+second time 4 0
+thankfully Found 1 0
+honestly far 1 0
+things professionally efficiently 1 0
+think finally found 1 0
+carefully reviewing places 1 0
+carefully reviewing 1 0
+seriously absolutely 0 1
+fast 0 4
+time using 4 0
+timely manner 0 1
+timely place 0 1
+2 years 0 3
+client 1 4
+frequenting many years 0 3
+long overdue 0 3
+expectations 3 0
+3 years 0 3
+trip every 0 3
+friend 3 0
+finding 3 0
+anytime Ive come 0 3
+high 3 0
 dining 3 0
-dining TMH 1 0
-dining experience 1 0
-dining experience ages 1 0
-dining pandemic 1 0
-dining_NOT 0 1
-dining_NOT experience_NOT 0 1
-dinner 0 1
-dinner casual 0 1
-dinner casual bar 0 1
-disappoint_NOT 2 0
-disappointed 1 0
-disappointed_NOT 0 1
-disappoints_NOT 0 1
-done 0 1
-done pink_NOT 0 1
-dozen 0 1
-dozen times 0 1
-dozen times always 0 1
-drinks 0 2
-drinks always 0 1
-drinks great 0 1
-drinks great bad_NOT 0 1
-e 0 1
-e cook 0 1
+new spot 3 0
+id 4 1
+trip every time 0 3
+reading 3 0
+always quick 0 3
+extremely 3 0
+nice guy 3 0
+past 3 0 3
+minute 3 0
+stressful 3 0
+fairly 3 0
+person 1 4
+another try 3 0
+time go 0 3
+today 3 0
+Im 5 2
+reached 3 0
+didnt know 3 0
+couple 0 3
+nail place 4 1
+hesitant 3 0
+usually use 1 1
+luckily 3 0
+chose 3 0
+found new 3 0
+show 0 3
+every time go 0 3
+chance 3 0
+wanted 3 0
+first visit 3 0
+cleaning 2 5
+pleasantly 3 0
+dov 4 7
+recommend enough 0 3
+pleasure 1 4
+take 3 0
+overdue review 0 3
+plumbing 5 8
+hire 5 2
+second 5 2
+will call 3 0
+first time using 3 0
+notice 3 0
+like_NOT 3 0
+thank 4 1
+im happy 3 0
+will use 3 0
+will using 3 0
+rude 3 0
+nail 5 2
+thorough 0 3
+wouldnt hesitate 3 0
+appointment 3 0
+seems 3 0
+seems like 3 0
+found Dov 3 0
+problem_NOT 0 3
+last minute 3 0
+back_NOT 3 0
+came across 3 0
+find place 2 0
+anyone 2 0
+anyone_NOT else_NOT 0 2
+had 2 0
+highlight trip 0 2
+highlight trip every 0 2
+finding new 2 0
+fixed 3 1
+time Utopia 2 0
+call always 0 2
+customers 1 3
+reading reviews 2 0
+online 2 0
+emergency 2 0
+time today 2 0
+honestly 3 1
+found place 2 0
+new nail place 2 0
+time yesterday 2 0
+timely 0 2
+stopped 2 0
+stressful move 2 0
+going forward 2 0
+past 7 0 2
+reach 2 0
+past three 0 2
+past three years 0 2
+stressful move Ive 2 0
+elsewhere 2 0
+else_NOT 1 3
+told 2 0
+researching 2 0
+returned 2 0
+long overdue review 0 2
+people 0 2
+ratings 2 0
+cant say enough 0 2
+tree 2 0
+movers 2 0
+ive using 0 2
+going year 0 2
+stumbled place 2 0
+rather 2 0
+next year 2 0
+service future 2 0
+service great 0 2
+moving_NOT 2 0
+everyone 0 2
+stumbled upon 2 0
+rarely 2 0
+least stressful move 2 0
+try items 2 0
+services 4 2
+best experience 2 0
+super happy 2 0
+referred 0 2
+best ever 2 0
+unexpected 2 0
+replace 2 0
+less 2 0
+upon 2 0
+else 2 0
+fix 2 0
+use future 2 0
+use next 2 0
+say enough 0 2
+use services 2 0
+going back soon 2 0
+quick respond 0 2
+out 0 2
+following 2 0
+using future 2 0
+using service 0 2
+bench 0 2
+sure_NOT 2 0
+least stressful 2 0
+sure_NOT Ill_NOT 2 0
+sure_NOT Ill_NOT go_NOT 2 0
+surely 2 0
+friend recommended 2 0
+reviews gave 2 0
+expect_NOT 2 0
+4 times 0 2
+least 3 1
+hopefully 2 0
+move Ive 2 0
+flavor 0 2
+likely 2 0
+quote 2 0
+visited 2 0
+got 3 1
+wait 7 9
+wait try 2 0
+short 2 0
+short notice 2 0
+9 0 2
+stand 0 2
+lucky find 2 0
+walkin 2 0
+BEST 2 0
+showed 2 0
+great job 0 2
+efficient 0 2
+late 2 0
+imagine 0 2
+way 1 3
+week 2 0
+help 2 0
+coming since 0 2
+first time yesterday 2 0
+experienced_NOT 2 0
+needed 3 1
+last year 0 2
+punctual 0 2
+recommend use 2 0
+company 10 8
+gave try 2 0
+looking company 2 0
+first time experience 2 0
+cant say 0 2
+knows 0 2
+last 6 4
+just went 2 0
+weve used 0 2
+outstanding 3 1
+since last 0 2
+hes consistently 0 2
+get job 0 2
+hard 3 1
+first reached 2 0
+team 1 3
+since last year 0 2
+cant recommend 0 2
+fails_NOT 0 2
+plumbers 2 0
+get job done 0 2
+will always use 0 2
+complete 0 2
+Ill_NOT 2 0
+Ill_NOT go_NOT 2 0
+will calling 2 0
+Ill_NOT go_NOT back_NOT 2 0
+satisfied 5 3
+Ive_NOT 0 2
+first time today 2 0
+farm 2 0
+new customer 2 0
+issues 2 0
+saw 2 0
+does 0 2
+cant imagine 0 2
+new favorite 2 0
+new goto 2 0
+moving experience 2 0
+go_NOT back_NOT 2 0
+customer service 0 2
+started 2 0
+will return 2 0
+will surely 2 0
+thing 2 0
+give another 2 0
+absolutely 3 5
+things 3 1
+disappointing 2 0
+with 0 2
+clean 0 2
+disappointed 2 0
+forward 7 9
+wont back 2 0
+wont go 2 0
+wont go back 2 0
+salon 3 1
+work Dov 2 0
+work future 2 0
+looking forward 2 0
+kind 2 0
+decided go 2 0
+give try 2 0
+respond 0 2
+worth_NOT 2 0
+easily 0 2
+decided stop 2 0
+ever 15 13
+moving experience ever 2 0
+smart 0 2
+cant believe 2 0
+decided try 2 0
+new nail 2 0
+always pleasure 0 2
+always quick respond 0 2
+always use 0 2
+three 0 2
+three years 0 2
+always will 0 2
+anywhere else 2 0
+amazing job 0 2
+professional trustworthy 0 2
+glad went 2 0
+love always 0 2
+highlight 0 2
+time experience 2 0
+dov plumbing_NOT 1 0
+dov plumbing_NOT us_NOT 1 0
+dov really 0 1
+down_NOT 0 1
+drain 0 1
+drain clogged 0 1
+dream 0 1
+dream work 0 1
 early 1 0
-early evening 1 0
-early evening reservation 1 0
-eat 0 2
-eaten 0 1
-eaten many 0 1
-eaten many times 0 1
+easier 0 1
+easiest 1 0
+easiest least 1 0
+easiest least stressful 1 0
+eat first 1 0
 eatin 1 0
 eatin next 1 0
 eatin next trip 1 0
-eating 0 1
-eating since 0 1
-else_NOT 1 0
+edison 0 1
+effective 1 0
+effective kind 1 0
+effectiveness 1 0
+efficient execution 0 1
+efficient moving 0 1
+efficient moving company 0 1
+efficiently 1 0
+either 1 0
+electricians 1 0
+electricians cause 1 0
+electricians cause know_NOT 1 0
+else_NOT ever_NOT 0 1
 else_NOT go_NOT 1 0
-encounter 0 1
-enjoy 0 1
-enjoy every 0 1
-enjoy every time 0 1
+else_NOT where_NOT 0 1
+emergency situationhe 1 0
+emergency situationhe arrived 1 0
+empty 0 1
+encountered 0 1
+encountered super 0 1
+end result 1 0
+end result gladly 1 0
+end search 1 0
+energy 0 1
+energy always 0 1
+energy always positive 0 1
 enjoyable 1 0
 enjoyable experience 1 0
 enjoyable experience must 1 0
-enjoyed 0 1
-enjoyed atmosphere 0 1
-enjoyed atmosphere Friday 0 1
-especially 0 1
-especially beef 0 1
-even 0 2
-even rewards 0 1
+enough always 0 1
+enough always best 0 1
+enough amazing 0 1
+enough amazing things 0 1
+enough hes 0 1
+enough hes good 0 1
+enough professionalism 0 1
+enough satisfied 1 0
+enough satisfied experience 1 0
+enough times 0 1
+enough times know 0 1
+enough_NOT everything_NOT 0 1
+enough_NOT write_NOT 1 0
+entire 1 0
+entire building 1 0
+entire building friends 1 0
+estimate 1 0
+estimate gave 1 0
+estimate gave sticker 1 0
+even stressful 1 0
 evening 1 0
 evening reservation 1 0
-evenings 0 1
-evenings great 0 1
-ever 4 1
 ever actually 1 0
-ever actually tasted 1 0
+ever already 1 0
 ever back 1 0
 ever back Princeton 1 0
-ever bad 0 1
-every 0 4
-every time 0 4
-every time always 0 1
-every_NOT 0 1
-every_NOT single_NOT 0 1
-every_NOT single_NOT time_NOT 0 1
-everything 0 1
-everything always 0 1
-everytime 0 1
-everytime come 0 1
-excellent 0 1
-excellent service 0 1
+ever call 0 1
+ever go 1 0
+ever go anywhere 1 0
+ever leave 1 0
+ever leave reviews 1 0
+ever pleasure 0 1
+ever since following 1 0
+ever_NOT amazing_NOT 1 0
+every experience 0 1
+every package 0 1
+every package offer 0 1
+every penny 0 1
+every penny always 0 1
+every respect 1 0
+every two 0 1
+every two weeks 0 1
+every year 0 1
+everyone Ive 0 1
+everyone Ive encountered 0 1
+everyone know 0 1
+everyone know needs 0 1
+everything plumbing 0 1
+everything_NOT 0 1
+exceeded 1 0
+exceeded expectations 1 0
+exceeding 1 0
+exceeding expectations 1 0
+excellent job 1 0
+excellent service every 0 1
 exceptional 1 0
-excited 1 1
 excited dine 1 0
 excited dine reading 1 0
-excited return 0 1
-excited return agricola 0 1
+excited say 1 0
+excited say Ill 1 0
+execution 0 1
+execution plumbing 0 1
+execution plumbing related 0 1
 existed_NOT 1 0
-expect_NOT 1 0
-expectations 1 0
+expand 1 0
+expand search 1 0
+expand search came 1 0
+expect 1 0
+expect best 1 0
+expect best thing 1 0
+expect_NOT attitude_NOT 1 0
+expectation_NOT 1 0
+expectations every 1 0
+expectations every respect 1 0
 expectations high 1 0
 expectations high arriving 1 0
+expected 1 0
+expected aboveaverage 1 0
+expected aboveaverage service 1 0
 expected_NOT 1 0
 expecting 1 0
 expecting farm 1 0
-experience 3 2
+experience Ive ever 1 0
+experience Ive handled 0 1
 experience ages 1 0
+experience awesome 1 0
+experience disappointing 1 0
+experience ever already 1 0
+experience far 1 0
+experience least 1 0
 experience must 1 0
+experience recommend 0 1
+experience recommend every 0 1
 experience surprisingly 1 0
-experience_NOT 0 1
-experienced_NOT 1 0
+experience tree 1 0
+experience_NOT moving_NOT 1 0
 experienced_NOT anything_NOT 1 0
 experienced_NOT anything_NOT quite_NOT 1 0
-experiences 0 1
 experiencing 1 0
+expert 1 0
+expert rely 1 0
+expertise 0 1
+explains 1 0
+explains things 1 0
+explains things well 1 0
 explore 1 0
-extremely 1 0
-extremely pleased 1 0
-fail_NOT 0 1
-failed_NOT 0 1
-failed_NOT deliver_NOT 0 1
-fairly 2 0
-fairly new 2 0
-family 0 2
-family friends 0 1
-family loves 0 1
-fantastic 0 1
-far 0 1
-far dined 0 1
-far dined twice 0 1
-farm 2 0
+express 1 0
+express enough 1 0
+face 0 1
+facility 1 0
+facility online 1 0
+fails_NOT disappoint_NOT 0 1
+fails_NOT me_NOT 0 1
+far BEST 1 0
+far best 1 0
+far best moving 1 0
+far good 1 0
 farm like 1 0
 farm like experience 1 0
 farm table 1 0
 farm table restaurant 1 0
+fast get 0 1
+fast great 0 1
+fast professional 0 1
+fast professional pleasant 0 1
+fast reliable 0 1
+fast reliable surprise_NOT 0 1
+fastest 1 0
+fastest easiest 1 0
+fastest easiest least 1 0
 fate 1 0
 fate brought 1 0
 fate brought us 1 0
-fave 1 1
-fave place 0 1
-fave place hanging 0 1
 fave spot 1 0
-favorite 0 8
-favorite area 0 1
-favorite hole 0 1
-favorite hole wall 0 1
-favorite place 0 1
-favorite place eat 0 1
-favorite post 0 1
-favorite post movie 0 1
-favorite restaurants 0 2
-favorite restaurants plenty 0 1
-favorite resteraunt 0 1
-favorite spot 0 1
-favorite spot town 0 1
-finally 1 0
-finally returned 1 0
-find 0 2
-find coming 0 1
-find something 0 1
-find something like 0 1
-first 12 1
+favorite always 0 1
+favorite flavor 0 1
+favorite nail 1 0
+favorite nail place 1 0
+favorite restaurant 0 1
+favorites 1 0
+feels 0 1
+feels like 0 1
+felt 1 0
+felt compelled 1 0
+felt compelled incredible 1 0
+felt_NOT 0 1
+felt_NOT rushed_NOT 0 1
+felt_NOT rushed_NOT taken_NOT 0 1
+find Yelp 1 0
+find better 0 1
+find company 1 0
+find company replace 1 0
+find good 1 0
+find new 1 0
+find place loved 1 0
+find really 1 0
+find service 0 1
+find service days 0 1
+find someone 1 0
+finding Yelp 1 0
+finding new nail 1 0
+finding new services 1 0
+finish 1 0
+firm 1 0
 first COVID 1 0
-first encounter 0 1
+first estimate 1 0
+first estimate gave 1 0
+first experience 1 0
+first first 1 0
+first first time 1 0
 first impression 1 0
 first indoor 1 0
 first indoor dining 1 0
+first interactions 1 0
+first quote 1 0
+first reached yelp 1 0
 first restaurants 1 0
-first time 7 0
+first time Utopia 1 0
+first time client 1 0
+first time customer 1 0
+first time customers 1 0
 first time dining 1 0
-first time today 1 0
-flyer 0 1
-food 2 8
-food always 0 3
-food always amazing 0 1
-food always fantastic 0 1
-food always great 0 1
-food atmosphere 0 1
-food consistently 0 1
-food consistently delicious 0 1
-food delicious 0 1
-food drinks 0 1
-food drinks always 0 1
-food service 0 1
-forever 0 1
-forever quite 0 1
-forever quite refreshing 0 1
-forward 4 1
+first time firm 1 0
+first time going 1 0
+first time hiring 1 0
+first time impressed 1 0
+first time showed 1 0
+first time visiting 1 0
+first time will 1 0
+first timer 1 0
+first visit last 1 0
+first visit pleasantly 1 0
+first visited 1 0
+first year 1 0
+first year using 1 0
+firsttime 1 0
+firsttime experience 1 0
+five 0 1
+five years 0 1
+five years now 0 1
+fix things 1 0
+fix things professionally 1 0
+fixed Im 0 1
+fixed Im sure 0 1
+fixed issue 1 0
+fixed issue 15 1 0
+fixed just 1 0
+fixed just like 1 0
+fixed problem 1 0
+fixed_NOT 0 1
+flavor years 0 1
+follow 1 0
+follow appointment 1 0
+following Instagram 1 0
+following day 1 0
+following_NOT 1 0
+following_NOT 2_NOT 1 0
+following_NOT 2_NOT weeks_NOT 1 0
+follows 0 1
+follows wherever 0 1
+follows wherever new 0 1
+food always good 0 1
+food always raw 0 1
+food everytime 0 1
+food everytime come 0 1
+food okay 0 1
+food okay time 0 1
+forbid 1 0
+forbid anymore 1 0
+forward calling 1 0
 forward coming 1 0
-forward coming back 1 0
 forward experiencing 1 0
 forward going 1 0
-forward many 0 1
-found_NOT 0 1
+found Dov Yelp 1 0
+found Dov exceeded 1 0
+found Dov yelp 1 0
+found PERFECT 1 0
+found PERFECT place 1 0
+found Yelp 1 0
+found company 1 0
+found company Home 1 0
+found expert 1 0
+found go 1 0
+found google 1 0
+found google today 1 0
+found hidden 1 0
+found home 1 0
+found new favorites 1 0
+found new nail 1 0
+found plumber 1 0
+found quick 1 0
+found quick search 1 0
+found shop 1 0
+found someone 1 0
+found someone dependable 1 0
 found_NOT best_NOT 0 1
-frequent 0 3
-frequent flyer 0 1
-frequent restaurant 0 2
-frequent restaurant times 0 1
-frequenting 0 1
-frequenting many 0 1
-frequenting many years 0 1
-fresh 0 1
-fresh service 0 1
-fresh service always 0 1
-friendly 0 3
-friendly prompt 0 1
-friendly prompt helpful 0 1
-friendly service 0 1
-friends 1 2
-friends come 0 1
+found_NOT company_NOT 1 0
+found_NOT company_NOT worthy_NOT 1 0
+frequent customer 0 1
+frequent customer year 0 1
+fresh food 0 1
+fresh food everytime 0 1
+fridge 0 1
+friend recommended clutter 1 0
+friend recommended place 1 0
 friends made 1 0
-full 0 1
-full patrons 0 1
-get 0 2
-get good 0 1
-get right 0 1
-get right away 0 1
-gets 0 1
-gets order 0 1
-gets order right 0 1
+functioned 1 0
+functioned without 1 0
+future issues 1 0
+future issues projects 1 0
+future needs 1 0
+future needs thank 1 0
+future plumbing 0 1
+future plumbing needs 0 1
+future service 1 0
+gET 0 1
+gET REWARDS 0 1
+gET REWARDS CARD 0 1
+gave call 1 0
+gave sticker 1 0
+gem go 0 1
+gem go check 0 1
+generally 0 1
+genius 0 1
+get fixed 0 1
+get fixed Im 0 1
+get pay 2 1
+get pay Im 1 0
+get pay will 1 0
+get_NOT 1 0
+get_NOT them_NOT 1 0
+gets jobs 0 1
+gets jobs done 0 1
+gets stomach 0 1
+getting 0 1
+getting hair 0 1
+getting hair cut 0 1
 girls 1 0
 girls day 1 0
-give 3 0
+give PoC 1 0
+give PoC try 1 0
+give business 1 0
+give business troubling 1 0
+give call 0 1
+give guys 1 0
+give guys another 1 0
 give one 1 0
-give one chance 1 0
 give place 1 0
-give try 1 0
-give_NOT 2 0
-give_NOT guys_NOT 1 0
+give_NOT 1 0
 give_NOT recommendation_NOT 1 0
 give_NOT recommendation_NOT someone_NOT 1 0
-go 4 5
-go back 3 0
-go quite 0 1
-go quite often 0 1
-go spot 0 1
-go spot sushi 0 1
-go time 0 1
-go typically 0 1
-go typically eat 0 1
-go_NOT 3 1
-go_NOT back_NOT 2 0
+glad finally 1 0
+glad found 1 0
+glad stopped 1 0
+gladly 1 0
+go Princeton 0 1
+go anywhere 1 0
+go anywhere else 1 0
+go check 0 1
+go cleaning 0 1
+go cleaning services 0 1
+go company 1 0
+go delaware 0 1
+go edison 0 1
+go guy 0 1
+go guy hope 0 1
+go literally 1 0
+go nail 0 1
+go needed 0 1
+go plumber 1 0
+go_NOT anyone_NOT 0 1
+go_NOT anyone_NOT else_NOT 0 1
 go_NOT back_NOT give_NOT 1 0
-go_NOT wrong_NOT 0 1
-going 4 3
-going Masa 0 1
-going back 3 0
+go_NOT else_NOT 0 1
+go_NOT else_NOT where_NOT 0 1
 going back another 1 0
-going back soon 2 0
+going back sure 1 0
+going five 0 1
+going five years 0 1
+going last 0 1
+going last 6 0 1
 going new 1 0
-going years 0 1
+going team 0 1
+going team year 0 1
+going use 1 0
+going use service 1 0
+going year now 0 1
 going_NOT 1 0
 going_NOT back_NOT 1 0
-gone 0 1
-gone since 0 1
-good 1 7
-good always 0 1
-good chow 0 1
-good chow especially 0 1
-good meal 0 1
-good vibes 0 1
-good vibes & 0 1
-good work 0 1
+gone enough 0 1
+gone enough times 0 1
+good customer 0 1
+good customer service 0 1
+good gets 0 1
+good hes 1 0
+good ratings 1 0
+good tree 1 0
+good tree company 1 0
 good_NOT 1 0
 good_NOT start_NOT 1 0
-goody 0 1
-goto 0 3
-goto place 0 1
-goto places 0 1
-goto places happy 0 1
-goto sushi/Japanese 0 1
-goto sushi/Japanese spot 0 1
-gotta 0 1
-gotta update 0 1
-great 1 8
-great bad_NOT 0 1
-great experience 0 1
-great experiences 0 1
-great service 0 1
-great service waitress 0 1
+goodness 1 0
+goodness went 1 0
+google 1 0
+google today 1 0
+got good 1 0
+got good ratings 1 0
+got issues_NOT 0 1
+got job 1 0
+got recommendation 1 0
+got recommendation someone 1 0
+goto now 1 0
+great company 0 1
+great company show 0 1
+great find 1 0
+great food 0 1
+great highly 1 0
+great learning 0 1
+great learning experience 0 1
+great one 1 0
+great professional 0 1
+great professional quick 0 1
+great recommend 0 1
+great service honest 0 1
+great service reasonable 0 1
+great service seems 1 0
+great team 0 1
+great team always 0 1
 great things 1 0
-guys_NOT 1 0
-guys_NOT another_NOT 1 0
-guys_NOT another_NOT try_NOT 1 0
-hanging 0 1
-happy 0 3
-happy hour 0 1
-happy well 0 1
+great usual 0 1
+great work hire 0 1
+great work way 0 1
+gross 1 0
+guy 5 4
+guy boot 1 0
+guy day 0 1
+guy definitely 1 0
+guy hope 0 1
+guy sooo 1 0
+guy sooo rude 1 0
+guys 5 6
+guys another 1 0
+guys another try 1 0
+guys around 1 0
+guys around corner 1 0
+guys best 0 1
+guys deal 0 1
+guys good 0 1
+guys good gets 0 1
+guys great 1 0
+guys great highly 1 0
+guys incredible 0 1
+guys incredible let_NOT 0 1
+guys one 0 1
+guys one call 0 1
+guys staying 0 1
+hair 0 1
+hair cut 0 1
+hair cut past 0 1
+handled 0 1
+handled professionally 0 1
+handyman 1 0
+handyman last 1 0
+happier 0 1
+happier_NOT another_NOT 0 1
+happier_NOT promptness_NOT 1 0
+happily 1 0
+happy always 0 1
+happy always service 0 1
+happy chose 1 0
+happy expertise 0 1
+happy found 1 0
+happy like 0 1
+happy look 1 0
+happy service 1 0
+happy someone 1 0
+happy someone call 1 0
+happy thankful 1 0
+happy thankful Dov 1 0
+happy use 1 0
+happy use next 1 0
+happy went 1 0
+happy will 1 0
+happy will absolutely 1 0
+hard find 1 0
+hard find good 1 0
+hard time 1 0
+hard time finding 1 0
+hard work 1 0
+hard working 0 1
+harder 1 0
+harder find 1 0
+hardworking 0 1
+hardworking team 0 1
+hate 0 1
+hate coming 0 1
+hate coming always 0 1
+hated 0 1
+hated bench 0 1
+havent 1 0
+havent BPG 1 0
+headache 1 0
+headache fixed 1 0
+headache fixed just 1 0
 heard 1 0
 heard many 1 0
 heard many great 1 0
-helpful 0 1
-helpful service 0 1
-here 0 4
-hesitate_NOT 1 0
-hesitate_NOT give_NOT 1 0
-hesitate_NOT give_NOT guys_NOT 1 0
-high 2 0
+heating 0 1
+heating systems 0 1
+heating systems 4 0 1
+hes capable 0 1
+hes capable competent 0 1
+hes good 0 1
+hes incredibly 0 1
+hes nice 1 0
+hes nice guy 1 0
+hes person 0 1
+hes pretty 0 1
+hes pretty much 0 1
+hesitant eat 1 0
+hesitant first 1 0
+hesitant recommending 1 0
+hesitate call 1 0
+hesitate contact 1 0
+hesitate give 1 0
+hesitate go 1 0
+hidden 1 0
+hidden gem 1 0
 high arriving 1 0
 high praise 1 0
-highly 0 1
-highly recommended 0 1
-him 0 1
-hole 0 1
-hole wall 0 1
-hour 0 1
-husband 0 2
-husband go 0 1
+high standards 1 0
+high standards found 1 0
+highest 0 1
+highest recommendation 0 1
+hire outstanding 1 0
+hire team 1 0
+hire whenever 0 1
+hire wont 0 1
+hire wont regret 0 1
+hired 1 0
+hired moving 1 0
+hiring 1 0
+home Im 0 1
+home service 0 1
+home service man 0 1
+honest service 1 0
+honest service happily 1 0
+honest straightforward 0 1
+honest straightforward hard 0 1
+hope 1 2
+hope changes_NOT 0 1
+hope experience 1 0
+hope experience least 1 0
+hope thatll 0 1
+hope thatll case 0 1
+hoping 1 0
+hoping issue_NOT 1 0
+horrible 1 0
+horrible service 1 0
+hour late 1 0
+howeverI 1 0
+howeverI use 1 0
+howeverI use service 1 0
+hugely 1 0
+husband always 0 1
+husband doesn’t 0 1
+husband doesn’t buy 0 1
+hype 0 1
+id always 0 1
+id always recommend 0 1
+id possibly 1 0
+id rather 1 0
+id recommend 1 0
+id recommend use 1 0
+id say 1 0
+id say Id 1 0
 idea_NOT 1 0
 idea_NOT existed_NOT 1 0
-impressed 3 1
+ill going 1 0
+ill going back 1 0
+im always 1 0
+im excited 1 0
+im happy found 1 0
+im happy service 1 0
+im pretty 1 0
+im return 0 1
+im return customer 0 1
+im satisfied 1 0
+im satisfied results 1 0
+imagine better 0 1
+imagine thorough 0 1
+immediately 1 0
+importantly 0 1
+impressed commitment 1 0
+impressed experience 1 0
+impressed quality 1 0
+impressed review 1 0
+impressed timeliness 1 0
+impressed timeliness effectiveness 1 0
+impressed whole 1 0
 impression 1 0
-improved 0 1
-improved tremendously 0 1
-improved tremendously since 0 1
-incredibly 0 1
-incredibly rare 0 1
-incredibly rare stumble 0 1
+incredible let_NOT 0 1
+incredible service 1 0
+incredible service received 1 0
 indoor 1 0
 indoor dining 1 0
 indoor dining experience 1 0
-ingredients 0 1
-ingredients always 0 1
+inquiries 0 1
+inquiries great 0 1
+inquiries great work 0 1
+instagram_NOT 1 0
+instagram_NOT viedos_NOT 1 0
+instagram_NOT viedos_NOT pics_NOT 1 0
+installation 1 0
 intend 1 0
 intend eatin 1 0
-issue_NOT 0 1
-it 1 1
-items 2 1
+interactions 1 0
+issue 2 1
+issue 15 1 0
+issue_NOT want_NOT 1 0
+issue_NOT want_NOT Anthony_NOT 1 0
+issues projects 1 0
+issues_NOT following_NOT 1 0
+issues_NOT following_NOT 2_NOT 1 0
 items menu 1 0
-just 2 3
-just amazing 0 1
-just amazing will 0 1
+ive absolutely 0 1
+ive client 0 1
+ive finally 1 0
+ive going year 0 1
+ive going years 0 1
+ive happy 0 1
+ive happy expertise 0 1
+ive just 1 0
+ive positive_NOT 1 0
+ive positive_NOT experience_NOT 1 0
+ive satisfied 0 1
+found expert rely 1 0
+ive struggled 1 0
+ive used 0 1
+ive using year 0 1
+ive wanting 1 0
+ive wanting try 1 0
+i’d 1 0
+i’d love 1 0
+i’d love work 1 0
+i’ll 1 0
+i’ll definitely 1 0
+i’m 1 0
+i’m hoping 1 0
+i’m hoping issue_NOT 1 0
+i’ve getting 0 1
+i’ve seen_NOT 1 0
+i’ve seen_NOT anyone_NOT 1 0
+i’ve told 1 0
+i’ve working 0 1
+i’ve working company 0 1
+job WELL 0 1
+job WELL DONE 0 1
+job done 1 2
+job done time 0 1
+job really 0 1
+job well 1 0
+job_NOT 1 0
+jobs 0 1
+jobs done 0 1
+just became 1 0
+just became new 1 0
 just expected_NOT 1 0
-just love 0 1
-just love place 0 1
-just place 0 1
+just follows 0 1
+just follows wherever 0 1
+just left 1 0
+just left Im 1 0
+just like 1 0
+just moved 1 0
+just moved area 1 0
+just started 1 0
+just took 1 0
+just took chance 1 0
 just wants 1 0
 just wants little 1 0
-keep 0 3
-keep coming 0 2
-keep coming back 0 2
-keep good 0 1
-keep good work 0 1
-keeps 0 1
-keeps coming 0 1
-knew 0 1
-knew get 0 1
-knew get right 0 1
-know 1 2
-know can 0 1
+just went first 1 0
+just went professionals 1 0
+keeping 1 0
+keeping Dov 1 0
+keeping Dov speed 1 0
+kids 0 1
+kids patient 0 1
+kind hire 1 0
+kind service 1 0
+& love 0 1
+10 0 1
+know call 1 0
+10 years 0 1
+know expect 1 0
+know functioned 1 0
 know go 1 0
-know will 0 1
-know will fail_NOT 0 1
-know_NOT 0 1
+know needs 0 1
+know take 1 0
+20 0 1
+know will calling 1 0
+20 years 0 1
+know_NOT cost_NOT 1 0
+know_NOT cost_NOT youll_NOT 1 0
 know_NOT personally_NOT 0 1
-last 1 0
-last minute 1 0
+knowledgeable_NOT 1 0
+knowledgeable_NOT experienced_NOT 1 0
+2011 0 1
+2018 0 1
+knows great 0 1
+knows hes 0 1
+lOOK 0 1
+lOOK ONES_NOT 0 1
+lOVE 0 1
+lOVE place 0 1
+lOVE place always 0 1
+landscaper 1 0
+landscaper luckily 1 0
+2018 anyways 0 1
+last 6 0 1
+last 6 years 0 1
+last Thursday 1 0
+last Thursday say 1 0
+last couple 0 1
+last couple years 0 1
+last min 1 0
+2018 anyways they’re 0 1
 last minute early 1 0
-leave 0 2
-leave impressed 0 1
-leave pleased 0 1
-leave pleased time 0 1
-like 1 3
+last minute fix 1 0
+last minute quote 1 0
+last times 1 0
+2_NOT 1 0
+last year October 0 1
+last year phenomenal 0 1
+2_NOT weeks_NOT 1 0
+late night 1 0
+late night short 1 0
+lavander 0 1
+lavander bun 0 1
+learning 0 1
+learning experience 0 1
+3 maybe 0 1
+least 3 0 1
+least 3 maybe 0 1
+least negative 1 0
+least negative reviews 1 0
+3 maybe 4 0 1
+3 years couldnt 0 1
+3 years now 0 1
+30 mins 1 0
+leave office 0 1
+30 mins fixed 1 0
+30 projects 0 1
+leave reviews 1 0
+leave reviews Jon 1 0
+leaves 0 1
+led 1 0
+led Utopia 1 0
+left Im 1 0
+left smile 0 1
+30 projects us 0 1
+less 30 1 0
+less 30 mins 1 0
+less week 1 0
+let_NOT 0 1
+let_NOT down_NOT 0 1
+life 0 1
+life much 0 1
+life much easier 0 1
+lifechanging_NOT 1 0
+lifechanging_NOT moving_NOT 1 0
+lifechanging_NOT moving_NOT experience_NOT 1 0
+lifesaver 1 0
+lifesaver unexpected 1 0
+lifesaver unexpected need 1 0
+3rd 0 1
 like experience 1 0
 like experience surprisingly 1 0
-like literally 0 1
-like literally come 0 1
-like well 0 1
-like well done 0 1
-like_NOT 1 0
-likely 1 0
-likely try 1 0
-likely try different 1 0
-literally 0 1
-literally come 0 1
-literally come time 0 1
-little 1 0
+like family 0 1
+like get 1 0
+like honest 1 0
+3rd year 0 1
+4 times 2 0 1
+like nice 1 0
+like place pizza 1 0
+4 year 1 0
+like second 0 1
+like second home 0 1
+4 year headache 1 0
+7 months 0 1
+7 years 0 1
+like_NOT instagram_NOT 1 0
+like_NOT instagram_NOT viedos_NOT 1 0
+liked 1 0
+liked work 1 0
+9 months 0 1
+9 years 0 1
+9 years professional 0 1
+: 1 0
+ABSOLUTELY 1 0
+line 0 1
+line work 0 1
+ABSOLUTELY using 1 0
+Advisor 1 0
+Anthony_NOT 1 0
+Anthony_NOT Rich_NOT 1 0
+BEST experience 1 0
+BEST moving 1 0
+BPG 1 0
+BPG several 1 0
+BPG several years 1 0
+little experience 1 0
+little experience tree 1 0
+little hesitant 1 0
+little hesitant first 1 0
 little nice 1 0
 little nice lunch 1 0
-location 0 1
-location many 0 1
-location many times 0 1
-long 0 1
-long time 0 1
-look 2 1
-look forward 2 1
+little trip 1 0
+little trip queens 1 0
+Best 0 1
+location go 0 1
+Best Cleaning 0 1
+Best Cleaning service 0 1
+lock 0 1
+Blue 1 0
+Blue Point 1 0
+Blue Point Grill 1 0
+CARD 0 1
+long time customer 0 1
+long time loyal 0 1
+long try 1 0
+long_NOT 0 1
+COVID 1 0
+look decided 1 0
+COVID meal 1 0
+look forward calling 1 0
 look forward going 1 0
-look forward many 0 1
-looking 2 0
-looking forward 2 0
-lot 0 1
-love 2 10
-love coming 0 3
-love coming back 0 1
+Cake 1 0
+looked 1 0
+looked reviews 1 0
+Cake bit 1 0
+Cake bit nervous 1 0
+Cleaning 0 1
+looking forward coming 1 0
+looking new 1 0
+looking quality 0 1
+looking reviews 1 0
+looking reviews around 1 0
+looking shop 1 0
+looking shop area 1 0
+looking vendors 1 0
+looking vendors service 1 0
+looking worryfree 0 1
+Cleaning service 0 1
+lot money 0 1
+lot time 1 0
+Cleaning service New 0 1
+DONE 0 1
+Dov Sewer 0 1
+Dov Sewer Drain 0 1
 love go 1 0
-love go back 1 0
+Dov Yelp 1 0
 love order 1 0
 love order next 1 0
-love place 0 5
-love place even 0 1
-love place religiously 0 1
-love place staff 0 1
-love redid 0 1
-loved 1 0
-loved place 1 0
-loveeee 0 1
-loves 0 1
+Dov called 1 0
+love place always 0 1
+Dov called back 1 0
+Dov came 1 0
+Dov came fixed 1 0
+Dov couple 0 1
+Dov entire 1 0
+love redid menu 0 1
+love service 0 1
+love service will 0 1
+love will 1 0
+love will use 1 0
+love work 1 0
+love ‘em 0 1
+loved lavander 0 1
+loved lavander bun 0 1
+loved place quite 0 1
+Dov exceeded 1 0
+Dov exceeded expectations 1 0
+Dov excellent 0 1
+loyal client 0 1
+loyal client Linda 0 1
+Dov get 0 1
+Dov plumbing 1 0
+Dov plumbing needs 1 0
+Dov provided 1 0
+Dov recommend 1 0
+Dov recommend anyone 1 0
+Dov repair 0 1
+lucky choose 1 0
+Dov smart 0 1
+lucky find Yelp 1 0
+lucky find place 1 0
+lucky found 1 0
 lunch 1 0
-made 1 0
 made last 1 0
 made last minute 1 0
-make 0 2
-make sure 0 1
-make sure stop 0 1
-make trips 0 1
-make trips town 0 1
-makes 0 1
-makes excited 0 1
-many 1 9
+made life 0 1
+Dov smart knows 0 1
+Dov speed 1 0
+Dov yelp 1 0
+Drain 0 1
+Found 1 0
+Found yelp 1 0
+GLAD 1 0
+makes sure 0 1
+makes sure clean 0 1
+makes think 1 0
+making appointment 1 0
+making repairs 0 1
+man 0 1
+man Ive 0 1
+man Ive ever 0 1
+manner 0 1
+GLAD found 1 0
 many great 1 0
 many great things 1 0
-many many 0 1
-many many times 0 1
-many times 0 4
-many times bad_NOT 0 1
-many times love 0 1
-many visits 0 1
-many years 0 3
-many years ago 0 1
-many years gotta 0 1
-many years now 0 1
-maybe 1 0
+Grill 1 0
+Grill first 1 0
+HAPPY 1 0
+Heather know_NOT 0 1
+Heather know_NOT personally_NOT 0 1
+Heaven 1 0
+Heaven forbid 1 0
+Heaven forbid anymore 1 0
+Home 1 0
+many years can 0 1
+Home Advisor 1 0
+may 1 0
+may become 1 0
+may become go 1 0
+maybe 4 0 1
+maybe 4 times 0 1
 maybe different 1 0
-maybe different time 1 0
-meal 1 2
-meal_NOT 0 2
+me 1 2
+me_NOT 0 1
+Id 1 0
+Id back 1 0
+mediocre 1 0
+meeting 0 1
+meeting client 0 1
+meeting_NOT 1 0
+meeting_NOT expectation_NOT 1 0
 meh 1 0
-menu 1 2
-menu FINALLY 0 1
-menu forever 0 1
-minute 1 0
+Ill call 1 0
+Ill calling 1 0
+Ill coming 1 0
+Ill coming many 1 0
+Ill definitely 1 0
+menu FINALLY time 0 1
+Im ever 1 0
+menu items 1 0
+mever 0 1
+mever frequent 0 1
+Im ever back 1 0
+Im glad 1 0
+min 1 0
+mind 1 0
+mins 1 0
+mins fixed 1 0
+Im impressed 1 0
 minute early 1 0
-minute early evening 1 0
-missing 0 1
-missing buffet 0 1
-missing buffet much 0 1
-movie 0 1
-movie place 0 1
-movie place go 0 1
-much 0 1
-much will 0 1
-much will back 0 1
-must 1 1
+Im impressed review 1 0
+minute fix 1 0
+minute quote 1 0
+minute quote request 1 0
+Im relieved 1 0
+Im super 1 0
+Im super happy 1 0
+mocha 0 1
+mocha flavor 0 1
+monday 1 0
+monday scrambled 1 0
+monday scrambled find 1 0
+money 2 1
+money food 1 0
+money stomach 1 0
+Im sure 0 1
+Im sure youll 0 1
+Im there_NOT 0 1
+more_NOT 0 1
+Instagram 1 0
+move Ill 1 0
+move Ill definitely 1 0
+Iove bar 0 1
+move Ive todate 1 0
+move beyond 1 0
+move beyond amazing 1 0
+moved 1 0
+moved area 1 0
+Iove bar everything 0 1
+movers now 1 0
+Ive Im 1 0
+Ive coming 0 1
+Ive coming since 0 1
+moving 3 2
+moving company 1 2
+moving company finding 1 0
+Ive encountered 0 1
+Ive encountered super 0 1
+Ive ever 2 1
+moving_NOT company_NOT 1 0
+moving_NOT experience_NOT 1 0
+Ive ever pleasure 0 1
+much better 1 0
+much easier 0 1
+much genius 0 1
+much us 0 1
+Ive handled 0 1
+Ive todate 1 0
+Ive_NOT found_NOT 0 1
 must try 1 0
 must try Princeton 1 0
-new 3 1
+Ive_NOT found_NOT best_NOT 0 1
+Ive_NOT patron_NOT 0 1
+nail place Im 1 0
+nail place technician 1 0
+nail salon go 0 1
+nasty 1 0
+nasty burnt 1 0
+Jacob 0 1
+Jacob show 0 1
+need guys 1 0
+need happy 1 0
+need help 1 0
+need last 1 0
+need plumbing 0 1
+need service 0 1
+need_NOT 0 1
+need_NOT go_NOT 0 1
+Jacob show say 0 1
+needed change 1 0
+needed handyman 1 0
+needed handyman last 1 0
+needed work 1 0
+needed work done 1 0
+needs 3 2
+needs service 0 1
+needs thank 1 0
+negative 1 0
+negative reviews 1 0
+negative_NOT 0 1
+negative_NOT say_NOT 0 1
+Jersey 0 1
+nervous Ive 1 0
+nervous call 1 0
+nervous chose 1 0
+nervous first 1 0
+nervous first time 1 0
+never 0 1
+John_NOT 0 1
 new area 1 0
+John_NOT amazing_NOT 0 1
+new customer super 1 0
 new fave 1 0
 new fave spot 1 0
-new items 0 1
-next 5 0
-next time 4 0
+Jon 1 0
+new favorite nail 1 0
+new favorites 1 0
+Jon teams 1 0
+new goto plumber 1 0
+new installation 1 0
+Jon teams work 1 0
+new landscaper 1 0
+new landscaper luckily 1 0
+new location 0 1
+new location go 0 1
+Linda 0 1
+Linda 4 0 1
+new official 1 0
+new official movers 1 0
+new patient 1 0
+new services 1 0
+Linda 4 years 0 1
+new spot closer 1 0
+new staple 1 0
+new staple will 1 0
+newgo 1 0
+newgo place 1 0
+New 0 1
+next appointment 1 0
+next plumbing 1 0
+next plumbing job 1 0
+New Jersey 0 1
+next time plumbing 1 0
 next trip 1 0
-nice 1 1
+ONES_NOT 0 1
+October 0 1
+October absolutely 0 1
+nice guy boot 1 0
+nice guy definitely 1 0
 nice lunch 1 0
-nice server 0 1
-nice server always 0 1
-nights 0 1
-normally 0 1
-normally busy 0 1
-normally busy worth 0 1
-now 0 3
-often 0 3
-often knew 0 1
-often thought 0 1
-old 0 1
-old goody 0 1
-on 0 1
-one 2 5
-one Gem 0 1
-one Gem town 0 1
+nice person 0 1
+nice person highest 0 1
+PERFECT 1 0
+PERFECT place 1 0
+night 1 0
+night short 1 0
+Piece 1 0
+Piece Cake 1 0
+PoC 1 0
+PoC try 1 0
+Point 1 0
+notice impressed 1 0
+Point Grill 1 0
+now know 1 0
+now_NOT 1 0
+number 0 1
+number fridge 0 1
+of_NOT 0 1
+offer 0 1
+office 0 1
+office super 0 1
+office super satisfied 0 1
+offices 0 1
+offices past 0 1
+offices past 7 0 1
+official 1 0
+official movers 1 0
+official movers now 1 0
+officially 1 0
+Point Grill first 1 0
+Princeton awhile 1 0
+Princeton well 1 0
+often pretty 0 1
+Pros 1 0
+okay 0 1
+okay time 0 1
+Pros satisfied 1 0
+Purify 1 0
+Purify Pros 1 0
+Purify Pros satisfied 1 0
+QUICKLY 1 0
+REWARDS 0 1
+one best 0 1
+one call 0 1
 one chance 1 0
-one favorite 0 2
-one favorite restaurants 0 1
+one day 1 0
+one day area 1 0
+REWARDS CARD 0 1
+Rich_NOT 1 0
 one first 1 0
-one goto 0 1
-one goto places 0 1
-open 0 1
-open continue 0 1
-opened 0 1
-opened many 0 1
-opened many years 0 1
+Rich_NOT ones_NOT 1 0
+Rich_NOT ones_NOT come_NOT 1 0
+one thing 1 0
+Richs 0 1
+one_NOT comes_NOT 0 1
+one_NOT comes_NOT close_NOT 0 1
+Rich’s 0 1
+Rich’s plumbing 0 1
+ones_NOT 1 0
+ones_NOT come_NOT 1 0
+Rich’s plumbing 20 0 1
+ive satisfied time 0 1
+Sewer 0 1
+Sewer Drain 0 1
+TMH 1 0
+Thursday 1 0
 opening 0 1
-order 1 2
+Thursday say 1 0
+order elsewhere 1 0
 order next 1 0
-order right 0 1
-order right every 0 1
-outdoor 0 1
-outdoor seating 0 1
-outdoor seating setup 0 1
-outstanding 1 0
+Utopia ever 1 0
+Utopia ever since 1 0
+order_NOT 1 0
+others 1 0
+others tried 1 0
+others tried couldnt 1 0
+WELL 0 1
+WELL DONE 0 1
+Yelp recommendations 1 0
+Yelp reviews 1 0
+Yelp saw 1 0
+outstanding cleaning 0 1
+outstanding cleaning service 0 1
+outstanding experience 1 0
+outstanding work 1 0
+over 1 0
+overcharge 0 1
+overcharge recommending 0 1
+overcharge recommending something 0 1
+Yelp since 1 0
+Yelp since got 1 0
+overdue review should’ve 0 1
+owners 0 1
+owners always 0 1
+owners always treat 0 1
+package 0 1
+package offer 0 1
 pandemic 1 0
 pandemic regretted 1 0
-passed 0 1
-passed test 0 1
-passed test time 0 1
-past 0 1
-past 6 0 1
-past 6 years 0 1
+part 0 1
+part trip 0 1
+part trip every 0 1
+Yelp will 1 0
+Yelp will ABSOLUTELY 1 0
+aboveaverage 1 0
+aboveaverage service 1 0
+absolute best 0 1
+accepted 1 0
+accepted walkin 1 0
+accepted walkin definitely 1 0
+across facility 1 0
+past 3 years 0 1
+across facility online 1 0
+added 1 0
+added list 1 0
+added list professionals 1 0
+adore 0 1
+past 7 months 0 1
+past 7 years 0 1
+past always 1 0
+past plan 0 1
+past plan call 0 1
+past subpar 1 0
+advantage_NOT 0 1
+advantage_NOT of_NOT 0 1
+affordable 0 1
+past two years 0 1
+past year 0 1
+affordable fast 0 1
+pastries 0 1
+pastries lock 0 1
 pathetic 1 0
+patient well 0 1
 patron_NOT 0 1
-patron_NOT since 0 1
-patrons 0 1
-patrons friendly 0 1
-perfect 1 0
+patron_NOT shes 0 1
+patron_NOT shes since 0 1
+affordable fast great 0 1
+afterwards…_NOT 0 1
+pay 2 1
+pay Im 1 0
+pay will 1 0
+penny 0 1
+penny always 0 1
+ages 1 0
+people call 0 1
+people years 0 1
 perfect first 1 0
 perfect first impression 1 0
+perfect job 0 1
+aging 0 1
+person allow 0 1
+person call 0 1
+person call plumbing 0 1
+person highest 0 1
+person line 0 1
+person line work 0 1
+person phone 1 0
+person phone extremely 1 0
+personable 0 1
+personable takes 0 1
+personable takes job 0 1
+personal 0 1
+personal experience 0 1
 personally_NOT 0 1
-personally_NOT found_NOT 0 1
-personally_NOT found_NOT best_NOT 0 1
-pink_NOT 0 1
-pink_NOT every_NOT 0 1
-pink_NOT every_NOT single_NOT 0 1
-place 6 11
-place always 0 1
-place always good 0 1
-place eat 0 1
-place even 0 1
-place go 0 1
-place hanging 0 1
-place husband 0 1
+personally_NOT Ive_NOT 0 1
+personally_NOT Ive_NOT found_NOT 0 1
+phenomenal 0 1
+phone 1 0
+phone extremely 1 0
+pics_NOT 1 0
+pics_NOT u_NOT 1 0
+pics_NOT u_NOT see_NOT 1 0
+aging heating 0 1
+aging heating systems 0 1
+air 0 1
+pizza 1 0
+pizza last 1 0
+pizza last times 1 0
+air vents 0 1
+air vents appliances 0 1
+place Im 1 0
+place Yelp 1 0
+place Yelp saw 1 0
+all 1 0
+place always clean 0 1
+allow 0 1
+place always will 0 1
+place anything 0 1
+allow home 0 1
+allow home Im 0 1
+almost 2 0 1
+almost 2 years 0 1
+place come 0 1
+place come lot 0 1
+already 1 0
+already booked 1 0
+place disappoints_NOT 0 1
+already booked follow 1 0
+always absolute 0 1
+place gem 0 1
+always absolute best 0 1
+place good 0 1
+place great 1 0
+always amazing around 0 1
+always amazing job 0 1
+place loved 1 0
+place many 0 1
+place many many 0 1
+always blast 0 1
+always bob 0 1
 place next 1 0
 place next time 1 0
-place religiously 0 1
-place staff 0 1
+place one 1 0
+place one day 1 0
+place pizza 1 0
+always bob serve 0 1
+always choose 0 1
+always choose window 0 1
+place technician 1 0
 place try 1 0
-places 0 1
-places happy 0 1
-pleasant_NOT 0 1
-pleasant_NOT dining_NOT 0 1
-pleasant_NOT dining_NOT experience_NOT 0 1
-please 0 1
-please try 0 1
-pleased 1 1
-pleased time 0 1
-plenty 0 1
-plenty times 0 1
+place us 1 0
+place usually 0 1
+place yelp 1 0
+always clean 0 1
+always come check 0 1
+places online 1 0
+plan 0 1
+plan call 0 1
+pleasant 0 1
+pleasant thorough 0 1
+always get pay 0 1
+always gets 0 1
+always gets stomach 0 1
+always happy work 0 1
+always hard 1 0
+always hated 0 1
+always hated bench 0 1
+always hesitant 1 0
+always hesitant recommending 1 0
+pleased Dov 1 0
+pleased new 1 0
+always leave office 0 1
+always left 0 1
+pleasure work 0 1
+pleasure working 0 1
+always left smile 0 1
+always looking 1 0
+plumber 4 5
+plumber Ill 1 0
+plumber Ill call 1 0
+plumber anything Ill 1 0
+plumber anything call 0 1
+plumber anywhere 0 1
+plumber going 1 0
+plumber going forward 1 0
+plumber home 0 1
+plumber will 0 1
+plumber will ever 0 1
+plumber years 0 1
+always love ‘em 0 1
+plumbers electricians 1 0
+plumbers electricians cause 1 0
+plumbers tend 1 0
+always loved 0 1
+plumbing 20 0 1
+plumbing air 0 1
+plumbing air vents 0 1
+plumbing job WELL 0 1
+plumbing needs 2 1
+plumbing problem 0 1
+plumbing problem stop 0 1
+plumbing projects 1 0
+plumbing pros 0 1
+plumbing pros can 0 1
+plumbing related 0 1
+plumbing related tasks 0 1
+plumbing_NOT 1 0
+plumbing_NOT us_NOT 1 0
+point 0 1
+point Dov 0 1
+positive 0 1
+positive_NOT 1 0
+positive_NOT experience_NOT 1 0
+positive_NOT experience_NOT moving_NOT 1 0
 possibly 1 0
-possibly give 1 0
-post 0 1
-post movie 0 1
-post movie place 0 1
+always makes 0 1
+always makes sure 0 1
+always mocha 0 1
+always mocha flavor 0 1
+always nervous 1 0
 praise 1 0
-probably 1 1
-probably favorite 0 1
-probably favorite spot 0 1
-probably go 1 0
-probably go back 1 0
-professional 0 1
-professional ask 0 1
-professional ask seated 0 1
-prompt 0 2
-prompt helpful 0 1
-prompt helpful service 0 1
-prove 0 1
-quality 0 2
-quality diminishes_NOT 0 1
-quality food 0 1
-quality food atmosphere 0 1
-quick 1 0
+pretty 1 2
+pretty empty 0 1
+pretty much 0 1
+pretty much genius 0 1
+pretty sure 1 0
+pretty sure wont 1 0
+previous 0 1
+previous job 0 1
+price 1 2
+price efficient 0 1
+price efficient execution 0 1
+price reasonable 1 0
+price reasonable work 1 0
+priced 1 0
+priced nail 1 0
+priced nail salon 1 0
+prices 1 0
+prices aren’t 1 0
+prices aren’t bad 1 0
+pricing_NOT 0 1
+prior 0 1
+prior actually 0 1
+private 1 0
+private cleanup 1 0
+private cleanup crew 1 0
+always nervous call 1 0
+always perfect 0 1
+always pleasure work 0 1
+always positive 0 1
+always quick friendly 0 1
+always raw 0 1
+always recommend 0 1
+always recommend youre 0 1
+always reliable 0 1
+problem 2 1
+problem stop 0 1
+problem stop scrolling 0 1
+always service 0 1
+problem_NOT afterwards…_NOT 0 1
+problems 0 1
+problems far 0 1
+problems_NOT 0 1
+process 1 0
+process well 1 0
+always treat 0 1
+always treat customers 0 1
+professional cleaning 0 1
+professional cleaning service 0 1
+professional efficient 0 1
+professional efficient moving 0 1
+professional nice 0 1
+professional pleasant 0 1
+professional pleasant thorough 0 1
+professional quick 0 1
+always use Richs 0 1
+professional trustworthy communicative 0 1
+professionalism 0 1
+professionalism recommend 0 1
+professionalism recommend guy 0 1
+always use home 0 1
+professionals 2 1
+professionals sUPER 1 0
+professionals sUPER HAPPY 1 0
+professionals years 0 1
+professionals years now 0 1
+project Dov 1 0
+project timely 0 1
+projects 2 1
+projects us 0 1
+always used 0 1
+always willing 0 1
+always work 0 1
+promptness 0 1
+promptness care 0 1
+promptness_NOT 1 0
+pros 0 1
+pros can 0 1
+always work spot 0 1
+provided outstanding 0 1
+provided outstanding cleaning 0 1
+providers 1 0
+amazing 4 1 0
+punctual delivers 0 1
+punctual delivers best 0 1
+punctual fast 0 1
+punctual fast professional 0 1
+punctuality 0 1
+punctuality reliability 0 1
+qualified 0 1
+qualified staff 0 1
+amazing around 0 1
+amazing things 0 1
+amazing work 0 1
+amazing_NOT 2 1
+amazing_NOT crew_NOT 0 1
+amazing_NOT crew_NOT enough_NOT 0 1
+quality professional 0 1
+quality professional cleaning 0 1
+quality service 1 0
+quality work 0 1
+quality_NOT 0 1
+quality_NOT service_NOT 0 1
+queens 1 0
+queens check 1 0
+queens check cute 1 0
+quick effective 1 0
+quick effective kind 1 0
+quick friendly 0 1
+amazing_NOT lifechanging_NOT 1 0
+quick look 1 0
+quick look decided 1 0
+amazing_NOT lifechanging_NOT moving_NOT 1 0
+quick search 1 0
+quick service 0 1
+quick service recommend_NOT 0 1
 quick snacktogo 1 0
-quite 0 2
-quite often 0 1
-quite often thought 0 1
-quite refreshing 0 1
-quite refreshing see 0 1
+quickly 1 0
+another celebration 1 0
+another project 1 0
+another project Dov 1 0
+quite challenge 1 0
+quite challenge find 1 0
+another service 1 0
+another_NOT 0 1
+another_NOT company_NOT 0 1
+anymore 1 0
+anymore issues 1 0
 quite_NOT 1 0
 quite_NOT like_NOT 1 0
-rare 0 1
-rare stumble 0 1
-ratings 1 0
-reading 1 0
-reading reviews 1 0
+anyone just 1 0
+quote request 1 0
+ran 1 0
+ran guys 1 0
+ran guys around 1 0
+anyone just wants 1 0
+rare find 0 1
+anyone use 1 0
+anyone use service 1 0
+anyone_NOT 1 2
+anyone_NOT else_NOT ever_NOT 0 1
+anyone_NOT knowledgeable_NOT 1 0
+anything 1 2
+anything Ill 1 0
+rather go 1 0
+rather go literally 1 0
+rather high 1 0
+anything Ill calling 1 0
+raw 0 1
+anything call 0 1
+reach Dov 1 0
+reach w/ 1 0
+anything_NOT 1 0
+reached came 1 0
+reached yelp 1 0
+read 1 0
+read reviews 1 0
+anything_NOT quite_NOT 1 0
+reading Yelp 1 0
+reading Yelp reviews 1 0
+anything_NOT quite_NOT like_NOT 1 0
 reading reviews Yelp 1 0
-really 0 1
-really happy 0 1
-really happy well 0 1
-recommend 1 0
+reading reviews found 1 0
+anyways 0 1
+anyways they’re 0 1
+anyways they’re still 0 1
+anywhere 2 1
+apartment 0 1
+apartment several 0 1
+apartment several times 0 1
+appliances 0 1
+appreciate 1 0
+appreciate honest 1 0
+appreciate honest service 1 0
+area decided 1 0
+area decided expand 1 0
+area great 0 1
+area great service 0 1
+area looking 1 0
+area looking new 1 0
+aren’t bad 1 0
+around area 1 0
+around board 0 1
+around corner 1 0
+around long 0 1
+arrived 1 0
+arrived less 1 0
+arriving 1 0
+arriving wholly 1 0
+ask_NOT 0 1
+assure 0 1
+reasonable 1 2
+reasonable gets 0 1
+reasonable price 0 1
+reasonable work 1 0
+reasonable work seemed 1 0
+received 1 0
+recommend anyone 1 0
+assure professional 0 1
+recommend enough always 0 1
+recommend enough hes 0 1
+recommend every 0 1
+recommend every package 0 1
+recommend guy 0 1
+recommend making 1 0
+recommend making appointment 1 0
+recommend promptness 0 1
+recommend promptness care 0 1
 recommend spot 1 0
 recommend spot anyone 1 0
+attitude_NOT 1 0
+recommend youre 0 1
+recommend_NOT 0 1
+recommend_NOT more_NOT 0 1
+recommendation someone 1 0
 recommendation_NOT 1 0
 recommendation_NOT someone_NOT 1 0
-recommended 0 2
-recommended Princeton 0 1
-recommended Princeton area 0 1
-redid 0 1
-redid menu 0 1
-redid menu FINALLY 0 1
-refreshing 0 1
-refreshing see 0 1
+recommendations 1 0
+recommendations led 1 0
+recommendations led Utopia 1 0
+average 1 0
+recommended Dov 0 1
+recommended Dov Sewer 0 1
+aways 0 1
+aways amazing 0 1
+recommended clutter 1 0
+recommended clutter thank 1 0
+recommended friend 1 0
+recommended place 1 0
+recommended sooner 1 0
+recommended thanks 1 0
+recommended thanks much 1 0
+recommending 2 1
+recommending Dov 1 0
+recommending Dov entire 1 0
+recommending plumbers 1 0
+recommending plumbers tend 1 0
+recommending something 0 1
+recommending something dont 0 1
+awesome 1 2
+awesome & 0 1
+awesome & love 0 1
+awesome hes 0 1
+referred everyone 0 1
+referred several 0 1
+referred several people 0 1
+awesome hes consistently 0 1
+awhile 1 0
+regret coming 1 0
+regret trust 0 1
+regret_NOT 0 1
+regret_NOT it_NOT 0 1
 regretted 1 0
+back 2018 0 1
+back Princeton 1 0
+regular customers 0 1
 regular_NOT 1 0
-reliably 0 1
-reliably tasty 0 1
-religiously 0 1
-religiously order 0 1
-remembers 0 2
-remembers us 0 1
-request 0 1
+regulars 0 1
+back another 1 0
+related 0 1
+related tasks 0 1
+related tasks highly 0 1
+reliability 0 1
+back future 1 0
+reliable company 0 1
+reliable company friendly 0 1
+reliable great 0 1
+reliable great job 0 1
+reliable moving 0 1
+reliable reasonable 0 1
+reliable reasonable gets 0 1
+reliable surprise_NOT 0 1
+reliable trustworthy 0 1
+reliable trustworthy service 0 1
+back maybe 1 0
+back maybe different 1 0
+relieved 1 0
+back replace 1 0
+back replace toilet 1 0
+back since 0 1
+back sure 1 0
+back try 1 0
+back will 1 0
+repair 0 1
+repair everything 0 1
+repair everything plumbing 0 1
+repair/service 0 1
+repair/service person 0 1
+repair/service person allow 0 1
+repairs 0 1
+back_NOT give_NOT 1 0
+replace day 1 0
+replace toilet 1 0
 request sit 0 1
 request sit Heather 0 1
-rereview 0 1
+requested 1 0
+requested first 1 0
+requested first quote 1 0
+bad delivery 1 0
+bad delivery service 1 0
+researching reading 1 0
+researching reading reviews 1 0
 reservation 1 0
-restaurant 3 5
+respect highly 0 1
+bad either 1 0
+bar everything 0 1
+respond clear 0 1
+respond clear price 0 1
+respond show 0 1
+respond show complete 0 1
+response_NOT 1 0
+response_NOT time_NOT 1 0
+response_NOT time_NOT amazing_NOT 1 0
+responsive 1 2
+responsive explains 1 0
+responsive explains things 1 0
+responsive inquiries 0 1
+responsive reliable 0 1
+bar everything always 0 1
 restaurant bookmarked 1 0
 restaurant bookmarked Princeton 1 0
-restaurant everything 0 1
-restaurant everything always 0 1
-restaurant makes 0 1
-restaurant makes excited 0 1
-restaurant times 0 1
-restaurants 1 2
-restaurants plenty 0 1
-resteraunt 0 1
-return 3 1
-return agricola 0 1
-return agricola one 0 1
-returned 1 0
+based 1 0
+based reviews 1 0
+basically 0 1
+bc 1 0
+bc needed 1 0
+be 0 1
+became 1 0
+became new 1 0
+result 1 0
+result gladly 1 0
+results 1 0
+results will 1 0
+results will continue 1 0
+resumed 0 1
+resumed service 0 1
+become 1 0
+become go 1 0
+believe 2 1
+return customer 0 1
+return recommend 1 0
+return salon 1 0
+believe find 0 1
+returned first 1 0
+returned first visit 1 0
 returning 1 0
-review_NOT 0 1
-review_NOT surprisingly_NOT 0 1
-reviews 1 0
+believe find better 0 1
+believe good 1 0
+believe took 1 0
+believe took long 1 0
+review right 1 0
+review right away 1 0
+review should’ve 0 1
+review way 0 1
+review way overdue 0 1
+bench fixed_NOT 0 1
+review_NOT now_NOT 1 0
+best around 0 1
+reviewing 1 0
+reviewing places 1 0
+best customer 1 0
+reviews Jon 1 0
 reviews Yelp 1 0
-rewards 0 1
-rewards card 0 1
-rewards card prove 0 1
-right 0 2
-right away 0 1
-right every 0 1
-saw 1 0
+reviews around 1 0
+reviews around area 1 0
+reviews called 1 0
+reviews called Dov 1 0
+reviews decided 1 0
+reviews decided go 1 0
+reviews felt 1 0
+reviews found 1 0
+best customer experience 1 0
+reviews gave call 1 0
+best experience ever 1 0
+best moving 1 0
+best moving experience 1 0
+best people 0 1
+best people call 0 1
+best person 0 1
+row 0 1
+best plumber 0 1
+rude disrespectful 1 0
+rushed_NOT 0 1
+rushed_NOT taken_NOT 0 1
+sUPER 1 0
+sUPER HAPPY 1 0
+best plumber home 0 1
+best service 0 1
+best service area 0 1
+best thing 1 0
+salon Ive 1 0
+salon Ive ever 1 0
+salon go 0 1
+salon highly 1 0
+best thing weve 1 0
+best town 0 1
+satisfied end 1 0
+satisfied end result 1 0
+satisfied experience 1 0
+satisfied issues_NOT 1 0
+satisfied results 1 0
+satisfied service 1 0
+satisfied time 0 1
+save lot 0 1
+save money 1 0
+save money stomach 1 0
+saved 1 0
+best_NOT 0 1
 saw ratings 1 0
-say 1 1
-say back 1 0
-say back maybe 1 0
-say please 0 1
-seated 0 1
-seated section 0 1
-seated section time 0 1
-seating 0 1
-seating setup 0 1
-seating setup restaurant 0 1
-section 0 1
-section time 0 1
-see 1 1
-see new 0 1
-see new items 0 1
+saw reviews 1 0
+saw reviews gave 1 0
+best_NOT server_NOT 0 1
+say Id 1 0
+say Id back 1 0
+say Ill 1 0
+say best 0 1
+best_NOT server_NOT years_NOT 0 1
+say enough amazing 0 1
+say enough professionalism 0 1
+say great 1 0
+say great one 1 0
+say hes 0 1
+say hes person 0 1
+say new 1 0
+say new goto 1 0
+better 2 3
+better cleaning 1 0
+say will 0 1
+say will get 0 1
+say years 0 1
+say_NOT 0 1
+scared 1 0
+scared find 1 0
+scared find new 1 0
+schedule 1 0
+schedule next 1 0
+schedule next appointment 1 0
+scrambled 1 0
+scrambled find 1 0
+scrolling 0 1
+scrolling give 0 1
+scrolling give call 0 1
+better order 1 0
+search came 1 0
+search cleaning 1 0
+search cleaning service 1 0
+search finally 1 0
+better order elsewhere 1 0
+searching 1 0
+searching new 1 0
+searching new landscaper 1 0
+better plumber 0 1
+better plumber anywhere 0 1
+better qualified 0 1
+seasons 0 1
+seasons now 0 1
+seat 0 1
+better qualified staff 0 1
+beyond 1 0
+beyond amazing 1 0
+bit 1 0
+bit nervous 1 0
+blast 0 1
+second home 0 1
+blessing 0 1
+second time using 1 0
+second visit 1 0
+second year 0 1
+blessing plumbing 0 1
+blew 1 0
+blew away 1 0
+board 0 1
+bob 0 1
+bob serve 0 1
+booked 1 0
 see us 1 0
 see us going 1 0
+see_NOT 1 0
 seeing 1 0
 seeing high 1 0
-server 0 2
-server Heather 0 1
-server Heather professional 0 1
-server always 0 1
+seem_NOT 0 1
+seem_NOT wait_NOT 0 1
+seem_NOT wait_NOT long_NOT 0 1
+seemed 1 0
+seemed good 1 0
+seemed good hes 1 0
+booked follow 1 0
+bookmarked 1 0
+seems like get 1 0
+seems like honest 1 0
+seems like nice 1 0
+seen_NOT 1 0
+seen_NOT anyone_NOT 1 0
+seen_NOT anyone_NOT knowledgeable_NOT 1 0
+bookmarked Princeton 1 0
+boot 1 0
+both 1 0
+serve 0 1
+bring 1 0
+bring car 1 0
+brought kids 0 1
 server_NOT 0 1
 server_NOT years_NOT 0 1
-service 0 9
-service always 0 5
-service always great 0 1
-service always prompt 0 1
-service every 0 1
-service every time 0 1
-service waitress 0 1
-service walked_NOT 0 1
-service walked_NOT disappointed_NOT 0 1
-setup 0 1
-setup restaurant 0 1
-several 1 1
-several times 0 1
-several years 1 0
-since 0 4
-since first 0 1
-since opened 0 1
-since opened many 0 1
+brought kids patient 0 1
+service 9 0 1
+service 9 months 0 1
+service Dov 1 0
+service Dov provided 1 0
+service New 0 1
+brought us 1 0
+service always good 0 1
+brought us restaurant 1 0
+bug 0 1
+service area 0 1
+service completely 0 1
+bug come 0 1
+service days 0 1
+building 1 0
+building friends 1 0
+bun 0 1
+service got 1 0
+service got job 1 0
+burnt 1 0
+service happily 1 0
+service honest 0 1
+service man 0 1
+service man Ive 0 1
+service offices 0 1
+service providers 1 0
+service reasonable 0 1
+service received 1 0
+service recommend_NOT 0 1
+service seems 1 0
+service since 0 1
+service since last 0 1
+service start 1 0
+service still 0 1
+service still top 0 1
+business 2 1
+business elsewhere 1 0
+business troubling 1 0
+service will 0 1
+service wonderful 0 1
+service wonderful cleaning 0 1
+service year 0 1
+service years 0 1
+service_NOT 1 2
+business use 0 1
+services future 1 0
+servicing 0 1
+servicing better 0 1
+business use always 0 1
+busy seem_NOT 0 1
+buy 0 1
+several people 0 1
+several people years 0 1
+buy pastries 0 1
+call 12 11
+several times last 0 1
+several times past 0 1
+several years 1 2
+several years now 0 1
+shes 0 1
+shes since 0 1
+she’s 0 1
+she’s always 0 1
+shock 1 0
+call Dov get 0 1
+shop area 1 0
+shop carefully 1 0
+call always amazing 0 1
+call back 1 0
+call can 1 0
+short notice impressed 1 0
+should’ve 0 1
+should’ve written 0 1
+should’ve written back 0 1
+call can come 1 0
+show complete 0 1
+show fast 0 1
+show fast get 0 1
+show say 0 1
+call contractors 1 0
+showed QUICKLY 1 0
+showed hour 1 0
+call contractors plumbers 1 0
+since 2011 0 1
+call future plumbing 0 1
+call future service 1 0
+since following 1 0
+since following Instagram 1 0
+since got 1 0
+call guy 0 1
+call looking 0 1
+call looking quality 0 1
+call need 0 1
+call need service 0 1
+call plumbing 0 1
 since opening 0 1
-single_NOT 0 1
-single_NOT time_NOT 0 1
+since previous 0 1
+call prices 1 0
+single_NOT problem_NOT 0 1
+call wont 1 0
 sit 0 1
 sit Heather 0 1
+situationhe 1 0
+situationhe arrived 1 0
+situationhe arrived less 1 0
+skeptical 1 0
+skilled 0 1
+skilled strongly 0 1
+call_NOT 0 1
+call_NOT anyone_NOT 0 1
+smart honest 0 1
+smart honest straightforward 0 1
+smart knows 0 1
+smile 0 1
+smile face 0 1
 snacktogo 1 0
-solid 0 1
-solid staple 0 1
+call_NOT anyone_NOT else_NOT 0 1
+called Dov 1 0
+called back 1 0
+someone call 1 0
+someone dependable 1 0
+someone dependable good 1 0
+someone recommended 1 0
+someone recommended sooner 1 0
 someone_NOT 1 0
 someone_NOT else_NOT 1 0
 someone_NOT else_NOT go_NOT 1 0
-something 0 1
-something like 0 1
-son's 0 1
-son's favorite 0 1
-son's favorite resteraunt 0 1
-soon 2 1
-spot 2 5
+called bc 1 0
+something dont 0 1
+called bc needed 1 0
+called first 1 0
+calling Heaven 1 0
+calling Heaven forbid 1 0
+calling future 1 0
+sooner 1 0
+sooo 1 0
+sooo rude 1 0
+calling future issues 1 0
+calling next 1 0
+spending 1 0
+spending lot 1 0
+spending lot time 1 0
+calling next time 1 0
 spot anyone 1 0
-spot family 0 1
-spot sushi 0 1
-spot town 0 1
-staff 0 2
-staff always 0 2
-staff always friendly 0 1
-staff always welcoming 0 1
-staple 0 1
-staple dozen 0 1
-staple dozen times 0 1
+spot closer 1 0
+spot closer home 1 0
+spot consistently 0 1
+calling now 1 0
+came days 1 0
+came days notice 1 0
+came first 1 0
+came first time 1 0
+came fixed 1 0
+came late 1 0
+came late night 1 0
+staff aways 0 1
+staff aways amazing 0 1
+staff like 0 1
+staff like family 0 1
+came short 1 0
+stand quality 0 1
+stand work 0 1
+standards 1 0
+standards found 1 0
+came short notice 1 0
+came wow 1 0
+can assure 0 1
+staple will 1 0
+start 1 0
+start finish 1 0
 start_NOT 1 0
-stay 0 1
-stay open 0 1
-stay open continue 0 1
-still 0 1
-still good 0 1
-stop 1 1
+can assure professional 0 1
+started like 1 0
+can come 1 0
+stay happy 0 1
+stay happy like 0 1
+can come quickly 1 0
+can definitely 1 0
+staying 0 1
+staying true 0 1
+sticker 1 0
+sticker shock 1 0
+can even 1 0
+still choice 0 1
+still come 1 0
+can rely 0 1
+still got 0 1
+still got issues_NOT 0 1
+still great 0 1
+still love 0 1
+can say 0 1
+still top 0 1
+still top notch 0 1
+stomach bug 0 1
+stomach bug come 0 1
+can say best 0 1
 stop day 1 0
-stopped 1 0
+stop scrolling 0 1
+stop scrolling give 0 1
+stop walkin 1 0
+can_NOT 0 1
 stopped quick 1 0
 stopped quick snacktogo 1 0
-stumble 0 1
-stumble across 0 1
-stumble across restaurant 0 1
-stumbled 2 0
-stumbled place 2 0
-sure 0 1
-sure stop 0 1
-sure_NOT 2 0
-sure_NOT go_NOT 2 0
-sure_NOT go_NOT back_NOT 2 0
-surprised 1 0
-surprisingly 4 0
-surprisingly bad 1 0
-surprisingly different 2 0
-surprisingly good 1 0
-surprisingly_NOT 0 1
-sushi 0 1
-sushi/Japanese 0 1
-sushi/Japanese spot 0 1
-sushi/Japanese spot family 0 1
+straightforward 0 1
+straightforward hard 0 1
+can_NOT ask_NOT 0 1
+cant 8 7
+cant imagine thorough 0 1
+strongly 0 1
+cant recommend enough 0 1
+cant tell 0 1
+struggled 1 0
+struggled years 1 0
+struggled years find 1 0
+cant tell happy 0 1
+cant wait another 1 0
+cant wait come 1 0
+cant wait go 1 0
+cant wait schedule 1 0
+cant wait try 1 0
+stumbled upon cozy 1 0
+stumbled upon place 1 0
+submitted 1 0
+submitted last 1 0
+submitted last minute 1 0
+subpar 1 0
+super 3 2
+capable 0 1
+super happy look 1 0
+super nervous 1 0
+super nice 0 1
+super satisfied 0 1
+capable competent 0 1
+capable competent smart 0 1
+car 1 0
+care 0 1
+sure clean 0 1
+care certainly 0 1
+sure wont 1 0
+sure youll 0 1
+sure youll stay 0 1
+carefully 1 0
+case 0 1
+case many 0 1
+case many years 0 1
+cause 1 0
+cause know_NOT 1 0
+celebration 1 0
+surprise_NOT 0 1
+surprise_NOT charges_NOT 0 1
+surprise_NOT charges_NOT pricing_NOT 0 1
+certainly 2 1
+challenge 1 0
+challenge find 1 0
+changed 1 0
+changed mind 1 0
+changes_NOT 0 1
+charges_NOT 0 1
+charges_NOT pricing_NOT 0 1
+check cute 1 0
+check hype 0 1
+systems 0 1
+systems 4 0 1
+systems 4 times 0 1
 table 1 0
 table restaurant 1 0
 table restaurant bookmarked 1 0
+checking 1 0
+take business 1 0
+take chance 1 0
+taken_NOT 0 1
+taken_NOT advantage_NOT 0 1
+taken_NOT advantage_NOT of_NOT 0 1
+takes 0 1
+takes job 0 1
+tasks 0 1
+tasks highly 0 1
 tasted 1 0
 tasted food 1 0
-tasty 0 1
-test 0 1
-test time 0 1
-them 0 1
-there 0 1
-things 1 0
-think 0 1
-think ever 0 1
-think ever bad 0 1
-this 0 1
-thoroughly 0 1
-thoroughly enjoy 0 1
-thought 0 1
-thought time 0 1
-thought time rereview 0 1
-thrive 0 1
-time 12 13
-time always 0 1
-time change 0 1
+checking reviews 1 0
+chicken 0 1
+team always 0 1
+team always love 0 1
+team year 0 1
+teams 1 0
+teams work 1 0
+teams work blew 1 0
+choice 0 1
+choice comes 0 1
+choose window 0 1
+technician 1 0
+technician can 1 0
+technician can even 1 0
+tell 0 1
+tell happy 0 1
+tenant 1 0
+tenant following 1 0
+tend 1 0
+tend hard 1 0
+tend hard work 1 0
+chose bring 1 0
+chose bring car 1 0
+chose come 1 0
+thank exceeding 1 0
+thank goodness 1 0
+thank goodness went 1 0
+thank punctuality 0 1
+thank punctuality reliability 0 1
+thank weekend 1 0
+thank weekend saved 1 0
+thank_NOT 0 1
+thank_NOT John_NOT 0 1
+thank_NOT John_NOT amazing_NOT 0 1
+thankful 1 0
+thankful Dov 1 0
+thankfully 1 0
+chose come close 1 0
+thanks 2 1
+thanks guys 0 1
+thanks guys staying 0 1
+thanks much 1 0
+that 1 0
+thatll 0 1
+thatll case 0 1
+clean leaves 0 1
+cleanest 1 0
+there_NOT 0 1
+cleanest salon 1 0
+cleanest salon Ive 1 0
+theyve 0 1
+theyve delivered 0 1
+theyve delivered every 0 1
+they’re 0 1
+they’re still 0 1
+they’re still great 0 1
+cleaning companies 1 0
+thing weve 1 0
+thing weve ever 1 0
+thing workers 1 0
+thing workers rude 1 0
+cleaning companies tried 1 0
+things professionally 1 0
+cleaning every 0 1
+things well 1 0
+things well came 1 0
+cleaning every two 0 1
+cleaning experience 0 1
+think finally 1 0
+cleaning service 1 2
+think found 1 0
+think i’d 1 0
+think i’d love 1 0
+think twice 1 0
+think twice give 1 0
+cleaning service offices 0 1
+cleaning services 0 1
+thorough servicing 0 1
+thorough servicing better 0 1
+cleanup 1 0
+cleanup crew 1 0
+cleanup crew fairly 1 0
+clear 0 1
+clear price 0 1
+client Linda 0 1
+client making 0 1
+client making repairs 0 1
+client two 0 1
+client two years 0 1
+time Ive 1 0
+time Ive Im 1 0
+client years 0 1
+clogged 0 1
+time call 0 1
+clogged call 0 1
+time client 1 0
+time customers 1 0
 time dining 1 0
 time dining pandemic 1 0
-time even 0 1
-time even rewards 0 1
-time rereview 0 1
-time today 1 0
-time_NOT 0 1
-times 0 8
-times always 0 1
-times bad_NOT 0 1
-times consistently 0 1
-times consistently good 0 1
-times love 0 1
-times year 0 1
-today 1 0
-told 1 0
+time disappointed_NOT 0 1
+time disappointed_NOT service_NOT 0 1
+clogged call guy 0 1
+close_NOT 0 1
+close_NOT quality_NOT 0 1
+time experience disappointing 1 0
+time finding 1 0
+time finding new 1 0
+time firm 1 0
+closer 1 0
+time going 1 0
+time hiring 1 0
+time impressed 1 0
+time just 1 0
+time loyal 0 1
+time plumbing 1 0
+closer home 1 0
+time researching 1 0
+time responsive 0 1
+time responsive inquiries 0 1
+time showed 1 0
+clutter 1 0
+clutter thank 1 0
+time using Piece 1 0
+time using kind 1 0
+time using move 1 0
+time using movers 1 0
+come apartment 0 1
+come back try 1 0
+time visiting 1 0
+time walked 0 1
+come back will 1 0
+come check 0 1
+come close 1 0
+time yesterday spending 1 0
+come consistently 0 1
+time_NOT amazing_NOT 1 0
+timeliness 1 0
+timeliness effectiveness 1 0
+come dont 0 1
+come dont stop 0 1
+come lot 0 1
+come quickly 1 0
+timer 1 0
+come_NOT 1 0
+times 2 0 1
+come_NOT job_NOT 1 0
+comes 0 1
+times changed 1 0
+times changed mind 1 0
+comes_NOT 0 1
+times know 0 1
+times last 0 1
+comes_NOT close_NOT 0 1
+times past 0 1
+comes_NOT close_NOT quality_NOT 0 1
+coming always 0 1
+coming back since 0 1
+times years 0 1
+times years honestly 0 1
+coming many 1 0
+todate 1 0
+commitment 1 0
+toilet 1 0
+toilet tenant 1 0
+toilet tenant following 1 0
+communicative 0 1
+told order 1 0
 told try 1 0
-town 0 3
-town fave 0 1
-town fave place 0 1
-town just 0 1
-town just place 0 1
-tremendously 0 1
-tremendously since 0 1
-tremendously since first 0 1
-trip 1 0
-trips 0 1
-trips town 0 1
-try 10 1
+companies 1 0
+companies tried 1 0
+company Home 1 0
+took chance 1 0
+took little 1 0
+took little trip 1 0
+took long 1 0
+took way 1 0
+took way hour 1 0
+touch 0 1
+touch year 0 1
+touch year now 0 1
+company almost 0 1
+company almost 2 0 1
+company finding 1 0
+company friendly 0 1
+company future 1 0
+treat 0 1
+treat customers 0 1
+company made 0 1
+tree company 1 0
+tree service 1 0
+company made life 0 1
+company recommend 1 0
+company replace 1 0
+company show 0 1
+tried couldnt 1 0
+tried definitely 1 0
+company since 0 1
+tried didnt 1 0
+tried guys 1 0
+company since previous 0 1
+company used 1 0
+tried week 1 0
+trip 2 3
+company_NOT 2 1
+company_NOT worthy_NOT 1 0
+trip queens 1 0
+company_NOT worthy_NOT enough_NOT 1 0
+compared 1 0
+troubles_NOT 0 1
+troubles_NOT them_NOT 0 1
+troubling 1 0
+troubling times 1 0
+compared company 1 0
+compared company used 1 0
+compelled 1 0
+true professional 0 1
+true professional nice 0 1
+trust 0 1
+compelled incredible 1 0
+trustworthy always 0 1
+trustworthy always quick 0 1
+trustworthy communicative 0 1
+trustworthy reliable 0 1
+trustworthy service 0 1
+competent 0 1
 try Princeton 1 0
+try Utopia 1 0
+try Utopia ever 1 0
 try different 1 0
-try items 2 0
+competent smart 0 1
 try items menu 1 0
+try least 1 0
+try least negative 1 0
+try menu 1 0
+try menu items 1 0
+try overcharge 0 1
 try restaurant 1 0
-try_NOT 1 0
-twice 0 1
-twice outdoor 0 1
-typically 0 1
-typically eat 0 1
+competent smart honest 0 1
+twice give 1 0
+complains_NOT 1 0
+complains_NOT whatsoever_NOT 1 0
+two seasons 0 1
+two seasons now 0 1
+two weeks 0 1
+complains_NOT whatsoever_NOT seems 1 0
+complete 30 0 1
+two years row 0 1
+complete 30 projects 0 1
+complete project 0 1
+u_NOT 1 0
+u_NOT see_NOT 1 0
+complete project timely 0 1
+unexpected need 1 0
+unhappy 0 1
+unhappy loyal 0 1
+unhappy loyal customer 0 1
 unimpressed 1 0
 unimpressed food 1 0
 unpleasantly 1 0
-unpleasantly surprised 1 0
-update 0 1
-us 2 1
+completely 0 1
+compliment 0 1
+compliment way 0 1
+upon cozy 1 0
+upon place 1 0
+contact 1 0
 us going 1 0
 us going back 1 0
 us restaurant 1 0
-vibes 0 1
-vibes & 0 1
-vibes & cozy 0 1
-visit 1 0
+us_NOT 1 0
+us_NOT response_NOT 1 0
+us_NOT response_NOT time_NOT 1 0
+continue go 0 1
+use Richs 0 1
+use always 0 1
+use always will 0 1
+use another 1 0
+use another service 1 0
+use company 1 0
+continue recommend 0 1
+use guys 1 0
+use home 0 1
+continue work 1 0
+use plumbing 1 0
+use private 1 0
+use private cleanup 1 0
+use problem 1 0
+contractors 1 0
+contractors plumbers 1 0
+use try 1 0
+use_NOT 1 0
+use_NOT service_NOT 1 0
+contractors plumbers electricians 1 0
+used Dov 0 1
+used Dov couple 0 1
+used Purify 1 0
+used Purify Pros 1 0
+corner 1 0
+cost_NOT 1 0
+used like 0 1
+used like place 0 1
+used past subpar 1 0
+used quite 0 1
+used service 0 1
+used service years 0 1
+used several 0 1
+used several times 0 1
+used two 0 1
+used two years 0 1
+cost_NOT youll_NOT 1 0
+using : 1 0
+using Piece 1 0
+using Piece Cake 1 0
+using company since 0 1
+cost_NOT youll_NOT get_NOT 1 0
+using kind 1 0
+using many 0 1
+using many years 0 1
+using move 1 0
+using movers 1 0
+using plumbing 1 0
+couldnt happier 0 1
+using service year 0 1
+using year 0 1
+usual 0 1
+couldnt thanks 1 0
+couple problems 0 1
+couple problems far 0 1
+couple times 0 1
+couple years 0 1
+cozy nail 1 0
+cozy nail place 1 0
+crew 1 0
+crew fairly 1 0
+crew_NOT 0 1
+vendors 1 0
+vendors service 1 0
+vents 0 1
+vents appliances 0 1
+crew_NOT enough_NOT 0 1
+crew_NOT enough_NOT everything_NOT 0 1
+customer 10 0 1
+viedos_NOT 1 0
+viedos_NOT pics_NOT 1 0
+customer 10 years 0 1
+customer experience 1 0
+customer experience Ive 1 0
 visit exceptional 1 0
-visited 1 0
+visit last 1 0
+visit last Thursday 1 0
+visit pleasantly 1 0
+customer less 1 0
 visited first 1 0
-visits 0 1
-wait 2 1
-wait try 2 0
-waitress 0 1
-waitress Heather 0 1
-waitress Heather gets 0 1
-walked_NOT 0 1
-walked_NOT disappointed_NOT 0 1
-wall 0 1
-wall spot 0 1
+visiting 1 0
+customer less week 1 0
+w/ 1 0
+w/ future 1 0
+w/ future needs 1 0
+customer service always 0 1
+wait another 1 0
+wait come 1 0
+wait go 1 0
+wait schedule 1 0
+customer service since 0 1
+wait worth 1 0
+wait_NOT 0 1
+wait_NOT long_NOT 0 1
+customer super 1 0
+customer year 0 1
+customer years now 0 1
+walked quick 1 0
+walked quick look 1 0
+customers Rich’s 0 1
+customers staff 0 1
+customers staff like 0 1
+walkin definitely 1 0
+cut 0 1
+cut past 0 1
 wandering 1 0
 wandering around 1 0
-want 0 1
-want stay 0 1
-want stay open 0 1
-wanted 2 0
+cute 1 0
+cute well 1 0
+cute well priced 1 0
+want_NOT 1 0
+want_NOT Anthony_NOT 1 0
+want_NOT Anthony_NOT Rich_NOT 1 0
+daughter’s 0 1
 wanted explore 1 0
+wanted new 1 0
+wanted new spot 1 0
 wanted try 1 0
+wanting 1 0
+wanting try 1 0
 wants 1 0
 wants little 1 0
-welcoming 0 1
-welcoming remembers 0 1
-well 0 2
-well done 0 1
-well done pink_NOT 0 1
-went 1 0
+waste 1 0
+waste money 1 0
+waste money food 1 0
+daughter’s favorite 0 1
+way affordable 0 1
+way affordable fast 0 1
+way hour 1 0
+way job 0 1
+way overdue 0 1
+daughter’s favorite restaurant 0 1
+week ago 1 0
+weekend 1 0
+weekend saved 1 0
+day area 1 0
+days highly 0 1
+weeks_NOT 1 0
+days notice 1 0
+deal 0 1
+deal aging 0 1
+well came 1 0
+deal aging heating 0 1
+decent 1 0
+well done will 1 0
+decent job 1 0
+well priced 1 0
+well priced nail 1 0
+well service 1 0
+well service start 1 0
+decided based 1 0
+went Yelp 1 0
+went Yelp recommendations 1 0
+went first 1 0
 went girls 1 0
-whenever 0 1
-whenever area 0 1
-whenever area must 0 1
+went girls day 1 0
+went professionals 1 0
+went really 1 0
+decided check 1 0
+decided expand 1 0
+decided give place 1 0
+decided give try 1 0
+decided go company 1 0
+decided just 1 0
+weve ever 1 0
+decided search 1 0
+weve guys 0 1
+weve guys deal 0 1
+decided stay 1 0
+weve used Dov 0 1
+weve used past 0 1
+whatsoever_NOT 1 0
+whatsoever_NOT seems 1 0
+decided stop day 1 0
+decided stop walkin 1 0
+decided take 1 0
+whenever need 0 1
+whenever need plumbing 0 1
+where_NOT 0 1
+wherever 0 1
+wherever new 0 1
+wherever new location 0 1
+whole 1 0
+whole process 1 0
+whole process well 1 0
 wholly 1 0
-wholly unimpressed 1 0
-wholly unimpressed food 1 0
-will 8 7
-will always 0 2
-will always keep 0 1
-will back 2 1
-will back soon 0 1
-will continue 0 2
-will continue coming 0 1
-will continue frequent 0 1
-will definitely 3 0
-will definitely dining 1 0
-will definitely go 1 0
-will definitely return 1 0
-will fail_NOT 0 1
-will go_NOT 0 1
-will go_NOT wrong_NOT 0 1
+decided take chance 1 0
+decided use 1 0
+decided use try 1 0
+will ABSOLUTELY 1 0
+will ABSOLUTELY using 1 0
+will absolutely 1 0
+deeply 1 0
+def 1 0
+def recommend 1 0
+def recommend use 1 0
+delaware 0 1
+will always pleasure 0 1
+delivered best 1 0
+delivered every 0 1
+delivered every time 0 1
+delivers 0 1
+delivers best 0 1
+will call prices 1 0
+delivery 1 0
+will certainly 1 0
+will come 1 0
+will come back 1 0
+delivery service 1 0
+dependable 1 0
+dependable good 1 0
+will continue work 1 0
+will def 1 0
+dial ever 0 1
+dial ever since 0 1
+did 1 0
+didnt know expect 1 0
+didnt like 1 0
+different place 1 0
+different place next 1 0
+different time 1 0
+dine 1 0
+will ever 0 1
+will ever call 0 1
+dine reading 1 0
+will get 0 1
+dined Blue 1 0
+dined Blue Point 1 0
+will happy 1 0
+will happy work 1 0
+will keep 0 1
+will keep coming 0 1
 will likely 1 0
-will likely try 1 0
-will return 2 0
-wonderful 1 0
+dining TMH 1 0
+will mever 0 1
+will recommending 1 0
+will recommending Dov 1 0
+will regret_NOT 0 1
+will regret_NOT it_NOT 0 1
+dining experience 1 0
+will stand 0 1
+will stand quality 0 1
+dining experience ages 1 0
+dining pandemic 1 0
+will take 1 0
+will take business 1 0
+disappointed_NOT service_NOT 0 1
+will use company 1 0
+will use future 1 0
+will use services 1 0
+discovered 1 0
+will using future 1 0
+will using plumbing 1 0
+will_NOT 1 0
+will_NOT order_NOT 1 0
+willing give 1 0
+willing give another 1 0
+window 0 1
+window seat 0 1
+discovered reading 1 0
+wish someone 1 0
+wish someone recommended 1 0
+disgusting 1 0
+disgusting nasty 1 0
+without 1 0
+disgusting nasty burnt 1 0
+wonderful cleaning 0 1
 wonderful place 1 0
-work 0 1
-worth 0 3
-worth going 0 1
-worth wait 0 1
-worth_NOT 1 0
+disrespectful 1 0
+wont absolutely 1 0
+do 0 1
+doesn’t 0 1
+wont come 1 0
+wont ever 1 0
+doesn’t buy 0 1
+doesn’t buy pastries 0 1
+wont help 1 0
+wont hesitate 1 0
+wont hesitate go 1 0
+wont regret 0 1
+wont regret trust 0 1
+wont try 0 1
+wont try overcharge 0 1
+doing 0 1
+done immediately 1 0
+work blew 1 0
+work blew away 1 0
+work company 0 1
+work done 1 0
+work done immediately 1 0
+done looking 1 0
+work harder 1 0
+work harder find 1 0
+work hire 0 1
+work hire whenever 0 1
+work next 1 0
+work next year 1 0
+work seemed 1 0
+work seemed good 1 0
+work spot 0 1
+work top 1 0
+work top notch 1 0
+work way 0 1
+worked 0 1
+workers 1 0
+workers rude 1 0
+done looking company 1 0
+working Dov pleasure 0 1
+working company 0 1
+working past 0 1
+worryfree 0 1
+worryfree cleaning 0 1
+worryfree cleaning experience 0 1
+done much 0 1
+done past 0 1
+worth every 0 1
+worth every penny 0 1
+done time 0 1
+done will 1 0
+done will definitely 1 0
 worth_NOT going_NOT 1 0
-wrong_NOT 0 1
-wrote_NOT 0 1
-wrote_NOT review_NOT 0 1
-wrote_NOT review_NOT surprisingly_NOT 0 1
-year 0 1
-years 0 8
-years Masa 0 1
-years Masa goto 0 1
-years ago 0 1
-years gotta 0 1
-years now 0 3
-years quality 0 1
-years quality diminishes_NOT 0 1
+worth_NOT it_NOT 1 0
+worthy_NOT 1 0
+worthy_NOT enough_NOT 1 0
+worthy_NOT enough_NOT write_NOT 1 0
+done_NOT 1 0
+wouldnt give 1 0
+wouldnt give another 1 0
+done_NOT like_NOT 1 0
+wouldnt hesitate call 1 0
+wouldnt hesitate contact 1 0
+wouldnt hesitate give 1 0
+wow 1 0
+write 1 0
+write reviews 1 0
+write reviews felt 1 0
+write_NOT 1 0
+write_NOT review_NOT 1 0
+write_NOT review_NOT now_NOT 1 0
+written 0 1
+written back 0 1
+written back 2018 0 1
+dont believe 0 1
+dont know 1 0
+dont know functioned 1 0
+dont need happy 1 0
+dont stop 0 1
+year October 0 1
+year October absolutely 0 1
+year generally 0 1
+dov Jacob 0 1
+year headache 1 0
+year headache fixed 1 0
+dov always 0 1
+year past 0 1
+year past 7 0 1
+year phenomenal 0 1
+year using 1 0
+dov always quick 0 1
+dov awesome 0 1
+dov awesome hes 0 1
+dov clearly 0 1
+dov come 0 1
+dov come apartment 0 1
+dov excellent 1 0
+years always 0 1
+years always used 0 1
+years can 0 1
+years couldnt 0 1
+dov excellent job 1 0
+years find 1 0
+years honestly 0 1
+dov great 0 1
+dov great work 0 1
+years problems_NOT 0 1
+years professional 0 1
+dov just 1 0
+dov lifesaver 1 0
+years row 0 1
 years_NOT 0 1
-#
+years_NOT Ive_NOT 0 1
+working Dov 1 1
+loved 2 2
+time customer 1 1
+quick 4 4
+check 2 2
+call future 1 1
+walked 1 1
+used past 1 1
+recommendation 1 1
+loved place 1 1
+professionally 1 1
+call Dov 1 1
+brought 1 1
+too 1 1
+around 3 3
+stomach 1 1
+for 1 1
+it_NOT 1 1
+actually 2 2
+project 1 1
+using company 1 1
+willing 1 1
+them_NOT 1 1
+top 1 1
+top notch 1 1
+rely 1 1
+ever need plumber 1 1
+ever need 1 1
+speed 1 1
+speed dial 1 1
+Dov pleasure 1 1
+like place 1 1
+30 1 1
+wonderful 1 1
+issues_NOT 1 1
+save 1 1
+honest 2 2
+plumbing issue 1 1
+plumbing job 1 1
+enough_NOT 1 1
+patient 1 1
+happy work 1 1
+experience Ive 1 1
+provided 1 1
+request 1 1
+left 1 1
+maybe 1 1
+ever_NOT 1 1
+ever since 1 1
+made 1 1
+found_NOT 1 1
+nail salon 1 1
+notch 1 1
+dont need 1 1
+happier_NOT 1 1
+respect 1 1
+honest guy 1 1
+regret 1 1
+dial 1 1
+perfect 1 1
+recommend 10 10
+know_NOT 1 1
+delivered 1 1
+days 1 1
+couldnt 1 1
+choose 1 1
+need plumber 1 1
+goto plumber 1 1
+go place 1 1
+list 1 1
+making 1 1
+list professionals 1 1
+recommend services 1 1
+incredible 1 1
+plumber anything 1 1
