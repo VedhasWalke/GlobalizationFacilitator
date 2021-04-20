@@ -28,9 +28,8 @@ def decrypt(enc, password):
 
 if __name__ == '__main__':
 	mode = argv[1].strip()[0].upper()
-	file = argv[2].strip() + ".txt"
+	file = argv[2].strip()
 	password = argv[3].strip()
-	chdir("Database\\" + file[0].upper())
 	content = open(file, 'r').read()
 	if (mode == 'E'):
 		open(file, 'w').write(str(encrypt(content, password)))
