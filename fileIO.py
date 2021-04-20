@@ -2,7 +2,7 @@ import csv
 import os
 from encryption import encrypt
 
-baseDir = "C:\\Users\\Yuvi\\Documents\\MCA\\Clubs\\GlobalizationFacilitator\\GlobalizationFacilitator\\SampleData" #ENTER DIRECTORY FOR DATABASE FOLDER HERE
+baseDir = "" #ENTER DIRECTORY FOR DATABASE FOLDER HERE
 
 def removeEmptyLines(filename):
     if not os.path.isfile(filename):
