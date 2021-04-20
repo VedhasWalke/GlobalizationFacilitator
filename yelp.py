@@ -310,53 +310,51 @@ This process is used to aid the ML algorithm in getting an idea of the reviewer
 #A function to get the individual attributes of each review from a user profile (different layout/elements so different function)
 def getRevInfoReviewerPage(reviewElementIndex, userID):
     #Scrape the review info
-    revInfo = []                
+	revInfo = []                
 
-    #The first attribute is the user ID, we already know that
-    revInfo.append(userID)
+	#The first attribute is the user ID, we already know that
+	revInfo.append(userID)
 
-    #Insert business ID at end after creation of file
+	#Insert business ID at end after creation of file
 
-    #Try getting the date of the review
-    try:
-        revDate = reviewElementIndex.find_elements_by_class_name("rating-qualifier")[0].text
-    except:
-        revDate = "No review date"
-    revInfo.append(revDate)
+	#Try getting the date of the review
+	try:
+		revDate = reviewElementIndex.find_elements_by_class_name("rating-qualifier")[0].text
+	except:
+		revDate = "No review date"
+	revInfo.append(revDate)
 
-    #Try getting the rating of the review
-    try:
-        revRating = reviewElementIndex.find_element_by_xpath("//div[@class='biz-rating__stars']/div").get_attribute('title').split()[0].strip()
-    except:
-        revRating = "No rating"
-    revInfo.append(revRating)
+	#Try getting the rating of the review
+	try:
+		revRating = reviewElementIndex.find_element_by_xpath("//div[@class='biz-rating__stars']/div").get_attribute('title').split()[0].strip()
+	except:
+		revRating = "No rating"
+	revInfo.append(revRating)
 
-    #Try getting the content of the review
-    try:
-        revContent = reviewElementIndex.find_elements_by_tag_name('p')[0].text.replace('\n',' ').strip()
-    except:
-        revContent = "No content"
-    revInfo.append(revContent)
+	#Try getting the content of the review
+	try:
+		revContent = reviewElementIndex.find_elements_by_tag_name('p')[0].text.replace('\n',' ').strip()
+	except:
+		revContent = "No content"
+	revInfo.append(revContent)
 
     #Scrape the business info
-    try:
-        bizLink = reviewElementIndex.find_elements_by_tag_name('a')[1].get_attribute('href')
-        bizId = getBasicBizInfo(bizLink)[0]
-        browser.back()
-    except:
-        print("Couldn't navigate to business page from reviewer profile")
-    
-	revInfo.insert(1, bizId) #Got the BizID after creating business, insert and then create review
-    revID = f.createReview(revInfo)
-    print(f"Created review {revID} from user {userID}'s page")
+	try:
+		bizLink = reviewElementIndex.find_elements_by_tag_name('a')[1].get_attribute('href')
+		bizId = getBasicBizInfo(bizLink)[0]
+		browser.back()
+	except:
+		print("Couldn't navigate to business page from reviewer profile")
+	
+	revInfo.insert(1, bizId)
+	revID = f.createReview(revInfo)
+	print(f"Created review {revID} from user {userID}'s page")
+	f.addRevsToBiz(str(bizId), str(revID), getBasicBizInfo(bizLink)[1])
+	print(f'Added review {revID} to business {bizId}')
+	print(f'Added review {revID} to user {userID}')
+	f.createUser("", str(userID), str(revID))
 
-    f.addRevsToBiz(str(bizId), str(revID), getBasicBizInfo(bizLink)[1])
-    print(f'Added review {revID} to business {bizId}')
-
-    print(f'Added review {revID} to user {userID}')
-    f.createUser("", str(userID), str(revID))
-
-    return revID
+	return revID
 
 #A function to get all reviews from a user's profile according to the conditions stated above
 def getUserReviews(userID, clientID, minNumReviews, locationRadius):

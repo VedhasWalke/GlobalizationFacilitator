@@ -1,7 +1,8 @@
 import csv
 import os
+from encryption import encrypt
 
-baseDir = '' #ENTER DIRECTORY FOR DATABASE FOLDER HERE
+baseDir = "C:\\Users\\Yuvi\\Documents\\MCA\\Clubs\\GlobalizationFacilitator\\GlobalizationFacilitator\\SampleData" #ENTER DIRECTORY FOR DATABASE FOLDER HERE
 
 def removeEmptyLines(filename):
     if not os.path.isfile(filename):
@@ -214,3 +215,25 @@ def getAllUserIDs():
         for row in csv.DictReader(lookup):
             ids.append(row['ourid'])
     return ids
+
+#Called at the end of main() to encrypt all created files
+def encryptAll(password):
+    #[R]eviews
+    os.chdir(baseDir + "\\R")
+    for r in os.listdir():
+        enc = str(encrypt(open(r, 'r').read(), password))
+        open(r, 'w').write(enc)
+        print(f"Successfully encrypted {r}")
+    #[U]sers
+    os.chdir(baseDir + "\\U")
+    for u in os.listdir():
+        enc = str(encrypt(open(u, 'r').read(), password))
+        open(u, 'w').write(enc)
+        print(f"Successfully encrypted {u}")
+    #[B]usinesses
+    os.chdir(baseDir + "\\B")
+    for b in os.listdir():
+        enc = str(encrypt(open(b, 'r').read(), password))
+        open(b, 'w').write(enc)
+        print(f"Successfully encrypted {b}")
+    return

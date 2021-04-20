@@ -3,12 +3,18 @@ from hashlib import sha256
 from sys import argv
 from Crypto.Cipher import AES
 from Crypto import Random
-from os import chdir
-from fileIO import writeList
 
 BLOCK_SIZE = 16
 pad = lambda s: bytes(s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * chr(BLOCK_SIZE - len(s) % BLOCK_SIZE), 'utf-8')
 unpad = lambda s: s[:-ord(s[len(s) - 1:])]
+
+#Irrelevant
+def writeList(writerObj, lst):
+    for i in range(len(lst)):
+        if i > 0 and i < len(lst):
+            writerObj.write('\n')
+        writerObj.write(lst[i])
+    return
 
 #A function to encrypt a decrypted phrase
 def encrypt(raw, password):
