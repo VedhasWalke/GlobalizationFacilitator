@@ -1,3 +1,5 @@
+import fileIO as f				# If using Windows
+# import fileIO_linux as f		# If using Linux
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -7,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from geopy.geocoders import Nominatim
 from geopy import distance
-import fileIO as f
 import encryption as e
 
 options = Options()

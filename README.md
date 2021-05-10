@@ -1,7 +1,15 @@
 # GlobalizationFacilitator Yelp Scraper
 
-Prior to running:
-  Fill out important parameters in main.py. Add directory to store files in fileIO.py
+Setup in main.py:
+  Comment/uncomment fileIO import in main.py to fileIO or fileIO_linux based on operating system.
+  Change numerical parameters.
+  Change password to desired encryption password.
+  Change client link.
+
+Setup in yelp.py:
+  Comment/uncomment fileIO import in main.py to fileIO or fileIO_linux based on operating system.
+
+Database folder will be found in same directory as .py files -- no need to download template folder anymore.
 
 encryption.exe:
   Run through command line with 3 parameters - 

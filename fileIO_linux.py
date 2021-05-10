@@ -69,7 +69,7 @@ def createID(case, yelpid):
 
     #Go to directory for the case and update lookup file (only applicable for business or user files)
     if (upperCase == 'B') or (upperCase == 'U'):
-        os.chdir(baseDir + '\\' + upperCase)
+        os.chdir(baseDir + '/' + upperCase)
         with open('lookup.csv','a+', newline='') as lookup:
             writer = csv.DictWriter(lookup, fieldnames=['yelpid', 'ourid'])
             writer.writerow({'yelpid' : yelpid, 'ourid' : newIdStr})
@@ -83,7 +83,7 @@ def checkDuplicate(fileType, id):
 
     #Check if business already exists; if it does, return our ID for the business
     if fileType == 'B':
-        os.chdir(baseDir + '\\B')
+        os.chdir(baseDir + '/B')
         with open('lookup.csv') as lookup:
             for row in csv.DictReader(lookup):
                 if row['yelpid'] == id:
@@ -91,7 +91,7 @@ def checkDuplicate(fileType, id):
 
     #Check if user already exists; if it does, return our ID for the user
     elif fileType == 'U':
-        os.chdir(baseDir +'\\U')
+        os.chdir(baseDir +'/U')
         with open('lookup.csv') as lookup:
             for row in csv.DictReader(lookup):
                 if row['yelpid'] == id:
@@ -105,7 +105,7 @@ def getYelpID(id):
 
     #Check if business already exists; if it does, return our ID for the business
     if fileType == 'B':
-        os.chdir(baseDir + '\\B')
+        os.chdir(baseDir + '/B')
         with open('lookup.csv') as lookup:
             for row in csv.DictReader(lookup):
                 if row['ourid'] == id:
@@ -113,7 +113,7 @@ def getYelpID(id):
 
     #Check if user already exists; if it does, return our ID for the user
     elif fileType == 'U':
-        os.chdir(baseDir +'\\U')
+        os.chdir(baseDir +'/U')
         with open('lookup.csv') as lookup:
             for row in csv.DictReader(lookup):
                 if row['ourid'] == id:
@@ -132,7 +132,7 @@ def getUserID(yelpID):
 #A function to create a new business file
 def createBiz(info, yelpid):
     newBizId = createID('b', yelpid)
-    os.chdir(baseDir + '\\B')
+    os.chdir(baseDir + '/B')
     with open(newBizId+'.txt', 'w') as newBiz:
         writeList(newBiz, info)
     removeEmptyLines(newBizId+'.txt')
@@ -141,7 +141,7 @@ def createBiz(info, yelpid):
 #A function to create a new review file 
 def createReview(info):
     revId = createID('r', "")
-    os.chdir(baseDir + '\\R')
+    os.chdir(baseDir + '/R')
     with open(revId+'.txt', 'w') as newRev:
         writeList(newRev, info)
     removeEmptyLines(revId+'.txt')
@@ -149,7 +149,7 @@ def createReview(info):
 
 #A function to create or update new reviewer/user file
 def createUser(info, userID, revID):
-    os.chdir(baseDir + '\\U')
+    os.chdir(baseDir + '/U')
     userFileName = userID + '.txt'
 
     #If the user doesn't exist, create a file for that reviewer and associate them with current review (line 3)
@@ -167,7 +167,7 @@ def createUser(info, userID, revID):
 
 #A function that appends new review ids to the business file to associate those reviews with the business
 def addRevsToBiz(bizId, revIDs, exists):
-    os.chdir(baseDir + '\\B')
+    os.chdir(baseDir + '/B')
     fileName = bizId + '.txt'
     
     with open(fileName,'a+') as biz:
@@ -184,21 +184,21 @@ def addRevsToBiz(bizId, revIDs, exists):
 def retrieve(fileID, elementRow):
     #If it is a review file
     if fileID[0] == 'R':
-        os.chdir(baseDir + '\\R')
+        os.chdir(baseDir + '/R')
         with open(fileID + '.txt', 'r') as reviewFile:
             try:
                 return readList(reviewFile)[elementRow]
             except:
                 pass
     elif fileID[0] == 'U':
-        os.chdir(baseDir + '\\U')
+        os.chdir(baseDir + '/U')
         with open(fileID + '.txt', 'r') as userFile:
             try:
                 return readList(userFile)[elementRow]
             except:
                 pass
     elif fileID[0] == 'B':
-        os.chdir(baseDir + '\\B')
+        os.chdir(baseDir + '/B')
         with open(fileID + '.txt', 'r') as bizFile:
             try:
                 return readList(bizFile)[elementRow]
@@ -213,7 +213,7 @@ def getUserBizIDs(userID):
     for review in reviews:
         bizIDs.append(retrieve(review, 1).strip())
     bizLinks = []
-    os.chdir(baseDir + '\\B')
+    os.chdir(baseDir + '/B')
     with open('lookup.csv') as lookup:
         for row in csv.DictReader(lookup):
             if len(bizIDs) > 0 and row['ourid'] in bizIDs:
@@ -225,7 +225,7 @@ def getUserBizIDs(userID):
 #A function to get all the user ids in our database, helps in process 2
 def getAllUserIDs():
     ids = []
-    os.chdir(baseDir + '\\U')
+    os.chdir(baseDir + '/U')
     with open('lookup.csv') as lookup:
         for row in csv.DictReader(lookup):
             ids.append(row['ourid'])
@@ -234,24 +234,21 @@ def getAllUserIDs():
 #Called at the end of main() to encrypt all created files
 def encryptAll(password):
     #[R]eviews
-    os.chdir(baseDir + "\\R")
+    os.chdir(baseDir + "/R")
     for r in os.listdir():
         enc = str(encrypt(open(r, 'r').read(), password))
         open(r, 'w').write(enc)
         print(f"Successfully encrypted {r}")
     #[U]sers
-    os.chdir(baseDir + "\\U")
+    os.chdir(baseDir + "/U")
     for u in os.listdir():
         enc = str(encrypt(open(u, 'r').read(), password))
         open(u, 'w').write(enc)
         print(f"Successfully encrypted {u}")
     #[B]usinesses
-    os.chdir(baseDir + "\\B")
+    os.chdir(baseDir + "/B")
     for b in os.listdir():
         enc = str(encrypt(open(b, 'r').read(), password))
         open(b, 'w').write(enc)
         print(f"Successfully encrypted {b}")
     return
-
-print(setup())
-print(baseDir)
