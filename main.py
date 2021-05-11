@@ -2,15 +2,17 @@ from fileIO import encryptAll, setup				# If using Windows
 # from fileIO_linux import encryptAll, setup  		# If using Linux
 from yelp import process1, process2
 
-#FILL OUT THIS REQUIRED INFORMATION PRIOR TO RUNNING
-linkToClientBiz = ""
+# FILL OUT THIS REQUIRED INFORMATION PRIOR TO RUNNING
+# -------------------------------------------------------------------------------------------
+linkToClientBiz = ""                                # link to client Yelp business
 maximumDistanceFromClient = 30
 minimumNumberOfReviewsPerUser = 7
-password = "" #same as password to call encryption.exe
+password = ""                                       # same as password to call encryption.exe
 
-#RUN
+# RUN
+# -------------------------------------------------------------------------------------------
 if __name__ == '__main__':
-    setup()
+    print(setup())
     p1 = process1(linkToClientBiz)
     print('\n\n\n--------------------------------------------------------------------\n\n\n')
     p2 = process2(linkToClientBiz, maximumDistanceFromClient, minimumNumberOfReviewsPerUser)

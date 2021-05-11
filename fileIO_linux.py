@@ -10,7 +10,6 @@ def setup():
     os.chdir("Database")
     global baseDir
     baseDir = os.getcwd()
-    print(baseDir)
     open("id.csv",'w').write("category,currid\nr,0\nu,0\nb,0")
     for dir in subdirs: os.mkdir(dir)
     for dir in subdirs[1:]:

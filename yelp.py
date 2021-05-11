@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from geopy.geocoders import Nominatim
 from geopy import distance
-import encryption as e
 
 options = Options()
 options.add_argument('--headless')
@@ -18,13 +17,13 @@ options.add_argument('--disable-gpu')
 options.add_argument("--log-level=3")  # fatal
 options.add_argument("--start-maximized")
 
-#Disable images
+#Disable images to speed it up
 chrome_prefs = {}
 options.experimental_options["prefs"] = chrome_prefs
 chrome_prefs["profile.default_content_settings"] = {"images": 2}
 chrome_prefs["profile.managed_default_content_settings"] = {"images": 2}
 
-browser = webdriver.Chrome(options=options)
+browser = webdriver.Chrome(options=options, executable_path="chromedriver.exe")
 browser.implicitly_wait(7)
 wait = WebDriverWait(browser, 10)
 dist = distance.distance
@@ -456,37 +455,37 @@ def process2(clientLink, locationRadius, minNumReviewsPerUser):
 	
 ########################################################################################################################################
 
-# #[OLD] A function to search Yelp for a certain good/service in a location
-# def searchYelp(goods, numResults, location=""):
+# [OLD] A function to search Yelp for a certain good/service in a location
+def searchYelp(goods, numResults, location=""):
 
-# 	#Search yelp for passed product/service and area
+	#Search yelp for passed product/service and area
 	
-# 	#Go to Yelp homepage
-# 	try:
-# 		browser.get("https://www.yelp.com/")
-# 	except:
-# 		print("Can't open Yelp website")
+	#Go to Yelp homepage
+	try:
+		browser.get("https://www.yelp.com/")
+	except:
+		print("Can't open Yelp website")
 
-# 	#Search for passed good/service
-# 	try:
-# 		searchBar = wait.until(EC.presence_of_element_located((By.ID, "find_desc")))
-# 		searchBar.clear()
-# 		searchBar.send_keys(goods)
-# 	except:
-# 		print("Can't find search bar")
+	#Search for passed good/service
+	try:
+		searchBar = wait.until(EC.presence_of_element_located((By.ID, "find_desc")))
+		searchBar.clear()
+		searchBar.send_keys(goods)
+	except:
+		print("Can't find search bar")
 
-# 	#Send preferred location, defaults to auto-detected location
-# 	try:
-# 		locationBar = wait.until(EC.presence_of_element_located((By.ID, "dropperText_Mast")))
-# 		locationBar.clear()
-# 		locationBar.send_keys(location + Keys.RETURN)
-# 	except:
-# 		print("Can't find location bar")
+	#Send preferred location, defaults to auto-detected location
+	try:
+		locationBar = wait.until(EC.presence_of_element_located((By.ID, "dropperText_Mast")))
+		locationBar.clear()
+		locationBar.send_keys(location + Keys.RETURN)
+	except:
+		print("Can't find location bar")
 
-# 	links = getLinks(numResults)
+	links = getLinks(numResults)
 
-# 	#Scrape top businesses for product; the links to these businesses have already been stored by the getBizLinks() function
-# 	for i in range(numResults):
-# 		getAllBizInfo(links[i])
+	#Scrape top businesses for product; the links to these businesses have already been stored by the getBizLinks() function
+	for i in range(numResults):
+		getAllBizInfo(links[i])
 
-# 	return True
+	return True
