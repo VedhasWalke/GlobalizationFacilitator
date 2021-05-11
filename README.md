@@ -4,7 +4,7 @@ Python modules:
   pycrypto (https://pypi.org/project/pycrypto/)
   selenium (https://pypi.org/project/selenium/)
   geopy (https://pypi.org/project/geopy/)
-  Make sure to download latest version of Chomedriver and add to path
+  Make sure to download latest version of Chomedriver and add to path (https://chromedriver.chromium.org/downloads)
   
 Setup in main.py:
   Windows - comment out fileIO_linux
