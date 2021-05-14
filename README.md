@@ -1,19 +1,14 @@
 # GFacil Yelp Scraper
 
 * Check you have Python installed
-  * `python --version`
+  * `python --version` or `python3 --version`
 * Check you have pip installed
   * `pip --version`
 
 You will need certain Python modules and Chromedriver to run the scraper.
 
 Python modules:
-  * pycryptodome (https://pypi.org/project/pycryptodome/)
-    * `pip install pycryptodome`
-  * selenium (https://pypi.org/project/selenium/)
-    * `pip install selenium`
-  * geopy (https://pypi.org/project/geopy/)
-    * `pip install geopy`
+  * Run `pip install -r requirements.txt` in this folder, which will automatically install all the required modules
 
 Chromedriver: https://chromedriver.chromium.org/downloads
   1. Download latest version to match Chrome install
