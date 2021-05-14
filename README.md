@@ -8,7 +8,7 @@
 You will need certain Python modules and Chromedriver to run the scraper.
 
 Python modules:
-  * Run `pip install -r requirements.txt` in this folder, which will automatically install all the required modules
+  * Run `pip install -r requirements.txt` in this directory, which will automatically install all the required modules
 
 Chromedriver: https://chromedriver.chromium.org/downloads
   1. Download latest version to match Chrome install
