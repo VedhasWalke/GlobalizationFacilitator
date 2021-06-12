@@ -127,7 +127,7 @@ def getRevInfo(revPath, bizID):
 def getAllReviews(bizId):
 	nextPage = True
 	ids = []
-	baseRevPath = '//*[@id="wrap"]/div[3]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/ul'
+	baseRevPath = '//*[@id="wrap"]/div[2]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/ul'
 	
 	while nextPage:
 		try:
@@ -139,10 +139,10 @@ def getAllReviews(bizId):
 
 		try:
 			time.sleep(1)
-			pageNums = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="wrap"]/div[3]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/div[4]/div[2]'))).text.strip().split(' ')
+			pageNums = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="wrap"]/div[2]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/div[4]/div[2]'))).text.strip().split(' ')
 			pageNums.pop(1)
 			if pageNums[0] != pageNums[-1]:
-				wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="wrap"]/div[3]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/div[4]/div[1]/div'))).find_elements_by_tag_name("div")[-1].click()
+				wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="wrap"]/div[2]/yelp-react-root/div/div[3]/div/div/div[2]/div/div[1]/div[2]/section[2]/div[2]/div/div[4]/div[1]/div'))).find_elements_by_tag_name("div")[-1].click()
 			else:
 				print(f'{bizId}: got to end of review pages at page {pageNums[-1]}')
 				nextPage = False
@@ -165,24 +165,24 @@ def getBasicBizInfo(link):
 	
 		# Try getting name of business on Yelp
 		try:
-			bizName = browser.find_element_by_xpath('//*[@id="wrap"]/div[3]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/div[1]/h1').text
+			bizName = browser.find_element_by_xpath('//*[@id="wrap"]/div[2]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/div[1]/h1').text
 		except:
 			bizName = "No name found"
 		currBiz.append(bizName)
 
 		#Try getting rating of business on Yelp
 		try:
-			bizRating = browser.find_element_by_xpath('//*[@id="wrap"]/div[3]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/span/div').get_attribute("aria-label").split(' ')[0]
+			bizRating = browser.find_element_by_xpath('//*[@id="wrap"]/div[2]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/span/div').get_attribute("aria-label").split(' ')[0]
 		except:
 			bizRating = "No rating found"
 		currBiz.append(bizRating)
 
 		#Try getting categories of business on Yelp
 		try:
-			bizCategories = browser.find_element_by_xpath('//*[@id="wrap"]/div[3]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/span[3]').text
+			bizCategories = browser.find_element_by_xpath('//*[@id="wrap"]/div[2]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/span[3]').text
 		except:
 			try:
-				bizCategories = browser.find_element_by_xpath('//*[@id="wrap"]/div[3]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/span[2]').text
+				bizCategories = browser.find_element_by_xpath('//*[@id="wrap"]/div[2]/yelp-react-root/div/div[2]/div[1]/div[1]/div/div/span[2]').text
 			except:
 				bizCategories = "No categories found"
 		currBiz.append(bizCategories.strip())
@@ -232,7 +232,7 @@ def getAllBizInfo(link):
 	bizId = basicInfo[0]
 
 	#Go back and add the associated reviews to the business file (parameter 2: generates string of new review IDs from list currBizRevIds)
-	f.addRevsToBiz(bizId, str(getAllReviews(bizId)).replace('[','').replace(']','').replace("'","").replace(' ',''), basicInfo[1])
+	f.addRevsToBiz(bizId, ' '.join(getAllReviews(bizId)), basicInfo[1])
 	print(f'Got allBizInfo for business {bizId}')
 	return bizId
 
@@ -283,9 +283,7 @@ def getAllCompetitorsList(clientYelpID):
 
 #A function that will scrape info from all direct competitors
 def getAllCompetitorsInfo(bizList):
-	scrapedBiz = []
-	for i in bizList:
-		scrapedBiz.append(getAllBizInfo(i))
+	scrapedBiz = [getAllBizInfo(i) for i in bizList]
 	print(f'Got all competitor info for competitors {scrapedBiz}')
 	return scrapedBiz
 
