@@ -12,8 +12,6 @@ from geopy import distance
 
 options = Options()
 options.add_argument('--headless')
-options.add_argument('--hide-scrollbars')
-options.add_argument('--disable-gpu')
 options.add_argument("--log-level=3")  # fatal
 options.add_argument("--start-maximized")
 
@@ -383,7 +381,7 @@ def getUserReviews(userID, clientID, minNumReviews, locationRadius):
 				for r in range(numRevsOnCurrPage):
 					reviews = browser.find_elements_by_class_name("review")
 					alreadyScrapedFromThisUser = f.getUserBizIDs(userID) #Have to refresh the reviews of this user because it may have increased from previous iteration
-					bizYelpID = reviews[r].find_elements_by_tag_name('a')[1].get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
+					bizYelpID = reviews[r].find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
 				
 					#If the review for this business from this user isn't already in our database, then we move forward
 					if bizYelpID not in alreadyScrapedFromThisUser:
@@ -421,7 +419,7 @@ def getUserReviews(userID, clientID, minNumReviews, locationRadius):
 			numRevsOnCurrPage = len(browser.find_elements_by_class_name("review"))
 			for r in range(numRevsOnCurrPage):
 				reviews = browser.find_elements_by_class_name("review")
-				bizYelpID = reviews[r].find_elements_by_tag_name('a')[1].get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]					
+				bizYelpID = reviews[r].find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]					
 				alreadyScrapedFromThisUser = f.getUserBizIDs(userID)
 				
 				#Ensure that the business being scraped has not already been scraped for this userp
@@ -445,12 +443,11 @@ def getUserReviews(userID, clientID, minNumReviews, locationRadius):
 def process2(clientLink, locationRadius, minNumReviewsPerUser):
 	clientID = f.checkDuplicate('b', clientLink.replace('https://www.yelp.com/biz/',"").split('?')[0])
 	userIDs = f.getAllUserIDs()
-	for id in userIDs:
-		getUserReviews(id, clientID, minNumReviewsPerUser, locationRadius)
+	for id in userIDs: getUserReviews(id, clientID, minNumReviewsPerUser, locationRadius)
 	browser.quit()
 	print('FINISHED PROCESS 2')
 	return True
-	
+
 ########################################################################################################################################
 
 # [OLD] A function to search Yelp for a certain good/service in a location
@@ -483,7 +480,6 @@ def searchYelp(goods, numResults, location=""):
 	links = getLinks(numResults)
 
 	#Scrape top businesses for product; the links to these businesses have already been stored by the getBizLinks() function
-	for i in range(numResults):
-		getAllBizInfo(links[i])
+	for i in range(numResults): getAllBizInfo(links[i])
 
 	return True
