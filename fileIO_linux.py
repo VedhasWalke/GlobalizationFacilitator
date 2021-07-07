@@ -23,7 +23,6 @@ def removeEmptyLines(filename):
         return
     with open(filename) as filehandle:
         lines = filehandle.readlines()
-
     with open(filename, 'w') as filehandle:
         lines = filter(lambda x: x.strip(), lines)
         filehandle.writelines(lines)
@@ -122,10 +121,8 @@ def getYelpID(id):
 #A function to get the reviewer's internal ID using their Yelp ID
 def getUserID(yelpID):
     duplicate = checkDuplicate('u', yelpID)
-
     if not duplicate:
-        return createID('u', yelpID)
-        
+        return createID('u', yelpID)    
     return duplicate #Else, return existing ID
 
 #A function to create a new business file
@@ -133,7 +130,7 @@ def createBiz(info, yelpid):
     newBizId = createID('b', yelpid)
     os.chdir(baseDir + '/B')
     with open(newBizId+'.txt', 'w') as newBiz:
-        writeList(newBiz, info)
+        writeList(newBiz, [str(inf) for inf in info])
     removeEmptyLines(newBizId+'.txt')
     return newBizId
 
@@ -142,7 +139,7 @@ def createReview(info):
     revId = createID('r', "")
     os.chdir(baseDir + '/R')
     with open(revId+'.txt', 'w') as newRev:
-        writeList(newRev, info)
+        writeList(newRev, [str(inf) for inf in info])
     removeEmptyLines(revId+'.txt')
     return revId
 
@@ -155,7 +152,7 @@ def createUser(info, userID, revID):
     if not userFileName in os.listdir(os.getcwd()):
         info.append(revID)
         with open(userFileName, 'w') as newUser:
-            writeList(newUser, info)
+            writeList(newUser, [str(inf) for inf in info])
     
     #If the user already exists, just append the review number to that user's associated review ids line (line 3)
     else: #If not newFile
@@ -168,7 +165,6 @@ def createUser(info, userID, revID):
 def addRevsToBiz(bizId, revIDs, exists):
     os.chdir(baseDir + '/B')
     fileName = bizId + '.txt'
-    
     with open(fileName,'a+') as biz:
         #If this is the first time we're adding review ids, we have to add all the review ids in a new line
         if not exists:
