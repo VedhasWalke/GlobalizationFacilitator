@@ -10,7 +10,7 @@ from os import getcwd, chdir
 linkToClientBiz = "https://www.yelp.com/biz/hunan-express-east-brunswick"                                # link to client Yelp business
 maximumDistanceFromClient = 30
 minimumNumberOfReviewsPerUser = 7
-password = "eT3sky8wwwcUK8rD"                                                                           # same as password to call encryption.exe
+password = ""                                                                           # same as password to call encryption.exe
 
 # RUN
 # -------------------------------------------------------------------------------------------
