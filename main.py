@@ -7,9 +7,9 @@ from os import getcwd, chdir
 
 # FILL OUT THIS REQUIRED INFORMATION PRIOR TO RUNNING
 # -------------------------------------------------------------------------------------------
-linkToClientBiz = "https://www.yelp.com/biz/hunan-express-east-brunswick"                                # link to client Yelp business
-maximumDistanceFromClient = 30
-minimumNumberOfReviewsPerUser = 7
+linkToClientBiz = ""                                # link to client Yelp business
+maximumDistanceFromClient = 0
+minimumNumberOfReviewsPerUser = 0
 password = ""                                                                           # same as password to call encryption.exe
 
 # RUN

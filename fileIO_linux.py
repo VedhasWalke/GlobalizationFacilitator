@@ -231,19 +231,31 @@ def encryptAll(password):
     #[R]eviews
     os.chdir(baseDir + "/R")
     for r in os.listdir():
-        enc = str(encrypt(open(r, 'r').read(), password))
-        open(r, 'w').write(enc)
-        print(f"Successfully encrypted {r}")
+        content = open(r, 'rb').read()
+        try:
+            open(r, 'wb').write(encrypt(content, password))
+            print(f"Successfully encrypted {r}")
+        except:
+            open(r, 'wb').write(content)
+            print(f'Error encrypting {r}')
     #[U]sers
     os.chdir(baseDir + "/U")
     for u in os.listdir():
-        enc = str(encrypt(open(u, 'r').read(), password))
-        open(u, 'w').write(enc)
-        print(f"Successfully encrypted {u}")
+        content = open(u, 'rb').read()
+        try:
+            open(u, 'wb').write(encrypt(content, password))
+            print(f"Successfully encrypted {u}")
+        except:
+            open(u, 'wb').write(content)
+            print(f'Error encrypting {u}')
     #[B]usinesses
     os.chdir(baseDir + "/B")
     for b in os.listdir():
-        enc = str(encrypt(open(b, 'r').read(), password))
-        open(b, 'w').write(enc)
-        print(f"Successfully encrypted {b}")
+        content = open(b, 'rb').read()
+        try:
+            open(b, 'wb').write(encrypt(content, password))
+            print(f"Successfully encrypted {b}")
+        except:
+            open(b, 'wb').write(content)
+            print(f'Error encrypting {b}')
     return
