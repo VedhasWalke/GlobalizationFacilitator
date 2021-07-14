@@ -1,5 +1,6 @@
 *.pyc
 /Database
-/P1_Backup_*
+/*_Backup_*
 /__pycache__
+encryption.py
 scraping.txt
