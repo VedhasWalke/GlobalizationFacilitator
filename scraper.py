@@ -935,96 +935,102 @@ def getUserReviews(userID, client, categories, minNumReviews, locationRadius):
     browser.get(retrieve(userID, 1))
     revScraped = len(retrieve(userID, 3).split(' ')) 		#Number of reviews already scraped from this user
 
-    browser.find_element_by_link_text('Reviews').click()
-    reviewerHomePage = browser.current_url
+    try:
+        browser.find_element_by_link_text('Reviews').click()
+        reviewerHomePage = browser.current_url
 
-    page = 1
+        page = 1
 
-	#This part requires client address to find nearby competitors, so it is impossible to do without the client address
-    for category in categories:
-        print(f'Category: {category}')
-        browser.get(reviewerHomePage)
-        browser.find_element_by_link_text('All Categories').click()
-        time.sleep(2)
-        try:
-            browser.find_element_by_xpath("//li/a/span[contains(text(), '" + str(category) + "')]").click()
+        #This part requires client address to find nearby competitors, so it is impossible to do without the client address
+        for category in categories:
+            try:
+                print(f'Category: {category}')
+                browser.get(reviewerHomePage)
+                browser.find_element_by_link_text('All Categories').click()
+                time.sleep(2)
+                try:
+                    browser.find_element_by_xpath("//li/a/span[contains(text(), '" + str(category) + "')]").click()
+                    nextPage = True
+
+                    while nextPage:
+                        numRevs = len(browser.find_elements_by_class_name("review"))
+                        print(f'# reviews on pg. {page}: {numRevs}')
+                        for r in range(1, numRevs + 1):
+                            try:
+                                currRev = browser.find_element_by_xpath(f"(//div[@class='review'])[{r}]")
+                                print(f'# rev scraped = {revScraped}')
+                                alreadyScrapedFromThisUser = getUserBizIDs(userID) #Have to refresh the reviews of this user because it may have increased from previous iteration
+                                bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
+                            
+                                #If the review for this business from this user isn't already in our database, then we move forward
+                                if bizYelpID not in alreadyScrapedFromThisUser:
+                                    currentAddr = geolocator.geocode(currRev.find_element_by_tag_name("address").text.split('\n')[1].strip())
+                                    print(currentAddr)
+                                    current = (currentAddr.latitude, currentAddr.longitude)
+                                    far = ceil(dist(current, client).miles)
+
+                                    #If the business is within the x mile radius
+                                    if far <= locationRadius:
+                                        getRevInfoReviewerPage(currRev, userID)
+                                        revScraped += 1
+                                    else:
+                                        print(f'Attempted review #{revScraped}, too distant: {far} miles')
+                                else:
+                                    print(f'{bizYelpID} for {userID} was already in the database')
+                            except:
+                                pass
+                        #Try going to next page (if there is one)
+                        try:
+                            browser.find_element_by_xpath("//span[contains(text(), 'Next')]").click()
+                            page += 1
+                        except:
+                            print(f'Reached end of reviews for {category} for {userID} at page {page}')
+                            nextPage = False
+                except:
+                    print(f'No category {category} found')
+            except:
+                print(f'Couldn\'t get to All Categories for {userID}')
+        print(f'Reached end for CATEGORIZED reviews for {userID}')
+
+        page = 1
+
+        #If the minimum number of reviews haven't been fulfilled for this user
+        if revScraped < minNumReviews:
             nextPage = True
-
-            while nextPage:
+            browser.get(reviewerHomePage)
+        try:    
+            while revScraped < minNumReviews and nextPage:
                 numRevs = len(browser.find_elements_by_class_name("review"))
                 print(f'# reviews on pg. {page}: {numRevs}')
                 for r in range(1, numRevs + 1):
                     try:
-                        currRev = browser.find_element_by_xpath(f"(//div[@class='review'])[{r}]")
+                        currRev = browser.find_element_by_xpath(f"(//*[@class='review'])[{r}]")
                         print(f'# rev scraped = {revScraped}')
-                        alreadyScrapedFromThisUser = getUserBizIDs(userID) #Have to refresh the reviews of this user because it may have increased from previous iteration
-                        bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
-                    
-                        #If the review for this business from this user isn't already in our database, then we move forward
+                        alreadyScrapedFromThisUser = getUserBizIDs(userID)
+                        bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]				
+                        
+                        #Ensure that the business being scraped has not already been scraped for this userp
                         if bizYelpID not in alreadyScrapedFromThisUser:
-                            currentAddr = geolocator.geocode(currRev.find_element_by_tag_name("address").text.split('\n')[1].strip())
-                            print(currentAddr)
-                            current = (currentAddr.latitude, currentAddr.longitude)
-                            far = ceil(dist(current, client).miles)
-
-                            #If the business is within the x mile radius
-                            if far <= locationRadius:
-                                getRevInfoReviewerPage(currRev, userID)
-                                revScraped += 1
-                            else:
-                                print(f'Attempted review #{revScraped}, too distant: {far} miles')
+                            getRevInfoReviewerPage(currRev, userID)
+                            revScraped += 1
                         else:
                             print(f'{bizYelpID} for {userID} was already in the database')
                     except:
                         pass
-				#Try going to next page (if there is one)
+                #Try going to next page (if there is one)
                 try:
                     browser.find_element_by_xpath("//span[contains(text(), 'Next')]").click()
                     page += 1
                 except:
-                    print(f'Reached end of reviews for {category} for {userID} at page {page}')
+                    print(f'Reached end of ALL reviews for {userID} at page {page}')
                     nextPage = False
         except:
-            print(f'No category {category} found')
-
-    print(f'Reached end for CATEGORIZED reviews for {userID}')
-
-    page = 1
-
-	#If the minimum number of reviews haven't been fulfilled for this user
-    if revScraped < minNumReviews:
-        nextPage = True
-        browser.get(reviewerHomePage)
-    try:    
-        while revScraped < minNumReviews and nextPage:
-            numRevs = len(browser.find_elements_by_class_name("review"))
-            print(f'# reviews on pg. {page}: {numRevs}')
-            for r in range(1, numRevs + 1):
-                try:
-                    currRev = browser.find_element_by_xpath(f"(//*[@class='review'])[{r}]")
-                    print(f'# rev scraped = {revScraped}')
-                    alreadyScrapedFromThisUser = getUserBizIDs(userID)
-                    bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]				
-                    
-                    #Ensure that the business being scraped has not already been scraped for this userp
-                    if bizYelpID not in alreadyScrapedFromThisUser:
-                        getRevInfoReviewerPage(currRev, userID)
-                        revScraped += 1
-                    else:
-                        print(f'{bizYelpID} for {userID} was already in the database')
-                except:
-                    pass
-            #Try going to next page (if there is one)
-            try:
-                browser.find_element_by_xpath("//span[contains(text(), 'Next')]").click()
-                page += 1
-            except:
-                print(f'Reached end of ALL reviews for {userID} at page {page}')
-                nextPage = False
+            print(f'Error while getting UNCATEGORIZED reviews for {userID}')
+        print(f'Scraped a total of {revScraped} reviews for {userID}')
+        return True
+    
     except:
-        print(f'Error while getting UNCATEGORIZED reviews for {userID}')
-    print(f'Scraped a total of {revScraped} reviews for {userID}')
-    return True
+        return False
 
 #MAIN function for PROCESS 2
 def process2(clientLink, locationRadius, minNumReviewsPerUser):
