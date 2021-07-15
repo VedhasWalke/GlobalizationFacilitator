@@ -954,27 +954,29 @@ def getUserReviews(userID, client, categories, minNumReviews, locationRadius):
                 numRevs = len(browser.find_elements_by_class_name("review"))
                 print(f'# reviews on pg. {page}: {numRevs}')
                 for r in range(1, numRevs + 1):
-                    currRev = browser.find_element_by_xpath(f"(//div[@class='review'])[{r}]")
-                    print(f'# rev scraped = {revScraped}')
-                    alreadyScrapedFromThisUser = getUserBizIDs(userID) #Have to refresh the reviews of this user because it may have increased from previous iteration
-                    bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
-                
-                    #If the review for this business from this user isn't already in our database, then we move forward
-                    if bizYelpID not in alreadyScrapedFromThisUser:
-                        currentAddr = geolocator.geocode(currRev.find_element_by_tag_name("address").text.split('\n')[1].strip())
-                        print(currentAddr)
-                        current = (currentAddr.latitude, currentAddr.longitude)
-                        far = ceil(dist(current, client).miles)
+                    try:
+                        currRev = browser.find_element_by_xpath(f"(//div[@class='review'])[{r}]")
+                        print(f'# rev scraped = {revScraped}')
+                        alreadyScrapedFromThisUser = getUserBizIDs(userID) #Have to refresh the reviews of this user because it may have increased from previous iteration
+                        bizYelpID = currRev.find_element_by_tag_name('a').get_attribute('href').replace('https://www.yelp.com/biz/','').split('?')[0]
+                    
+                        #If the review for this business from this user isn't already in our database, then we move forward
+                        if bizYelpID not in alreadyScrapedFromThisUser:
+                            currentAddr = geolocator.geocode(currRev.find_element_by_tag_name("address").text.split('\n')[1].strip())
+                            print(currentAddr)
+                            current = (currentAddr.latitude, currentAddr.longitude)
+                            far = ceil(dist(current, client).miles)
 
-                        #If the business is within the x mile radius
-                        if far <= locationRadius:
-                            getRevInfoReviewerPage(currRev, userID)
-                            revScraped += 1
+                            #If the business is within the x mile radius
+                            if far <= locationRadius:
+                                getRevInfoReviewerPage(currRev, userID)
+                                revScraped += 1
+                            else:
+                                print(f'Attempted review #{revScraped}, too distant: {far} miles')
                         else:
-                            print(f'Attempted review #{revScraped}, too distant: {far} miles')
-                    else:
-                        print(f'{bizYelpID} for {userID} was already in the database')
-
+                            print(f'{bizYelpID} for {userID} was already in the database')
+                    except:
+                        pass
 				#Try going to next page (if there is one)
                 try:
                     browser.find_element_by_xpath("//span[contains(text(), 'Next')]").click()
