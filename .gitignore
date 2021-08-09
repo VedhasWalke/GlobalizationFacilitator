@@ -1,0 +1,6 @@
+*.pyc
+/Database
+/*_Backup_*
+/__pycache__
+encryption.py
+scraping.txt
