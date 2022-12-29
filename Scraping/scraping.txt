@@ -1,0 +1,101 @@
+eT3sky8wwwcUK8rD
+
+Remove password, distance, minRevs, linktobiz, baseDir before committing
+
+So what I've understood (steps the bot should take):
+
+Process 1:
+	1. Go to client business page
+		- Basic business info
+		- Search terms that yielded this business (for future, finding competitors)
+		- Make list of links to competitor businesses (for finding & evaluating very close competitors)
+		- All reviews
+	2. Go to directly related business pages
+		- Basic business info
+		- All reviews
+		- Do not navigate to any more businesses from this
+	3. Search Yelp for the search terms that yielded client business in that location/area
+		- Find more (hopefully competitor) businesses
+		- Basic business info
+		- All reviews
+		- Do not navigate to any more businesses from this
+
+Process 2:
+	1. Open reviewer files for the reviewers of the client business & competitor businesses
+	2. Get links to all reviewer profiles
+	3. Visit all reviewer profiles
+	4. Sort/categorize reviews & get relevant ones
+		- Navigate to those business pages for which the reviews were written & get very basic info about those businesses
+	
+
+
+
+
+
+1) Scrape basic business data on Yelp
+	- Name
+	- Average rating
+	- Phone Number
+	- Address
+	- Website
+	- Description (if present)
+	- Reviews (if present; you can set how many reviews to scrape per business, if # entered exceeds # present, rest are blank)
+		> Name of reviewer
+		> Date of review
+		> Rating of review
+		> Content of review (what the person wrote, no images)
+		> Link to reviewers profile
+
+2) Scrape reviews from reviewer profiles
+	- The profile links are already scraped when scraping businesses
+	- For each review on the profile, scrape:
+		> Name of business which was reviewed
+		> Date of review
+		> Rating given
+		> Content of review
+		> Link to review/business reviewed
+
+Storage:
+
+	*All files are encrypted*
+
+	- 1 folder for just for text files with review info only
+		> Named by Review Id
+		> Includes important attributes of review
+			- (FileName) Review Id: will help a business file refer to one of its reviews or help a reviewer file refer to one of its reviews
+				> Unique alphanumeric: R0001, R0002; R signifies that it is a review
+			- (0) Reviewer Id: will help review file to refer to who wrote it
+				> Unique alphanumeric: U0001, U0002; U signifies that it is a reviewer
+			- (1) Business Id: will help a review file refer to what business it was written for
+				> Unique alphanumeric: B0001, B0002; B signifies that it is a business
+			- (2) Date: the date the review was written, a string
+			- (3) Rating: the rating out of 5 stars, expressed as a float
+			- (4) Content: a long (possibly multiline) string
+
+	- 1 folder for just the text files with reviewer info only
+		> Includes reference file with Yelp IDs and our interal IDs
+		> Named by Reviewer Id
+		> Includes important attributes of reviewer
+			- (FileName) Reviewer Id: will help review file to refer to reviewer file (who wrote it?)
+				> Unique alphanumeric: U0001, U0002; U signifies that it is a reviewer
+			- (0) Reviewer Name: name of the user/reviewer on Yelp
+			- (1) Link To Profile: link to reviewer's profile on Yelp
+				> We can use this later to visit reviewer profiles and scrape more businesses off that
+			- (2) Reviews Written: will help the reviewer file refer to one of its review's review file
+				> A comma-separated list of review IDs of reviews that were written by this user
+	
+	- 1 folder for just the text files with business info only
+		> Includes reference file with Yelp IDs and our interal IDs
+		> Named by Business Id
+		> Includes important attributes of a business
+			- (FileName) Business Id: will help a review file refer to what business it was written for
+				> Unique alphanumeric: B0001, B0002; B signifies that it is a business
+			- (0) Business Name: a string that contains the name of the business
+			- (1) Business Rating: an overall rating out of 5 stars from Yelp
+			- (2) Business categories: comma-separated phrases that describe the business
+			- (3) Business Location: a string which contains the address for the business
+			- (4) Business Phone Number: the primary telephone number for the business on Yelp
+			- (5) Business Website: a link to the business's website
+			- (6) Business Description: likely multiple lines describing the business
+			- (7) Reviews of Business: will help a business file refer to one of its reviews
+				> A comma-separated list of review IDs of reviews that were written for this business
